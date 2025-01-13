@@ -1,0 +1,246 @@
+Turbo Assembler	 Version 4.1	    13/01/01 00:30:13	    Page 1
+D:\zhu\2\test.asm
+
+
+
+      1	0000			     STACK1 SEGMENT
+      2	0000  80*(00)			     DB	128 DUP(0)
+      3	0080			     STACK1 ENDS
+      4
+      5	0000			     DATA SEGMENT
+      6	0000  50 6C 65 61 73 65	20+	     TISHIINFO			     DB	'Please	input a	number:',0AH,0DH,'$'
+      7	      69 6E 70 75 74 20	61+
+      8	      20 6E 75 6D 62 65	72+
+      9	      3A 0A 0D 24
+     10	0019  0A 0D 53 74 72 69	6E+	     STRING		     DB	0AH,0DH,'String:$'
+     11	      67 3A 24
+     12	0023  20			     INPUT			     DB	20H
+     13	0024  64*(24)			     DB	100 DUP('$')
+     14	0088  42 69 6E 61 72 79	3A+	     RESULT		     DB	'Binary:$'
+     15	      24
+     16	0090  50 6C 65 61 73 65	20+	     ERRORINFO			     DB	'Please	input again:',0AH,0DH,'$'
+     17	      69 6E 70 75 74 20	61+
+     18	      67 61 69 6E 3A 0A	0D+
+     19	      24
+     20	00A6			     DATA ENDS
+     21
+     22	0000			     CODE SEGMENT
+     23				     ASSUME CS:CODE,DS:DATA,SS:STACK1
+     24	0000			     START:
+     25	0000  B8 0000s			     MOV AX, STACK1
+     26	0003  8E D0			     MOV SS, AX
+     27	0005  B8 0000s			     MOV AX, DATA
+     28	0008  8E D8			     MOV DS, AX
+     29	000A  BA 0000r			     MOV DX, OFFSET TISHIINFO
+     30	000D  B4 09			     MOV AH, 09H
+     31	000F  CD 21			     INT 21H
+     32	0011  BB 0000			     MOV BX, 0
+     33	0014			     READ:
+     34	0014  BA 0019r			     MOV DX, OFFSET STRING
+     35	0017  B4 09			     MOV AH, 09H
+     36	0019  CD 21			     INT 21H
+     37	001B  BA 0023r			     MOV DX, OFFSET INPUT
+     38	001E  B4 0A			     MOV AH, 0AH
+     39	0020  CD 21			     INT 21H
+     40	0022  BB 0024r			     MOV BX, OFFSET INPUT+1
+     41	0025  8B 0F			     MOV CX, [BX]
+     42	0027  B5 00			     MOV CH, 0
+     43	0029  BA 0025r			     MOV DX, OFFSET INPUT+2
+     44	002C  8A 47 01			     MOV AL, [BX+1]
+     45	002F  3C 71			     CMP AL, 'q'
+     46	0031  74 18			     JE	EXIT
+     47	0033  3C 51			     CMP AL, 'Q'
+     48	0035  74 14			     JE	EXIT
+     49
+     50	0037  E8 00B0			     CALL NEW
+     51	003A  E8 0012			     CALL BINARY
+     52	003D  50			     PUSH AX
+     53	003E  BA 0088r			     MOV DX, OFFSET RESULT
+     54	0041  B4 09			     MOV AH, 09H
+     55	0043  CD 21			     INT 21H
+     56	0045  58			     POP AX
+     57	0046  E8 007F			     CALL DISPBIN
+Turbo Assembler	 Version 4.1	    13/01/01 00:30:13	    Page 2
+D:\zhu\2\test.asm
+
+
+
+     58	0049  EB C9			     JMP READ
+     59	004B			     EXIT:
+     60	004B  B4 4C			     MOV AH, 4CH
+     61	004D  CD 21			     INT 21H
+     62
+     63	004F			     BINARY PROC
+     64	004F  53			     PUSH BX
+     65	0050  56			     PUSH SI
+     66	0051  51			     PUSH CX
+     67	0052  52			     PUSH DX
+     68	0053  BB 0000			     MOV BX, 0
+     69	0056  8B F2			     MOV SI, DX
+     70	0058  B4 00			     MOV AH, 0
+     71	005A  8A 04			     MOV AL, [SI]
+     72	005C  2D 0030			     SUB AX, 30H
+     73	005F  3D 0009			     CMP AX, 9
+     74	0062  77 20			     JA	OVERERR
+     75	0064  83 F9 01			     CMP CX, 1H
+     76	0067  74 33			     JE	BINPROCESS
+     77	0069  BA 000A			     MOV DX, 10
+     78	006C  49			     DEC CX
+     79	006D			     LOOPFORBIN:
+     80	006D  46			     INC SI
+     81	006E  BA 000A			     MOV DX, 10
+     82	0071  F7 E2			     MUL DX
+     83	0073  8A 1C			     MOV BL, [SI]
+     84	0075  80 EB 30			     SUB BL, 30H
+     85	0078  80 FB 09			     CMP BL, 9
+     86	007B  77 07			     JA	OVERERR
+     87	007D  03 C3			     ADD AX, BX
+     88	007F  E2 EC			     LOOP LOOPFORBIN
+     89	0081  EB 19 90			     JMP BINPROCESS
+     90
+     91	0084			     OVERERR:
+     92	0084  5A			     POP DX
+     93	0085  59			     POP CX
+     94	0086  51			     PUSH CX
+     95	0087  52			     PUSH DX
+     96	0088  E8 0016			     CALL COUNT
+     97	008B  E8 005C			     CALL NEW
+     98	008E  BA 0090r			     MOV DX, OFFSET ERRORINFO
+     99	0091  B4 09			     MOV AH, 09H
+    100	0093  CD 21			     INT 21H
+    101	0095  5A			     POP DX
+    102	0096  59			     POP CX
+    103	0097  5E			     POP SI
+    104	0098  5B			     POP BX
+    105	0099  E9 FF78			     JMP READ
+    106	009C			     BINPROCESS:
+    107	009C  5A			     POP DX
+    108	009D  59			     POP CX
+    109	009E  5E			     POP SI
+    110	009F  5B			     POP BX
+    111	00A0  C3			     RET
+    112	00A1			     BINARY ENDP
+    113
+    114	00A1			     COUNT PROC
+Turbo Assembler	 Version 4.1	    13/01/01 00:30:13	    Page 3
+D:\zhu\2\test.asm
+
+
+
+    115	00A1  50			     PUSH AX
+    116	00A2  53			     PUSH BX
+    117	00A3  51			     PUSH CX
+    118	00A4  52			     PUSH DX
+    119	00A5  8B F2			     MOV SI, DX
+    120	00A7  B8 0000			     MOV AX, 0
+    121	00AA			     CHECK:
+    122	00AA  8A 1C			     MOV BL, [SI]
+    123	00AC  46			     INC SI
+    124	00AD  80 FB 30			     CMP BL, 30H
+    125	00B0  72 06			     JB	NOTNUM
+    126	00B2  80 FB 39			     CMP BL, 39H
+    127	00B5  77 01			     JA	NOTNUM
+    128	00B7  40			     INC AX
+    129	00B8			     NOTNUM:
+    130	00B8  E2 F0			     LOOP CHECK
+    131	00BA  05 0030			     ADD AX, 30H
+    132	00BD  8B D0			     MOV DX, AX
+    133	00BF  B4 02			     MOV AH, 02H
+    134	00C1  CD 21			     INT 21H
+    135	00C3  5A			     POP DX
+    136	00C4  59			     POP CX
+    137	00C5  5B			     POP BX
+    138	00C6  58			     POP AX
+    139	00C7  C3			     RET
+    140	00C8			     COUNT ENDP
+    141
+    142	00C8			     DISPBIN PROC
+    143	00C8  50			     PUSH AX
+    144	00C9  53			     PUSH BX
+    145	00CA  51			     PUSH CX
+    146	00CB  52			     PUSH DX
+    147	00CC  8B D8			     MOV BX, AX
+    148	00CE  B9 0010			     MOV CX, 16
+    149	00D1			     DISPBIN_LOOP:
+    150	00D1  D1 E3			     SHL BX, 1
+    151	00D3  B2 00			     MOV DL, 0
+    152	00D5  72 05			     JC	SET_ONE
+    153	00D7  B2 30			     MOV DL, '0'
+    154	00D9  EB 03 90			     JMP PRINT_CHAR
+    155	00DC			     SET_ONE:
+    156	00DC  B2 31			     MOV DL, '1'
+    157	00DE			     PRINT_CHAR:
+    158	00DE  B4 02			     MOV AH, 02H
+    159	00E0  CD 21			     INT 21H
+    160	00E2  49			     DEC CX
+    161	00E3  75 EC			     JNZ DISPBIN_LOOP
+    162	00E5  5A			     POP DX
+    163	00E6  59			     POP CX
+    164	00E7  5B			     POP BX
+    165	00E8  58			     POP AX
+    166	00E9  C3			     RET
+    167	00EA			     DISPBIN ENDP
+    168
+    169	00EA			     NEW      PROC
+    170	00EA  50			     PUSH AX
+    171	00EB  52			     PUSH DX
+Turbo Assembler	 Version 4.1	    13/01/01 00:30:13	    Page 4
+D:\zhu\2\test.asm
+
+
+
+    172	00EC  B4 02			     MOV AH, 02H
+    173	00EE  B2 0A			     MOV DL, 0AH
+    174	00F0  CD 21			     INT 21H
+    175	00F2  B2 0D			     MOV DL, 0DH
+    176	00F4  CD 21			     INT 21H
+    177	00F6  5A			     POP DX
+    178	00F7  58			     POP AX
+    179	00F8  C3			     RET
+    180	00F9			     NEW ENDP
+    181
+    182	00F9			     CODE ENDS
+    183				     END START
+Turbo Assembler	 Version 4.1	    13/01/01 00:30:13	    Page 5
+Symbol Table
+
+
+
+
+Symbol Name			  Type	 Value
+
+??DATE				  Text	 "13/01/01"
+??FILENAME			  Text	 "test	  "
+??TIME				  Text	 "00:30:13"
+??VERSION			  Number 040A
+@CPU				  Text	 0101H
+@CURSEG				  Text	 CODE
+@FILENAME			  Text	 TEST
+@WORDSIZE			  Text	 2
+BINARY				  Near	 CODE:004F
+BINPROCESS			  Near	 CODE:009C
+CHECK				  Near	 CODE:00AA
+COUNT				  Near	 CODE:00A1
+DISPBIN				  Near	 CODE:00C8
+DISPBIN_LOOP			  Near	 CODE:00D1
+ERRORINFO			  Byte	 DATA:0090
+EXIT				  Near	 CODE:004B
+INPUT				  Byte	 DATA:0023
+LOOPFORBIN			  Near	 CODE:006D
+NEW				  Near	 CODE:00EA
+NOTNUM				  Near	 CODE:00B8
+OVERERR				  Near	 CODE:0084
+PRINT_CHAR			  Near	 CODE:00DE
+READ				  Near	 CODE:0014
+RESULT				  Byte	 DATA:0088
+SET_ONE				  Near	 CODE:00DC
+START				  Near	 CODE:0000
+STRING				  Byte	 DATA:0019
+TISHIINFO			  Byte	 DATA:0000
+
+Groups & Segments		  Bit Size Align  Combine Class
+
+CODE				  16  00F9 Para	  none
+DATA				  16  00A6 Para	  none
+STACK1				  16  0080 Para	  none
+

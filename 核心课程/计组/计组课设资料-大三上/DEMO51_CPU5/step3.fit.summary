@@ -1,0 +1,16 @@
+Fitter Status : Successful - Thu Mar 15 11:59:24 2012
+Quartus II Version : 9.0 Build 132 02/25/2009 SJ Full Version
+Revision Name : step3
+Top-level Entity Name : step3
+Family : Cyclone III
+Device : EP3C55F484C8
+Timing Models : Final
+Total logic elements : 5 / 55,856 ( < 1 % )
+    Total combinational functions : 2 / 55,856 ( < 1 % )
+    Dedicated logic registers : 5 / 55,856 ( < 1 % )
+Total registers : 5
+Total pins : 6 / 328 ( 2 % )
+Total virtual pins : 0
+Total memory bits : 0 / 2,396,160 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 312 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )

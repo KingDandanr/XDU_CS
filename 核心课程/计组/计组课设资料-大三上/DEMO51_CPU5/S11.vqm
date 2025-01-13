@@ -1,0 +1,1790 @@
+// Copyright (C) 1991-2005 Altera Corporation
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, Altera MegaCore Function License 
+// Agreement, or other applicable license agreement, including, 
+// without limitation, that your use is for the sole purpose of 
+// programming logic devices manufactured by Altera and sold by 
+// Altera or its authorized distributors.  Please refer to the 
+// applicable agreement for further details.
+
+// VENDOR "Altera"
+// PROGRAM "Quartus II"
+// VERSION "Version 5.1 Build 176 10/26/2005 Service Pack 0.15 SJ Full Version"
+
+// DATE "01/07/2009 20:52:02"
+
+module 	S11 (
+	CLK,
+	
+	NO,
+	MT,
+	RST,
+	STEP,
+	P35,
+	P36,
+	P37,
+	T1,
+	T2,
+	T3,
+	T4,
+	DOUT,
+	POE);
+output 	P35;
+input 	NO;
+input 	MT;
+input 	RST;
+input 	CLK;
+output 	P36;
+output 	P37;
+output 	T1;
+input 	STEP;
+output 	T2;
+output 	T3;
+output 	T4;
+output 	DOUT;
+output 	[7:0] POE;
+wire \step:inst42|inst4 ;
+wire \FPGA1C:inst7|FPGA1C:inst1|inst24~38 ;
+wire \FPGA1C:inst7|FPGA1C:inst1|inst32 ;
+wire \FPGA1C:inst7|FPGA1C:inst1|counter2:inst7|lpm_counter:lpm_counter_component|cntr_unf:auto_generated|modulus_trigger ;
+wire \FPGA1C:inst7|FPGA1C:inst1|START:inst1|inst3 ;
+wire \FPGA1C:inst7|FPGA1C:inst1|counter2:inst7|lpm_counter:lpm_counter_component|cntr_unf:auto_generated|cmpr1_aeb_int~0 ;
+wire \FPGA1C:inst7|FPGA1C:inst1|counter2:inst7|lpm_counter:lpm_counter_component|cntr_unf:auto_generated|counter_cella5~COUT ;
+wire \FPGA1C:inst7|FPGA1C:inst1|counter2:inst7|lpm_counter:lpm_counter_component|cntr_unf:auto_generated|counter_cella5~COUTCOUT1_1 ;
+wire \FPGA1C:inst7|FPGA1C:inst1|counter2:inst7|lpm_counter:lpm_counter_component|cntr_unf:auto_generated|safe_q[5] ;
+wire \FPGA1C:inst7|FPGA1C:inst1|counter2:inst7|lpm_counter:lpm_counter_component|cntr_unf:auto_generated|counter_cella4~COUT ;
+wire \FPGA1C:inst7|FPGA1C:inst1|counter2:inst7|lpm_counter:lpm_counter_component|cntr_unf:auto_generated|counter_cella4~COUTCOUT1_1 ;
+wire \FPGA1C:inst7|FPGA1C:inst1|counter2:inst7|lpm_counter:lpm_counter_component|cntr_unf:auto_generated|safe_q[4] ;
+wire \FPGA1C:inst7|FPGA1C:inst1|counter2:inst7|lpm_counter:lpm_counter_component|cntr_unf:auto_generated|cmpr1_aeb_int~35 ;
+wire \FPGA1C:inst7|FPGA1C:inst1|counter2:inst7|lpm_counter:lpm_counter_component|cntr_unf:auto_generated|counter_cella3~COUT ;
+wire \FPGA1C:inst7|FPGA1C:inst1|counter2:inst7|lpm_counter:lpm_counter_component|cntr_unf:auto_generated|safe_q[3] ;
+wire \FPGA1C:inst7|FPGA1C:inst1|counter2:inst7|lpm_counter:lpm_counter_component|cntr_unf:auto_generated|counter_cella1~COUT ;
+wire \FPGA1C:inst7|FPGA1C:inst1|counter2:inst7|lpm_counter:lpm_counter_component|cntr_unf:auto_generated|counter_cella1~COUTCOUT1_1 ;
+wire \FPGA1C:inst7|FPGA1C:inst1|counter2:inst7|lpm_counter:lpm_counter_component|cntr_unf:auto_generated|safe_q[1] ;
+wire \FPGA1C:inst7|FPGA1C:inst1|counter2:inst7|lpm_counter:lpm_counter_component|cntr_unf:auto_generated|counter_cella2~COUT ;
+wire \FPGA1C:inst7|FPGA1C:inst1|counter2:inst7|lpm_counter:lpm_counter_component|cntr_unf:auto_generated|counter_cella2~COUTCOUT1 ;
+wire \FPGA1C:inst7|FPGA1C:inst1|counter2:inst7|lpm_counter:lpm_counter_component|cntr_unf:auto_generated|safe_q[2] ;
+wire \FPGA1C:inst7|FPGA1C:inst1|counter2:inst7|lpm_counter:lpm_counter_component|cntr_unf:auto_generated|counter_cella0~COUT ;
+wire \FPGA1C:inst7|FPGA1C:inst1|counter2:inst7|lpm_counter:lpm_counter_component|cntr_unf:auto_generated|counter_cella0~COUTCOUT1_1 ;
+wire \FPGA1C:inst7|FPGA1C:inst1|counter2:inst7|lpm_counter:lpm_counter_component|cntr_unf:auto_generated|safe_q[0] ;
+wire \FPGA1C:inst7|FPGA1C:inst1|inst26 ;
+wire \FPGA1C:inst7|FPGA1C:inst1|inst25 ;
+wire \~GND ;
+wire \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|safe_q[0] ;
+wire \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella0~COUT ;
+wire \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella0~COUTCOUT1_1 ;
+wire \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|safe_q[1] ;
+wire \FPGA1C:inst7|FPGA1C:inst1|START:inst1|inst1 ;
+wire \FPGA1C:inst7|FPGA1C:inst1|START:inst1|inst ;
+wire \FPGA1C:inst7|FPGA1C:inst1|inst10 ;
+wire \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella1~COUT ;
+wire \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|safe_q[2] ;
+wire \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella2~COUT ;
+wire \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella2~COUTCOUT1_1 ;
+wire \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|safe_q[3] ;
+wire \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella3~COUT ;
+wire \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella3~COUTCOUT1_1 ;
+wire \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|safe_q[4] ;
+wire \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella4~COUT ;
+wire \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella4~COUTCOUT1_1 ;
+wire \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|safe_q[5] ;
+wire \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella5~COUT ;
+wire \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella5~COUTCOUT1_1 ;
+wire \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|safe_q[6] ;
+wire \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella6~COUT ;
+wire \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|safe_q[7] ;
+wire \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella7~COUT ;
+wire \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella7~COUTCOUT1_1 ;
+wire \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|safe_q[8] ;
+wire \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella8~COUT ;
+wire \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella8~COUTCOUT1_1 ;
+wire \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|safe_q[9] ;
+wire \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella9~COUT ;
+wire \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella9~COUTCOUT1_1 ;
+wire \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|safe_q[10] ;
+wire \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella10~COUT ;
+wire \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella10~COUTCOUT1_1 ;
+wire \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|safe_q[11] ;
+wire \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella11~COUT ;
+wire \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|safe_q[12] ;
+wire \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella12~COUT ;
+wire \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella12~COUTCOUT1_1 ;
+wire \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|safe_q[13] ;
+wire \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella13~COUT ;
+wire \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella13~COUTCOUT1_1 ;
+wire \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|safe_q[14] ;
+wire \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella14~COUT ;
+wire \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella14~COUTCOUT1_1 ;
+wire \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|safe_q[15] ;
+wire \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella15~COUT ;
+wire \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella15~COUTCOUT1_1 ;
+wire \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|safe_q[16] ;
+wire \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella16~COUT ;
+wire \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|safe_q[17] ;
+wire \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella17~COUT ;
+wire \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella17~COUTCOUT1_1 ;
+wire \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|safe_q[18] ;
+wire \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella18~COUT ;
+wire \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella18~COUTCOUT1_1 ;
+wire \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|safe_q[19] ;
+wire \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella19~COUT ;
+wire \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella19~COUTCOUT1_1 ;
+wire \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|safe_q[20] ;
+wire \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella20~COUT ;
+wire \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella20~COUTCOUT1_1 ;
+wire \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|safe_q[21] ;
+wire \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[10] ;
+wire \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[11] ;
+wire \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[12] ;
+wire \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[13] ;
+wire \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[14] ;
+wire \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[15] ;
+wire \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[16] ;
+wire \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[17] ;
+wire \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[18] ;
+wire \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[19] ;
+wire \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[20] ;
+wire \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[21] ;
+wire \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella21~COUT ;
+wire \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|safe_q[22] ;
+wire \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[22] ;
+wire \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella22~COUT ;
+wire \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella22~COUTCOUT1_1 ;
+wire \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|safe_q[23] ;
+wire \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[23] ;
+wire \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[0] ;
+wire \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[1] ;
+wire \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[2] ;
+wire \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[3] ;
+wire \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[4] ;
+wire \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[5] ;
+wire \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[6] ;
+wire \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[7] ;
+wire \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[8] ;
+wire \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[9] ;
+wire \FPGA1C:inst7|FPGA1C:inst1|inst5 ;
+wire \FPGA1C:inst7|FPGA1C:inst1|inst22~2 ;
+wire \FPGA1C:inst7|FPGA1C:inst1|inst28 ;
+wire \FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|STX.st0 ;
+wire \FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|STX.st1 ;
+wire \FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|STX.st2 ;
+wire \FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|STX.st3 ;
+wire \FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|STX.st4 ;
+wire \FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|STX.st5 ;
+wire \FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|STX.st6 ;
+wire \FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|STX.st7 ;
+wire \FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|STX.st8 ;
+wire \FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|STX.st9 ;
+wire \FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|STX.st10 ;
+wire \FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|STX.st11 ;
+wire \FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|STX.st12 ;
+wire \FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|Select~1339 ;
+wire \FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|Select~1340 ;
+wire \FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|Q ;
+wire \FPGA1C:inst7|FPGA1C:inst1|inst18 ;
+wire \FPGA1C:inst7|FPGA1C:inst1|inst19 ;
+wire \FPGA1C:inst7|FPGA1C:inst1|inst30 ;
+wire \FPGA1C:inst7|FPGA1C:inst1|inst23~17 ;
+wire \FPGA1C:inst7|FPGA1C:inst1|counter6:inst17|lpm_counter:lpm_counter_component|cntr_dtd:auto_generated|safe_q[0] ;
+wire \FPGA1C:inst7|FPGA1C:inst1|counter6:inst17|lpm_counter:lpm_counter_component|cntr_dtd:auto_generated|counter_cella0~COUT ;
+wire \FPGA1C:inst7|FPGA1C:inst1|counter6:inst17|lpm_counter:lpm_counter_component|cntr_dtd:auto_generated|counter_cella0~COUTCOUT1_1 ;
+wire \FPGA1C:inst7|FPGA1C:inst1|counter6:inst17|lpm_counter:lpm_counter_component|cntr_dtd:auto_generated|safe_q[1] ;
+wire \FPGA1C:inst7|FPGA1C:inst1|counter6:inst17|lpm_counter:lpm_counter_component|cntr_dtd:auto_generated|counter_cella1~COUT ;
+wire \FPGA1C:inst7|FPGA1C:inst1|counter6:inst17|lpm_counter:lpm_counter_component|cntr_dtd:auto_generated|counter_cella1~COUTCOUT1_1 ;
+wire \FPGA1C:inst7|FPGA1C:inst1|counter6:inst17|lpm_counter:lpm_counter_component|cntr_dtd:auto_generated|safe_q[2] ;
+wire \FPGA1C:inst7|FPGA1C:inst1|counter6:inst17|lpm_counter:lpm_counter_component|cntr_dtd:auto_generated|counter_cella2~COUT ;
+wire \FPGA1C:inst7|FPGA1C:inst1|counter6:inst17|lpm_counter:lpm_counter_component|cntr_dtd:auto_generated|safe_q[3] ;
+wire \FPGA1C:inst7|FPGA1C:inst1|counter6:inst17|lpm_counter:lpm_counter_component|cntr_dtd:auto_generated|counter_cella3~COUT ;
+wire \FPGA1C:inst7|FPGA1C:inst1|counter6:inst17|lpm_counter:lpm_counter_component|cntr_dtd:auto_generated|counter_cella3~COUTCOUT1_1 ;
+wire \FPGA1C:inst7|FPGA1C:inst1|counter6:inst17|lpm_counter:lpm_counter_component|cntr_dtd:auto_generated|safe_q[4] ;
+wire \FPGA1C:inst7|FPGA1C:inst1|counter6:inst17|lpm_counter:lpm_counter_component|cntr_dtd:auto_generated|counter_cella4~COUT ;
+wire \FPGA1C:inst7|FPGA1C:inst1|counter6:inst17|lpm_counter:lpm_counter_component|cntr_dtd:auto_generated|counter_cella4~COUTCOUT1_1 ;
+wire \FPGA1C:inst7|FPGA1C:inst1|counter6:inst17|lpm_counter:lpm_counter_component|cntr_dtd:auto_generated|safe_q[5] ;
+wire \FPGA1C:inst7|FPGA1C:inst1|cmp_6:inst3|lpm_compare:lpm_compare_component|cmpr_s4h:auto_generated|aleb~21 ;
+wire \step:inst42|inst1 ;
+wire \step:inst42|inst2 ;
+wire \step:inst42|inst3 ;
+wire \step:inst42|inst ;
+wire inst3;
+wire \step:inst42|inst5 ;
+wire inst4;
+wire \FPGA1C:inst7|FPGA1C:inst1|XOR3:inst33|1~13 ;
+wire \FPGA1C:inst7|FPGA1C:inst1|inst15~8 ;
+wire \FPGA1C:inst7|FPGA1C:inst1|XOR3:inst34|1 ;
+wire [5:0] \FPGA1C:inst7|FPGA1C:inst1|counter6:inst17|lpm_counter:lpm_counter_component|cntr_dtd:auto_generated|safe_q ;
+wire [5:0] \FPGA1C:inst7|FPGA1C:inst1|counter2:inst7|lpm_counter:lpm_counter_component|cntr_unf:auto_generated|safe_q ;
+wire [23:0] \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs ;
+wire [23:0] \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|safe_q ;
+
+wire __ALT_INV__STEP;
+
+wire gnd;
+wire vcc;
+
+assign gnd = 1'b0;
+assign vcc = 1'b1;
+
+assign __ALT_INV__STEP = ~ STEP;
+
+cyclone_lcell \FPGA1C:inst7|FPGA1C:inst1|inst24~38_I (
+	.dataa(\FPGA1C:inst7|FPGA1C:inst1|inst19 ),
+	.datab(NO),
+	.datac(\FPGA1C:inst7|FPGA1C:inst1|inst18 ),
+	.datad(\FPGA1C:inst7|FPGA1C:inst1|inst15~8 ),
+	.combout(\FPGA1C:inst7|FPGA1C:inst1|inst24~38 ));
+defparam \FPGA1C:inst7|FPGA1C:inst1|inst24~38_I .operation_mode = "normal";
+defparam \FPGA1C:inst7|FPGA1C:inst1|inst24~38_I .synch_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|inst24~38_I .register_cascade_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|inst24~38_I .sum_lutc_input = "datac";
+defparam \FPGA1C:inst7|FPGA1C:inst1|inst24~38_I .lut_mask = "0900";
+defparam \FPGA1C:inst7|FPGA1C:inst1|inst24~38_I .output_mode = "comb_only";
+
+cyclone_lcell \FPGA1C:inst7|FPGA1C:inst1|counter2:inst7|lpm_counter:lpm_counter_component|cntr_unf:auto_generated|cout_bit (
+	.datad(\FPGA1C:inst7|FPGA1C:inst1|counter2:inst7|lpm_counter:lpm_counter_component|cntr_unf:auto_generated|cmpr1_aeb_int~0 ),
+	.cin(\FPGA1C:inst7|FPGA1C:inst1|counter2:inst7|lpm_counter:lpm_counter_component|cntr_unf:auto_generated|counter_cella5~COUT ),
+	.combout(\FPGA1C:inst7|FPGA1C:inst1|counter2:inst7|lpm_counter:lpm_counter_component|cntr_unf:auto_generated|modulus_trigger ));
+defparam \FPGA1C:inst7|FPGA1C:inst1|counter2:inst7|lpm_counter:lpm_counter_component|cntr_unf:auto_generated|cout_bit .operation_mode = "normal";
+defparam \FPGA1C:inst7|FPGA1C:inst1|counter2:inst7|lpm_counter:lpm_counter_component|cntr_unf:auto_generated|cout_bit .synch_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|counter2:inst7|lpm_counter:lpm_counter_component|cntr_unf:auto_generated|cout_bit .register_cascade_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|counter2:inst7|lpm_counter:lpm_counter_component|cntr_unf:auto_generated|cout_bit .sum_lutc_input = "cin";
+defparam \FPGA1C:inst7|FPGA1C:inst1|counter2:inst7|lpm_counter:lpm_counter_component|cntr_unf:auto_generated|cout_bit .lut_mask = "FF0F";
+defparam \FPGA1C:inst7|FPGA1C:inst1|counter2:inst7|lpm_counter:lpm_counter_component|cntr_unf:auto_generated|cout_bit .output_mode = "comb_only";
+
+cyclone_lcell \FPGA1C:inst7|FPGA1C:inst1|START:inst1|inst1~I (
+	.clk(\FPGA1C:inst7|FPGA1C:inst1|START:inst1|inst3 ),
+	.datab(\FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|safe_q[1] ),
+	.datac(\FPGA1C:inst7|FPGA1C:inst1|START:inst1|inst ),
+	.aclr(RST),
+	.sload(vcc),
+	.combout(\FPGA1C:inst7|FPGA1C:inst1|START:inst1|inst3 ),
+	.regout(\FPGA1C:inst7|FPGA1C:inst1|START:inst1|inst1 ));
+defparam \FPGA1C:inst7|FPGA1C:inst1|START:inst1|inst1~I .operation_mode = "normal";
+defparam \FPGA1C:inst7|FPGA1C:inst1|START:inst1|inst1~I .synch_mode = "on";
+defparam \FPGA1C:inst7|FPGA1C:inst1|START:inst1|inst1~I .register_cascade_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|START:inst1|inst1~I .sum_lutc_input = "qfbk";
+defparam \FPGA1C:inst7|FPGA1C:inst1|START:inst1|inst1~I .lut_mask = "FCFC";
+defparam \FPGA1C:inst7|FPGA1C:inst1|START:inst1|inst1~I .output_mode = "reg_and_comb";
+
+cyclone_lcell \FPGA1C:inst7|FPGA1C:inst1|counter2:inst7|lpm_counter:lpm_counter_component|cntr_unf:auto_generated|cmpr1_aeb_int~0_I (
+	.datab(\FPGA1C:inst7|FPGA1C:inst1|counter2:inst7|lpm_counter:lpm_counter_component|cntr_unf:auto_generated|safe_q[4] ),
+	.datac(\FPGA1C:inst7|FPGA1C:inst1|counter2:inst7|lpm_counter:lpm_counter_component|cntr_unf:auto_generated|cmpr1_aeb_int~35 ),
+	.datad(\FPGA1C:inst7|FPGA1C:inst1|counter2:inst7|lpm_counter:lpm_counter_component|cntr_unf:auto_generated|safe_q[5] ),
+	.combout(\FPGA1C:inst7|FPGA1C:inst1|counter2:inst7|lpm_counter:lpm_counter_component|cntr_unf:auto_generated|cmpr1_aeb_int~0 ));
+defparam \FPGA1C:inst7|FPGA1C:inst1|counter2:inst7|lpm_counter:lpm_counter_component|cntr_unf:auto_generated|cmpr1_aeb_int~0_I .operation_mode = "normal";
+defparam \FPGA1C:inst7|FPGA1C:inst1|counter2:inst7|lpm_counter:lpm_counter_component|cntr_unf:auto_generated|cmpr1_aeb_int~0_I .synch_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|counter2:inst7|lpm_counter:lpm_counter_component|cntr_unf:auto_generated|cmpr1_aeb_int~0_I .register_cascade_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|counter2:inst7|lpm_counter:lpm_counter_component|cntr_unf:auto_generated|cmpr1_aeb_int~0_I .sum_lutc_input = "datac";
+defparam \FPGA1C:inst7|FPGA1C:inst1|counter2:inst7|lpm_counter:lpm_counter_component|cntr_unf:auto_generated|cmpr1_aeb_int~0_I .lut_mask = "3000";
+defparam \FPGA1C:inst7|FPGA1C:inst1|counter2:inst7|lpm_counter:lpm_counter_component|cntr_unf:auto_generated|cmpr1_aeb_int~0_I .output_mode = "comb_only";
+
+cyclone_lcell \FPGA1C:inst7|FPGA1C:inst1|counter2:inst7|lpm_counter:lpm_counter_component|cntr_unf:auto_generated|counter_cella5 (
+	.clk(CLK),
+	.dataa(\FPGA1C:inst7|FPGA1C:inst1|counter2:inst7|lpm_counter:lpm_counter_component|cntr_unf:auto_generated|safe_q[5] ),
+	.datac(\~GND ),
+	.aclr(gnd),
+	.sclr(\FPGA1C:inst7|FPGA1C:inst1|START:inst1|inst ),
+	.sload(\FPGA1C:inst7|FPGA1C:inst1|counter2:inst7|lpm_counter:lpm_counter_component|cntr_unf:auto_generated|modulus_trigger ),
+	.cin(\FPGA1C:inst7|FPGA1C:inst1|counter2:inst7|lpm_counter:lpm_counter_component|cntr_unf:auto_generated|counter_cella4~COUT ),
+	.regout(\FPGA1C:inst7|FPGA1C:inst1|counter2:inst7|lpm_counter:lpm_counter_component|cntr_unf:auto_generated|safe_q[5] ),
+	.cout(\FPGA1C:inst7|FPGA1C:inst1|counter2:inst7|lpm_counter:lpm_counter_component|cntr_unf:auto_generated|counter_cella5~COUT ));
+defparam \FPGA1C:inst7|FPGA1C:inst1|counter2:inst7|lpm_counter:lpm_counter_component|cntr_unf:auto_generated|counter_cella5 .operation_mode = "arithmetic";
+defparam \FPGA1C:inst7|FPGA1C:inst1|counter2:inst7|lpm_counter:lpm_counter_component|cntr_unf:auto_generated|counter_cella5 .synch_mode = "on";
+defparam \FPGA1C:inst7|FPGA1C:inst1|counter2:inst7|lpm_counter:lpm_counter_component|cntr_unf:auto_generated|counter_cella5 .register_cascade_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|counter2:inst7|lpm_counter:lpm_counter_component|cntr_unf:auto_generated|counter_cella5 .sum_lutc_input = "cin";
+defparam \FPGA1C:inst7|FPGA1C:inst1|counter2:inst7|lpm_counter:lpm_counter_component|cntr_unf:auto_generated|counter_cella5 .lut_mask = "5A5F";
+defparam \FPGA1C:inst7|FPGA1C:inst1|counter2:inst7|lpm_counter:lpm_counter_component|cntr_unf:auto_generated|counter_cella5 .output_mode = "reg_only";
+
+cyclone_lcell \FPGA1C:inst7|FPGA1C:inst1|counter2:inst7|lpm_counter:lpm_counter_component|cntr_unf:auto_generated|counter_cella4 (
+	.clk(CLK),
+	.datab(\FPGA1C:inst7|FPGA1C:inst1|counter2:inst7|lpm_counter:lpm_counter_component|cntr_unf:auto_generated|safe_q[4] ),
+	.datac(\~GND ),
+	.aclr(gnd),
+	.sclr(\FPGA1C:inst7|FPGA1C:inst1|START:inst1|inst ),
+	.sload(\FPGA1C:inst7|FPGA1C:inst1|counter2:inst7|lpm_counter:lpm_counter_component|cntr_unf:auto_generated|modulus_trigger ),
+	.cin(\FPGA1C:inst7|FPGA1C:inst1|counter2:inst7|lpm_counter:lpm_counter_component|cntr_unf:auto_generated|counter_cella3~COUT ),
+	.regout(\FPGA1C:inst7|FPGA1C:inst1|counter2:inst7|lpm_counter:lpm_counter_component|cntr_unf:auto_generated|safe_q[4] ),
+	.cout(\FPGA1C:inst7|FPGA1C:inst1|counter2:inst7|lpm_counter:lpm_counter_component|cntr_unf:auto_generated|counter_cella4~COUT ));
+defparam \FPGA1C:inst7|FPGA1C:inst1|counter2:inst7|lpm_counter:lpm_counter_component|cntr_unf:auto_generated|counter_cella4 .operation_mode = "arithmetic";
+defparam \FPGA1C:inst7|FPGA1C:inst1|counter2:inst7|lpm_counter:lpm_counter_component|cntr_unf:auto_generated|counter_cella4 .synch_mode = "on";
+defparam \FPGA1C:inst7|FPGA1C:inst1|counter2:inst7|lpm_counter:lpm_counter_component|cntr_unf:auto_generated|counter_cella4 .register_cascade_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|counter2:inst7|lpm_counter:lpm_counter_component|cntr_unf:auto_generated|counter_cella4 .sum_lutc_input = "cin";
+defparam \FPGA1C:inst7|FPGA1C:inst1|counter2:inst7|lpm_counter:lpm_counter_component|cntr_unf:auto_generated|counter_cella4 .lut_mask = "C30C";
+defparam \FPGA1C:inst7|FPGA1C:inst1|counter2:inst7|lpm_counter:lpm_counter_component|cntr_unf:auto_generated|counter_cella4 .output_mode = "reg_only";
+
+cyclone_lcell \FPGA1C:inst7|FPGA1C:inst1|counter2:inst7|lpm_counter:lpm_counter_component|cntr_unf:auto_generated|cmpr1_aeb_int~35_I (
+	.dataa(\FPGA1C:inst7|FPGA1C:inst1|counter2:inst7|lpm_counter:lpm_counter_component|cntr_unf:auto_generated|safe_q[1] ),
+	.datab(\FPGA1C:inst7|FPGA1C:inst1|counter2:inst7|lpm_counter:lpm_counter_component|cntr_unf:auto_generated|safe_q[2] ),
+	.datac(\FPGA1C:inst7|FPGA1C:inst1|counter2:inst7|lpm_counter:lpm_counter_component|cntr_unf:auto_generated|safe_q[3] ),
+	.datad(\FPGA1C:inst7|FPGA1C:inst1|counter2:inst7|lpm_counter:lpm_counter_component|cntr_unf:auto_generated|safe_q[0] ),
+	.combout(\FPGA1C:inst7|FPGA1C:inst1|counter2:inst7|lpm_counter:lpm_counter_component|cntr_unf:auto_generated|cmpr1_aeb_int~35 ));
+defparam \FPGA1C:inst7|FPGA1C:inst1|counter2:inst7|lpm_counter:lpm_counter_component|cntr_unf:auto_generated|cmpr1_aeb_int~35_I .operation_mode = "normal";
+defparam \FPGA1C:inst7|FPGA1C:inst1|counter2:inst7|lpm_counter:lpm_counter_component|cntr_unf:auto_generated|cmpr1_aeb_int~35_I .synch_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|counter2:inst7|lpm_counter:lpm_counter_component|cntr_unf:auto_generated|cmpr1_aeb_int~35_I .register_cascade_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|counter2:inst7|lpm_counter:lpm_counter_component|cntr_unf:auto_generated|cmpr1_aeb_int~35_I .sum_lutc_input = "datac";
+defparam \FPGA1C:inst7|FPGA1C:inst1|counter2:inst7|lpm_counter:lpm_counter_component|cntr_unf:auto_generated|cmpr1_aeb_int~35_I .lut_mask = "2000";
+defparam \FPGA1C:inst7|FPGA1C:inst1|counter2:inst7|lpm_counter:lpm_counter_component|cntr_unf:auto_generated|cmpr1_aeb_int~35_I .output_mode = "comb_only";
+
+cyclone_lcell \FPGA1C:inst7|FPGA1C:inst1|counter2:inst7|lpm_counter:lpm_counter_component|cntr_unf:auto_generated|counter_cella3 (
+	.clk(CLK),
+	.datab(\FPGA1C:inst7|FPGA1C:inst1|counter2:inst7|lpm_counter:lpm_counter_component|cntr_unf:auto_generated|safe_q[3] ),
+	.datac(\~GND ),
+	.aclr(gnd),
+	.sclr(\FPGA1C:inst7|FPGA1C:inst1|START:inst1|inst ),
+	.sload(\FPGA1C:inst7|FPGA1C:inst1|counter2:inst7|lpm_counter:lpm_counter_component|cntr_unf:auto_generated|modulus_trigger ),
+	.cin(\FPGA1C:inst7|FPGA1C:inst1|counter2:inst7|lpm_counter:lpm_counter_component|cntr_unf:auto_generated|counter_cella2~COUT ),
+	.regout(\FPGA1C:inst7|FPGA1C:inst1|counter2:inst7|lpm_counter:lpm_counter_component|cntr_unf:auto_generated|safe_q[3] ),
+	.cout(\FPGA1C:inst7|FPGA1C:inst1|counter2:inst7|lpm_counter:lpm_counter_component|cntr_unf:auto_generated|counter_cella3~COUT ));
+defparam \FPGA1C:inst7|FPGA1C:inst1|counter2:inst7|lpm_counter:lpm_counter_component|cntr_unf:auto_generated|counter_cella3 .operation_mode = "arithmetic";
+defparam \FPGA1C:inst7|FPGA1C:inst1|counter2:inst7|lpm_counter:lpm_counter_component|cntr_unf:auto_generated|counter_cella3 .synch_mode = "on";
+defparam \FPGA1C:inst7|FPGA1C:inst1|counter2:inst7|lpm_counter:lpm_counter_component|cntr_unf:auto_generated|counter_cella3 .register_cascade_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|counter2:inst7|lpm_counter:lpm_counter_component|cntr_unf:auto_generated|counter_cella3 .sum_lutc_input = "cin";
+defparam \FPGA1C:inst7|FPGA1C:inst1|counter2:inst7|lpm_counter:lpm_counter_component|cntr_unf:auto_generated|counter_cella3 .lut_mask = "3C3F";
+defparam \FPGA1C:inst7|FPGA1C:inst1|counter2:inst7|lpm_counter:lpm_counter_component|cntr_unf:auto_generated|counter_cella3 .output_mode = "reg_only";
+
+cyclone_lcell \FPGA1C:inst7|FPGA1C:inst1|counter2:inst7|lpm_counter:lpm_counter_component|cntr_unf:auto_generated|counter_cella1 (
+	.clk(CLK),
+	.dataa(\FPGA1C:inst7|FPGA1C:inst1|counter2:inst7|lpm_counter:lpm_counter_component|cntr_unf:auto_generated|safe_q[1] ),
+	.datac(\~GND ),
+	.aclr(gnd),
+	.sclr(\FPGA1C:inst7|FPGA1C:inst1|START:inst1|inst ),
+	.sload(\FPGA1C:inst7|FPGA1C:inst1|counter2:inst7|lpm_counter:lpm_counter_component|cntr_unf:auto_generated|modulus_trigger ),
+	.cin(\FPGA1C:inst7|FPGA1C:inst1|counter2:inst7|lpm_counter:lpm_counter_component|cntr_unf:auto_generated|counter_cella0~COUT ),
+	.regout(\FPGA1C:inst7|FPGA1C:inst1|counter2:inst7|lpm_counter:lpm_counter_component|cntr_unf:auto_generated|safe_q[1] ),
+	.cout(\FPGA1C:inst7|FPGA1C:inst1|counter2:inst7|lpm_counter:lpm_counter_component|cntr_unf:auto_generated|counter_cella1~COUT ));
+defparam \FPGA1C:inst7|FPGA1C:inst1|counter2:inst7|lpm_counter:lpm_counter_component|cntr_unf:auto_generated|counter_cella1 .operation_mode = "arithmetic";
+defparam \FPGA1C:inst7|FPGA1C:inst1|counter2:inst7|lpm_counter:lpm_counter_component|cntr_unf:auto_generated|counter_cella1 .synch_mode = "on";
+defparam \FPGA1C:inst7|FPGA1C:inst1|counter2:inst7|lpm_counter:lpm_counter_component|cntr_unf:auto_generated|counter_cella1 .register_cascade_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|counter2:inst7|lpm_counter:lpm_counter_component|cntr_unf:auto_generated|counter_cella1 .sum_lutc_input = "cin";
+defparam \FPGA1C:inst7|FPGA1C:inst1|counter2:inst7|lpm_counter:lpm_counter_component|cntr_unf:auto_generated|counter_cella1 .lut_mask = "5A5F";
+defparam \FPGA1C:inst7|FPGA1C:inst1|counter2:inst7|lpm_counter:lpm_counter_component|cntr_unf:auto_generated|counter_cella1 .output_mode = "reg_only";
+
+cyclone_lcell \FPGA1C:inst7|FPGA1C:inst1|counter2:inst7|lpm_counter:lpm_counter_component|cntr_unf:auto_generated|counter_cella2 (
+	.clk(CLK),
+	.datab(\FPGA1C:inst7|FPGA1C:inst1|counter2:inst7|lpm_counter:lpm_counter_component|cntr_unf:auto_generated|safe_q[2] ),
+	.datac(\~GND ),
+	.aclr(gnd),
+	.sclr(\FPGA1C:inst7|FPGA1C:inst1|START:inst1|inst ),
+	.sload(\FPGA1C:inst7|FPGA1C:inst1|counter2:inst7|lpm_counter:lpm_counter_component|cntr_unf:auto_generated|modulus_trigger ),
+	.cin(\FPGA1C:inst7|FPGA1C:inst1|counter2:inst7|lpm_counter:lpm_counter_component|cntr_unf:auto_generated|counter_cella1~COUT ),
+	.regout(\FPGA1C:inst7|FPGA1C:inst1|counter2:inst7|lpm_counter:lpm_counter_component|cntr_unf:auto_generated|safe_q[2] ),
+	.cout(\FPGA1C:inst7|FPGA1C:inst1|counter2:inst7|lpm_counter:lpm_counter_component|cntr_unf:auto_generated|counter_cella2~COUT ));
+defparam \FPGA1C:inst7|FPGA1C:inst1|counter2:inst7|lpm_counter:lpm_counter_component|cntr_unf:auto_generated|counter_cella2 .operation_mode = "arithmetic";
+defparam \FPGA1C:inst7|FPGA1C:inst1|counter2:inst7|lpm_counter:lpm_counter_component|cntr_unf:auto_generated|counter_cella2 .synch_mode = "on";
+defparam \FPGA1C:inst7|FPGA1C:inst1|counter2:inst7|lpm_counter:lpm_counter_component|cntr_unf:auto_generated|counter_cella2 .register_cascade_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|counter2:inst7|lpm_counter:lpm_counter_component|cntr_unf:auto_generated|counter_cella2 .sum_lutc_input = "cin";
+defparam \FPGA1C:inst7|FPGA1C:inst1|counter2:inst7|lpm_counter:lpm_counter_component|cntr_unf:auto_generated|counter_cella2 .lut_mask = "C30C";
+defparam \FPGA1C:inst7|FPGA1C:inst1|counter2:inst7|lpm_counter:lpm_counter_component|cntr_unf:auto_generated|counter_cella2 .output_mode = "reg_only";
+
+cyclone_lcell \FPGA1C:inst7|FPGA1C:inst1|counter2:inst7|lpm_counter:lpm_counter_component|cntr_unf:auto_generated|counter_cella0 (
+	.clk(CLK),
+	.dataa(\FPGA1C:inst7|FPGA1C:inst1|counter2:inst7|lpm_counter:lpm_counter_component|cntr_unf:auto_generated|safe_q[0] ),
+	.datac(\~GND ),
+	.aclr(gnd),
+	.sclr(\FPGA1C:inst7|FPGA1C:inst1|START:inst1|inst ),
+	.sload(\FPGA1C:inst7|FPGA1C:inst1|counter2:inst7|lpm_counter:lpm_counter_component|cntr_unf:auto_generated|modulus_trigger ),
+	.regout(\FPGA1C:inst7|FPGA1C:inst1|counter2:inst7|lpm_counter:lpm_counter_component|cntr_unf:auto_generated|safe_q[0] ),
+	.cout(\FPGA1C:inst7|FPGA1C:inst1|counter2:inst7|lpm_counter:lpm_counter_component|cntr_unf:auto_generated|counter_cella0~COUT ));
+defparam \FPGA1C:inst7|FPGA1C:inst1|counter2:inst7|lpm_counter:lpm_counter_component|cntr_unf:auto_generated|counter_cella0 .operation_mode = "arithmetic";
+defparam \FPGA1C:inst7|FPGA1C:inst1|counter2:inst7|lpm_counter:lpm_counter_component|cntr_unf:auto_generated|counter_cella0 .synch_mode = "on";
+defparam \FPGA1C:inst7|FPGA1C:inst1|counter2:inst7|lpm_counter:lpm_counter_component|cntr_unf:auto_generated|counter_cella0 .register_cascade_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|counter2:inst7|lpm_counter:lpm_counter_component|cntr_unf:auto_generated|counter_cella0 .sum_lutc_input = "datac";
+defparam \FPGA1C:inst7|FPGA1C:inst1|counter2:inst7|lpm_counter:lpm_counter_component|cntr_unf:auto_generated|counter_cella0 .lut_mask = "55AA";
+defparam \FPGA1C:inst7|FPGA1C:inst1|counter2:inst7|lpm_counter:lpm_counter_component|cntr_unf:auto_generated|counter_cella0 .output_mode = "reg_only";
+
+cyclone_lcell \FPGA1C:inst7|FPGA1C:inst1|inst26~I (
+	.datab(\FPGA1C:inst7|FPGA1C:inst1|inst10 ),
+	.datac(\FPGA1C:inst7|FPGA1C:inst1|inst25 ),
+	.datad(CLK),
+	.combout(\FPGA1C:inst7|FPGA1C:inst1|inst26 ));
+defparam \FPGA1C:inst7|FPGA1C:inst1|inst26~I .operation_mode = "normal";
+defparam \FPGA1C:inst7|FPGA1C:inst1|inst26~I .synch_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|inst26~I .register_cascade_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|inst26~I .sum_lutc_input = "datac";
+defparam \FPGA1C:inst7|FPGA1C:inst1|inst26~I .lut_mask = "0300";
+defparam \FPGA1C:inst7|FPGA1C:inst1|inst26~I .output_mode = "comb_only";
+
+cyclone_lcell \FPGA1C:inst7|FPGA1C:inst1|inst25~I (
+	.clk(\FPGA1C:inst7|FPGA1C:inst1|inst5 ),
+	.aclr(\FPGA1C:inst7|FPGA1C:inst1|inst22~2 ),
+	.regout(\FPGA1C:inst7|FPGA1C:inst1|inst25 ));
+defparam \FPGA1C:inst7|FPGA1C:inst1|inst25~I .operation_mode = "normal";
+defparam \FPGA1C:inst7|FPGA1C:inst1|inst25~I .synch_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|inst25~I .register_cascade_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|inst25~I .sum_lutc_input = "datac";
+defparam \FPGA1C:inst7|FPGA1C:inst1|inst25~I .lut_mask = "FFFF";
+defparam \FPGA1C:inst7|FPGA1C:inst1|inst25~I .output_mode = "reg_only";
+
+cyclone_lcell \~GND~I (
+	.combout(\~GND ));
+defparam \~GND~I .operation_mode = "normal";
+defparam \~GND~I .synch_mode = "off";
+defparam \~GND~I .register_cascade_mode = "off";
+defparam \~GND~I .sum_lutc_input = "datac";
+defparam \~GND~I .lut_mask = "0000";
+defparam \~GND~I .output_mode = "comb_only";
+
+cyclone_lcell \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella0 (
+	.clk(CLK),
+	.datab(\FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|safe_q[0] ),
+	.aclr(gnd),
+	.regout(\FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|safe_q[0] ),
+	.cout(\FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella0~COUT ));
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella0 .operation_mode = "arithmetic";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella0 .synch_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella0 .register_cascade_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella0 .sum_lutc_input = "datac";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella0 .lut_mask = "33CC";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella0 .output_mode = "reg_only";
+
+cyclone_lcell \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella1 (
+	.clk(CLK),
+	.datab(\FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|safe_q[1] ),
+	.aclr(gnd),
+	.cin(\FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella0~COUT ),
+	.regout(\FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|safe_q[1] ),
+	.cout(\FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella1~COUT ));
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella1 .operation_mode = "arithmetic";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella1 .synch_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella1 .register_cascade_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella1 .sum_lutc_input = "cin";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella1 .lut_mask = "3C3F";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella1 .output_mode = "reg_only";
+
+cyclone_lcell \FPGA1C:inst7|FPGA1C:inst1|START:inst1|inst~I (
+	.clk(\FPGA1C:inst7|FPGA1C:inst1|START:inst1|inst3 ),
+	.dataa(\FPGA1C:inst7|FPGA1C:inst1|START:inst1|inst ),
+	.datac(\FPGA1C:inst7|FPGA1C:inst1|START:inst1|inst1 ),
+	.aclr(RST),
+	.regout(\FPGA1C:inst7|FPGA1C:inst1|START:inst1|inst ));
+defparam \FPGA1C:inst7|FPGA1C:inst1|START:inst1|inst~I .operation_mode = "normal";
+defparam \FPGA1C:inst7|FPGA1C:inst1|START:inst1|inst~I .synch_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|START:inst1|inst~I .register_cascade_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|START:inst1|inst~I .sum_lutc_input = "datac";
+defparam \FPGA1C:inst7|FPGA1C:inst1|START:inst1|inst~I .lut_mask = "0505";
+defparam \FPGA1C:inst7|FPGA1C:inst1|START:inst1|inst~I .output_mode = "reg_only";
+
+cyclone_lcell \FPGA1C:inst7|FPGA1C:inst1|inst10~I (
+	.clk(\FPGA1C:inst7|FPGA1C:inst1|counter2:inst7|lpm_counter:lpm_counter_component|cntr_unf:auto_generated|modulus_trigger ),
+	.aclr(\FPGA1C:inst7|FPGA1C:inst1|START:inst1|inst ),
+	.regout(\FPGA1C:inst7|FPGA1C:inst1|inst10 ));
+defparam \FPGA1C:inst7|FPGA1C:inst1|inst10~I .operation_mode = "normal";
+defparam \FPGA1C:inst7|FPGA1C:inst1|inst10~I .synch_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|inst10~I .register_cascade_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|inst10~I .sum_lutc_input = "datac";
+defparam \FPGA1C:inst7|FPGA1C:inst1|inst10~I .lut_mask = "FFFF";
+defparam \FPGA1C:inst7|FPGA1C:inst1|inst10~I .output_mode = "reg_only";
+
+cyclone_lcell \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella2 (
+	.clk(CLK),
+	.datab(\FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|safe_q[2] ),
+	.aclr(gnd),
+	.cin(\FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella1~COUT ),
+	.regout(\FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|safe_q[2] ),
+	.cout(\FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella2~COUT ));
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella2 .operation_mode = "arithmetic";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella2 .synch_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella2 .register_cascade_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella2 .sum_lutc_input = "cin";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella2 .lut_mask = "C30C";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella2 .output_mode = "reg_only";
+
+cyclone_lcell \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella3 (
+	.clk(CLK),
+	.dataa(\FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|safe_q[3] ),
+	.aclr(gnd),
+	.cin(\FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella2~COUT ),
+	.regout(\FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|safe_q[3] ),
+	.cout(\FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella3~COUT ));
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella3 .operation_mode = "arithmetic";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella3 .synch_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella3 .register_cascade_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella3 .sum_lutc_input = "cin";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella3 .lut_mask = "5A5F";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella3 .output_mode = "reg_only";
+
+cyclone_lcell \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella4 (
+	.clk(CLK),
+	.dataa(\FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|safe_q[4] ),
+	.aclr(gnd),
+	.cin(\FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella3~COUT ),
+	.regout(\FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|safe_q[4] ),
+	.cout(\FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella4~COUT ));
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella4 .operation_mode = "arithmetic";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella4 .synch_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella4 .register_cascade_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella4 .sum_lutc_input = "cin";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella4 .lut_mask = "A50A";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella4 .output_mode = "reg_only";
+
+cyclone_lcell \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella5 (
+	.clk(CLK),
+	.datab(\FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|safe_q[5] ),
+	.aclr(gnd),
+	.cin(\FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella4~COUT ),
+	.regout(\FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|safe_q[5] ),
+	.cout(\FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella5~COUT ));
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella5 .operation_mode = "arithmetic";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella5 .synch_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella5 .register_cascade_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella5 .sum_lutc_input = "cin";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella5 .lut_mask = "3C3F";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella5 .output_mode = "reg_only";
+
+cyclone_lcell \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella6 (
+	.clk(CLK),
+	.dataa(\FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|safe_q[6] ),
+	.aclr(gnd),
+	.cin(\FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella5~COUT ),
+	.regout(\FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|safe_q[6] ),
+	.cout(\FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella6~COUT ));
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella6 .operation_mode = "arithmetic";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella6 .synch_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella6 .register_cascade_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella6 .sum_lutc_input = "cin";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella6 .lut_mask = "A50A";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella6 .output_mode = "reg_only";
+
+cyclone_lcell \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella7 (
+	.clk(CLK),
+	.datab(\FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|safe_q[7] ),
+	.aclr(gnd),
+	.cin(\FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella6~COUT ),
+	.regout(\FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|safe_q[7] ),
+	.cout(\FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella7~COUT ));
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella7 .operation_mode = "arithmetic";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella7 .synch_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella7 .register_cascade_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella7 .sum_lutc_input = "cin";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella7 .lut_mask = "3C3F";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella7 .output_mode = "reg_only";
+
+cyclone_lcell \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella8 (
+	.clk(CLK),
+	.dataa(\FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|safe_q[8] ),
+	.aclr(gnd),
+	.cin(\FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella7~COUT ),
+	.regout(\FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|safe_q[8] ),
+	.cout(\FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella8~COUT ));
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella8 .operation_mode = "arithmetic";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella8 .synch_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella8 .register_cascade_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella8 .sum_lutc_input = "cin";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella8 .lut_mask = "A50A";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella8 .output_mode = "reg_only";
+
+cyclone_lcell \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella9 (
+	.clk(CLK),
+	.dataa(\FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|safe_q[9] ),
+	.aclr(gnd),
+	.cin(\FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella8~COUT ),
+	.regout(\FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|safe_q[9] ),
+	.cout(\FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella9~COUT ));
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella9 .operation_mode = "arithmetic";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella9 .synch_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella9 .register_cascade_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella9 .sum_lutc_input = "cin";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella9 .lut_mask = "5A5F";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella9 .output_mode = "reg_only";
+
+cyclone_lcell \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella10 (
+	.clk(CLK),
+	.datab(\FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|safe_q[10] ),
+	.aclr(gnd),
+	.cin(\FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella9~COUT ),
+	.regout(\FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|safe_q[10] ),
+	.cout(\FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella10~COUT ));
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella10 .operation_mode = "arithmetic";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella10 .synch_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella10 .register_cascade_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella10 .sum_lutc_input = "cin";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella10 .lut_mask = "C30C";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella10 .output_mode = "reg_only";
+
+cyclone_lcell \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella11 (
+	.clk(CLK),
+	.datab(\FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|safe_q[11] ),
+	.aclr(gnd),
+	.cin(\FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella10~COUT ),
+	.regout(\FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|safe_q[11] ),
+	.cout(\FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella11~COUT ));
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella11 .operation_mode = "arithmetic";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella11 .synch_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella11 .register_cascade_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella11 .sum_lutc_input = "cin";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella11 .lut_mask = "3C3F";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella11 .output_mode = "reg_only";
+
+cyclone_lcell \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella12 (
+	.clk(CLK),
+	.datab(\FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|safe_q[12] ),
+	.aclr(gnd),
+	.cin(\FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella11~COUT ),
+	.regout(\FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|safe_q[12] ),
+	.cout(\FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella12~COUT ));
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella12 .operation_mode = "arithmetic";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella12 .synch_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella12 .register_cascade_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella12 .sum_lutc_input = "cin";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella12 .lut_mask = "C30C";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella12 .output_mode = "reg_only";
+
+cyclone_lcell \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella13 (
+	.clk(CLK),
+	.dataa(\FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|safe_q[13] ),
+	.aclr(gnd),
+	.cin(\FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella12~COUT ),
+	.regout(\FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|safe_q[13] ),
+	.cout(\FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella13~COUT ));
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella13 .operation_mode = "arithmetic";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella13 .synch_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella13 .register_cascade_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella13 .sum_lutc_input = "cin";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella13 .lut_mask = "5A5F";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella13 .output_mode = "reg_only";
+
+cyclone_lcell \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella14 (
+	.clk(CLK),
+	.dataa(\FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|safe_q[14] ),
+	.aclr(gnd),
+	.cin(\FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella13~COUT ),
+	.regout(\FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|safe_q[14] ),
+	.cout(\FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella14~COUT ));
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella14 .operation_mode = "arithmetic";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella14 .synch_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella14 .register_cascade_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella14 .sum_lutc_input = "cin";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella14 .lut_mask = "A50A";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella14 .output_mode = "reg_only";
+
+cyclone_lcell \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella15 (
+	.clk(CLK),
+	.datab(\FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|safe_q[15] ),
+	.aclr(gnd),
+	.cin(\FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella14~COUT ),
+	.regout(\FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|safe_q[15] ),
+	.cout(\FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella15~COUT ));
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella15 .operation_mode = "arithmetic";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella15 .synch_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella15 .register_cascade_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella15 .sum_lutc_input = "cin";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella15 .lut_mask = "3C3F";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella15 .output_mode = "reg_only";
+
+cyclone_lcell \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella16 (
+	.clk(CLK),
+	.dataa(\FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|safe_q[16] ),
+	.aclr(gnd),
+	.cin(\FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella15~COUT ),
+	.regout(\FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|safe_q[16] ),
+	.cout(\FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella16~COUT ));
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella16 .operation_mode = "arithmetic";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella16 .synch_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella16 .register_cascade_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella16 .sum_lutc_input = "cin";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella16 .lut_mask = "A50A";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella16 .output_mode = "reg_only";
+
+cyclone_lcell \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella17 (
+	.clk(CLK),
+	.datab(\FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|safe_q[17] ),
+	.aclr(gnd),
+	.cin(\FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella16~COUT ),
+	.regout(\FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|safe_q[17] ),
+	.cout(\FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella17~COUT ));
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella17 .operation_mode = "arithmetic";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella17 .synch_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella17 .register_cascade_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella17 .sum_lutc_input = "cin";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella17 .lut_mask = "3C3F";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella17 .output_mode = "reg_only";
+
+cyclone_lcell \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella18 (
+	.clk(CLK),
+	.dataa(\FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|safe_q[18] ),
+	.aclr(gnd),
+	.cin(\FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella17~COUT ),
+	.regout(\FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|safe_q[18] ),
+	.cout(\FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella18~COUT ));
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella18 .operation_mode = "arithmetic";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella18 .synch_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella18 .register_cascade_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella18 .sum_lutc_input = "cin";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella18 .lut_mask = "A50A";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella18 .output_mode = "reg_only";
+
+cyclone_lcell \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella19 (
+	.clk(CLK),
+	.dataa(\FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|safe_q[19] ),
+	.aclr(gnd),
+	.cin(\FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella18~COUT ),
+	.regout(\FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|safe_q[19] ),
+	.cout(\FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella19~COUT ));
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella19 .operation_mode = "arithmetic";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella19 .synch_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella19 .register_cascade_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella19 .sum_lutc_input = "cin";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella19 .lut_mask = "5A5F";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella19 .output_mode = "reg_only";
+
+cyclone_lcell \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella20 (
+	.clk(CLK),
+	.datab(\FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|safe_q[20] ),
+	.aclr(gnd),
+	.cin(\FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella19~COUT ),
+	.regout(\FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|safe_q[20] ),
+	.cout(\FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella20~COUT ));
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella20 .operation_mode = "arithmetic";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella20 .synch_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella20 .register_cascade_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella20 .sum_lutc_input = "cin";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella20 .lut_mask = "C30C";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella20 .output_mode = "reg_only";
+
+cyclone_lcell \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella21 (
+	.clk(CLK),
+	.datab(\FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|safe_q[21] ),
+	.aclr(gnd),
+	.cin(\FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella20~COUT ),
+	.regout(\FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|safe_q[21] ),
+	.cout(\FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella21~COUT ));
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella21 .operation_mode = "arithmetic";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella21 .synch_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella21 .register_cascade_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella21 .sum_lutc_input = "cin";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella21 .lut_mask = "3C3F";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella21 .output_mode = "reg_only";
+
+cyclone_lcell \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[10]~I (
+	.clk(\FPGA1C:inst7|FPGA1C:inst1|inst15~8 ),
+	.datab(\FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[9] ),
+	.datac(\FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|safe_q[10] ),
+	.datad(\FPGA1C:inst7|FPGA1C:inst1|START:inst1|inst ),
+	.aclr(gnd),
+	.regout(\FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[10] ));
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[10]~I .operation_mode = "normal";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[10]~I .synch_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[10]~I .register_cascade_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[10]~I .sum_lutc_input = "datac";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[10]~I .lut_mask = "F0CC";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[10]~I .output_mode = "reg_only";
+
+cyclone_lcell \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[11]~I (
+	.clk(\FPGA1C:inst7|FPGA1C:inst1|inst15~8 ),
+	.dataa(\FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|safe_q[11] ),
+	.datac(\FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[10] ),
+	.datad(\FPGA1C:inst7|FPGA1C:inst1|START:inst1|inst ),
+	.aclr(gnd),
+	.regout(\FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[11] ));
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[11]~I .operation_mode = "normal";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[11]~I .synch_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[11]~I .register_cascade_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[11]~I .sum_lutc_input = "datac";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[11]~I .lut_mask = "AAF0";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[11]~I .output_mode = "reg_only";
+
+cyclone_lcell \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[12]~I (
+	.clk(\FPGA1C:inst7|FPGA1C:inst1|inst15~8 ),
+	.datab(\FPGA1C:inst7|FPGA1C:inst1|START:inst1|inst ),
+	.datac(\FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|safe_q[12] ),
+	.datad(\FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[11] ),
+	.aclr(gnd),
+	.regout(\FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[12] ));
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[12]~I .operation_mode = "normal";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[12]~I .synch_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[12]~I .register_cascade_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[12]~I .sum_lutc_input = "datac";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[12]~I .lut_mask = "F3C0";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[12]~I .output_mode = "reg_only";
+
+cyclone_lcell \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[13]~I (
+	.clk(\FPGA1C:inst7|FPGA1C:inst1|inst15~8 ),
+	.datab(\FPGA1C:inst7|FPGA1C:inst1|START:inst1|inst ),
+	.datac(\FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[12] ),
+	.datad(\FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|safe_q[13] ),
+	.aclr(gnd),
+	.regout(\FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[13] ));
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[13]~I .operation_mode = "normal";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[13]~I .synch_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[13]~I .register_cascade_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[13]~I .sum_lutc_input = "datac";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[13]~I .lut_mask = "FC30";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[13]~I .output_mode = "reg_only";
+
+cyclone_lcell \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[14]~I (
+	.clk(\FPGA1C:inst7|FPGA1C:inst1|inst15~8 ),
+	.datab(\FPGA1C:inst7|FPGA1C:inst1|START:inst1|inst ),
+	.datac(\FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[13] ),
+	.datad(\FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|safe_q[14] ),
+	.aclr(gnd),
+	.regout(\FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[14] ));
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[14]~I .operation_mode = "normal";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[14]~I .synch_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[14]~I .register_cascade_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[14]~I .sum_lutc_input = "datac";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[14]~I .lut_mask = "FC30";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[14]~I .output_mode = "reg_only";
+
+cyclone_lcell \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[15]~I (
+	.clk(\FPGA1C:inst7|FPGA1C:inst1|inst15~8 ),
+	.dataa(\FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|safe_q[15] ),
+	.datab(\FPGA1C:inst7|FPGA1C:inst1|START:inst1|inst ),
+	.datad(\FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[14] ),
+	.aclr(gnd),
+	.regout(\FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[15] ));
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[15]~I .operation_mode = "normal";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[15]~I .synch_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[15]~I .register_cascade_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[15]~I .sum_lutc_input = "datac";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[15]~I .lut_mask = "BB88";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[15]~I .output_mode = "reg_only";
+
+cyclone_lcell \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[16]~I (
+	.clk(\FPGA1C:inst7|FPGA1C:inst1|inst15~8 ),
+	.datab(\FPGA1C:inst7|FPGA1C:inst1|START:inst1|inst ),
+	.datac(\FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[15] ),
+	.datad(\FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|safe_q[16] ),
+	.aclr(gnd),
+	.regout(\FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[16] ));
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[16]~I .operation_mode = "normal";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[16]~I .synch_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[16]~I .register_cascade_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[16]~I .sum_lutc_input = "datac";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[16]~I .lut_mask = "FC30";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[16]~I .output_mode = "reg_only";
+
+cyclone_lcell \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[17]~I (
+	.clk(\FPGA1C:inst7|FPGA1C:inst1|inst15~8 ),
+	.datab(\FPGA1C:inst7|FPGA1C:inst1|START:inst1|inst ),
+	.datac(\FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|safe_q[17] ),
+	.datad(\FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[16] ),
+	.aclr(gnd),
+	.regout(\FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[17] ));
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[17]~I .operation_mode = "normal";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[17]~I .synch_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[17]~I .register_cascade_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[17]~I .sum_lutc_input = "datac";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[17]~I .lut_mask = "F3C0";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[17]~I .output_mode = "reg_only";
+
+cyclone_lcell \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[18]~I (
+	.clk(\FPGA1C:inst7|FPGA1C:inst1|inst15~8 ),
+	.dataa(\FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|safe_q[18] ),
+	.datab(\FPGA1C:inst7|FPGA1C:inst1|START:inst1|inst ),
+	.datac(\FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[17] ),
+	.aclr(gnd),
+	.regout(\FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[18] ));
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[18]~I .operation_mode = "normal";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[18]~I .synch_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[18]~I .register_cascade_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[18]~I .sum_lutc_input = "datac";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[18]~I .lut_mask = "B8B8";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[18]~I .output_mode = "reg_only";
+
+cyclone_lcell \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[19]~I (
+	.clk(\FPGA1C:inst7|FPGA1C:inst1|inst15~8 ),
+	.datab(\FPGA1C:inst7|FPGA1C:inst1|START:inst1|inst ),
+	.datac(\FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|safe_q[19] ),
+	.datad(\FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[18] ),
+	.aclr(gnd),
+	.regout(\FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[19] ));
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[19]~I .operation_mode = "normal";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[19]~I .synch_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[19]~I .register_cascade_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[19]~I .sum_lutc_input = "datac";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[19]~I .lut_mask = "F3C0";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[19]~I .output_mode = "reg_only";
+
+cyclone_lcell \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[20]~I (
+	.clk(\FPGA1C:inst7|FPGA1C:inst1|inst15~8 ),
+	.dataa(\FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|safe_q[20] ),
+	.datac(\FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[19] ),
+	.datad(\FPGA1C:inst7|FPGA1C:inst1|START:inst1|inst ),
+	.aclr(gnd),
+	.regout(\FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[20] ));
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[20]~I .operation_mode = "normal";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[20]~I .synch_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[20]~I .register_cascade_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[20]~I .sum_lutc_input = "datac";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[20]~I .lut_mask = "AAF0";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[20]~I .output_mode = "reg_only";
+
+cyclone_lcell \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[21]~I (
+	.clk(\FPGA1C:inst7|FPGA1C:inst1|inst15~8 ),
+	.datab(\FPGA1C:inst7|FPGA1C:inst1|START:inst1|inst ),
+	.datac(\FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|safe_q[21] ),
+	.datad(\FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[20] ),
+	.aclr(gnd),
+	.regout(\FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[21] ));
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[21]~I .operation_mode = "normal";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[21]~I .synch_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[21]~I .register_cascade_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[21]~I .sum_lutc_input = "datac";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[21]~I .lut_mask = "F3C0";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[21]~I .output_mode = "reg_only";
+
+cyclone_lcell \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella22 (
+	.clk(CLK),
+	.datab(\FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|safe_q[22] ),
+	.aclr(gnd),
+	.cin(\FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella21~COUT ),
+	.regout(\FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|safe_q[22] ),
+	.cout(\FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella22~COUT ));
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella22 .operation_mode = "arithmetic";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella22 .synch_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella22 .register_cascade_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella22 .sum_lutc_input = "cin";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella22 .lut_mask = "C30C";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella22 .output_mode = "reg_only";
+
+cyclone_lcell \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[22]~I (
+	.clk(\FPGA1C:inst7|FPGA1C:inst1|inst15~8 ),
+	.datab(\FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[21] ),
+	.datac(\FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|safe_q[22] ),
+	.datad(\FPGA1C:inst7|FPGA1C:inst1|START:inst1|inst ),
+	.aclr(gnd),
+	.regout(\FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[22] ));
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[22]~I .operation_mode = "normal";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[22]~I .synch_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[22]~I .register_cascade_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[22]~I .sum_lutc_input = "datac";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[22]~I .lut_mask = "F0CC";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[22]~I .output_mode = "reg_only";
+
+cyclone_lcell \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella23 (
+	.clk(CLK),
+	.datad(\FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|safe_q[23] ),
+	.aclr(gnd),
+	.cin(\FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella22~COUT ),
+	.regout(\FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|safe_q[23] ));
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella23 .operation_mode = "normal";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella23 .synch_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella23 .register_cascade_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella23 .sum_lutc_input = "cin";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella23 .lut_mask = "0FF0";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|counter_cella23 .output_mode = "reg_only";
+
+cyclone_lcell \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[23]~I (
+	.clk(\FPGA1C:inst7|FPGA1C:inst1|inst15~8 ),
+	.datab(\FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[22] ),
+	.datac(\FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|safe_q[23] ),
+	.datad(\FPGA1C:inst7|FPGA1C:inst1|START:inst1|inst ),
+	.aclr(gnd),
+	.regout(\FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[23] ));
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[23]~I .operation_mode = "normal";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[23]~I .synch_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[23]~I .register_cascade_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[23]~I .sum_lutc_input = "datac";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[23]~I .lut_mask = "F0CC";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[23]~I .output_mode = "reg_only";
+
+cyclone_lcell \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[0]~I (
+	.clk(\FPGA1C:inst7|FPGA1C:inst1|inst15~8 ),
+	.datab(\FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[23] ),
+	.datac(\FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|safe_q[0] ),
+	.datad(\FPGA1C:inst7|FPGA1C:inst1|START:inst1|inst ),
+	.aclr(gnd),
+	.regout(\FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[0] ));
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[0]~I .operation_mode = "normal";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[0]~I .synch_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[0]~I .register_cascade_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[0]~I .sum_lutc_input = "datac";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[0]~I .lut_mask = "F0CC";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[0]~I .output_mode = "reg_only";
+
+cyclone_lcell \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[1]~I (
+	.clk(\FPGA1C:inst7|FPGA1C:inst1|inst15~8 ),
+	.datab(\FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[0] ),
+	.datac(\FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|safe_q[1] ),
+	.datad(\FPGA1C:inst7|FPGA1C:inst1|START:inst1|inst ),
+	.aclr(gnd),
+	.regout(\FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[1] ));
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[1]~I .operation_mode = "normal";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[1]~I .synch_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[1]~I .register_cascade_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[1]~I .sum_lutc_input = "datac";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[1]~I .lut_mask = "F0CC";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[1]~I .output_mode = "reg_only";
+
+cyclone_lcell \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[2]~I (
+	.clk(\FPGA1C:inst7|FPGA1C:inst1|inst15~8 ),
+	.dataa(\FPGA1C:inst7|FPGA1C:inst1|START:inst1|inst ),
+	.datac(\FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|safe_q[2] ),
+	.datad(\FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[1] ),
+	.aclr(gnd),
+	.regout(\FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[2] ));
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[2]~I .operation_mode = "normal";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[2]~I .synch_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[2]~I .register_cascade_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[2]~I .sum_lutc_input = "datac";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[2]~I .lut_mask = "F5A0";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[2]~I .output_mode = "reg_only";
+
+cyclone_lcell \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[3]~I (
+	.clk(\FPGA1C:inst7|FPGA1C:inst1|inst15~8 ),
+	.dataa(\FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[2] ),
+	.datab(\FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|safe_q[3] ),
+	.datad(\FPGA1C:inst7|FPGA1C:inst1|START:inst1|inst ),
+	.aclr(gnd),
+	.regout(\FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[3] ));
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[3]~I .operation_mode = "normal";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[3]~I .synch_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[3]~I .register_cascade_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[3]~I .sum_lutc_input = "datac";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[3]~I .lut_mask = "CCAA";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[3]~I .output_mode = "reg_only";
+
+cyclone_lcell \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[4]~I (
+	.clk(\FPGA1C:inst7|FPGA1C:inst1|inst15~8 ),
+	.dataa(\FPGA1C:inst7|FPGA1C:inst1|START:inst1|inst ),
+	.datab(\FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[3] ),
+	.datad(\FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|safe_q[4] ),
+	.aclr(gnd),
+	.regout(\FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[4] ));
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[4]~I .operation_mode = "normal";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[4]~I .synch_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[4]~I .register_cascade_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[4]~I .sum_lutc_input = "datac";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[4]~I .lut_mask = "EE44";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[4]~I .output_mode = "reg_only";
+
+cyclone_lcell \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[5]~I (
+	.clk(\FPGA1C:inst7|FPGA1C:inst1|inst15~8 ),
+	.dataa(\FPGA1C:inst7|FPGA1C:inst1|START:inst1|inst ),
+	.datab(\FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[4] ),
+	.datac(\FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|safe_q[5] ),
+	.aclr(gnd),
+	.regout(\FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[5] ));
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[5]~I .operation_mode = "normal";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[5]~I .synch_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[5]~I .register_cascade_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[5]~I .sum_lutc_input = "datac";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[5]~I .lut_mask = "E4E4";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[5]~I .output_mode = "reg_only";
+
+cyclone_lcell \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[6]~I (
+	.clk(\FPGA1C:inst7|FPGA1C:inst1|inst15~8 ),
+	.datab(\FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[5] ),
+	.datac(\FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|safe_q[6] ),
+	.datad(\FPGA1C:inst7|FPGA1C:inst1|START:inst1|inst ),
+	.aclr(gnd),
+	.regout(\FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[6] ));
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[6]~I .operation_mode = "normal";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[6]~I .synch_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[6]~I .register_cascade_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[6]~I .sum_lutc_input = "datac";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[6]~I .lut_mask = "F0CC";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[6]~I .output_mode = "reg_only";
+
+cyclone_lcell \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[7]~I (
+	.clk(\FPGA1C:inst7|FPGA1C:inst1|inst15~8 ),
+	.dataa(\FPGA1C:inst7|FPGA1C:inst1|START:inst1|inst ),
+	.datab(\FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|safe_q[7] ),
+	.datad(\FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[6] ),
+	.aclr(gnd),
+	.regout(\FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[7] ));
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[7]~I .operation_mode = "normal";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[7]~I .synch_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[7]~I .register_cascade_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[7]~I .sum_lutc_input = "datac";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[7]~I .lut_mask = "DD88";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[7]~I .output_mode = "reg_only";
+
+cyclone_lcell \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[8]~I (
+	.clk(\FPGA1C:inst7|FPGA1C:inst1|inst15~8 ),
+	.dataa(\FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|safe_q[8] ),
+	.datac(\FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[7] ),
+	.datad(\FPGA1C:inst7|FPGA1C:inst1|START:inst1|inst ),
+	.aclr(gnd),
+	.regout(\FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[8] ));
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[8]~I .operation_mode = "normal";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[8]~I .synch_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[8]~I .register_cascade_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[8]~I .sum_lutc_input = "datac";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[8]~I .lut_mask = "AAF0";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[8]~I .output_mode = "reg_only";
+
+cyclone_lcell \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[9]~I (
+	.clk(\FPGA1C:inst7|FPGA1C:inst1|inst15~8 ),
+	.datab(\FPGA1C:inst7|FPGA1C:inst1|lpm_counter0:inst2|lpm_counter:lpm_counter_component|cntr_9gd:auto_generated|safe_q[9] ),
+	.datac(\FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[8] ),
+	.datad(\FPGA1C:inst7|FPGA1C:inst1|START:inst1|inst ),
+	.aclr(gnd),
+	.regout(\FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[9] ));
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[9]~I .operation_mode = "normal";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[9]~I .synch_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[9]~I .register_cascade_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[9]~I .sum_lutc_input = "datac";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[9]~I .lut_mask = "CCF0";
+defparam \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[9]~I .output_mode = "reg_only";
+
+cyclone_lcell \FPGA1C:inst7|FPGA1C:inst1|inst5~I (
+	.clk(\FPGA1C:inst7|FPGA1C:inst1|inst15~8 ),
+	.dataa(\FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[9] ),
+	.datab(\FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[4] ),
+	.datac(\FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[15] ),
+	.datad(\FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[1] ),
+	.aclr(gnd),
+	.regout(\FPGA1C:inst7|FPGA1C:inst1|inst5 ));
+defparam \FPGA1C:inst7|FPGA1C:inst1|inst5~I .operation_mode = "normal";
+defparam \FPGA1C:inst7|FPGA1C:inst1|inst5~I .synch_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|inst5~I .register_cascade_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|inst5~I .sum_lutc_input = "datac";
+defparam \FPGA1C:inst7|FPGA1C:inst1|inst5~I .lut_mask = "6996";
+defparam \FPGA1C:inst7|FPGA1C:inst1|inst5~I .output_mode = "reg_only";
+
+cyclone_lcell \FPGA1C:inst7|FPGA1C:inst1|inst22~2_I (
+	.dataa(\FPGA1C:inst7|FPGA1C:inst1|inst5 ),
+	.datac(MT),
+	.combout(\FPGA1C:inst7|FPGA1C:inst1|inst22~2 ));
+defparam \FPGA1C:inst7|FPGA1C:inst1|inst22~2_I .operation_mode = "normal";
+defparam \FPGA1C:inst7|FPGA1C:inst1|inst22~2_I .synch_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|inst22~2_I .register_cascade_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|inst22~2_I .sum_lutc_input = "datac";
+defparam \FPGA1C:inst7|FPGA1C:inst1|inst22~2_I .lut_mask = "0505";
+defparam \FPGA1C:inst7|FPGA1C:inst1|inst22~2_I .output_mode = "comb_only";
+
+cyclone_lcell \FPGA1C:inst7|FPGA1C:inst1|inst28~I (
+	.dataa(\FPGA1C:inst7|FPGA1C:inst1|START:inst1|inst ),
+	.datac(\FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[23] ),
+	.combout(\FPGA1C:inst7|FPGA1C:inst1|inst28 ));
+defparam \FPGA1C:inst7|FPGA1C:inst1|inst28~I .operation_mode = "normal";
+defparam \FPGA1C:inst7|FPGA1C:inst1|inst28~I .synch_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|inst28~I .register_cascade_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|inst28~I .sum_lutc_input = "datac";
+defparam \FPGA1C:inst7|FPGA1C:inst1|inst28~I .lut_mask = "FAFA";
+defparam \FPGA1C:inst7|FPGA1C:inst1|inst28~I .output_mode = "comb_only";
+
+cyclone_lcell \FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|STX.st0~I (
+	.clk(\FPGA1C:inst7|FPGA1C:inst1|inst26 ),
+	.dataa(\FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|STX.st12 ),
+	.datab(\FPGA1C:inst7|FPGA1C:inst1|inst10 ),
+	.datac(\FPGA1C:inst7|FPGA1C:inst1|inst22~2 ),
+	.datad(\FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|STX.st0 ),
+	.aclr(\FPGA1C:inst7|FPGA1C:inst1|inst28 ),
+	.regout(\FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|STX.st0 ));
+defparam \FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|STX.st0~I .operation_mode = "normal";
+defparam \FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|STX.st0~I .synch_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|STX.st0~I .register_cascade_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|STX.st0~I .sum_lutc_input = "datac";
+defparam \FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|STX.st0~I .lut_mask = "DF9A";
+defparam \FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|STX.st0~I .output_mode = "reg_only";
+
+cyclone_lcell \FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|STX.st1~I (
+	.clk(\FPGA1C:inst7|FPGA1C:inst1|inst26 ),
+	.dataa(\FPGA1C:inst7|FPGA1C:inst1|inst10 ),
+	.datab(\FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|STX.st1 ),
+	.datac(\FPGA1C:inst7|FPGA1C:inst1|inst22~2 ),
+	.datad(\FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|STX.st0 ),
+	.aclr(\FPGA1C:inst7|FPGA1C:inst1|inst28 ),
+	.regout(\FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|STX.st1 ));
+defparam \FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|STX.st1~I .operation_mode = "normal";
+defparam \FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|STX.st1~I .synch_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|STX.st1~I .register_cascade_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|STX.st1~I .sum_lutc_input = "datac";
+defparam \FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|STX.st1~I .lut_mask = "8C50";
+defparam \FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|STX.st1~I .output_mode = "reg_only";
+
+cyclone_lcell \FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|STX.st2~I (
+	.clk(\FPGA1C:inst7|FPGA1C:inst1|inst26 ),
+	.dataa(\FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|STX.st2 ),
+	.datab(\FPGA1C:inst7|FPGA1C:inst1|inst22~2 ),
+	.datac(\FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|STX.st1 ),
+	.datad(\FPGA1C:inst7|FPGA1C:inst1|inst10 ),
+	.aclr(\FPGA1C:inst7|FPGA1C:inst1|inst28 ),
+	.regout(\FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|STX.st2 ));
+defparam \FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|STX.st2~I .operation_mode = "normal";
+defparam \FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|STX.st2~I .synch_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|STX.st2~I .register_cascade_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|STX.st2~I .sum_lutc_input = "datac";
+defparam \FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|STX.st2~I .lut_mask = "0AC2";
+defparam \FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|STX.st2~I .output_mode = "reg_only";
+
+cyclone_lcell \FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|STX.st3~I (
+	.clk(\FPGA1C:inst7|FPGA1C:inst1|inst26 ),
+	.dataa(\FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|STX.st2 ),
+	.datab(\FPGA1C:inst7|FPGA1C:inst1|inst10 ),
+	.datac(\FPGA1C:inst7|FPGA1C:inst1|inst22~2 ),
+	.datad(\FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|STX.st3 ),
+	.aclr(\FPGA1C:inst7|FPGA1C:inst1|inst28 ),
+	.regout(\FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|STX.st3 ));
+defparam \FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|STX.st3~I .operation_mode = "normal";
+defparam \FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|STX.st3~I .synch_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|STX.st3~I .register_cascade_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|STX.st3~I .sum_lutc_input = "datac";
+defparam \FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|STX.st3~I .lut_mask = "6520";
+defparam \FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|STX.st3~I .output_mode = "reg_only";
+
+cyclone_lcell \FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|STX.st4~I (
+	.clk(\FPGA1C:inst7|FPGA1C:inst1|inst26 ),
+	.dataa(\FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|STX.st4 ),
+	.datab(\FPGA1C:inst7|FPGA1C:inst1|inst10 ),
+	.datac(\FPGA1C:inst7|FPGA1C:inst1|inst22~2 ),
+	.datad(\FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|STX.st3 ),
+	.aclr(\FPGA1C:inst7|FPGA1C:inst1|inst28 ),
+	.regout(\FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|STX.st4 ));
+defparam \FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|STX.st4~I .operation_mode = "normal";
+defparam \FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|STX.st4~I .synch_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|STX.st4~I .register_cascade_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|STX.st4~I .sum_lutc_input = "datac";
+defparam \FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|STX.st4~I .lut_mask = "308A";
+defparam \FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|STX.st4~I .output_mode = "reg_only";
+
+cyclone_lcell \FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|STX.st5~I (
+	.clk(\FPGA1C:inst7|FPGA1C:inst1|inst26 ),
+	.dataa(\FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|STX.st5 ),
+	.datab(\FPGA1C:inst7|FPGA1C:inst1|inst10 ),
+	.datac(\FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|STX.st4 ),
+	.datad(\FPGA1C:inst7|FPGA1C:inst1|inst22~2 ),
+	.aclr(\FPGA1C:inst7|FPGA1C:inst1|inst28 ),
+	.regout(\FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|STX.st5 ));
+defparam \FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|STX.st5~I .operation_mode = "normal";
+defparam \FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|STX.st5~I .synch_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|STX.st5~I .register_cascade_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|STX.st5~I .sum_lutc_input = "datac";
+defparam \FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|STX.st5~I .lut_mask = "380A";
+defparam \FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|STX.st5~I .output_mode = "reg_only";
+
+cyclone_lcell \FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|STX.st6~I (
+	.clk(\FPGA1C:inst7|FPGA1C:inst1|inst26 ),
+	.dataa(\FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|STX.st6 ),
+	.datab(\FPGA1C:inst7|FPGA1C:inst1|inst10 ),
+	.datac(\FPGA1C:inst7|FPGA1C:inst1|inst22~2 ),
+	.datad(\FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|STX.st5 ),
+	.aclr(\FPGA1C:inst7|FPGA1C:inst1|inst28 ),
+	.regout(\FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|STX.st6 ));
+defparam \FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|STX.st6~I .operation_mode = "normal";
+defparam \FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|STX.st6~I .synch_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|STX.st6~I .register_cascade_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|STX.st6~I .sum_lutc_input = "datac";
+defparam \FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|STX.st6~I .lut_mask = "308A";
+defparam \FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|STX.st6~I .output_mode = "reg_only";
+
+cyclone_lcell \FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|STX.st7~I (
+	.clk(\FPGA1C:inst7|FPGA1C:inst1|inst26 ),
+	.dataa(\FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|STX.st6 ),
+	.datab(\FPGA1C:inst7|FPGA1C:inst1|inst10 ),
+	.datac(\FPGA1C:inst7|FPGA1C:inst1|inst22~2 ),
+	.datad(\FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|STX.st7 ),
+	.aclr(\FPGA1C:inst7|FPGA1C:inst1|inst28 ),
+	.regout(\FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|STX.st7 ));
+defparam \FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|STX.st7~I .operation_mode = "normal";
+defparam \FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|STX.st7~I .synch_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|STX.st7~I .register_cascade_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|STX.st7~I .sum_lutc_input = "datac";
+defparam \FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|STX.st7~I .lut_mask = "6520";
+defparam \FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|STX.st7~I .output_mode = "reg_only";
+
+cyclone_lcell \FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|STX.st8~I (
+	.clk(\FPGA1C:inst7|FPGA1C:inst1|inst26 ),
+	.dataa(\FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|STX.st8 ),
+	.datab(\FPGA1C:inst7|FPGA1C:inst1|inst10 ),
+	.datac(\FPGA1C:inst7|FPGA1C:inst1|inst22~2 ),
+	.datad(\FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|STX.st7 ),
+	.aclr(\FPGA1C:inst7|FPGA1C:inst1|inst28 ),
+	.regout(\FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|STX.st8 ));
+defparam \FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|STX.st8~I .operation_mode = "normal";
+defparam \FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|STX.st8~I .synch_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|STX.st8~I .register_cascade_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|STX.st8~I .sum_lutc_input = "datac";
+defparam \FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|STX.st8~I .lut_mask = "308A";
+defparam \FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|STX.st8~I .output_mode = "reg_only";
+
+cyclone_lcell \FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|STX.st9~I (
+	.clk(\FPGA1C:inst7|FPGA1C:inst1|inst26 ),
+	.dataa(\FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|STX.st8 ),
+	.datab(\FPGA1C:inst7|FPGA1C:inst1|inst10 ),
+	.datac(\FPGA1C:inst7|FPGA1C:inst1|inst22~2 ),
+	.datad(\FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|STX.st9 ),
+	.aclr(\FPGA1C:inst7|FPGA1C:inst1|inst28 ),
+	.regout(\FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|STX.st9 ));
+defparam \FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|STX.st9~I .operation_mode = "normal";
+defparam \FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|STX.st9~I .synch_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|STX.st9~I .register_cascade_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|STX.st9~I .sum_lutc_input = "datac";
+defparam \FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|STX.st9~I .lut_mask = "6520";
+defparam \FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|STX.st9~I .output_mode = "reg_only";
+
+cyclone_lcell \FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|STX.st10~I (
+	.clk(\FPGA1C:inst7|FPGA1C:inst1|inst26 ),
+	.dataa(\FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|STX.st10 ),
+	.datab(\FPGA1C:inst7|FPGA1C:inst1|inst22~2 ),
+	.datac(\FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|STX.st9 ),
+	.datad(\FPGA1C:inst7|FPGA1C:inst1|inst10 ),
+	.aclr(\FPGA1C:inst7|FPGA1C:inst1|inst28 ),
+	.regout(\FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|STX.st10 ));
+defparam \FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|STX.st10~I .operation_mode = "normal";
+defparam \FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|STX.st10~I .synch_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|STX.st10~I .register_cascade_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|STX.st10~I .sum_lutc_input = "datac";
+defparam \FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|STX.st10~I .lut_mask = "0AC2";
+defparam \FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|STX.st10~I .output_mode = "reg_only";
+
+cyclone_lcell \FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|STX.st11~I (
+	.clk(\FPGA1C:inst7|FPGA1C:inst1|inst26 ),
+	.dataa(\FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|STX.st10 ),
+	.datab(\FPGA1C:inst7|FPGA1C:inst1|inst22~2 ),
+	.datac(\FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|STX.st11 ),
+	.datad(\FPGA1C:inst7|FPGA1C:inst1|inst10 ),
+	.aclr(\FPGA1C:inst7|FPGA1C:inst1|inst28 ),
+	.regout(\FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|STX.st11 ));
+defparam \FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|STX.st11~I .operation_mode = "normal";
+defparam \FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|STX.st11~I .synch_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|STX.st11~I .register_cascade_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|STX.st11~I .sum_lutc_input = "datac";
+defparam \FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|STX.st11~I .lut_mask = "5098";
+defparam \FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|STX.st11~I .output_mode = "reg_only";
+
+cyclone_lcell \FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|STX.st12~I (
+	.clk(\FPGA1C:inst7|FPGA1C:inst1|inst26 ),
+	.dataa(\FPGA1C:inst7|FPGA1C:inst1|inst10 ),
+	.datab(\FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|STX.st12 ),
+	.datac(\FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|STX.st11 ),
+	.datad(\FPGA1C:inst7|FPGA1C:inst1|inst22~2 ),
+	.aclr(\FPGA1C:inst7|FPGA1C:inst1|inst28 ),
+	.regout(\FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|STX.st12 ));
+defparam \FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|STX.st12~I .operation_mode = "normal";
+defparam \FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|STX.st12~I .synch_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|STX.st12~I .register_cascade_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|STX.st12~I .sum_lutc_input = "datac";
+defparam \FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|STX.st12~I .lut_mask = "580C";
+defparam \FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|STX.st12~I .output_mode = "reg_only";
+
+cyclone_lcell \FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|Select~1339_I (
+	.dataa(MT),
+	.datab(\FPGA1C:inst7|FPGA1C:inst1|inst10 ),
+	.datac(\FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|STX.st12 ),
+	.datad(\FPGA1C:inst7|FPGA1C:inst1|inst5 ),
+	.combout(\FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|Select~1339 ));
+defparam \FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|Select~1339_I .operation_mode = "normal";
+defparam \FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|Select~1339_I .synch_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|Select~1339_I .register_cascade_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|Select~1339_I .sum_lutc_input = "datac";
+defparam \FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|Select~1339_I .lut_mask = "0010";
+defparam \FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|Select~1339_I .output_mode = "comb_only";
+
+cyclone_lcell \FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|Select~1340_I (
+	.dataa(\FPGA1C:inst7|FPGA1C:inst1|inst5 ),
+	.datab(\FPGA1C:inst7|FPGA1C:inst1|inst10 ),
+	.datac(\FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|STX.st12 ),
+	.datad(MT),
+	.combout(\FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|Select~1340 ));
+defparam \FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|Select~1340_I .operation_mode = "normal";
+defparam \FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|Select~1340_I .synch_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|Select~1340_I .register_cascade_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|Select~1340_I .sum_lutc_input = "datac";
+defparam \FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|Select~1340_I .lut_mask = "F0F1";
+defparam \FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|Select~1340_I .output_mode = "comb_only";
+
+cyclone_lcell \FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|Q~I (
+	.datab(\FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|Select~1339 ),
+	.datac(\FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|Q ),
+	.datad(\FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|Select~1340 ),
+	.combout(\FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|Q ));
+defparam \FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|Q~I .operation_mode = "normal";
+defparam \FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|Q~I .synch_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|Q~I .register_cascade_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|Q~I .sum_lutc_input = "datac";
+defparam \FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|Q~I .lut_mask = "CCF0";
+defparam \FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|Q~I .output_mode = "comb_only";
+
+cyclone_lcell \FPGA1C:inst7|FPGA1C:inst1|inst18~I (
+	.datac(MT),
+	.datad(\FPGA1C:inst7|FPGA1C:inst1|inst5 ),
+	.combout(\FPGA1C:inst7|FPGA1C:inst1|inst18 ));
+defparam \FPGA1C:inst7|FPGA1C:inst1|inst18~I .operation_mode = "normal";
+defparam \FPGA1C:inst7|FPGA1C:inst1|inst18~I .synch_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|inst18~I .register_cascade_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|inst18~I .sum_lutc_input = "datac";
+defparam \FPGA1C:inst7|FPGA1C:inst1|inst18~I .lut_mask = "0FF0";
+defparam \FPGA1C:inst7|FPGA1C:inst1|inst18~I .output_mode = "comb_only";
+
+cyclone_lcell \FPGA1C:inst7|FPGA1C:inst1|inst19~I (
+	.clk(\FPGA1C:inst7|FPGA1C:inst1|inst15~8 ),
+	.dataa(\FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[2] ),
+	.datab(\FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[11] ),
+	.datac(\FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[5] ),
+	.datad(\FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[0] ),
+	.aclr(gnd),
+	.regout(\FPGA1C:inst7|FPGA1C:inst1|inst19 ));
+defparam \FPGA1C:inst7|FPGA1C:inst1|inst19~I .operation_mode = "normal";
+defparam \FPGA1C:inst7|FPGA1C:inst1|inst19~I .synch_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|inst19~I .register_cascade_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|inst19~I .sum_lutc_input = "datac";
+defparam \FPGA1C:inst7|FPGA1C:inst1|inst19~I .lut_mask = "6996";
+defparam \FPGA1C:inst7|FPGA1C:inst1|inst19~I .output_mode = "reg_only";
+
+cyclone_lcell \FPGA1C:inst7|FPGA1C:inst1|inst30~I (
+	.clk(\FPGA1C:inst7|FPGA1C:inst1|inst15~8 ),
+	.datac(\FPGA1C:inst7|FPGA1C:inst1|inst19 ),
+	.datad(NO),
+	.aclr(gnd),
+	.regout(\FPGA1C:inst7|FPGA1C:inst1|inst30 ));
+defparam \FPGA1C:inst7|FPGA1C:inst1|inst30~I .operation_mode = "normal";
+defparam \FPGA1C:inst7|FPGA1C:inst1|inst30~I .synch_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|inst30~I .register_cascade_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|inst30~I .sum_lutc_input = "datac";
+defparam \FPGA1C:inst7|FPGA1C:inst1|inst30~I .lut_mask = "0FF0";
+defparam \FPGA1C:inst7|FPGA1C:inst1|inst30~I .output_mode = "reg_only";
+
+cyclone_lcell \FPGA1C:inst7|FPGA1C:inst1|inst32~I (
+	.clk(\FPGA1C:inst7|FPGA1C:inst1|inst15~8 ),
+	.dataa(\FPGA1C:inst7|FPGA1C:inst1|MEALY1:inst14|Q ),
+	.datab(\FPGA1C:inst7|FPGA1C:inst1|START:inst1|inst ),
+	.datac(\FPGA1C:inst7|FPGA1C:inst1|inst18 ),
+	.datad(\FPGA1C:inst7|FPGA1C:inst1|inst30 ),
+	.aclr(gnd),
+	.sload(vcc),
+	.combout(\FPGA1C:inst7|FPGA1C:inst1|inst23~17 ),
+	.regout(\FPGA1C:inst7|FPGA1C:inst1|inst32 ));
+defparam \FPGA1C:inst7|FPGA1C:inst1|inst32~I .operation_mode = "normal";
+defparam \FPGA1C:inst7|FPGA1C:inst1|inst32~I .synch_mode = "on";
+defparam \FPGA1C:inst7|FPGA1C:inst1|inst32~I .register_cascade_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|inst32~I .sum_lutc_input = "qfbk";
+defparam \FPGA1C:inst7|FPGA1C:inst1|inst32~I .lut_mask = "FFFE";
+defparam \FPGA1C:inst7|FPGA1C:inst1|inst32~I .output_mode = "comb_only";
+
+cyclone_lcell \FPGA1C:inst7|FPGA1C:inst1|counter6:inst17|lpm_counter:lpm_counter_component|cntr_dtd:auto_generated|counter_cella0 (
+	.clk(\FPGA1C:inst7|FPGA1C:inst1|inst24~38 ),
+	.dataa(\FPGA1C:inst7|FPGA1C:inst1|counter6:inst17|lpm_counter:lpm_counter_component|cntr_dtd:auto_generated|safe_q[0] ),
+	.aclr(gnd),
+	.sclr(\FPGA1C:inst7|FPGA1C:inst1|inst23~17 ),
+	.regout(\FPGA1C:inst7|FPGA1C:inst1|counter6:inst17|lpm_counter:lpm_counter_component|cntr_dtd:auto_generated|safe_q[0] ),
+	.cout(\FPGA1C:inst7|FPGA1C:inst1|counter6:inst17|lpm_counter:lpm_counter_component|cntr_dtd:auto_generated|counter_cella0~COUT ));
+defparam \FPGA1C:inst7|FPGA1C:inst1|counter6:inst17|lpm_counter:lpm_counter_component|cntr_dtd:auto_generated|counter_cella0 .operation_mode = "arithmetic";
+defparam \FPGA1C:inst7|FPGA1C:inst1|counter6:inst17|lpm_counter:lpm_counter_component|cntr_dtd:auto_generated|counter_cella0 .synch_mode = "on";
+defparam \FPGA1C:inst7|FPGA1C:inst1|counter6:inst17|lpm_counter:lpm_counter_component|cntr_dtd:auto_generated|counter_cella0 .register_cascade_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|counter6:inst17|lpm_counter:lpm_counter_component|cntr_dtd:auto_generated|counter_cella0 .sum_lutc_input = "datac";
+defparam \FPGA1C:inst7|FPGA1C:inst1|counter6:inst17|lpm_counter:lpm_counter_component|cntr_dtd:auto_generated|counter_cella0 .lut_mask = "55AA";
+defparam \FPGA1C:inst7|FPGA1C:inst1|counter6:inst17|lpm_counter:lpm_counter_component|cntr_dtd:auto_generated|counter_cella0 .output_mode = "reg_only";
+
+cyclone_lcell \FPGA1C:inst7|FPGA1C:inst1|counter6:inst17|lpm_counter:lpm_counter_component|cntr_dtd:auto_generated|counter_cella1 (
+	.clk(\FPGA1C:inst7|FPGA1C:inst1|inst24~38 ),
+	.datab(\FPGA1C:inst7|FPGA1C:inst1|counter6:inst17|lpm_counter:lpm_counter_component|cntr_dtd:auto_generated|safe_q[1] ),
+	.aclr(gnd),
+	.sclr(\FPGA1C:inst7|FPGA1C:inst1|inst23~17 ),
+	.cin(\FPGA1C:inst7|FPGA1C:inst1|counter6:inst17|lpm_counter:lpm_counter_component|cntr_dtd:auto_generated|counter_cella0~COUT ),
+	.regout(\FPGA1C:inst7|FPGA1C:inst1|counter6:inst17|lpm_counter:lpm_counter_component|cntr_dtd:auto_generated|safe_q[1] ),
+	.cout(\FPGA1C:inst7|FPGA1C:inst1|counter6:inst17|lpm_counter:lpm_counter_component|cntr_dtd:auto_generated|counter_cella1~COUT ));
+defparam \FPGA1C:inst7|FPGA1C:inst1|counter6:inst17|lpm_counter:lpm_counter_component|cntr_dtd:auto_generated|counter_cella1 .operation_mode = "arithmetic";
+defparam \FPGA1C:inst7|FPGA1C:inst1|counter6:inst17|lpm_counter:lpm_counter_component|cntr_dtd:auto_generated|counter_cella1 .synch_mode = "on";
+defparam \FPGA1C:inst7|FPGA1C:inst1|counter6:inst17|lpm_counter:lpm_counter_component|cntr_dtd:auto_generated|counter_cella1 .register_cascade_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|counter6:inst17|lpm_counter:lpm_counter_component|cntr_dtd:auto_generated|counter_cella1 .sum_lutc_input = "cin";
+defparam \FPGA1C:inst7|FPGA1C:inst1|counter6:inst17|lpm_counter:lpm_counter_component|cntr_dtd:auto_generated|counter_cella1 .lut_mask = "3C3F";
+defparam \FPGA1C:inst7|FPGA1C:inst1|counter6:inst17|lpm_counter:lpm_counter_component|cntr_dtd:auto_generated|counter_cella1 .output_mode = "reg_only";
+
+cyclone_lcell \FPGA1C:inst7|FPGA1C:inst1|counter6:inst17|lpm_counter:lpm_counter_component|cntr_dtd:auto_generated|counter_cella2 (
+	.clk(\FPGA1C:inst7|FPGA1C:inst1|inst24~38 ),
+	.datab(\FPGA1C:inst7|FPGA1C:inst1|counter6:inst17|lpm_counter:lpm_counter_component|cntr_dtd:auto_generated|safe_q[2] ),
+	.aclr(gnd),
+	.sclr(\FPGA1C:inst7|FPGA1C:inst1|inst23~17 ),
+	.cin(\FPGA1C:inst7|FPGA1C:inst1|counter6:inst17|lpm_counter:lpm_counter_component|cntr_dtd:auto_generated|counter_cella1~COUT ),
+	.regout(\FPGA1C:inst7|FPGA1C:inst1|counter6:inst17|lpm_counter:lpm_counter_component|cntr_dtd:auto_generated|safe_q[2] ),
+	.cout(\FPGA1C:inst7|FPGA1C:inst1|counter6:inst17|lpm_counter:lpm_counter_component|cntr_dtd:auto_generated|counter_cella2~COUT ));
+defparam \FPGA1C:inst7|FPGA1C:inst1|counter6:inst17|lpm_counter:lpm_counter_component|cntr_dtd:auto_generated|counter_cella2 .operation_mode = "arithmetic";
+defparam \FPGA1C:inst7|FPGA1C:inst1|counter6:inst17|lpm_counter:lpm_counter_component|cntr_dtd:auto_generated|counter_cella2 .synch_mode = "on";
+defparam \FPGA1C:inst7|FPGA1C:inst1|counter6:inst17|lpm_counter:lpm_counter_component|cntr_dtd:auto_generated|counter_cella2 .register_cascade_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|counter6:inst17|lpm_counter:lpm_counter_component|cntr_dtd:auto_generated|counter_cella2 .sum_lutc_input = "cin";
+defparam \FPGA1C:inst7|FPGA1C:inst1|counter6:inst17|lpm_counter:lpm_counter_component|cntr_dtd:auto_generated|counter_cella2 .lut_mask = "C30C";
+defparam \FPGA1C:inst7|FPGA1C:inst1|counter6:inst17|lpm_counter:lpm_counter_component|cntr_dtd:auto_generated|counter_cella2 .output_mode = "reg_only";
+
+cyclone_lcell \FPGA1C:inst7|FPGA1C:inst1|counter6:inst17|lpm_counter:lpm_counter_component|cntr_dtd:auto_generated|counter_cella3 (
+	.clk(\FPGA1C:inst7|FPGA1C:inst1|inst24~38 ),
+	.datab(\FPGA1C:inst7|FPGA1C:inst1|counter6:inst17|lpm_counter:lpm_counter_component|cntr_dtd:auto_generated|safe_q[3] ),
+	.aclr(gnd),
+	.sclr(\FPGA1C:inst7|FPGA1C:inst1|inst23~17 ),
+	.cin(\FPGA1C:inst7|FPGA1C:inst1|counter6:inst17|lpm_counter:lpm_counter_component|cntr_dtd:auto_generated|counter_cella2~COUT ),
+	.regout(\FPGA1C:inst7|FPGA1C:inst1|counter6:inst17|lpm_counter:lpm_counter_component|cntr_dtd:auto_generated|safe_q[3] ),
+	.cout(\FPGA1C:inst7|FPGA1C:inst1|counter6:inst17|lpm_counter:lpm_counter_component|cntr_dtd:auto_generated|counter_cella3~COUT ));
+defparam \FPGA1C:inst7|FPGA1C:inst1|counter6:inst17|lpm_counter:lpm_counter_component|cntr_dtd:auto_generated|counter_cella3 .operation_mode = "arithmetic";
+defparam \FPGA1C:inst7|FPGA1C:inst1|counter6:inst17|lpm_counter:lpm_counter_component|cntr_dtd:auto_generated|counter_cella3 .synch_mode = "on";
+defparam \FPGA1C:inst7|FPGA1C:inst1|counter6:inst17|lpm_counter:lpm_counter_component|cntr_dtd:auto_generated|counter_cella3 .register_cascade_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|counter6:inst17|lpm_counter:lpm_counter_component|cntr_dtd:auto_generated|counter_cella3 .sum_lutc_input = "cin";
+defparam \FPGA1C:inst7|FPGA1C:inst1|counter6:inst17|lpm_counter:lpm_counter_component|cntr_dtd:auto_generated|counter_cella3 .lut_mask = "3C3F";
+defparam \FPGA1C:inst7|FPGA1C:inst1|counter6:inst17|lpm_counter:lpm_counter_component|cntr_dtd:auto_generated|counter_cella3 .output_mode = "reg_only";
+
+cyclone_lcell \FPGA1C:inst7|FPGA1C:inst1|counter6:inst17|lpm_counter:lpm_counter_component|cntr_dtd:auto_generated|counter_cella4 (
+	.clk(\FPGA1C:inst7|FPGA1C:inst1|inst24~38 ),
+	.dataa(\FPGA1C:inst7|FPGA1C:inst1|counter6:inst17|lpm_counter:lpm_counter_component|cntr_dtd:auto_generated|safe_q[4] ),
+	.aclr(gnd),
+	.sclr(\FPGA1C:inst7|FPGA1C:inst1|inst23~17 ),
+	.cin(\FPGA1C:inst7|FPGA1C:inst1|counter6:inst17|lpm_counter:lpm_counter_component|cntr_dtd:auto_generated|counter_cella3~COUT ),
+	.regout(\FPGA1C:inst7|FPGA1C:inst1|counter6:inst17|lpm_counter:lpm_counter_component|cntr_dtd:auto_generated|safe_q[4] ),
+	.cout(\FPGA1C:inst7|FPGA1C:inst1|counter6:inst17|lpm_counter:lpm_counter_component|cntr_dtd:auto_generated|counter_cella4~COUT ));
+defparam \FPGA1C:inst7|FPGA1C:inst1|counter6:inst17|lpm_counter:lpm_counter_component|cntr_dtd:auto_generated|counter_cella4 .operation_mode = "arithmetic";
+defparam \FPGA1C:inst7|FPGA1C:inst1|counter6:inst17|lpm_counter:lpm_counter_component|cntr_dtd:auto_generated|counter_cella4 .synch_mode = "on";
+defparam \FPGA1C:inst7|FPGA1C:inst1|counter6:inst17|lpm_counter:lpm_counter_component|cntr_dtd:auto_generated|counter_cella4 .register_cascade_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|counter6:inst17|lpm_counter:lpm_counter_component|cntr_dtd:auto_generated|counter_cella4 .sum_lutc_input = "cin";
+defparam \FPGA1C:inst7|FPGA1C:inst1|counter6:inst17|lpm_counter:lpm_counter_component|cntr_dtd:auto_generated|counter_cella4 .lut_mask = "A50A";
+defparam \FPGA1C:inst7|FPGA1C:inst1|counter6:inst17|lpm_counter:lpm_counter_component|cntr_dtd:auto_generated|counter_cella4 .output_mode = "reg_only";
+
+cyclone_lcell \FPGA1C:inst7|FPGA1C:inst1|counter6:inst17|lpm_counter:lpm_counter_component|cntr_dtd:auto_generated|counter_cella5 (
+	.clk(\FPGA1C:inst7|FPGA1C:inst1|inst24~38 ),
+	.dataa(\FPGA1C:inst7|FPGA1C:inst1|counter6:inst17|lpm_counter:lpm_counter_component|cntr_dtd:auto_generated|safe_q[5] ),
+	.aclr(gnd),
+	.sclr(\FPGA1C:inst7|FPGA1C:inst1|inst23~17 ),
+	.cin(\FPGA1C:inst7|FPGA1C:inst1|counter6:inst17|lpm_counter:lpm_counter_component|cntr_dtd:auto_generated|counter_cella4~COUT ),
+	.regout(\FPGA1C:inst7|FPGA1C:inst1|counter6:inst17|lpm_counter:lpm_counter_component|cntr_dtd:auto_generated|safe_q[5] ));
+defparam \FPGA1C:inst7|FPGA1C:inst1|counter6:inst17|lpm_counter:lpm_counter_component|cntr_dtd:auto_generated|counter_cella5 .operation_mode = "normal";
+defparam \FPGA1C:inst7|FPGA1C:inst1|counter6:inst17|lpm_counter:lpm_counter_component|cntr_dtd:auto_generated|counter_cella5 .synch_mode = "on";
+defparam \FPGA1C:inst7|FPGA1C:inst1|counter6:inst17|lpm_counter:lpm_counter_component|cntr_dtd:auto_generated|counter_cella5 .register_cascade_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|counter6:inst17|lpm_counter:lpm_counter_component|cntr_dtd:auto_generated|counter_cella5 .sum_lutc_input = "cin";
+defparam \FPGA1C:inst7|FPGA1C:inst1|counter6:inst17|lpm_counter:lpm_counter_component|cntr_dtd:auto_generated|counter_cella5 .lut_mask = "5A5A";
+defparam \FPGA1C:inst7|FPGA1C:inst1|counter6:inst17|lpm_counter:lpm_counter_component|cntr_dtd:auto_generated|counter_cella5 .output_mode = "reg_only";
+
+cyclone_lcell \FPGA1C:inst7|FPGA1C:inst1|cmp_6:inst3|lpm_compare:lpm_compare_component|cmpr_s4h:auto_generated|aleb~21_I (
+	.dataa(\FPGA1C:inst7|FPGA1C:inst1|counter6:inst17|lpm_counter:lpm_counter_component|cntr_dtd:auto_generated|safe_q[5] ),
+	.datab(\FPGA1C:inst7|FPGA1C:inst1|counter6:inst17|lpm_counter:lpm_counter_component|cntr_dtd:auto_generated|safe_q[3] ),
+	.datac(\FPGA1C:inst7|FPGA1C:inst1|counter6:inst17|lpm_counter:lpm_counter_component|cntr_dtd:auto_generated|safe_q[2] ),
+	.datad(\FPGA1C:inst7|FPGA1C:inst1|counter6:inst17|lpm_counter:lpm_counter_component|cntr_dtd:auto_generated|safe_q[4] ),
+	.combout(\FPGA1C:inst7|FPGA1C:inst1|cmp_6:inst3|lpm_compare:lpm_compare_component|cmpr_s4h:auto_generated|aleb~21 ));
+defparam \FPGA1C:inst7|FPGA1C:inst1|cmp_6:inst3|lpm_compare:lpm_compare_component|cmpr_s4h:auto_generated|aleb~21_I .operation_mode = "normal";
+defparam \FPGA1C:inst7|FPGA1C:inst1|cmp_6:inst3|lpm_compare:lpm_compare_component|cmpr_s4h:auto_generated|aleb~21_I .synch_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|cmp_6:inst3|lpm_compare:lpm_compare_component|cmpr_s4h:auto_generated|aleb~21_I .register_cascade_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|cmp_6:inst3|lpm_compare:lpm_compare_component|cmpr_s4h:auto_generated|aleb~21_I .sum_lutc_input = "datac";
+defparam \FPGA1C:inst7|FPGA1C:inst1|cmp_6:inst3|lpm_compare:lpm_compare_component|cmpr_s4h:auto_generated|aleb~21_I .lut_mask = "FEAA";
+defparam \FPGA1C:inst7|FPGA1C:inst1|cmp_6:inst3|lpm_compare:lpm_compare_component|cmpr_s4h:auto_generated|aleb~21_I .output_mode = "comb_only";
+
+cyclone_lcell \step:inst42|inst1~I (
+	.clk(\step:inst42|inst5 ),
+	.datac(\step:inst42|inst ),
+	.datad(\FPGA1C:inst7|FPGA1C:inst1|cmp_6:inst3|lpm_compare:lpm_compare_component|cmpr_s4h:auto_generated|aleb~21 ),
+	.aclr(__ALT_INV__STEP),
+	.sload(vcc),
+	.combout(inst4),
+	.regout(\step:inst42|inst1 ));
+defparam \step:inst42|inst1~I .operation_mode = "normal";
+defparam \step:inst42|inst1~I .synch_mode = "on";
+defparam \step:inst42|inst1~I .register_cascade_mode = "off";
+defparam \step:inst42|inst1~I .sum_lutc_input = "qfbk";
+defparam \step:inst42|inst1~I .lut_mask = "F000";
+defparam \step:inst42|inst1~I .output_mode = "reg_and_comb";
+
+cyclone_lcell \step:inst42|inst2~I (
+	.clk(\step:inst42|inst5 ),
+	.datac(\step:inst42|inst1 ),
+	.aclr(__ALT_INV__STEP),
+	.regout(\step:inst42|inst2 ));
+defparam \step:inst42|inst2~I .operation_mode = "normal";
+defparam \step:inst42|inst2~I .synch_mode = "off";
+defparam \step:inst42|inst2~I .register_cascade_mode = "off";
+defparam \step:inst42|inst2~I .sum_lutc_input = "datac";
+defparam \step:inst42|inst2~I .lut_mask = "F0F0";
+defparam \step:inst42|inst2~I .output_mode = "reg_only";
+
+cyclone_lcell \step:inst42|inst3~I (
+	.clk(\step:inst42|inst5 ),
+	.datac(\step:inst42|inst2 ),
+	.aclr(__ALT_INV__STEP),
+	.sload(vcc),
+	.regout(\step:inst42|inst3 ));
+defparam \step:inst42|inst3~I .operation_mode = "normal";
+defparam \step:inst42|inst3~I .synch_mode = "on";
+defparam \step:inst42|inst3~I .register_cascade_mode = "off";
+defparam \step:inst42|inst3~I .sum_lutc_input = "datac";
+defparam \step:inst42|inst3~I .lut_mask = "0000";
+defparam \step:inst42|inst3~I .output_mode = "reg_only";
+
+cyclone_lcell \step:inst42|inst~I (
+	.clk(\step:inst42|inst5 ),
+	.dataa(\step:inst42|inst3 ),
+	.datab(\step:inst42|inst1 ),
+	.datac(\step:inst42|inst2 ),
+	.datad(\step:inst42|inst ),
+	.aclr(__ALT_INV__STEP),
+	.regout(\step:inst42|inst ));
+defparam \step:inst42|inst~I .operation_mode = "normal";
+defparam \step:inst42|inst~I .synch_mode = "off";
+defparam \step:inst42|inst~I .register_cascade_mode = "off";
+defparam \step:inst42|inst~I .sum_lutc_input = "datac";
+defparam \step:inst42|inst~I .lut_mask = "0001";
+defparam \step:inst42|inst~I .output_mode = "reg_only";
+
+cyclone_lcell \inst3~I (
+	.dataa(\step:inst42|inst ),
+	.datac(\FPGA1C:inst7|FPGA1C:inst1|cmp_6:inst3|lpm_compare:lpm_compare_component|cmpr_s4h:auto_generated|aleb~21 ),
+	.combout(inst3));
+defparam \inst3~I .operation_mode = "normal";
+defparam \inst3~I .synch_mode = "off";
+defparam \inst3~I .register_cascade_mode = "off";
+defparam \inst3~I .sum_lutc_input = "datac";
+defparam \inst3~I .lut_mask = "A0A0";
+defparam \inst3~I .output_mode = "comb_only";
+
+cyclone_lcell \step:inst42|inst4~I (
+	.clk(\step:inst42|inst5 ),
+	.datac(\step:inst42|inst3 ),
+	.datad(CLK),
+	.aclr(__ALT_INV__STEP),
+	.sload(vcc),
+	.combout(\step:inst42|inst5 ),
+	.regout(\step:inst42|inst4 ));
+defparam \step:inst42|inst4~I .operation_mode = "normal";
+defparam \step:inst42|inst4~I .synch_mode = "on";
+defparam \step:inst42|inst4~I .register_cascade_mode = "off";
+defparam \step:inst42|inst4~I .sum_lutc_input = "qfbk";
+defparam \step:inst42|inst4~I .lut_mask = "FFF0";
+defparam \step:inst42|inst4~I .output_mode = "comb_only";
+
+cyclone_lcell \FPGA1C:inst7|FPGA1C:inst1|XOR3:inst33|1~13_I (
+	.dataa(\FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[3] ),
+	.datab(\FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[9] ),
+	.datad(\FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[6] ),
+	.combout(\FPGA1C:inst7|FPGA1C:inst1|XOR3:inst33|1~13 ));
+defparam \FPGA1C:inst7|FPGA1C:inst1|XOR3:inst33|1~13_I .operation_mode = "normal";
+defparam \FPGA1C:inst7|FPGA1C:inst1|XOR3:inst33|1~13_I .synch_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|XOR3:inst33|1~13_I .register_cascade_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|XOR3:inst33|1~13_I .sum_lutc_input = "datac";
+defparam \FPGA1C:inst7|FPGA1C:inst1|XOR3:inst33|1~13_I .lut_mask = "9966";
+defparam \FPGA1C:inst7|FPGA1C:inst1|XOR3:inst33|1~13_I .output_mode = "comb_only";
+
+cyclone_lcell \FPGA1C:inst7|FPGA1C:inst1|inst15~8_I (
+	.datac(CLK),
+	.datad(\FPGA1C:inst7|FPGA1C:inst1|inst10 ),
+	.combout(\FPGA1C:inst7|FPGA1C:inst1|inst15~8 ));
+defparam \FPGA1C:inst7|FPGA1C:inst1|inst15~8_I .operation_mode = "normal";
+defparam \FPGA1C:inst7|FPGA1C:inst1|inst15~8_I .synch_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|inst15~8_I .register_cascade_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|inst15~8_I .sum_lutc_input = "datac";
+defparam \FPGA1C:inst7|FPGA1C:inst1|inst15~8_I .lut_mask = "00F0";
+defparam \FPGA1C:inst7|FPGA1C:inst1|inst15~8_I .output_mode = "comb_only";
+
+cyclone_lcell \FPGA1C:inst7|FPGA1C:inst1|XOR3:inst34|1~I (
+	.dataa(\FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[4] ),
+	.datac(\FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[8] ),
+	.datad(\FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[1] ),
+	.combout(\FPGA1C:inst7|FPGA1C:inst1|XOR3:inst34|1 ));
+defparam \FPGA1C:inst7|FPGA1C:inst1|XOR3:inst34|1~I .operation_mode = "normal";
+defparam \FPGA1C:inst7|FPGA1C:inst1|XOR3:inst34|1~I .synch_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|XOR3:inst34|1~I .register_cascade_mode = "off";
+defparam \FPGA1C:inst7|FPGA1C:inst1|XOR3:inst34|1~I .sum_lutc_input = "datac";
+defparam \FPGA1C:inst7|FPGA1C:inst1|XOR3:inst34|1~I .lut_mask = "A55A";
+defparam \FPGA1C:inst7|FPGA1C:inst1|XOR3:inst34|1~I .output_mode = "comb_only";
+
+assign P35 = \FPGA1C:inst7|FPGA1C:inst1|cmp_6:inst3|lpm_compare:lpm_compare_component|cmpr_s4h:auto_generated|aleb~21 ;
+
+cyclone_io \P36~I (
+	.datain(gnd),
+	.padio(P36));
+defparam \P36~I .operation_mode = "output";
+defparam \P36~I .input_register_mode = "none";
+defparam \P36~I .output_register_mode = "none";
+defparam \P36~I .oe_register_mode = "none";
+defparam \P36~I .input_async_reset = "none";
+defparam \P36~I .output_async_reset = "none";
+defparam \P36~I .oe_async_reset = "none";
+defparam \P36~I .input_sync_reset = "none";
+defparam \P36~I .output_sync_reset = "none";
+defparam \P36~I .oe_sync_reset = "none";
+defparam \P36~I .input_power_up = "low";
+defparam \P36~I .output_power_up = "low";
+defparam \P36~I .oe_power_up = "low";
+
+cyclone_io \P37~I (
+	.datain(gnd),
+	.padio(P37));
+defparam \P37~I .operation_mode = "output";
+defparam \P37~I .input_register_mode = "none";
+defparam \P37~I .output_register_mode = "none";
+defparam \P37~I .oe_register_mode = "none";
+defparam \P37~I .input_async_reset = "none";
+defparam \P37~I .output_async_reset = "none";
+defparam \P37~I .oe_async_reset = "none";
+defparam \P37~I .input_sync_reset = "none";
+defparam \P37~I .output_sync_reset = "none";
+defparam \P37~I .oe_sync_reset = "none";
+defparam \P37~I .input_power_up = "low";
+defparam \P37~I .output_power_up = "low";
+defparam \P37~I .oe_power_up = "low";
+
+assign T1 = inst3;
+
+assign T2 = inst4;
+
+assign T3 = \step:inst42|inst2 ;
+
+assign T4 = \step:inst42|inst3 ;
+
+assign DOUT = \FPGA1C:inst7|FPGA1C:inst1|cmp_6:inst3|lpm_compare:lpm_compare_component|cmpr_s4h:auto_generated|aleb~21 ;
+
+cyclone_io \POE[7]~I (
+	.datain(gnd),
+	.padio(POE[7]));
+defparam \POE[7]~I .operation_mode = "output";
+defparam \POE[7]~I .input_register_mode = "none";
+defparam \POE[7]~I .output_register_mode = "none";
+defparam \POE[7]~I .oe_register_mode = "none";
+defparam \POE[7]~I .input_async_reset = "none";
+defparam \POE[7]~I .output_async_reset = "none";
+defparam \POE[7]~I .oe_async_reset = "none";
+defparam \POE[7]~I .input_sync_reset = "none";
+defparam \POE[7]~I .output_sync_reset = "none";
+defparam \POE[7]~I .oe_sync_reset = "none";
+defparam \POE[7]~I .input_power_up = "low";
+defparam \POE[7]~I .output_power_up = "low";
+defparam \POE[7]~I .oe_power_up = "low";
+
+cyclone_io \POE[6]~I (
+	.datain(gnd),
+	.padio(POE[6]));
+defparam \POE[6]~I .operation_mode = "output";
+defparam \POE[6]~I .input_register_mode = "none";
+defparam \POE[6]~I .output_register_mode = "none";
+defparam \POE[6]~I .oe_register_mode = "none";
+defparam \POE[6]~I .input_async_reset = "none";
+defparam \POE[6]~I .output_async_reset = "none";
+defparam \POE[6]~I .oe_async_reset = "none";
+defparam \POE[6]~I .input_sync_reset = "none";
+defparam \POE[6]~I .output_sync_reset = "none";
+defparam \POE[6]~I .oe_sync_reset = "none";
+defparam \POE[6]~I .input_power_up = "low";
+defparam \POE[6]~I .output_power_up = "low";
+defparam \POE[6]~I .oe_power_up = "low";
+
+cyclone_io \POE[5]~I (
+	.datain(gnd),
+	.padio(POE[5]));
+defparam \POE[5]~I .operation_mode = "output";
+defparam \POE[5]~I .input_register_mode = "none";
+defparam \POE[5]~I .output_register_mode = "none";
+defparam \POE[5]~I .oe_register_mode = "none";
+defparam \POE[5]~I .input_async_reset = "none";
+defparam \POE[5]~I .output_async_reset = "none";
+defparam \POE[5]~I .oe_async_reset = "none";
+defparam \POE[5]~I .input_sync_reset = "none";
+defparam \POE[5]~I .output_sync_reset = "none";
+defparam \POE[5]~I .oe_sync_reset = "none";
+defparam \POE[5]~I .input_power_up = "low";
+defparam \POE[5]~I .output_power_up = "low";
+defparam \POE[5]~I .oe_power_up = "low";
+
+cyclone_io \POE[4]~I (
+	.datain(gnd),
+	.padio(POE[4]));
+defparam \POE[4]~I .operation_mode = "output";
+defparam \POE[4]~I .input_register_mode = "none";
+defparam \POE[4]~I .output_register_mode = "none";
+defparam \POE[4]~I .oe_register_mode = "none";
+defparam \POE[4]~I .input_async_reset = "none";
+defparam \POE[4]~I .output_async_reset = "none";
+defparam \POE[4]~I .oe_async_reset = "none";
+defparam \POE[4]~I .input_sync_reset = "none";
+defparam \POE[4]~I .output_sync_reset = "none";
+defparam \POE[4]~I .oe_sync_reset = "none";
+defparam \POE[4]~I .input_power_up = "low";
+defparam \POE[4]~I .output_power_up = "low";
+defparam \POE[4]~I .oe_power_up = "low";
+
+assign POE[3] = \FPGA1C:inst7|FPGA1C:inst1|XOR3:inst33|1~13 ;
+
+assign POE[2] = \FPGA1C:inst7|FPGA1C:inst1|inst15~8 ;
+
+assign POE[1] = \FPGA1C:inst7|FPGA1C:inst1|XOR3:inst34|1 ;
+
+assign POE[0] = \FPGA1C:inst7|FPGA1C:inst1|lpm_shiftreg32:inst|lpm_shiftreg:lpm_shiftreg_component|dffs[23] ;
+
+endmodule

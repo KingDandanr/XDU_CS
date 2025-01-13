@@ -1,0 +1,101 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'LDAR'
+Slack : -2.936
+TNS   : -21.371
+
+Type  : Slow 1200mV 85C Model Setup 'LDIR'
+Slack : -2.807
+TNS   : -20.065
+
+Type  : Slow 1200mV 85C Model Setup 'LED_B'
+Slack : -2.564
+TNS   : -18.639
+
+Type  : Slow 1200mV 85C Model Setup 'LDPC'
+Slack : -1.363
+TNS   : -8.965
+
+Type  : Slow 1200mV 85C Model Hold 'LDPC'
+Slack : 0.766
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'LED_B'
+Slack : 1.484
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'LDIR'
+Slack : 1.757
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'LDAR'
+Slack : 1.938
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'LDAR'
+Slack : -2.792
+TNS   : -20.656
+
+Type  : Slow 1200mV 0C Model Setup 'LDIR'
+Slack : -2.657
+TNS   : -19.433
+
+Type  : Slow 1200mV 0C Model Setup 'LED_B'
+Slack : -2.440
+TNS   : -18.247
+
+Type  : Slow 1200mV 0C Model Setup 'LDPC'
+Slack : -1.132
+TNS   : -7.307
+
+Type  : Slow 1200mV 0C Model Hold 'LDPC'
+Slack : 0.710
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'LED_B'
+Slack : 1.511
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'LDIR'
+Slack : 1.757
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'LDAR'
+Slack : 1.931
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'LDAR'
+Slack : -0.511
+TNS   : -3.163
+
+Type  : Fast 1200mV 0C Model Setup 'LDIR'
+Slack : -0.406
+TNS   : -2.157
+
+Type  : Fast 1200mV 0C Model Setup 'LED_B'
+Slack : -0.305
+TNS   : -1.602
+
+Type  : Fast 1200mV 0C Model Setup 'LDPC'
+Slack : -0.010
+TNS   : -0.016
+
+Type  : Fast 1200mV 0C Model Hold 'LDPC'
+Slack : 0.306
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'LED_B'
+Slack : 0.350
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'LDIR'
+Slack : 0.465
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'LDAR'
+Slack : 0.602
+TNS   : 0.000
+
+------------------------------------------------------------

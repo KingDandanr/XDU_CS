@@ -1,0 +1,455 @@
+Turbo Assembler	 Version 4.1	    13/01/01 00:58:39	    Page 1
+D:\project2\test2.asm
+
+
+
+      1	0000			     MYSTACK SEGMENT
+      2	0000  01F4*(????)	     DW	       500 DUP(?)
+      3	03E8			     MYSTACK  ENDS
+      4
+      5	0000			     DATA  SEGMENT
+      6	0000  31 3A 43 68 61 6E	67+	 help db '1:Change to hex', 0AH, 0DH,'2:Count the number of numeric chars in the string',   +
+      7	      65 20 74 6F 20 68	65+  0AH, 0DH,'q or Q:Quit', 0AH, 0DH, '$'
+      8	      78 0A 0D 32 3A 43	6F+
+      9	      75 6E 74 20 74 68	65+
+     10	      20 6E 75 6D 62 65	72+
+     11	      20 6F 66 20 6E 75	6D+
+     12	      65 72 69 63 20 63	68+
+     13	      61 72 73 20 69 6E	20+
+     14	      74 68 65 20 73 74	72+
+     15	      69 6E 67 0A 0D 71	20+
+     16	      6F 72 20 51 3A 51	75+
+     17	      69 74 0A 0D 24
+     18	0052  0A 0D 24			 enterr	db 0AH,	0DH, '$'
+     19	0055  65 72 72 6F 72 20	69+	 error db 'error input', 0AH, 0DH, '$'
+     20	      6E 70 75 74 0A 0D	24
+     21	0063  69 6E 70 75 74 20	61+	 tip1 db 'input	a number:', 0AH, 0DH, '$'
+     22	      20 6E 75 6D 62 65	72+
+     23	      3A 0A 0D 24
+     24	0075  69 6E 70 75 74 20	61+	 tip2 db 'input	a string:', 0AH, 0DH, '$'
+     25	      20 73 74 72 69 6E	67+
+     26	      3A 0A 0D 24
+     27	0087  74 68 65 20 68 65	78+	 tip3 db 'the hex is:$'
+     28	      20 69 73 3A 24
+     29	0093  74 68 65 20 6E 75	6D+	 tip4 db 'the number of	numeric	char is:$'
+     30	      62 65 72 20 6F 66	20+
+     31	      6E 75 6D 65 72 69	63+
+     32	      20 63 68 61 72 20	69+
+     33	      73 3A 24
+     34					 ; cnt db 100 dup(0)
+     35	00B2  64*(00)			 buf db	100 dup(0)
+     36	0116			     DATA  ENDS
+     37
+     38	0000			     CODE  SEGMENT
+     39					   ASSUME DS:DATA,SS:MYSTACK,CS:CODE
+     40	0000			     START:
+     41
+     42	0000  B8 0000s			 mov ax, DATA
+     43	0003  8E D8			 mov ds, ax
+     44	0005  E8 0177			 call PRINT_ENTER
+     45	0008  BE 0000r			 mov si, offset	help
+     46	000B  E8 017B			 call PRINT_STR
+     47
+     48	000E			     INPUT:
+     49	000E  B4 01			 mov ah, 1
+     50	0010  CD 21			 int 21h
+     51	0012  3C 71			 cmp al, 'q'
+     52	0014  74 7B			 je EXIT_PROC
+     53	0016  3C 51			 cmp al, 'Q'
+     54	0018  74 77			 je EXIT_PROC
+     55	001A  2C 30			 sub al, '0'
+     56	001C  3C 01			 cmp al, 1
+     57	001E  74 0D			 je  SUB_D_TO_B
+Turbo Assembler	 Version 4.1	    13/01/01 00:58:39	    Page 2
+D:\project2\test2.asm
+
+
+
+     58	0020  3C 02			 cmp al, 2
+     59	0022  74 33			 je  SUB_NUM_CNT
+     60	0024  3C 03			 cmp al, 3
+     61	0026  74 D8			 je  START
+     62	0028  E8 00D8			 call ERROR_PROCESS
+     63	002B  EB D3			 jmp START
+     64
+     65
+     66	002D			     SUB_D_TO_B:
+     67	002D  E8 014F			 call PRINT_ENTER
+     68	0030  BE 0063r			 mov si, offset	tip1
+     69	0033  E8 0153			 call PRINT_STR
+     70	0036  E8 005F			 call NEXT_INT
+     71	0039  3D FFFF			 cmp ax, -1
+     72	003C  74 C2			 je START
+     73					 ; mov dx, ax
+     74					 ; mov di, offset buf
+     75					 ; call	WORD_TO_BINARY
+     76	003E  50			 push ax
+     77	003F  BE 0087r			 mov si, offset	tip3
+     78	0042  E8 0144			 call PRINT_STR
+     79					 ; mov si, offset buf
+     80					 ; call	PRINT_STR
+     81	0045  58			 pop ax
+     82	0046  8A D4			 mov dl, ah
+     83	0048  50			 push ax
+     84	0049  E8 0146			 call CHAR_TO_ASCII
+     85	004C  58			 pop ax
+     86	004D  8A D0			 mov dl, al
+     87	004F  E8 0140			 call CHAR_TO_ASCII
+     88	0052  E8 012A			 call PRINT_ENTER
+     89	0055  EB A9			 jmp START
+     90	0057			     SUB_NUM_CNT:
+     91
+     92	0057  E8 0125			 call PRINT_ENTER
+     93	005A  BE 0075r			 mov si, offset	tip2
+     94	005D  E8 0129			 call PRINT_STR
+     95	0060  BF 00B2r			 mov di, offset	buf
+     96	0063  E8 00B0			 call READ_STR
+     97	0066  33 D2			 xor dx, dx
+     98	0068  8B F7			 mov si, di
+     99	006A			     NUM_CNT_START:
+    100	006A  8A 04			 mov al, byte ptr[si]
+    101	006C  46			 inc si
+    102	006D  3C 0A			 cmp al, 0AH
+    103	006F  74 0B			 je NUM_CNT_END
+    104	0071  E8 00FB			 call IS_DIGIT
+    105	0074  3D 0001			 cmp ax, 1
+    106	0077  75 01			 jne NUM_CNT_IGNORE
+    107	0079  42			 inc dx
+    108	007A			     NUM_CNT_IGNORE:
+    109	007A  EB EE			 jmp NUM_CNT_START
+    110	007C			     NUM_CNT_END:
+    111	007C  BF 00B2r			 mov di, offset	buf
+    112	007F  E8 00B9			 call WORD_TO_DIGIT
+    113	0082  BE 0093r			 mov si, offset	tip4
+    114	0085  E8 0101			 call PRINT_STR
+Turbo Assembler	 Version 4.1	    13/01/01 00:58:39	    Page 3
+D:\project2\test2.asm
+
+
+
+    115	0088  BE 00B2r			 mov si, offset	buf
+    116	008B  E8 00FB			 call PRINT_STR
+    117	008E  E9 FF6F			 jmp START
+    118	0091			     EXIT_PROC:
+    119	0091  B0 00			 mov al, 0
+    120	0093  B4 4C			 mov ah, 4ch
+    121	0095  CD 21			 int 21h
+    122	0097  F4			 hlt
+    123				     ;input a digit
+    124	0098			     NEXT_INT:
+    125	0098  52			 push dx
+    126	0099  53			 push bx
+    127	009A  33 C0			 xor ax, ax
+    128	009C  33 D2			 xor dx, dx
+    129	009E			     NEXT_INT_START_INPUT:
+    130	009E  B4 01			 mov ah, 1
+    131	00A0  CD 21			 int 21h
+    132	00A2  3C 0D			 cmp al, 0DH;≈–∂œ «∑Ò ‰»ÎΩ· ¯
+    133	00A4  75 05			 jne .L5
+    134	00A6  8B C2			 mov ax, dx
+    135	00A8  EB 2E 90			 jmp NEXT_INT_RET
+    136	00AB			     .L5:
+    137	00AB  2C 30			 sub al, '0'
+    138	00AD  3C 00			 cmp al, 0
+    139	00AF  7D 09			 jge .L3
+    140	00B1  E8 004F			 call ERROR_PROCESS
+    141	00B4  B8 FFFF			 mov ax, -1
+    142	00B7  EB 1F 90			 jmp NEXT_INT_RET
+    143	00BA			     .L3:
+    144	00BA  3C 09			 cmp al, 9
+    145	00BC  7E 09			 jle .L4
+    146	00BE  E8 0042			 call ERROR_PROCESS
+    147	00C1  B8 FFFF			 mov ax, -1
+    148	00C4  EB 12 90			 jmp NEXT_INT_RET
+    149	00C7			     .L4:
+    150	00C7  32 E4			 xor ah, ah
+    151	00C9  50			 push ax
+    152	00CA  8B C2			 mov ax, dx
+    153	00CC  BB 000A			 mov bx, 10
+    154	00CF  F7 E3			 mul bx
+    155	00D1  8B D0			 mov dx, ax
+    156	00D3  58			 pop ax
+    157	00D4  03 D0			 add dx, ax
+    158	00D6  EB C6			 jmp NEXT_INT_START_INPUT
+    159
+    160	00D8			     NEXT_INT_RET:
+    161	00D8  5B			 pop bx
+    162	00D9  5A			 pop dx
+    163	00DA  C3			 ret
+    164
+    165				     ;transform	a word to binary string, dx : word, di : string
+    166	00DB			     WORD_TO_BINARY:
+    167	00DB  57			 push di
+    168	00DC  51			 push cx
+    169	00DD  53			 push bx
+    170	00DE  B9 0010			 mov cx, 10h
+    171	00E1			     WORD_TO_BINARY_START:
+Turbo Assembler	 Version 4.1	    13/01/01 00:58:39	    Page 4
+D:\project2\test2.asm
+
+
+
+    172					 ; mov al, cl
+    173					 ; dec al
+    174	00E1  BB 0001			 mov bx, 1
+    175					 ; push	cx
+    176	00E4  49			 dec cx
+    177	00E5  D3 E3			 shl bx, cl
+    178	00E7  23 DA			 and bx, dx
+    179	00E9  D3 EB			 shr bx, cl
+    180	00EB  41			 inc cx
+    181					 ; pop cx
+    182	00EC  80 C3 30			 add bl, '0'
+    183	00EF  88 1D			 mov byte ptr[di], bl
+    184	00F1  47			 inc di
+    185	00F2  E2 ED			 LOOP WORD_TO_BINARY_START
+    186	00F4  C6 05 0A			 mov byte ptr[di], 0AH
+    187	00F7  47			 inc di
+    188	00F8  C6 05 0D			 mov byte ptr[di], 0DH
+    189	00FB  47			 inc di
+    190	00FC  C6 05 24			 mov byte ptr[di], '$'
+    191	00FF  5B			 pop bx
+    192	0100  59			 pop cx
+    193	0101  5F			 pop di
+    194	0102  C3			 ret
+    195	0103			     ERROR_PROCESS:
+    196	0103  1E			 push ds
+    197	0104  52			 push dx
+    198	0105  E8 0077			 call PRINT_ENTER
+    199	0108  B8 0000s			 mov ax, DATA
+    200	010B  8E D8			 mov ds, ax
+    201	010D  BE 0055r			 mov si, offset	error
+    202	0110  E8 0076			 call PRINT_STR
+    203	0113  5A			 pop dx
+    204	0114  1F			 pop ds
+    205	0115  C3			 ret
+    206
+    207
+    208				     ;read a str, di: target str
+    209	0116			     READ_STR:
+    210	0116  57			 push di
+    211	0117			     READ_STR_START:
+    212	0117  B4 01			 mov ah, 1
+    213	0119  CD 21			 int 21h
+    214	011B  3C 20			 cmp al, ' '
+    215	011D  74 09			 je .L9
+    216	011F  3C 0D			 cmp al, 0DH
+    217	0121  74 08			 je .L10
+    218	0123  88 05			 mov byte ptr[di], al
+    219	0125  47			 inc di
+    220	0126  EB EF			 jmp READ_STR_START
+    221	0128			     .L9:
+    222	0128  E8 0054			 call PRINT_ENTER
+    223	012B			     .L10:
+    224	012B  B0 0A			 mov al, 0AH
+    225	012D  88 05			 mov byte ptr[di], al
+    226	012F  47			 inc di
+    227	0130  B0 0D			 mov al, 0DH
+    228	0132  88 05			 mov byte ptr[di], al
+Turbo Assembler	 Version 4.1	    13/01/01 00:58:39	    Page 5
+D:\project2\test2.asm
+
+
+
+    229	0134  47			 inc di
+    230	0135  B0 24			 mov al, '$'
+    231	0137  88 05			 mov byte ptr[di], al
+    232
+    233	0139  5F			 pop di
+    234	013A  C3			 ret
+    235
+    236				     ;dx : the word; di	: target str
+    237	013B			     WORD_TO_DIGIT:
+    238	013B  52			 push dx
+    239	013C  57			 push di
+    240	013D  51			 push cx
+    241	013E  53			 push bx
+    242	013F  33 C9			 xor cx, cx
+    243	0141  8B C2			 mov ax, dx
+    244	0143			     WORD_TO_DIGIT_START:
+    245	0143  33 D2			 xor dx, dx
+    246	0145  BB 000A			 mov bx, 10
+    247	0148  F7 F3			 div bx
+    248	014A  52			 push dx
+    249	014B  41			 inc cx
+    250	014C  3D 0000			 cmp ax, 0
+    251	014F  74 02			 je WORD_TO_DIGIT_END
+    252	0151  EB F0			 jmp WORD_TO_DIGIT_START
+    253
+    254	0153			     WORD_TO_DIGIT_END:
+    255	0153  5A			 pop dx
+    256	0154  80 C2 30			 add dl, '0'
+    257	0157  88 15			 mov byte ptr[di], dl
+    258	0159  47			 inc di
+    259	015A  E2 F7			 loop WORD_TO_DIGIT_END
+    260
+    261	015C  B0 0A			 mov al, 0AH
+    262	015E  88 05			 mov byte ptr[di], al
+    263	0160  47			 inc di
+    264	0161  B0 0D			 mov al, 0DH
+    265	0163  88 05			 mov byte ptr[di], al
+    266	0165  47			 inc di
+    267	0166  B0 24			 mov al, '$'
+    268	0168  88 05			 mov byte ptr[di], al
+    269
+    270	016A			     WORD_TO_DIGIT_RET:
+    271	016A  5B			 pop bx
+    272	016B  59			 pop cx
+    273	016C  5F			 pop di
+    274	016D  5A			 pop dx
+    275	016E  C3			 ret
+    276
+    277				     ;al : the char
+    278	016F			     IS_DIGIT:
+    279	016F  3C 39			 cmp al, '9'
+    280	0171  7F 08			 jg DIGIT_FALSE
+    281	0173  3C 30			 cmp al, '0'
+    282	0175  7C 04			 jl DIGIT_FALSE
+    283
+    284	0177			     DIGIT_TRUE:
+    285	0177  B8 0001			 mov ax, 1
+Turbo Assembler	 Version 4.1	    13/01/01 00:58:39	    Page 6
+D:\project2\test2.asm
+
+
+
+    286	017A  C3			 ret
+    287	017B			     DIGIT_FALSE:
+    288	017B  B8 0000			 mov ax, 0
+    289	017E  C3			 ret
+    290
+    291	017F			     PRINT_ENTER:
+    292	017F  52			 push dx
+    293	0180  BA 0052r			 mov dx, offset	enterr
+    294	0183  B4 09			 mov ah, 9
+    295	0185  CD 21			 int 21h
+    296	0187  5A			 pop dx
+    297	0188  C3			 ret
+    298
+    299				     ;si : source string
+    300	0189			     PRINT_STR:
+    301	0189  52			 push dx
+    302	018A  8B D6			 mov dx, si
+    303	018C  B4 09			 mov ah, 9
+    304	018E  CD 21			 int 21h
+    305	0190  5A			 pop dx
+    306	0191  C3			 ret
+    307
+    308
+    309				     ;output a char in ascii, dl is the	param
+    310	0192			     CHAR_TO_ASCII:
+    311	0192  51			 push cx
+    312	0193  8A CA			 mov cl, dl
+    313					 ;mov al, 4
+    314	0195  D0 EA D0 EA D0 EA	D0+	 shr dl, 4
+    315	      EA
+    316	019D  80 FA 0A			 cmp dl, 10
+    317	01A0  7D 0A			 jge .L6
+    318	01A2  80 C2 30			 add dl, '0'
+    319	01A5  B4 02			 mov ah, 2
+    320	01A7  CD 21			 int 21h
+    321	01A9  EB 0B 90			 jmp .L11
+    322	01AC			     .L6:;greater than 0AH
+    323	01AC  80 EA 0A			 sub dl, 10
+    324	01AF  80 C2 41			 add dl, 'A'
+    325	01B2  B4 02			 mov ah, 2
+    326	01B4  CD 21			 int 21h
+    327	01B6			     .L11:
+    328	01B6  8A D1			 mov dl, cl
+    329	01B8  80 E2 0F			 and dl, 0FH
+    330	01BB  80 FA 0A			 cmp dl, 10
+    331	01BE  7D 0A			 jge .L12
+    332	01C0  80 C2 30			 add dl, '0'
+    333	01C3  B4 02			 mov ah, 2
+    334	01C5  CD 21			 int 21h
+    335	01C7  EB 0B 90			 jmp CHAR_TO_ASCII_RET
+    336	01CA			     .L12:;greater than	0AH
+    337	01CA  80 EA 0A			 sub dl, 10
+    338	01CD  80 C2 41			 add dl, 'A'
+    339	01D0  B4 02			 mov ah, 2
+    340	01D2  CD 21			 int 21h
+    341	01D4			     CHAR_TO_ASCII_RET:
+    342					 ; mov dl, ' '
+Turbo Assembler	 Version 4.1	    13/01/01 00:58:39	    Page 7
+D:\project2\test2.asm
+
+
+
+    343					 ; mov ah, 2
+    344					 ; int 21h
+    345	01D4  59			 pop cx
+    346	01D5  C3			 ret
+    347
+    348	01D6			     CODE  ENDS
+    349				     END START
+Turbo Assembler	 Version 4.1	    13/01/01 00:58:39	    Page 8
+Symbol Table
+
+
+
+
+Symbol Name			  Type	 Value
+
+.L10				  Near	 CODE:012B
+.L11				  Near	 CODE:01B6
+.L12				  Near	 CODE:01CA
+.L3				  Near	 CODE:00BA
+.L4				  Near	 CODE:00C7
+.L5				  Near	 CODE:00AB
+.L6				  Near	 CODE:01AC
+.L9				  Near	 CODE:0128
+??DATE				  Text	 "13/01/01"
+??FILENAME			  Text	 "test2	  "
+??TIME				  Text	 "00:58:39"
+??VERSION			  Number 040A
+@CPU				  Text	 0101H
+@CURSEG				  Text	 CODE
+@FILENAME			  Text	 TEST2
+@WORDSIZE			  Text	 2
+BUF				  Byte	 DATA:00B2
+CHAR_TO_ASCII			  Near	 CODE:0192
+CHAR_TO_ASCII_RET		  Near	 CODE:01D4
+DIGIT_FALSE			  Near	 CODE:017B
+DIGIT_TRUE			  Near	 CODE:0177
+ENTERR				  Byte	 DATA:0052
+ERROR				  Byte	 DATA:0055
+ERROR_PROCESS			  Near	 CODE:0103
+EXIT_PROC			  Near	 CODE:0091
+HELP				  Byte	 DATA:0000
+INPUT				  Near	 CODE:000E
+IS_DIGIT			  Near	 CODE:016F
+NEXT_INT			  Near	 CODE:0098
+NEXT_INT_RET			  Near	 CODE:00D8
+NEXT_INT_START_INPUT		  Near	 CODE:009E
+NUM_CNT_END			  Near	 CODE:007C
+NUM_CNT_IGNORE			  Near	 CODE:007A
+NUM_CNT_START			  Near	 CODE:006A
+PRINT_ENTER			  Near	 CODE:017F
+PRINT_STR			  Near	 CODE:0189
+READ_STR			  Near	 CODE:0116
+READ_STR_START			  Near	 CODE:0117
+START				  Near	 CODE:0000
+SUB_D_TO_B			  Near	 CODE:002D
+SUB_NUM_CNT			  Near	 CODE:0057
+TIP1				  Byte	 DATA:0063
+TIP2				  Byte	 DATA:0075
+TIP3				  Byte	 DATA:0087
+TIP4				  Byte	 DATA:0093
+WORD_TO_BINARY			  Near	 CODE:00DB
+WORD_TO_BINARY_START		  Near	 CODE:00E1
+WORD_TO_DIGIT			  Near	 CODE:013B
+WORD_TO_DIGIT_END		  Near	 CODE:0153
+WORD_TO_DIGIT_RET		  Near	 CODE:016A
+WORD_TO_DIGIT_START		  Near	 CODE:0143
+Turbo Assembler	 Version 4.1	    13/01/01 00:58:39	    Page 9
+Symbol Table
+
+
+
+
+Groups & Segments		  Bit Size Align  Combine Class
+
+CODE				  16  01D6 Para	  none
+DATA				  16  0116 Para	  none
+MYSTACK				  16  03E8 Para	  none
+

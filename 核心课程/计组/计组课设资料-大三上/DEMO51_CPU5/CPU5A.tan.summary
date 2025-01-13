@@ -1,0 +1,156 @@
+--------------------------------------------------------------------------------------
+Timing Analyzer Summary
+--------------------------------------------------------------------------------------
+
+Type           : Worst-case tsu
+Slack          : N/A
+Required Time  : None
+Actual Time    : 119.217 ns
+From           : RST
+To             : sld_signaltap:SSCPU|acq_trigger_in_reg[40]
+From Clock     : --
+To Clock       : CLK
+Failed Paths   : 0
+
+Type           : Worst-case tco
+Slack          : N/A
+Required Time  : None
+Actual Time    : 171.906 ns
+From           : lpm_rom0:inst23|altsyncram:altsyncram_component|altsyncram_0hu:auto_generated|altsyncram_47a2:altsyncram1|ram_block3a16~porta_address_reg5
+To             : P1_0
+From Clock     : CLK
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Worst-case tpd
+Slack          : N/A
+Required Time  : None
+Actual Time    : 129.339 ns
+From           : RST
+To             : P1_0
+From Clock     : --
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Worst-case th
+Slack          : N/A
+Required Time  : None
+Actual Time    : 25.768 ns
+From           : IN[3]
+To             : counter:inst2|lpm_counter1:inst|lpm_counter:lpm_counter_component|cntr_8ub:auto_generated|safe_q[3]
+From Clock     : --
+To Clock       : CLK
+Failed Paths   : 0
+
+Type           : Worst-case Minimum tco
+Slack          : N/A
+Required Time  : None
+Actual Time    : 13.596 ns
+From           : S11:inst11|step:inst42|inst1
+To             : DR1[6]
+From Clock     : CLK
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Worst-case Minimum tpd
+Slack          : N/A
+Required Time  : None
+Actual Time    : 2.124 ns
+From           : altera_internal_jtag~TDO
+To             : altera_reserved_tdo
+From Clock     : --
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Clock Setup: 'CLK'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 6.18 MHz ( period = 161.784 ns )
+From           : lpm_rom0:inst23|altsyncram:altsyncram_component|altsyncram_0hu:auto_generated|altsyncram_47a2:altsyncram1|ram_block3a16~porta_address_reg5
+To             : sld_signaltap:SSCPU|acq_trigger_in_reg[40]
+From Clock     : CLK
+To Clock       : CLK
+Failed Paths   : 0
+
+Type           : Clock Setup: 'MT'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 7.69 MHz ( period = 129.988 ns )
+From           : lpm_rom0:inst23|altsyncram:altsyncram_component|altsyncram_0hu:auto_generated|altsyncram_47a2:altsyncram1|ram_block3a16~porta_address_reg5
+To             : lpm_ram_dq0:inst9|altsyncram:altsyncram_component|altsyncram_og81:auto_generated|altsyncram_85e2:altsyncram1|ram_block3a6~porta_address_reg7
+From Clock     : MT
+To Clock       : MT
+Failed Paths   : 0
+
+Type           : Clock Setup: 'NO'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 7.69 MHz ( period = 129.988 ns )
+From           : lpm_rom0:inst23|altsyncram:altsyncram_component|altsyncram_0hu:auto_generated|altsyncram_47a2:altsyncram1|ram_block3a16~porta_address_reg5
+To             : lpm_ram_dq0:inst9|altsyncram:altsyncram_component|altsyncram_og81:auto_generated|altsyncram_85e2:altsyncram1|ram_block3a6~porta_address_reg7
+From Clock     : NO
+To Clock       : NO
+Failed Paths   : 0
+
+Type           : Clock Setup: 'altera_internal_jtag~TCKUTAP'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 79.48 MHz ( period = 12.582 ns )
+From           : sld_signaltap:SSCPU|sld_rom_sr:crc_rom_sr|WORD_SR[0]
+To             : sld_hub:sld_hub_inst|hub_tdo
+From Clock     : altera_internal_jtag~TCKUTAP
+To Clock       : altera_internal_jtag~TCKUTAP
+Failed Paths   : 0
+
+Type           : Clock Setup: 'P1_1'
+Slack          : N/A
+Required Time  : None
+Actual Time    : Restricted to 275.03 MHz ( period = 3.636 ns )
+From           : dsplay:inst3|dsp:48|cnt4:212|lpm_counter:1|cntr_oua:auto_generated|safe_q[1]
+To             : dsplay:inst3|dsp:48|cnt4:212|lpm_counter:1|cntr_oua:auto_generated|safe_q[4]
+From Clock     : P1_1
+To Clock       : P1_1
+Failed Paths   : 0
+
+Type           : Clock Hold: 'CLK'
+Slack          : Not operational: Clock Skew > Data Delay
+Required Time  : None
+Actual Time    : N/A
+From           : counter:inst2|lpm_counter1:inst|lpm_counter:lpm_counter_component|cntr_8ub:auto_generated|safe_q[0]
+To             : counter:inst2|lpm_counter1:inst|lpm_counter:lpm_counter_component|cntr_8ub:auto_generated|safe_q[0]
+From Clock     : CLK
+To Clock       : CLK
+Failed Paths   : 719
+
+Type           : Clock Hold: 'NO'
+Slack          : Not operational: Clock Skew > Data Delay
+Required Time  : None
+Actual Time    : N/A
+From           : S11:inst11|FPGA1C:inst7|FPGA1C:inst1|counter6:inst17|lpm_counter:lpm_counter_component|cntr_dtd:auto_generated|safe_q[5]
+To             : counter:inst2|lpm_counter1:inst|lpm_counter:lpm_counter_component|cntr_8ub:auto_generated|safe_q[4]
+From Clock     : NO
+To Clock       : NO
+Failed Paths   : 204
+
+Type           : Clock Hold: 'MT'
+Slack          : Not operational: Clock Skew > Data Delay
+Required Time  : None
+Actual Time    : N/A
+From           : S11:inst11|FPGA1C:inst7|FPGA1C:inst1|counter6:inst17|lpm_counter:lpm_counter_component|cntr_dtd:auto_generated|safe_q[5]
+To             : counter:inst2|lpm_counter1:inst|lpm_counter:lpm_counter_component|cntr_8ub:auto_generated|safe_q[4]
+From Clock     : MT
+To Clock       : MT
+Failed Paths   : 204
+
+Type           : Total number of failed paths
+Slack          : 
+Required Time  : 
+Actual Time    : 
+From           : 
+To             : 
+From Clock     : 
+To Clock       : 
+Failed Paths   : 1127
+
+--------------------------------------------------------------------------------------
+

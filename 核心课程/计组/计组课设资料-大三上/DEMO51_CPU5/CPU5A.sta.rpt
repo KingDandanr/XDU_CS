@@ -1,0 +1,1229 @@
+TimeQuest Timing Analyzer report for CPU5A
+Wed Oct 09 16:42:35 2024
+Quartus II Version 9.0 Build 132 02/25/2009 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. TimeQuest Timing Analyzer Summary
+  3. Parallel Compilation
+  4. Clocks
+  5. Slow 1200mV 85C Model Fmax Summary
+  6. Slow 1200mV 85C Model Setup Summary
+  7. Slow 1200mV 85C Model Hold Summary
+  8. Slow 1200mV 85C Model Recovery Summary
+  9. Slow 1200mV 85C Model Removal Summary
+ 10. Slow 1200mV 85C Model Minimum Pulse Width
+ 11. Setup Times
+ 12. Hold Times
+ 13. Clock to Output Times
+ 14. Minimum Clock to Output Times
+ 15. Propagation Delay
+ 16. Minimum Propagation Delay
+ 17. Slow 1200mV 0C Model Fmax Summary
+ 18. Slow 1200mV 0C Model Setup Summary
+ 19. Slow 1200mV 0C Model Hold Summary
+ 20. Slow 1200mV 0C Model Recovery Summary
+ 21. Slow 1200mV 0C Model Removal Summary
+ 22. Slow 1200mV 0C Model Minimum Pulse Width
+ 23. Setup Times
+ 24. Hold Times
+ 25. Clock to Output Times
+ 26. Minimum Clock to Output Times
+ 27. Propagation Delay
+ 28. Minimum Propagation Delay
+ 29. Fast 1200mV 0C Model Setup Summary
+ 30. Fast 1200mV 0C Model Hold Summary
+ 31. Fast 1200mV 0C Model Recovery Summary
+ 32. Fast 1200mV 0C Model Removal Summary
+ 33. Fast 1200mV 0C Model Minimum Pulse Width
+ 34. Setup Times
+ 35. Hold Times
+ 36. Clock to Output Times
+ 37. Minimum Clock to Output Times
+ 38. Propagation Delay
+ 39. Minimum Propagation Delay
+ 40. Multicorner Timing Analysis Summary
+ 41. Setup Times
+ 42. Hold Times
+ 43. Clock to Output Times
+ 44. Minimum Clock to Output Times
+ 45. Progagation Delay
+ 46. Minimum Progagation Delay
+ 47. Board Trace Model Assignments
+ 48. Input Transition Times
+ 49. Slow Corner Signal Integrity Metrics
+ 50. Fast Corner Signal Integrity Metrics
+ 51. Setup Transfers
+ 52. Hold Transfers
+ 53. Recovery Transfers
+ 54. Removal Transfers
+ 55. Report TCCS
+ 56. Report RSKM
+ 57. Unconstrained Paths
+ 58. TimeQuest Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++-----------------------------------------------------------------------+
+; TimeQuest Timing Analyzer Summary                                     ;
++--------------------+--------------------------------------------------+
+; Quartus II Version ; Version 9.0 Build 132 02/25/2009 SJ Full Version ;
+; Revision Name      ; CPU5A                                            ;
+; Device Family      ; Cyclone III                                      ;
+; Device Name        ; EP3C40Q240C8                                     ;
+; Timing Models      ; Final                                            ;
+; Delay Model        ; Combined                                         ;
+; Rise/Fall Delays   ; Enabled                                          ;
++--------------------+--------------------------------------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 4           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     1 processor            ; 100.0%      ;
+;     2-4 processors         ; < 0.1%      ;
++----------------------------+-------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clocks                                                                                                                                                                                                    ;
++---------------------+------+---------+-----------+-------+--------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+-------------------------+
+; Clock Name          ; Type ; Period  ; Frequency ; Rise  ; Fall   ; Duty Cycle ; Divide by ; Multiply by ; Phase ; Offset ; Edge List ; Edge Shift ; Inverted ; Master ; Source ; Targets                 ;
++---------------------+------+---------+-----------+-------+--------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+-------------------------+
+; altera_reserved_tck ; Base ; 100.000 ; 10.0 MHz  ; 0.000 ; 50.000 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { altera_reserved_tck } ;
++---------------------+------+---------+-----------+-------+--------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+-------------------------+
+
+
++-----------------------------------------------------------+
+; Slow 1200mV 85C Model Fmax Summary                        ;
++------------+-----------------+---------------------+------+
+; Fmax       ; Restricted Fmax ; Clock Name          ; Note ;
++------------+-----------------+---------------------+------+
+; 144.18 MHz ; 144.18 MHz      ; altera_reserved_tck ;      ;
++------------+-----------------+---------------------+------+
+This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
+
+
++----------------------------------------------+
+; Slow 1200mV 85C Model Setup Summary          ;
++---------------------+--------+---------------+
+; Clock               ; Slack  ; End Point TNS ;
++---------------------+--------+---------------+
+; altera_reserved_tck ; 46.532 ; 0.000         ;
++---------------------+--------+---------------+
+
+
++---------------------------------------------+
+; Slow 1200mV 85C Model Hold Summary          ;
++---------------------+-------+---------------+
+; Clock               ; Slack ; End Point TNS ;
++---------------------+-------+---------------+
+; altera_reserved_tck ; 0.451 ; 0.000         ;
++---------------------+-------+---------------+
+
+
++----------------------------------------------+
+; Slow 1200mV 85C Model Recovery Summary       ;
++---------------------+--------+---------------+
+; Clock               ; Slack  ; End Point TNS ;
++---------------------+--------+---------------+
+; altera_reserved_tck ; 48.604 ; 0.000         ;
++---------------------+--------+---------------+
+
+
++---------------------------------------------+
+; Slow 1200mV 85C Model Removal Summary       ;
++---------------------+-------+---------------+
+; Clock               ; Slack ; End Point TNS ;
++---------------------+-------+---------------+
+; altera_reserved_tck ; 1.127 ; 0.000         ;
++---------------------+-------+---------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow 1200mV 85C Model Minimum Pulse Width                                                                                                                                                                                                                                                                      ;
++--------+--------------+----------------+-------+------------------+---------------------+------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slack  ; Actual Width ; Required Width ; CCPP  ; Type             ; Clock               ; Clock Edge ; Target                                                                                                                                                                                                  ;
++--------+--------------+----------------+-------+------------------+---------------------+------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; 49.490 ; 49.562       ; 0.235          ; 0.163 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; uPC:inst2|uP_ROM:inst|altsyncram:altsyncram_component|altsyncram_hfd1:auto_generated|altsyncram_jte2:altsyncram1|altsyncram:ram_block3a0|altsyncram_guk3:auto_generated|ram_block1a0~portb_address_reg0 ;
+; 49.490 ; 49.562       ; 0.235          ; 0.163 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; uPC:inst2|uP_ROM:inst|altsyncram:altsyncram_component|altsyncram_hfd1:auto_generated|altsyncram_jte2:altsyncram1|altsyncram:ram_block3a0|altsyncram_guk3:auto_generated|ram_block1a0~portb_we_reg       ;
+; 49.490 ; 49.562       ; 0.235          ; 0.163 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; uPC:inst2|uP_ROM:inst|altsyncram:altsyncram_component|altsyncram_hfd1:auto_generated|altsyncram_jte2:altsyncram1|altsyncram:ram_block3a0|altsyncram_guk3:auto_generated|ram_block1a1~portb_address_reg0 ;
+; 49.490 ; 49.562       ; 0.235          ; 0.163 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; uPC:inst2|uP_ROM:inst|altsyncram:altsyncram_component|altsyncram_hfd1:auto_generated|altsyncram_jte2:altsyncram1|altsyncram:ram_block3a0|altsyncram_guk3:auto_generated|ram_block1a1~portb_we_reg       ;
+; 49.491 ; 49.562       ; 0.235          ; 0.164 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; RAM8:inst38|altsyncram:altsyncram_component|altsyncram_fgk1:auto_generated|altsyncram_rna2:altsyncram1|ram_block3a0~portb_address_reg0                                                                  ;
+; 49.491 ; 49.562       ; 0.235          ; 0.164 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; RAM8:inst38|altsyncram:altsyncram_component|altsyncram_fgk1:auto_generated|altsyncram_rna2:altsyncram1|ram_block3a0~portb_we_reg                                                                        ;
+; 49.493 ; 49.565       ; 0.235          ; 0.163 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; uPC:inst2|uP_ROM:inst|altsyncram:altsyncram_component|altsyncram_hfd1:auto_generated|altsyncram_jte2:altsyncram1|altsyncram:ram_block3a0|altsyncram_guk3:auto_generated|ram_block1a0~portb_datain_reg0  ;
+; 49.493 ; 49.565       ; 0.235          ; 0.163 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; uPC:inst2|uP_ROM:inst|altsyncram:altsyncram_component|altsyncram_hfd1:auto_generated|altsyncram_jte2:altsyncram1|altsyncram:ram_block3a0|altsyncram_guk3:auto_generated|ram_block1a1~portb_datain_reg0  ;
+; 49.494 ; 49.565       ; 0.235          ; 0.164 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; RAM8:inst38|altsyncram:altsyncram_component|altsyncram_fgk1:auto_generated|altsyncram_rna2:altsyncram1|ram_block3a0~portb_datain_reg0                                                                   ;
+; 49.555 ; 49.607       ; 0.220          ; 0.168 ; High Pulse Width ; altera_reserved_tck ; Fall       ; sld_hub:sld_hub_inst|tdo                                                                                                                                                                                ;
+; 49.614 ; 49.634       ; 0.188          ; 0.168 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; RAM8:inst38|altsyncram:altsyncram_component|altsyncram_fgk1:auto_generated|sld_mod_ram_rom:mgl_prim2|ir_loaded_address_reg[0]                                                                           ;
+; 49.614 ; 49.634       ; 0.188          ; 0.168 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; RAM8:inst38|altsyncram:altsyncram_component|altsyncram_fgk1:auto_generated|sld_mod_ram_rom:mgl_prim2|ir_loaded_address_reg[1]                                                                           ;
+; 49.614 ; 49.634       ; 0.188          ; 0.168 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; RAM8:inst38|altsyncram:altsyncram_component|altsyncram_fgk1:auto_generated|sld_mod_ram_rom:mgl_prim2|ir_loaded_address_reg[2]                                                                           ;
+; 49.614 ; 49.634       ; 0.188          ; 0.168 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; RAM8:inst38|altsyncram:altsyncram_component|altsyncram_fgk1:auto_generated|sld_mod_ram_rom:mgl_prim2|ir_loaded_address_reg[3]                                                                           ;
+; 49.614 ; 49.634       ; 0.188          ; 0.168 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; sld_hub:sld_hub_inst|jtag_ir_reg[6]                                                                                                                                                                     ;
+; 49.614 ; 49.634       ; 0.188          ; 0.168 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; sld_hub:sld_hub_inst|jtag_ir_reg[7]                                                                                                                                                                     ;
+; 49.614 ; 49.634       ; 0.188          ; 0.168 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; sld_hub:sld_hub_inst|jtag_ir_reg[8]                                                                                                                                                                     ;
+; 49.614 ; 49.634       ; 0.188          ; 0.168 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; sld_hub:sld_hub_inst|jtag_ir_reg[9]                                                                                                                                                                     ;
+; 49.614 ; 49.634       ; 0.188          ; 0.168 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; sld_hub:sld_hub_inst|sld_shadow_jsm:shadow_jsm|state[0]                                                                                                                                                 ;
+; 49.614 ; 49.634       ; 0.188          ; 0.168 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; sld_hub:sld_hub_inst|sld_shadow_jsm:shadow_jsm|tms_cnt[0]                                                                                                                                               ;
+; 49.614 ; 49.634       ; 0.188          ; 0.168 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; sld_hub:sld_hub_inst|sld_shadow_jsm:shadow_jsm|tms_cnt[1]                                                                                                                                               ;
+; 49.614 ; 49.634       ; 0.188          ; 0.168 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; sld_hub:sld_hub_inst|sld_shadow_jsm:shadow_jsm|tms_cnt[2]                                                                                                                                               ;
+; 49.614 ; 49.634       ; 0.188          ; 0.168 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; uPC:inst2|uP_ROM:inst|altsyncram:altsyncram_component|altsyncram_hfd1:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_data_shift_cntr_reg[0]                                                           ;
+; 49.614 ; 49.634       ; 0.188          ; 0.168 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; uPC:inst2|uP_ROM:inst|altsyncram:altsyncram_component|altsyncram_hfd1:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_data_shift_cntr_reg[1]                                                           ;
+; 49.614 ; 49.634       ; 0.188          ; 0.168 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; uPC:inst2|uP_ROM:inst|altsyncram:altsyncram_component|altsyncram_hfd1:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_data_shift_cntr_reg[2]                                                           ;
+; 49.614 ; 49.634       ; 0.188          ; 0.168 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; uPC:inst2|uP_ROM:inst|altsyncram:altsyncram_component|altsyncram_hfd1:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_data_shift_cntr_reg[3]                                                           ;
+; 49.614 ; 49.634       ; 0.188          ; 0.168 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; uPC:inst2|uP_ROM:inst|altsyncram:altsyncram_component|altsyncram_hfd1:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_data_shift_cntr_reg[4]                                                           ;
+; 49.615 ; 49.634       ; 0.188          ; 0.169 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; RAM8:inst38|altsyncram:altsyncram_component|altsyncram_fgk1:auto_generated|sld_mod_ram_rom:mgl_prim2|bypass_reg_out                                                                                     ;
+; 49.615 ; 49.634       ; 0.188          ; 0.169 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; RAM8:inst38|altsyncram:altsyncram_component|altsyncram_fgk1:auto_generated|sld_mod_ram_rom:mgl_prim2|is_in_use_reg                                                                                      ;
+; 49.615 ; 49.634       ; 0.188          ; 0.169 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; RAM8:inst38|altsyncram:altsyncram_component|altsyncram_fgk1:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_addr_reg[0]                                                                                ;
+; 49.615 ; 49.634       ; 0.188          ; 0.169 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; RAM8:inst38|altsyncram:altsyncram_component|altsyncram_fgk1:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_addr_reg[1]                                                                                ;
+; 49.615 ; 49.634       ; 0.188          ; 0.169 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; RAM8:inst38|altsyncram:altsyncram_component|altsyncram_fgk1:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_addr_reg[2]                                                                                ;
+; 49.615 ; 49.634       ; 0.188          ; 0.169 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; RAM8:inst38|altsyncram:altsyncram_component|altsyncram_fgk1:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_addr_reg[3]                                                                                ;
+; 49.615 ; 49.634       ; 0.188          ; 0.169 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; RAM8:inst38|altsyncram:altsyncram_component|altsyncram_fgk1:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_addr_reg[4]                                                                                ;
+; 49.615 ; 49.634       ; 0.188          ; 0.169 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; RAM8:inst38|altsyncram:altsyncram_component|altsyncram_fgk1:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_addr_reg[5]                                                                                ;
+; 49.615 ; 49.634       ; 0.188          ; 0.169 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; RAM8:inst38|altsyncram:altsyncram_component|altsyncram_fgk1:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_addr_reg[6]                                                                                ;
+; 49.615 ; 49.634       ; 0.188          ; 0.169 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; RAM8:inst38|altsyncram:altsyncram_component|altsyncram_fgk1:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_addr_reg[7]                                                                                ;
+; 49.615 ; 49.635       ; 0.188          ; 0.168 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; RAM8:inst38|altsyncram:altsyncram_component|altsyncram_fgk1:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_data_reg[0]                                                                                ;
+; 49.615 ; 49.635       ; 0.188          ; 0.168 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; RAM8:inst38|altsyncram:altsyncram_component|altsyncram_fgk1:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_data_reg[1]                                                                                ;
+; 49.615 ; 49.635       ; 0.188          ; 0.168 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; RAM8:inst38|altsyncram:altsyncram_component|altsyncram_fgk1:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_data_reg[2]                                                                                ;
+; 49.615 ; 49.634       ; 0.188          ; 0.169 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; RAM8:inst38|altsyncram:altsyncram_component|altsyncram_fgk1:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_data_reg[3]                                                                                ;
+; 49.615 ; 49.634       ; 0.188          ; 0.169 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; RAM8:inst38|altsyncram:altsyncram_component|altsyncram_fgk1:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_data_reg[4]                                                                                ;
+; 49.615 ; 49.634       ; 0.188          ; 0.169 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; RAM8:inst38|altsyncram:altsyncram_component|altsyncram_fgk1:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_data_reg[5]                                                                                ;
+; 49.615 ; 49.634       ; 0.188          ; 0.169 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; RAM8:inst38|altsyncram:altsyncram_component|altsyncram_fgk1:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_data_reg[6]                                                                                ;
+; 49.615 ; 49.634       ; 0.188          ; 0.169 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; RAM8:inst38|altsyncram:altsyncram_component|altsyncram_fgk1:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_data_reg[7]                                                                                ;
+; 49.615 ; 49.635       ; 0.188          ; 0.168 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; RAM8:inst38|altsyncram:altsyncram_component|altsyncram_fgk1:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_data_shift_cntr_reg[0]                                                                     ;
+; 49.615 ; 49.635       ; 0.188          ; 0.168 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; RAM8:inst38|altsyncram:altsyncram_component|altsyncram_fgk1:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_data_shift_cntr_reg[1]                                                                     ;
+; 49.615 ; 49.635       ; 0.188          ; 0.168 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; RAM8:inst38|altsyncram:altsyncram_component|altsyncram_fgk1:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_data_shift_cntr_reg[2]                                                                     ;
+; 49.615 ; 49.635       ; 0.188          ; 0.168 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; RAM8:inst38|altsyncram:altsyncram_component|altsyncram_fgk1:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_data_shift_cntr_reg[3]                                                                     ;
+; 49.615 ; 49.634       ; 0.188          ; 0.169 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; RAM8:inst38|altsyncram:altsyncram_component|altsyncram_fgk1:auto_generated|sld_mod_ram_rom:mgl_prim2|sld_rom_sr:\ram_rom_logic_gen:name_gen:info_rom_sr|WORD_SR[0]                                      ;
+; 49.615 ; 49.634       ; 0.188          ; 0.169 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; RAM8:inst38|altsyncram:altsyncram_component|altsyncram_fgk1:auto_generated|sld_mod_ram_rom:mgl_prim2|sld_rom_sr:\ram_rom_logic_gen:name_gen:info_rom_sr|WORD_SR[1]                                      ;
+; 49.615 ; 49.634       ; 0.188          ; 0.169 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; RAM8:inst38|altsyncram:altsyncram_component|altsyncram_fgk1:auto_generated|sld_mod_ram_rom:mgl_prim2|sld_rom_sr:\ram_rom_logic_gen:name_gen:info_rom_sr|WORD_SR[2]                                      ;
+; 49.615 ; 49.634       ; 0.188          ; 0.169 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; RAM8:inst38|altsyncram:altsyncram_component|altsyncram_fgk1:auto_generated|sld_mod_ram_rom:mgl_prim2|sld_rom_sr:\ram_rom_logic_gen:name_gen:info_rom_sr|WORD_SR[3]                                      ;
+; 49.615 ; 49.634       ; 0.188          ; 0.169 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; RAM8:inst38|altsyncram:altsyncram_component|altsyncram_fgk1:auto_generated|sld_mod_ram_rom:mgl_prim2|sld_rom_sr:\ram_rom_logic_gen:name_gen:info_rom_sr|word_counter[0]                                 ;
+; 49.615 ; 49.634       ; 0.188          ; 0.169 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; RAM8:inst38|altsyncram:altsyncram_component|altsyncram_fgk1:auto_generated|sld_mod_ram_rom:mgl_prim2|sld_rom_sr:\ram_rom_logic_gen:name_gen:info_rom_sr|word_counter[1]                                 ;
+; 49.615 ; 49.634       ; 0.188          ; 0.169 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; RAM8:inst38|altsyncram:altsyncram_component|altsyncram_fgk1:auto_generated|sld_mod_ram_rom:mgl_prim2|sld_rom_sr:\ram_rom_logic_gen:name_gen:info_rom_sr|word_counter[2]                                 ;
+; 49.615 ; 49.634       ; 0.188          ; 0.169 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; RAM8:inst38|altsyncram:altsyncram_component|altsyncram_fgk1:auto_generated|sld_mod_ram_rom:mgl_prim2|sld_rom_sr:\ram_rom_logic_gen:name_gen:info_rom_sr|word_counter[3]                                 ;
+; 49.615 ; 49.634       ; 0.188          ; 0.169 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; RAM8:inst38|altsyncram:altsyncram_component|altsyncram_fgk1:auto_generated|sld_mod_ram_rom:mgl_prim2|sld_rom_sr:\ram_rom_logic_gen:name_gen:info_rom_sr|word_counter[4]                                 ;
+; 49.615 ; 49.635       ; 0.188          ; 0.168 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; sld_hub:sld_hub_inst|clr_reg                                                                                                                                                                            ;
+; 49.615 ; 49.634       ; 0.188          ; 0.169 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; sld_hub:sld_hub_inst|hub_mode_reg[0]                                                                                                                                                                    ;
+; 49.615 ; 49.635       ; 0.188          ; 0.168 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; sld_hub:sld_hub_inst|hub_mode_reg[1]                                                                                                                                                                    ;
+; 49.615 ; 49.634       ; 0.188          ; 0.169 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; sld_hub:sld_hub_inst|hub_mode_reg[2]                                                                                                                                                                    ;
+; 49.615 ; 49.635       ; 0.188          ; 0.168 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; sld_hub:sld_hub_inst|irf_reg[1][0]                                                                                                                                                                      ;
+; 49.615 ; 49.635       ; 0.188          ; 0.168 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; sld_hub:sld_hub_inst|irf_reg[1][1]                                                                                                                                                                      ;
+; 49.615 ; 49.635       ; 0.188          ; 0.168 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; sld_hub:sld_hub_inst|irf_reg[1][2]                                                                                                                                                                      ;
+; 49.615 ; 49.635       ; 0.188          ; 0.168 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; sld_hub:sld_hub_inst|irf_reg[1][3]                                                                                                                                                                      ;
+; 49.615 ; 49.635       ; 0.188          ; 0.168 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; sld_hub:sld_hub_inst|irf_reg[1][4]                                                                                                                                                                      ;
+; 49.615 ; 49.634       ; 0.188          ; 0.169 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; sld_hub:sld_hub_inst|irf_reg[2][0]                                                                                                                                                                      ;
+; 49.615 ; 49.634       ; 0.188          ; 0.169 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; sld_hub:sld_hub_inst|irf_reg[2][1]                                                                                                                                                                      ;
+; 49.615 ; 49.634       ; 0.188          ; 0.169 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; sld_hub:sld_hub_inst|irf_reg[2][2]                                                                                                                                                                      ;
+; 49.615 ; 49.634       ; 0.188          ; 0.169 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; sld_hub:sld_hub_inst|irf_reg[2][3]                                                                                                                                                                      ;
+; 49.615 ; 49.634       ; 0.188          ; 0.169 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; sld_hub:sld_hub_inst|irf_reg[2][4]                                                                                                                                                                      ;
+; 49.615 ; 49.634       ; 0.188          ; 0.169 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; sld_hub:sld_hub_inst|irsr_reg[0]                                                                                                                                                                        ;
+; 49.615 ; 49.634       ; 0.188          ; 0.169 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; sld_hub:sld_hub_inst|irsr_reg[1]                                                                                                                                                                        ;
+; 49.615 ; 49.634       ; 0.188          ; 0.169 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; sld_hub:sld_hub_inst|irsr_reg[2]                                                                                                                                                                        ;
+; 49.615 ; 49.634       ; 0.188          ; 0.169 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; sld_hub:sld_hub_inst|irsr_reg[3]                                                                                                                                                                        ;
+; 49.615 ; 49.634       ; 0.188          ; 0.169 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; sld_hub:sld_hub_inst|irsr_reg[4]                                                                                                                                                                        ;
+; 49.615 ; 49.634       ; 0.188          ; 0.169 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; sld_hub:sld_hub_inst|irsr_reg[5]                                                                                                                                                                        ;
+; 49.615 ; 49.634       ; 0.188          ; 0.169 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; sld_hub:sld_hub_inst|irsr_reg[6]                                                                                                                                                                        ;
+; 49.615 ; 49.635       ; 0.188          ; 0.168 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; sld_hub:sld_hub_inst|jtag_ir_reg[0]                                                                                                                                                                     ;
+; 49.615 ; 49.635       ; 0.188          ; 0.168 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; sld_hub:sld_hub_inst|jtag_ir_reg[1]                                                                                                                                                                     ;
+; 49.615 ; 49.635       ; 0.188          ; 0.168 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; sld_hub:sld_hub_inst|jtag_ir_reg[2]                                                                                                                                                                     ;
+; 49.615 ; 49.635       ; 0.188          ; 0.168 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; sld_hub:sld_hub_inst|jtag_ir_reg[3]                                                                                                                                                                     ;
+; 49.615 ; 49.635       ; 0.188          ; 0.168 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; sld_hub:sld_hub_inst|jtag_ir_reg[4]                                                                                                                                                                     ;
+; 49.615 ; 49.635       ; 0.188          ; 0.168 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; sld_hub:sld_hub_inst|jtag_ir_reg[5]                                                                                                                                                                     ;
+; 49.615 ; 49.635       ; 0.188          ; 0.168 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; sld_hub:sld_hub_inst|node_ena[1]~reg0                                                                                                                                                                   ;
+; 49.615 ; 49.635       ; 0.188          ; 0.168 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; sld_hub:sld_hub_inst|node_ena[2]~reg0                                                                                                                                                                   ;
+; 49.615 ; 49.634       ; 0.188          ; 0.169 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; sld_hub:sld_hub_inst|reset_ena_reg                                                                                                                                                                      ;
+; 49.615 ; 49.635       ; 0.188          ; 0.168 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; sld_hub:sld_hub_inst|shadow_irf_reg[1][0]                                                                                                                                                               ;
+; 49.615 ; 49.635       ; 0.188          ; 0.168 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; sld_hub:sld_hub_inst|shadow_irf_reg[1][1]                                                                                                                                                               ;
+; 49.615 ; 49.635       ; 0.188          ; 0.168 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; sld_hub:sld_hub_inst|shadow_irf_reg[1][2]                                                                                                                                                               ;
+; 49.615 ; 49.635       ; 0.188          ; 0.168 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; sld_hub:sld_hub_inst|shadow_irf_reg[1][3]                                                                                                                                                               ;
+; 49.615 ; 49.635       ; 0.188          ; 0.168 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; sld_hub:sld_hub_inst|shadow_irf_reg[1][4]                                                                                                                                                               ;
+; 49.615 ; 49.635       ; 0.188          ; 0.168 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; sld_hub:sld_hub_inst|shadow_irf_reg[2][0]                                                                                                                                                               ;
+; 49.615 ; 49.635       ; 0.188          ; 0.168 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; sld_hub:sld_hub_inst|shadow_irf_reg[2][1]                                                                                                                                                               ;
+; 49.615 ; 49.635       ; 0.188          ; 0.168 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; sld_hub:sld_hub_inst|shadow_irf_reg[2][2]                                                                                                                                                               ;
+; 49.615 ; 49.635       ; 0.188          ; 0.168 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; sld_hub:sld_hub_inst|shadow_irf_reg[2][3]                                                                                                                                                               ;
+; 49.615 ; 49.635       ; 0.188          ; 0.168 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; sld_hub:sld_hub_inst|shadow_irf_reg[2][4]                                                                                                                                                               ;
+; 49.615 ; 49.634       ; 0.188          ; 0.169 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; sld_hub:sld_hub_inst|sld_rom_sr:hub_info_reg|WORD_SR[0]                                                                                                                                                 ;
+; 49.615 ; 49.634       ; 0.188          ; 0.169 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; sld_hub:sld_hub_inst|sld_rom_sr:hub_info_reg|WORD_SR[1]                                                                                                                                                 ;
++--------+--------------+----------------+-------+------------------+---------------------+------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------+
+; Setup Times                                                                                  ;
++---------------------+---------------------+-------+-------+------------+---------------------+
+; Data Port           ; Clock Port          ; Rise  ; Fall  ; Clock Edge ; Clock Reference     ;
++---------------------+---------------------+-------+-------+------------+---------------------+
+; altera_reserved_tdi ; altera_reserved_tck ; 3.383 ; 3.720 ; Rise       ; altera_reserved_tck ;
+; altera_reserved_tms ; altera_reserved_tck ; 8.606 ; 8.793 ; Rise       ; altera_reserved_tck ;
++---------------------+---------------------+-------+-------+------------+---------------------+
+
+
++------------------------------------------------------------------------------------------------+
+; Hold Times                                                                                     ;
++---------------------+---------------------+--------+--------+------------+---------------------+
+; Data Port           ; Clock Port          ; Rise   ; Fall   ; Clock Edge ; Clock Reference     ;
++---------------------+---------------------+--------+--------+------------+---------------------+
+; altera_reserved_tdi ; altera_reserved_tck ; -0.144 ; -0.411 ; Rise       ; altera_reserved_tck ;
+; altera_reserved_tms ; altera_reserved_tck ; -2.350 ; -2.568 ; Rise       ; altera_reserved_tck ;
++---------------------+---------------------+--------+--------+------------+---------------------+
+
+
++------------------------------------------------------------------------------------------------+
+; Clock to Output Times                                                                          ;
++---------------------+---------------------+--------+--------+------------+---------------------+
+; Data Port           ; Clock Port          ; Rise   ; Fall   ; Clock Edge ; Clock Reference     ;
++---------------------+---------------------+--------+--------+------------+---------------------+
+; altera_reserved_tdo ; altera_reserved_tck ; 15.524 ; 16.691 ; Fall       ; altera_reserved_tck ;
++---------------------+---------------------+--------+--------+------------+---------------------+
+
+
++------------------------------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                                                  ;
++---------------------+---------------------+--------+--------+------------+---------------------+
+; Data Port           ; Clock Port          ; Rise   ; Fall   ; Clock Edge ; Clock Reference     ;
++---------------------+---------------------+--------+--------+------------+---------------------+
+; altera_reserved_tdo ; altera_reserved_tck ; 13.175 ; 14.351 ; Fall       ; altera_reserved_tck ;
++---------------------+---------------------+--------+--------+------------+---------------------+
+
+
++--------------------------------------------------------------+
+; Propagation Delay                                            ;
++------------+-------------+--------+--------+--------+--------+
+; Input Port ; Output Port ; RR     ; RF     ; FR     ; FF     ;
++------------+-------------+--------+--------+--------+--------+
+; IN[0]      ; P10_1       ; 23.256 ; 22.845 ; 22.912 ; 22.501 ;
+; IN[1]      ; P10_1       ; 19.342 ; 18.962 ; 19.355 ; 18.968 ;
+; IN[2]      ; P10_1       ; 21.855 ; 21.444 ; 21.774 ; 21.363 ;
+; IN[3]      ; P10_1       ; 19.153 ; 18.742 ; 19.138 ; 18.771 ;
+; IN[4]      ; P10_1       ; 19.245 ; 18.815 ; 19.157 ; 18.771 ;
+; IN[5]      ; P10_1       ; 19.591 ; 19.178 ; 19.355 ; 19.007 ;
+; IN[6]      ; P10_1       ; 20.356 ; 19.926 ; 20.237 ; 19.851 ;
+; IN[7]      ; P10_1       ; 19.602 ;        ;        ; 19.091 ;
+; RST        ; P10_1       ; 21.095 ; 20.684 ; 21.734 ; 21.323 ;
+; SWA        ; P10_1       ; 22.109 ; 21.698 ; 21.998 ; 21.587 ;
+; SWB        ; P10_1       ; 21.359 ; 20.979 ; 21.367 ; 20.980 ;
++------------+-------------+--------+--------+--------+--------+
+
+
++--------------------------------------------------------------+
+; Minimum Propagation Delay                                    ;
++------------+-------------+--------+--------+--------+--------+
+; Input Port ; Output Port ; RR     ; RF     ; FR     ; FF     ;
++------------+-------------+--------+--------+--------+--------+
+; IN[0]      ; P10_1       ; 17.286 ; 16.930 ; 17.286 ; 16.930 ;
+; IN[1]      ; P10_1       ; 16.640 ; 16.256 ; 16.657 ; 16.281 ;
+; IN[2]      ; P10_1       ; 18.365 ; 18.009 ; 18.264 ; 17.908 ;
+; IN[3]      ; P10_1       ; 17.209 ; 16.815 ; 17.251 ; 16.895 ;
+; IN[4]      ; P10_1       ; 15.632 ; 15.218 ; 15.796 ; 15.420 ;
+; IN[5]      ; P10_1       ; 17.412 ; 17.077 ; 17.502 ; 17.082 ;
+; IN[6]      ; P10_1       ; 15.939 ; 15.525 ; 15.971 ; 15.595 ;
+; IN[7]      ; P10_1       ; 15.325 ;        ;        ; 15.135 ;
+; RST        ; P10_1       ; 16.544 ; 16.168 ; 17.030 ; 16.616 ;
+; SWA        ; P10_1       ; 20.974 ; 20.618 ; 20.831 ; 20.475 ;
+; SWB        ; P10_1       ; 20.502 ; 20.118 ; 20.481 ; 20.105 ;
++------------+-------------+--------+--------+--------+--------+
+
+
++-----------------------------------------------------------+
+; Slow 1200mV 0C Model Fmax Summary                         ;
++------------+-----------------+---------------------+------+
+; Fmax       ; Restricted Fmax ; Clock Name          ; Note ;
++------------+-----------------+---------------------+------+
+; 159.59 MHz ; 159.59 MHz      ; altera_reserved_tck ;      ;
++------------+-----------------+---------------------+------+
+This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
+
+
++----------------------------------------------+
+; Slow 1200mV 0C Model Setup Summary           ;
++---------------------+--------+---------------+
+; Clock               ; Slack  ; End Point TNS ;
++---------------------+--------+---------------+
+; altera_reserved_tck ; 46.867 ; 0.000         ;
++---------------------+--------+---------------+
+
+
++---------------------------------------------+
+; Slow 1200mV 0C Model Hold Summary           ;
++---------------------+-------+---------------+
+; Clock               ; Slack ; End Point TNS ;
++---------------------+-------+---------------+
+; altera_reserved_tck ; 0.400 ; 0.000         ;
++---------------------+-------+---------------+
+
+
++----------------------------------------------+
+; Slow 1200mV 0C Model Recovery Summary        ;
++---------------------+--------+---------------+
+; Clock               ; Slack  ; End Point TNS ;
++---------------------+--------+---------------+
+; altera_reserved_tck ; 48.885 ; 0.000         ;
++---------------------+--------+---------------+
+
+
++---------------------------------------------+
+; Slow 1200mV 0C Model Removal Summary        ;
++---------------------+-------+---------------+
+; Clock               ; Slack ; End Point TNS ;
++---------------------+-------+---------------+
+; altera_reserved_tck ; 1.028 ; 0.000         ;
++---------------------+-------+---------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow 1200mV 0C Model Minimum Pulse Width                                                                                                                                                                                                                                                                       ;
++--------+--------------+----------------+-------+------------------+---------------------+------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slack  ; Actual Width ; Required Width ; CCPP  ; Type             ; Clock               ; Clock Edge ; Target                                                                                                                                                                                                  ;
++--------+--------------+----------------+-------+------------------+---------------------+------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; 49.346 ; 49.434       ; 0.230          ; 0.142 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; uPC:inst2|uP_ROM:inst|altsyncram:altsyncram_component|altsyncram_hfd1:auto_generated|altsyncram_jte2:altsyncram1|altsyncram:ram_block3a0|altsyncram_guk3:auto_generated|ram_block1a0~portb_address_reg0 ;
+; 49.346 ; 49.434       ; 0.230          ; 0.142 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; uPC:inst2|uP_ROM:inst|altsyncram:altsyncram_component|altsyncram_hfd1:auto_generated|altsyncram_jte2:altsyncram1|altsyncram:ram_block3a0|altsyncram_guk3:auto_generated|ram_block1a0~portb_we_reg       ;
+; 49.347 ; 49.434       ; 0.230          ; 0.143 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; RAM8:inst38|altsyncram:altsyncram_component|altsyncram_fgk1:auto_generated|altsyncram_rna2:altsyncram1|ram_block3a0~portb_address_reg0                                                                  ;
+; 49.347 ; 49.434       ; 0.230          ; 0.143 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; RAM8:inst38|altsyncram:altsyncram_component|altsyncram_fgk1:auto_generated|altsyncram_rna2:altsyncram1|ram_block3a0~portb_we_reg                                                                        ;
+; 49.348 ; 49.436       ; 0.230          ; 0.142 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; uPC:inst2|uP_ROM:inst|altsyncram:altsyncram_component|altsyncram_hfd1:auto_generated|altsyncram_jte2:altsyncram1|altsyncram:ram_block3a0|altsyncram_guk3:auto_generated|ram_block1a1~portb_address_reg0 ;
+; 49.348 ; 49.436       ; 0.230          ; 0.142 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; uPC:inst2|uP_ROM:inst|altsyncram:altsyncram_component|altsyncram_hfd1:auto_generated|altsyncram_jte2:altsyncram1|altsyncram:ram_block3a0|altsyncram_guk3:auto_generated|ram_block1a1~portb_we_reg       ;
+; 49.349 ; 49.437       ; 0.230          ; 0.142 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; uPC:inst2|uP_ROM:inst|altsyncram:altsyncram_component|altsyncram_hfd1:auto_generated|altsyncram_jte2:altsyncram1|altsyncram:ram_block3a0|altsyncram_guk3:auto_generated|ram_block1a0~portb_datain_reg0  ;
+; 49.350 ; 49.437       ; 0.230          ; 0.143 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; RAM8:inst38|altsyncram:altsyncram_component|altsyncram_fgk1:auto_generated|altsyncram_rna2:altsyncram1|ram_block3a0~portb_datain_reg0                                                                   ;
+; 49.351 ; 49.439       ; 0.230          ; 0.142 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; uPC:inst2|uP_ROM:inst|altsyncram:altsyncram_component|altsyncram_hfd1:auto_generated|altsyncram_jte2:altsyncram1|altsyncram:ram_block3a0|altsyncram_guk3:auto_generated|ram_block1a1~portb_datain_reg0  ;
+; 49.437 ; 49.501       ; 0.216          ; 0.152 ; High Pulse Width ; altera_reserved_tck ; Fall       ; sld_hub:sld_hub_inst|tdo                                                                                                                                                                                ;
+; 49.483 ; 49.517       ; 0.184          ; 0.150 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; RAM8:inst38|altsyncram:altsyncram_component|altsyncram_fgk1:auto_generated|sld_mod_ram_rom:mgl_prim2|bypass_reg_out                                                                                     ;
+; 49.483 ; 49.517       ; 0.184          ; 0.150 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; RAM8:inst38|altsyncram:altsyncram_component|altsyncram_fgk1:auto_generated|sld_mod_ram_rom:mgl_prim2|ir_loaded_address_reg[0]                                                                           ;
+; 49.483 ; 49.517       ; 0.184          ; 0.150 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; RAM8:inst38|altsyncram:altsyncram_component|altsyncram_fgk1:auto_generated|sld_mod_ram_rom:mgl_prim2|ir_loaded_address_reg[1]                                                                           ;
+; 49.483 ; 49.517       ; 0.184          ; 0.150 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; RAM8:inst38|altsyncram:altsyncram_component|altsyncram_fgk1:auto_generated|sld_mod_ram_rom:mgl_prim2|ir_loaded_address_reg[2]                                                                           ;
+; 49.483 ; 49.517       ; 0.184          ; 0.150 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; RAM8:inst38|altsyncram:altsyncram_component|altsyncram_fgk1:auto_generated|sld_mod_ram_rom:mgl_prim2|ir_loaded_address_reg[3]                                                                           ;
+; 49.483 ; 49.517       ; 0.184          ; 0.150 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; RAM8:inst38|altsyncram:altsyncram_component|altsyncram_fgk1:auto_generated|sld_mod_ram_rom:mgl_prim2|is_in_use_reg                                                                                      ;
+; 49.483 ; 49.517       ; 0.184          ; 0.150 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; RAM8:inst38|altsyncram:altsyncram_component|altsyncram_fgk1:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_addr_reg[0]                                                                                ;
+; 49.483 ; 49.517       ; 0.184          ; 0.150 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; RAM8:inst38|altsyncram:altsyncram_component|altsyncram_fgk1:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_addr_reg[1]                                                                                ;
+; 49.483 ; 49.517       ; 0.184          ; 0.150 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; RAM8:inst38|altsyncram:altsyncram_component|altsyncram_fgk1:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_addr_reg[2]                                                                                ;
+; 49.483 ; 49.517       ; 0.184          ; 0.150 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; RAM8:inst38|altsyncram:altsyncram_component|altsyncram_fgk1:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_addr_reg[3]                                                                                ;
+; 49.483 ; 49.517       ; 0.184          ; 0.150 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; RAM8:inst38|altsyncram:altsyncram_component|altsyncram_fgk1:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_addr_reg[4]                                                                                ;
+; 49.483 ; 49.517       ; 0.184          ; 0.150 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; RAM8:inst38|altsyncram:altsyncram_component|altsyncram_fgk1:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_addr_reg[5]                                                                                ;
+; 49.483 ; 49.517       ; 0.184          ; 0.150 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; RAM8:inst38|altsyncram:altsyncram_component|altsyncram_fgk1:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_addr_reg[6]                                                                                ;
+; 49.483 ; 49.517       ; 0.184          ; 0.150 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; RAM8:inst38|altsyncram:altsyncram_component|altsyncram_fgk1:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_addr_reg[7]                                                                                ;
+; 49.483 ; 49.516       ; 0.184          ; 0.151 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; RAM8:inst38|altsyncram:altsyncram_component|altsyncram_fgk1:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_data_reg[0]                                                                                ;
+; 49.483 ; 49.516       ; 0.184          ; 0.151 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; RAM8:inst38|altsyncram:altsyncram_component|altsyncram_fgk1:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_data_reg[1]                                                                                ;
+; 49.483 ; 49.516       ; 0.184          ; 0.151 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; RAM8:inst38|altsyncram:altsyncram_component|altsyncram_fgk1:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_data_reg[2]                                                                                ;
+; 49.483 ; 49.517       ; 0.184          ; 0.150 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; RAM8:inst38|altsyncram:altsyncram_component|altsyncram_fgk1:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_data_reg[3]                                                                                ;
+; 49.483 ; 49.517       ; 0.184          ; 0.150 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; RAM8:inst38|altsyncram:altsyncram_component|altsyncram_fgk1:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_data_reg[4]                                                                                ;
+; 49.483 ; 49.517       ; 0.184          ; 0.150 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; RAM8:inst38|altsyncram:altsyncram_component|altsyncram_fgk1:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_data_reg[5]                                                                                ;
+; 49.483 ; 49.517       ; 0.184          ; 0.150 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; RAM8:inst38|altsyncram:altsyncram_component|altsyncram_fgk1:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_data_reg[6]                                                                                ;
+; 49.483 ; 49.517       ; 0.184          ; 0.150 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; RAM8:inst38|altsyncram:altsyncram_component|altsyncram_fgk1:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_data_reg[7]                                                                                ;
+; 49.483 ; 49.516       ; 0.184          ; 0.151 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; RAM8:inst38|altsyncram:altsyncram_component|altsyncram_fgk1:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_data_shift_cntr_reg[0]                                                                     ;
+; 49.483 ; 49.516       ; 0.184          ; 0.151 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; RAM8:inst38|altsyncram:altsyncram_component|altsyncram_fgk1:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_data_shift_cntr_reg[1]                                                                     ;
+; 49.483 ; 49.516       ; 0.184          ; 0.151 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; RAM8:inst38|altsyncram:altsyncram_component|altsyncram_fgk1:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_data_shift_cntr_reg[2]                                                                     ;
+; 49.483 ; 49.516       ; 0.184          ; 0.151 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; RAM8:inst38|altsyncram:altsyncram_component|altsyncram_fgk1:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_data_shift_cntr_reg[3]                                                                     ;
+; 49.483 ; 49.516       ; 0.184          ; 0.151 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; sld_hub:sld_hub_inst|clr_reg                                                                                                                                                                            ;
+; 49.483 ; 49.517       ; 0.184          ; 0.150 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; sld_hub:sld_hub_inst|hub_mode_reg[0]                                                                                                                                                                    ;
+; 49.483 ; 49.517       ; 0.184          ; 0.150 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; sld_hub:sld_hub_inst|hub_mode_reg[2]                                                                                                                                                                    ;
+; 49.483 ; 49.516       ; 0.184          ; 0.151 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; sld_hub:sld_hub_inst|irf_reg[1][0]                                                                                                                                                                      ;
+; 49.483 ; 49.516       ; 0.184          ; 0.151 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; sld_hub:sld_hub_inst|irf_reg[1][1]                                                                                                                                                                      ;
+; 49.483 ; 49.516       ; 0.184          ; 0.151 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; sld_hub:sld_hub_inst|irf_reg[1][2]                                                                                                                                                                      ;
+; 49.483 ; 49.516       ; 0.184          ; 0.151 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; sld_hub:sld_hub_inst|irf_reg[1][3]                                                                                                                                                                      ;
+; 49.483 ; 49.516       ; 0.184          ; 0.151 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; sld_hub:sld_hub_inst|irf_reg[1][4]                                                                                                                                                                      ;
+; 49.483 ; 49.517       ; 0.184          ; 0.150 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; sld_hub:sld_hub_inst|irf_reg[2][0]                                                                                                                                                                      ;
+; 49.483 ; 49.517       ; 0.184          ; 0.150 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; sld_hub:sld_hub_inst|irf_reg[2][1]                                                                                                                                                                      ;
+; 49.483 ; 49.517       ; 0.184          ; 0.150 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; sld_hub:sld_hub_inst|irf_reg[2][2]                                                                                                                                                                      ;
+; 49.483 ; 49.517       ; 0.184          ; 0.150 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; sld_hub:sld_hub_inst|irf_reg[2][3]                                                                                                                                                                      ;
+; 49.483 ; 49.517       ; 0.184          ; 0.150 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; sld_hub:sld_hub_inst|irf_reg[2][4]                                                                                                                                                                      ;
+; 49.483 ; 49.517       ; 0.184          ; 0.150 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; sld_hub:sld_hub_inst|irsr_reg[0]                                                                                                                                                                        ;
+; 49.483 ; 49.517       ; 0.184          ; 0.150 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; sld_hub:sld_hub_inst|irsr_reg[1]                                                                                                                                                                        ;
+; 49.483 ; 49.517       ; 0.184          ; 0.150 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; sld_hub:sld_hub_inst|irsr_reg[2]                                                                                                                                                                        ;
+; 49.483 ; 49.517       ; 0.184          ; 0.150 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; sld_hub:sld_hub_inst|irsr_reg[3]                                                                                                                                                                        ;
+; 49.483 ; 49.517       ; 0.184          ; 0.150 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; sld_hub:sld_hub_inst|irsr_reg[4]                                                                                                                                                                        ;
+; 49.483 ; 49.517       ; 0.184          ; 0.150 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; sld_hub:sld_hub_inst|irsr_reg[5]                                                                                                                                                                        ;
+; 49.483 ; 49.517       ; 0.184          ; 0.150 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; sld_hub:sld_hub_inst|irsr_reg[6]                                                                                                                                                                        ;
+; 49.483 ; 49.517       ; 0.184          ; 0.150 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; sld_hub:sld_hub_inst|jtag_ir_reg[6]                                                                                                                                                                     ;
+; 49.483 ; 49.517       ; 0.184          ; 0.150 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; sld_hub:sld_hub_inst|jtag_ir_reg[7]                                                                                                                                                                     ;
+; 49.483 ; 49.517       ; 0.184          ; 0.150 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; sld_hub:sld_hub_inst|jtag_ir_reg[8]                                                                                                                                                                     ;
+; 49.483 ; 49.517       ; 0.184          ; 0.150 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; sld_hub:sld_hub_inst|jtag_ir_reg[9]                                                                                                                                                                     ;
+; 49.483 ; 49.517       ; 0.184          ; 0.150 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; sld_hub:sld_hub_inst|reset_ena_reg                                                                                                                                                                      ;
+; 49.483 ; 49.516       ; 0.184          ; 0.151 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; sld_hub:sld_hub_inst|shadow_irf_reg[2][0]                                                                                                                                                               ;
+; 49.483 ; 49.516       ; 0.184          ; 0.151 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; sld_hub:sld_hub_inst|shadow_irf_reg[2][1]                                                                                                                                                               ;
+; 49.483 ; 49.516       ; 0.184          ; 0.151 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; sld_hub:sld_hub_inst|shadow_irf_reg[2][2]                                                                                                                                                               ;
+; 49.483 ; 49.516       ; 0.184          ; 0.151 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; sld_hub:sld_hub_inst|shadow_irf_reg[2][3]                                                                                                                                                               ;
+; 49.483 ; 49.516       ; 0.184          ; 0.151 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; sld_hub:sld_hub_inst|shadow_irf_reg[2][4]                                                                                                                                                               ;
+; 49.483 ; 49.517       ; 0.184          ; 0.150 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; sld_hub:sld_hub_inst|sld_rom_sr:hub_info_reg|WORD_SR[0]                                                                                                                                                 ;
+; 49.483 ; 49.517       ; 0.184          ; 0.150 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; sld_hub:sld_hub_inst|sld_rom_sr:hub_info_reg|WORD_SR[1]                                                                                                                                                 ;
+; 49.483 ; 49.517       ; 0.184          ; 0.150 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; sld_hub:sld_hub_inst|sld_rom_sr:hub_info_reg|WORD_SR[2]                                                                                                                                                 ;
+; 49.483 ; 49.517       ; 0.184          ; 0.150 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; sld_hub:sld_hub_inst|sld_rom_sr:hub_info_reg|WORD_SR[3]                                                                                                                                                 ;
+; 49.483 ; 49.517       ; 0.184          ; 0.150 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; sld_hub:sld_hub_inst|sld_shadow_jsm:shadow_jsm|state[0]                                                                                                                                                 ;
+; 49.483 ; 49.516       ; 0.184          ; 0.151 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; sld_hub:sld_hub_inst|sld_shadow_jsm:shadow_jsm|state[10]                                                                                                                                                ;
+; 49.483 ; 49.516       ; 0.184          ; 0.151 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; sld_hub:sld_hub_inst|sld_shadow_jsm:shadow_jsm|state[11]                                                                                                                                                ;
+; 49.483 ; 49.516       ; 0.184          ; 0.151 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; sld_hub:sld_hub_inst|sld_shadow_jsm:shadow_jsm|state[12]                                                                                                                                                ;
+; 49.483 ; 49.516       ; 0.184          ; 0.151 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; sld_hub:sld_hub_inst|sld_shadow_jsm:shadow_jsm|state[13]                                                                                                                                                ;
+; 49.483 ; 49.516       ; 0.184          ; 0.151 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; sld_hub:sld_hub_inst|sld_shadow_jsm:shadow_jsm|state[14]                                                                                                                                                ;
+; 49.483 ; 49.516       ; 0.184          ; 0.151 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; sld_hub:sld_hub_inst|sld_shadow_jsm:shadow_jsm|state[15]                                                                                                                                                ;
+; 49.483 ; 49.516       ; 0.184          ; 0.151 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; sld_hub:sld_hub_inst|sld_shadow_jsm:shadow_jsm|state[3]                                                                                                                                                 ;
+; 49.483 ; 49.516       ; 0.184          ; 0.151 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; sld_hub:sld_hub_inst|sld_shadow_jsm:shadow_jsm|state[7]                                                                                                                                                 ;
+; 49.483 ; 49.516       ; 0.184          ; 0.151 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; sld_hub:sld_hub_inst|sld_shadow_jsm:shadow_jsm|state[8]                                                                                                                                                 ;
+; 49.483 ; 49.516       ; 0.184          ; 0.151 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; sld_hub:sld_hub_inst|sld_shadow_jsm:shadow_jsm|state[9]                                                                                                                                                 ;
+; 49.483 ; 49.517       ; 0.184          ; 0.150 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; sld_hub:sld_hub_inst|sld_shadow_jsm:shadow_jsm|tms_cnt[0]                                                                                                                                               ;
+; 49.483 ; 49.517       ; 0.184          ; 0.150 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; sld_hub:sld_hub_inst|sld_shadow_jsm:shadow_jsm|tms_cnt[1]                                                                                                                                               ;
+; 49.483 ; 49.517       ; 0.184          ; 0.150 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; sld_hub:sld_hub_inst|sld_shadow_jsm:shadow_jsm|tms_cnt[2]                                                                                                                                               ;
+; 49.483 ; 49.516       ; 0.184          ; 0.151 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; sld_hub:sld_hub_inst|tdo_bypass_reg                                                                                                                                                                     ;
+; 49.483 ; 49.517       ; 0.184          ; 0.150 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; uPC:inst2|uP_ROM:inst|altsyncram:altsyncram_component|altsyncram_hfd1:auto_generated|sld_mod_ram_rom:mgl_prim2|bypass_reg_out                                                                           ;
+; 49.483 ; 49.516       ; 0.184          ; 0.151 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; uPC:inst2|uP_ROM:inst|altsyncram:altsyncram_component|altsyncram_hfd1:auto_generated|sld_mod_ram_rom:mgl_prim2|ir_loaded_address_reg[0]                                                                 ;
+; 49.483 ; 49.516       ; 0.184          ; 0.151 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; uPC:inst2|uP_ROM:inst|altsyncram:altsyncram_component|altsyncram_hfd1:auto_generated|sld_mod_ram_rom:mgl_prim2|ir_loaded_address_reg[1]                                                                 ;
+; 49.483 ; 49.516       ; 0.184          ; 0.151 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; uPC:inst2|uP_ROM:inst|altsyncram:altsyncram_component|altsyncram_hfd1:auto_generated|sld_mod_ram_rom:mgl_prim2|ir_loaded_address_reg[2]                                                                 ;
+; 49.483 ; 49.516       ; 0.184          ; 0.151 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; uPC:inst2|uP_ROM:inst|altsyncram:altsyncram_component|altsyncram_hfd1:auto_generated|sld_mod_ram_rom:mgl_prim2|ir_loaded_address_reg[3]                                                                 ;
+; 49.484 ; 49.517       ; 0.184          ; 0.151 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; RAM8:inst38|altsyncram:altsyncram_component|altsyncram_fgk1:auto_generated|sld_mod_ram_rom:mgl_prim2|sld_rom_sr:\ram_rom_logic_gen:name_gen:info_rom_sr|WORD_SR[0]                                      ;
+; 49.484 ; 49.517       ; 0.184          ; 0.151 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; RAM8:inst38|altsyncram:altsyncram_component|altsyncram_fgk1:auto_generated|sld_mod_ram_rom:mgl_prim2|sld_rom_sr:\ram_rom_logic_gen:name_gen:info_rom_sr|WORD_SR[1]                                      ;
+; 49.484 ; 49.517       ; 0.184          ; 0.151 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; RAM8:inst38|altsyncram:altsyncram_component|altsyncram_fgk1:auto_generated|sld_mod_ram_rom:mgl_prim2|sld_rom_sr:\ram_rom_logic_gen:name_gen:info_rom_sr|WORD_SR[2]                                      ;
+; 49.484 ; 49.517       ; 0.184          ; 0.151 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; RAM8:inst38|altsyncram:altsyncram_component|altsyncram_fgk1:auto_generated|sld_mod_ram_rom:mgl_prim2|sld_rom_sr:\ram_rom_logic_gen:name_gen:info_rom_sr|WORD_SR[3]                                      ;
+; 49.484 ; 49.517       ; 0.184          ; 0.151 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; RAM8:inst38|altsyncram:altsyncram_component|altsyncram_fgk1:auto_generated|sld_mod_ram_rom:mgl_prim2|sld_rom_sr:\ram_rom_logic_gen:name_gen:info_rom_sr|word_counter[0]                                 ;
+; 49.484 ; 49.517       ; 0.184          ; 0.151 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; RAM8:inst38|altsyncram:altsyncram_component|altsyncram_fgk1:auto_generated|sld_mod_ram_rom:mgl_prim2|sld_rom_sr:\ram_rom_logic_gen:name_gen:info_rom_sr|word_counter[1]                                 ;
+; 49.484 ; 49.517       ; 0.184          ; 0.151 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; RAM8:inst38|altsyncram:altsyncram_component|altsyncram_fgk1:auto_generated|sld_mod_ram_rom:mgl_prim2|sld_rom_sr:\ram_rom_logic_gen:name_gen:info_rom_sr|word_counter[2]                                 ;
+; 49.484 ; 49.517       ; 0.184          ; 0.151 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; RAM8:inst38|altsyncram:altsyncram_component|altsyncram_fgk1:auto_generated|sld_mod_ram_rom:mgl_prim2|sld_rom_sr:\ram_rom_logic_gen:name_gen:info_rom_sr|word_counter[3]                                 ;
+; 49.484 ; 49.517       ; 0.184          ; 0.151 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; RAM8:inst38|altsyncram:altsyncram_component|altsyncram_fgk1:auto_generated|sld_mod_ram_rom:mgl_prim2|sld_rom_sr:\ram_rom_logic_gen:name_gen:info_rom_sr|word_counter[4]                                 ;
+; 49.484 ; 49.517       ; 0.184          ; 0.151 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; sld_hub:sld_hub_inst|hub_mode_reg[1]                                                                                                                                                                    ;
++--------+--------------+----------------+-------+------------------+---------------------+------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------+
+; Setup Times                                                                                  ;
++---------------------+---------------------+-------+-------+------------+---------------------+
+; Data Port           ; Clock Port          ; Rise  ; Fall  ; Clock Edge ; Clock Reference     ;
++---------------------+---------------------+-------+-------+------------+---------------------+
+; altera_reserved_tdi ; altera_reserved_tck ; 3.254 ; 3.849 ; Rise       ; altera_reserved_tck ;
+; altera_reserved_tms ; altera_reserved_tck ; 8.349 ; 8.685 ; Rise       ; altera_reserved_tck ;
++---------------------+---------------------+-------+-------+------------+---------------------+
+
+
++------------------------------------------------------------------------------------------------+
+; Hold Times                                                                                     ;
++---------------------+---------------------+--------+--------+------------+---------------------+
+; Data Port           ; Clock Port          ; Rise   ; Fall   ; Clock Edge ; Clock Reference     ;
++---------------------+---------------------+--------+--------+------------+---------------------+
+; altera_reserved_tdi ; altera_reserved_tck ; -0.242 ; -0.675 ; Rise       ; altera_reserved_tck ;
+; altera_reserved_tms ; altera_reserved_tck ; -2.371 ; -2.808 ; Rise       ; altera_reserved_tck ;
++---------------------+---------------------+--------+--------+------------+---------------------+
+
+
++------------------------------------------------------------------------------------------------+
+; Clock to Output Times                                                                          ;
++---------------------+---------------------+--------+--------+------------+---------------------+
+; Data Port           ; Clock Port          ; Rise   ; Fall   ; Clock Edge ; Clock Reference     ;
++---------------------+---------------------+--------+--------+------------+---------------------+
+; altera_reserved_tdo ; altera_reserved_tck ; 15.019 ; 16.026 ; Fall       ; altera_reserved_tck ;
++---------------------+---------------------+--------+--------+------------+---------------------+
+
+
++------------------------------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                                                  ;
++---------------------+---------------------+--------+--------+------------+---------------------+
+; Data Port           ; Clock Port          ; Rise   ; Fall   ; Clock Edge ; Clock Reference     ;
++---------------------+---------------------+--------+--------+------------+---------------------+
+; altera_reserved_tdo ; altera_reserved_tck ; 12.729 ; 13.750 ; Fall       ; altera_reserved_tck ;
++---------------------+---------------------+--------+--------+------------+---------------------+
+
+
++--------------------------------------------------------------+
+; Propagation Delay                                            ;
++------------+-------------+--------+--------+--------+--------+
+; Input Port ; Output Port ; RR     ; RF     ; FR     ; FF     ;
++------------+-------------+--------+--------+--------+--------+
+; IN[0]      ; P10_1       ; 22.246 ; 21.530 ; 21.213 ; 20.497 ;
+; IN[1]      ; P10_1       ; 18.461 ; 17.745 ; 17.982 ; 17.266 ;
+; IN[2]      ; P10_1       ; 20.874 ; 20.158 ; 20.201 ; 19.485 ;
+; IN[3]      ; P10_1       ; 18.268 ; 17.552 ; 17.759 ; 17.083 ;
+; IN[4]      ; P10_1       ; 18.376 ; 17.621 ; 17.792 ; 17.077 ;
+; IN[5]      ; P10_1       ; 18.716 ; 17.969 ; 17.963 ; 17.290 ;
+; IN[6]      ; P10_1       ; 19.456 ; 18.701 ; 18.739 ; 18.024 ;
+; IN[7]      ; P10_1       ; 18.746 ;        ;        ; 17.335 ;
+; RST        ; P10_1       ; 19.800 ; 19.084 ; 20.573 ; 19.857 ;
+; SWA        ; P10_1       ; 21.121 ; 20.405 ; 20.380 ; 19.664 ;
+; SWB        ; P10_1       ; 20.390 ; 19.674 ; 19.780 ; 19.064 ;
++------------+-------------+--------+--------+--------+--------+
+
+
++--------------------------------------------------------------+
+; Minimum Propagation Delay                                    ;
++------------+-------------+--------+--------+--------+--------+
+; Input Port ; Output Port ; RR     ; RF     ; FR     ; FF     ;
++------------+-------------+--------+--------+--------+--------+
+; IN[0]      ; P10_1       ; 16.408 ; 15.753 ; 16.060 ; 15.405 ;
+; IN[1]      ; P10_1       ; 15.858 ; 15.203 ; 15.502 ; 14.847 ;
+; IN[2]      ; P10_1       ; 17.433 ; 16.778 ; 16.957 ; 16.302 ;
+; IN[3]      ; P10_1       ; 16.409 ; 15.721 ; 16.057 ; 15.402 ;
+; IN[4]      ; P10_1       ; 14.914 ; 14.188 ; 14.775 ; 14.082 ;
+; IN[5]      ; P10_1       ; 16.596 ; 15.930 ; 16.320 ; 15.586 ;
+; IN[6]      ; P10_1       ; 15.237 ; 14.511 ; 14.897 ; 14.204 ;
+; IN[7]      ; P10_1       ; 14.629 ;        ;        ; 13.815 ;
+; RST        ; P10_1       ; 15.568 ; 14.875 ; 16.123 ; 15.397 ;
+; SWA        ; P10_1       ; 19.934 ; 19.279 ; 19.209 ; 18.554 ;
+; SWB        ; P10_1       ; 19.539 ; 18.884 ; 18.932 ; 18.277 ;
++------------+-------------+--------+--------+--------+--------+
+
+
++----------------------------------------------+
+; Fast 1200mV 0C Model Setup Summary           ;
++---------------------+--------+---------------+
+; Clock               ; Slack  ; End Point TNS ;
++---------------------+--------+---------------+
+; altera_reserved_tck ; 48.745 ; 0.000         ;
++---------------------+--------+---------------+
+
+
++---------------------------------------------+
+; Fast 1200mV 0C Model Hold Summary           ;
++---------------------+-------+---------------+
+; Clock               ; Slack ; End Point TNS ;
++---------------------+-------+---------------+
+; altera_reserved_tck ; 0.184 ; 0.000         ;
++---------------------+-------+---------------+
+
+
++----------------------------------------------+
+; Fast 1200mV 0C Model Recovery Summary        ;
++---------------------+--------+---------------+
+; Clock               ; Slack  ; End Point TNS ;
++---------------------+--------+---------------+
+; altera_reserved_tck ; 49.594 ; 0.000         ;
++---------------------+--------+---------------+
+
+
++---------------------------------------------+
+; Fast 1200mV 0C Model Removal Summary        ;
++---------------------+-------+---------------+
+; Clock               ; Slack ; End Point TNS ;
++---------------------+-------+---------------+
+; altera_reserved_tck ; 0.494 ; 0.000         ;
++---------------------+-------+---------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fast 1200mV 0C Model Minimum Pulse Width                                                                                                                                                                                                                                                                       ;
++--------+--------------+----------------+-------+------------------+---------------------+------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slack  ; Actual Width ; Required Width ; CCPP  ; Type             ; Clock               ; Clock Edge ; Target                                                                                                                                                                                                  ;
++--------+--------------+----------------+-------+------------------+---------------------+------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; 49.460 ; 49.610       ; 0.230          ; 0.080 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; RAM8:inst38|altsyncram:altsyncram_component|altsyncram_fgk1:auto_generated|altsyncram_rna2:altsyncram1|ram_block3a0~portb_address_reg0                                                                  ;
+; 49.460 ; 49.610       ; 0.230          ; 0.080 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; RAM8:inst38|altsyncram:altsyncram_component|altsyncram_fgk1:auto_generated|altsyncram_rna2:altsyncram1|ram_block3a0~portb_we_reg                                                                        ;
+; 49.461 ; 49.611       ; 0.230          ; 0.080 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; uPC:inst2|uP_ROM:inst|altsyncram:altsyncram_component|altsyncram_hfd1:auto_generated|altsyncram_jte2:altsyncram1|altsyncram:ram_block3a0|altsyncram_guk3:auto_generated|ram_block1a0~portb_address_reg0 ;
+; 49.461 ; 49.611       ; 0.230          ; 0.080 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; uPC:inst2|uP_ROM:inst|altsyncram:altsyncram_component|altsyncram_hfd1:auto_generated|altsyncram_jte2:altsyncram1|altsyncram:ram_block3a0|altsyncram_guk3:auto_generated|ram_block1a0~portb_we_reg       ;
+; 49.461 ; 49.611       ; 0.230          ; 0.080 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; uPC:inst2|uP_ROM:inst|altsyncram:altsyncram_component|altsyncram_hfd1:auto_generated|altsyncram_jte2:altsyncram1|altsyncram:ram_block3a0|altsyncram_guk3:auto_generated|ram_block1a1~portb_address_reg0 ;
+; 49.461 ; 49.611       ; 0.230          ; 0.080 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; uPC:inst2|uP_ROM:inst|altsyncram:altsyncram_component|altsyncram_hfd1:auto_generated|altsyncram_jte2:altsyncram1|altsyncram:ram_block3a0|altsyncram_guk3:auto_generated|ram_block1a1~portb_we_reg       ;
+; 49.462 ; 49.612       ; 0.230          ; 0.080 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; RAM8:inst38|altsyncram:altsyncram_component|altsyncram_fgk1:auto_generated|altsyncram_rna2:altsyncram1|ram_block3a0~portb_datain_reg0                                                                   ;
+; 49.463 ; 49.613       ; 0.230          ; 0.080 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; uPC:inst2|uP_ROM:inst|altsyncram:altsyncram_component|altsyncram_hfd1:auto_generated|altsyncram_jte2:altsyncram1|altsyncram:ram_block3a0|altsyncram_guk3:auto_generated|ram_block1a0~portb_datain_reg0  ;
+; 49.463 ; 49.613       ; 0.230          ; 0.080 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; uPC:inst2|uP_ROM:inst|altsyncram:altsyncram_component|altsyncram_hfd1:auto_generated|altsyncram_jte2:altsyncram1|altsyncram:ram_block3a0|altsyncram_guk3:auto_generated|ram_block1a1~portb_datain_reg0  ;
+; 49.476 ; 49.612       ; 0.216          ; 0.080 ; High Pulse Width ; altera_reserved_tck ; Fall       ; sld_hub:sld_hub_inst|tdo                                                                                                                                                                                ;
+; 49.495 ; 49.590       ; 0.184          ; 0.089 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; uPC:inst2|uP_ROM:inst|altsyncram:altsyncram_component|altsyncram_hfd1:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_data_reg[0]                                                                      ;
+; 49.495 ; 49.590       ; 0.184          ; 0.089 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; uPC:inst2|uP_ROM:inst|altsyncram:altsyncram_component|altsyncram_hfd1:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_data_reg[10]                                                                     ;
+; 49.495 ; 49.590       ; 0.184          ; 0.089 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; uPC:inst2|uP_ROM:inst|altsyncram:altsyncram_component|altsyncram_hfd1:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_data_reg[11]                                                                     ;
+; 49.495 ; 49.590       ; 0.184          ; 0.089 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; uPC:inst2|uP_ROM:inst|altsyncram:altsyncram_component|altsyncram_hfd1:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_data_reg[12]                                                                     ;
+; 49.495 ; 49.590       ; 0.184          ; 0.089 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; uPC:inst2|uP_ROM:inst|altsyncram:altsyncram_component|altsyncram_hfd1:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_data_reg[13]                                                                     ;
+; 49.495 ; 49.590       ; 0.184          ; 0.089 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; uPC:inst2|uP_ROM:inst|altsyncram:altsyncram_component|altsyncram_hfd1:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_data_reg[14]                                                                     ;
+; 49.495 ; 49.590       ; 0.184          ; 0.089 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; uPC:inst2|uP_ROM:inst|altsyncram:altsyncram_component|altsyncram_hfd1:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_data_reg[15]                                                                     ;
+; 49.495 ; 49.590       ; 0.184          ; 0.089 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; uPC:inst2|uP_ROM:inst|altsyncram:altsyncram_component|altsyncram_hfd1:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_data_reg[16]                                                                     ;
+; 49.495 ; 49.590       ; 0.184          ; 0.089 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; uPC:inst2|uP_ROM:inst|altsyncram:altsyncram_component|altsyncram_hfd1:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_data_reg[17]                                                                     ;
+; 49.495 ; 49.590       ; 0.184          ; 0.089 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; uPC:inst2|uP_ROM:inst|altsyncram:altsyncram_component|altsyncram_hfd1:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_data_reg[18]                                                                     ;
+; 49.495 ; 49.590       ; 0.184          ; 0.089 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; uPC:inst2|uP_ROM:inst|altsyncram:altsyncram_component|altsyncram_hfd1:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_data_reg[19]                                                                     ;
+; 49.495 ; 49.590       ; 0.184          ; 0.089 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; uPC:inst2|uP_ROM:inst|altsyncram:altsyncram_component|altsyncram_hfd1:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_data_reg[1]                                                                      ;
+; 49.495 ; 49.590       ; 0.184          ; 0.089 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; uPC:inst2|uP_ROM:inst|altsyncram:altsyncram_component|altsyncram_hfd1:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_data_reg[20]                                                                     ;
+; 49.495 ; 49.590       ; 0.184          ; 0.089 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; uPC:inst2|uP_ROM:inst|altsyncram:altsyncram_component|altsyncram_hfd1:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_data_reg[21]                                                                     ;
+; 49.495 ; 49.590       ; 0.184          ; 0.089 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; uPC:inst2|uP_ROM:inst|altsyncram:altsyncram_component|altsyncram_hfd1:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_data_reg[22]                                                                     ;
+; 49.495 ; 49.590       ; 0.184          ; 0.089 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; uPC:inst2|uP_ROM:inst|altsyncram:altsyncram_component|altsyncram_hfd1:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_data_reg[23]                                                                     ;
+; 49.495 ; 49.590       ; 0.184          ; 0.089 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; uPC:inst2|uP_ROM:inst|altsyncram:altsyncram_component|altsyncram_hfd1:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_data_reg[2]                                                                      ;
+; 49.495 ; 49.590       ; 0.184          ; 0.089 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; uPC:inst2|uP_ROM:inst|altsyncram:altsyncram_component|altsyncram_hfd1:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_data_reg[3]                                                                      ;
+; 49.495 ; 49.590       ; 0.184          ; 0.089 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; uPC:inst2|uP_ROM:inst|altsyncram:altsyncram_component|altsyncram_hfd1:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_data_reg[4]                                                                      ;
+; 49.495 ; 49.590       ; 0.184          ; 0.089 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; uPC:inst2|uP_ROM:inst|altsyncram:altsyncram_component|altsyncram_hfd1:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_data_reg[5]                                                                      ;
+; 49.495 ; 49.590       ; 0.184          ; 0.089 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; uPC:inst2|uP_ROM:inst|altsyncram:altsyncram_component|altsyncram_hfd1:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_data_reg[6]                                                                      ;
+; 49.495 ; 49.590       ; 0.184          ; 0.089 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; uPC:inst2|uP_ROM:inst|altsyncram:altsyncram_component|altsyncram_hfd1:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_data_reg[7]                                                                      ;
+; 49.495 ; 49.590       ; 0.184          ; 0.089 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; uPC:inst2|uP_ROM:inst|altsyncram:altsyncram_component|altsyncram_hfd1:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_data_reg[8]                                                                      ;
+; 49.495 ; 49.590       ; 0.184          ; 0.089 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; uPC:inst2|uP_ROM:inst|altsyncram:altsyncram_component|altsyncram_hfd1:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_data_reg[9]                                                                      ;
+; 49.520 ; 49.624       ; 0.184          ; 0.080 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; sld_hub:sld_hub_inst|shadow_irf_reg[1][0]                                                                                                                                                               ;
+; 49.520 ; 49.624       ; 0.184          ; 0.080 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; sld_hub:sld_hub_inst|shadow_irf_reg[1][1]                                                                                                                                                               ;
+; 49.520 ; 49.624       ; 0.184          ; 0.080 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; sld_hub:sld_hub_inst|shadow_irf_reg[1][2]                                                                                                                                                               ;
+; 49.520 ; 49.624       ; 0.184          ; 0.080 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; sld_hub:sld_hub_inst|shadow_irf_reg[1][3]                                                                                                                                                               ;
+; 49.520 ; 49.624       ; 0.184          ; 0.080 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; sld_hub:sld_hub_inst|shadow_irf_reg[1][4]                                                                                                                                                               ;
+; 49.520 ; 49.624       ; 0.184          ; 0.080 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; sld_hub:sld_hub_inst|sld_shadow_jsm:shadow_jsm|state[3]                                                                                                                                                 ;
+; 49.520 ; 49.624       ; 0.184          ; 0.080 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; sld_hub:sld_hub_inst|sld_shadow_jsm:shadow_jsm|state[7]                                                                                                                                                 ;
+; 49.520 ; 49.624       ; 0.184          ; 0.080 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; sld_hub:sld_hub_inst|sld_shadow_jsm:shadow_jsm|state[8]                                                                                                                                                 ;
+; 49.520 ; 49.624       ; 0.184          ; 0.080 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; sld_hub:sld_hub_inst|tdo_bypass_reg                                                                                                                                                                     ;
+; 49.520 ; 49.624       ; 0.184          ; 0.080 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; uPC:inst2|uP_ROM:inst|altsyncram:altsyncram_component|altsyncram_hfd1:auto_generated|sld_mod_ram_rom:mgl_prim2|is_in_use_reg                                                                            ;
+; 49.521 ; 49.624       ; 0.184          ; 0.081 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; RAM8:inst38|altsyncram:altsyncram_component|altsyncram_fgk1:auto_generated|sld_mod_ram_rom:mgl_prim2|bypass_reg_out                                                                                     ;
+; 49.521 ; 49.625       ; 0.184          ; 0.080 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; RAM8:inst38|altsyncram:altsyncram_component|altsyncram_fgk1:auto_generated|sld_mod_ram_rom:mgl_prim2|ir_loaded_address_reg[0]                                                                           ;
+; 49.521 ; 49.625       ; 0.184          ; 0.080 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; RAM8:inst38|altsyncram:altsyncram_component|altsyncram_fgk1:auto_generated|sld_mod_ram_rom:mgl_prim2|ir_loaded_address_reg[1]                                                                           ;
+; 49.521 ; 49.625       ; 0.184          ; 0.080 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; RAM8:inst38|altsyncram:altsyncram_component|altsyncram_fgk1:auto_generated|sld_mod_ram_rom:mgl_prim2|ir_loaded_address_reg[2]                                                                           ;
+; 49.521 ; 49.625       ; 0.184          ; 0.080 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; RAM8:inst38|altsyncram:altsyncram_component|altsyncram_fgk1:auto_generated|sld_mod_ram_rom:mgl_prim2|ir_loaded_address_reg[3]                                                                           ;
+; 49.521 ; 49.624       ; 0.184          ; 0.081 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; RAM8:inst38|altsyncram:altsyncram_component|altsyncram_fgk1:auto_generated|sld_mod_ram_rom:mgl_prim2|is_in_use_reg                                                                                      ;
+; 49.521 ; 49.624       ; 0.184          ; 0.081 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; RAM8:inst38|altsyncram:altsyncram_component|altsyncram_fgk1:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_addr_reg[0]                                                                                ;
+; 49.521 ; 49.624       ; 0.184          ; 0.081 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; RAM8:inst38|altsyncram:altsyncram_component|altsyncram_fgk1:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_addr_reg[1]                                                                                ;
+; 49.521 ; 49.624       ; 0.184          ; 0.081 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; RAM8:inst38|altsyncram:altsyncram_component|altsyncram_fgk1:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_addr_reg[2]                                                                                ;
+; 49.521 ; 49.624       ; 0.184          ; 0.081 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; RAM8:inst38|altsyncram:altsyncram_component|altsyncram_fgk1:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_addr_reg[3]                                                                                ;
+; 49.521 ; 49.624       ; 0.184          ; 0.081 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; RAM8:inst38|altsyncram:altsyncram_component|altsyncram_fgk1:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_addr_reg[4]                                                                                ;
+; 49.521 ; 49.624       ; 0.184          ; 0.081 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; RAM8:inst38|altsyncram:altsyncram_component|altsyncram_fgk1:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_addr_reg[5]                                                                                ;
+; 49.521 ; 49.624       ; 0.184          ; 0.081 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; RAM8:inst38|altsyncram:altsyncram_component|altsyncram_fgk1:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_addr_reg[6]                                                                                ;
+; 49.521 ; 49.624       ; 0.184          ; 0.081 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; RAM8:inst38|altsyncram:altsyncram_component|altsyncram_fgk1:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_addr_reg[7]                                                                                ;
+; 49.521 ; 49.625       ; 0.184          ; 0.080 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; RAM8:inst38|altsyncram:altsyncram_component|altsyncram_fgk1:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_data_reg[0]                                                                                ;
+; 49.521 ; 49.625       ; 0.184          ; 0.080 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; RAM8:inst38|altsyncram:altsyncram_component|altsyncram_fgk1:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_data_reg[1]                                                                                ;
+; 49.521 ; 49.625       ; 0.184          ; 0.080 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; RAM8:inst38|altsyncram:altsyncram_component|altsyncram_fgk1:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_data_reg[2]                                                                                ;
+; 49.521 ; 49.624       ; 0.184          ; 0.081 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; RAM8:inst38|altsyncram:altsyncram_component|altsyncram_fgk1:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_data_reg[3]                                                                                ;
+; 49.521 ; 49.624       ; 0.184          ; 0.081 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; RAM8:inst38|altsyncram:altsyncram_component|altsyncram_fgk1:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_data_reg[4]                                                                                ;
+; 49.521 ; 49.624       ; 0.184          ; 0.081 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; RAM8:inst38|altsyncram:altsyncram_component|altsyncram_fgk1:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_data_reg[5]                                                                                ;
+; 49.521 ; 49.624       ; 0.184          ; 0.081 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; RAM8:inst38|altsyncram:altsyncram_component|altsyncram_fgk1:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_data_reg[6]                                                                                ;
+; 49.521 ; 49.624       ; 0.184          ; 0.081 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; RAM8:inst38|altsyncram:altsyncram_component|altsyncram_fgk1:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_data_reg[7]                                                                                ;
+; 49.521 ; 49.625       ; 0.184          ; 0.080 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; RAM8:inst38|altsyncram:altsyncram_component|altsyncram_fgk1:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_data_shift_cntr_reg[0]                                                                     ;
+; 49.521 ; 49.625       ; 0.184          ; 0.080 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; RAM8:inst38|altsyncram:altsyncram_component|altsyncram_fgk1:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_data_shift_cntr_reg[1]                                                                     ;
+; 49.521 ; 49.625       ; 0.184          ; 0.080 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; RAM8:inst38|altsyncram:altsyncram_component|altsyncram_fgk1:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_data_shift_cntr_reg[2]                                                                     ;
+; 49.521 ; 49.625       ; 0.184          ; 0.080 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; RAM8:inst38|altsyncram:altsyncram_component|altsyncram_fgk1:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_data_shift_cntr_reg[3]                                                                     ;
+; 49.521 ; 49.624       ; 0.184          ; 0.081 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; RAM8:inst38|altsyncram:altsyncram_component|altsyncram_fgk1:auto_generated|sld_mod_ram_rom:mgl_prim2|sld_rom_sr:\ram_rom_logic_gen:name_gen:info_rom_sr|WORD_SR[0]                                      ;
+; 49.521 ; 49.624       ; 0.184          ; 0.081 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; RAM8:inst38|altsyncram:altsyncram_component|altsyncram_fgk1:auto_generated|sld_mod_ram_rom:mgl_prim2|sld_rom_sr:\ram_rom_logic_gen:name_gen:info_rom_sr|WORD_SR[1]                                      ;
+; 49.521 ; 49.624       ; 0.184          ; 0.081 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; RAM8:inst38|altsyncram:altsyncram_component|altsyncram_fgk1:auto_generated|sld_mod_ram_rom:mgl_prim2|sld_rom_sr:\ram_rom_logic_gen:name_gen:info_rom_sr|WORD_SR[2]                                      ;
+; 49.521 ; 49.624       ; 0.184          ; 0.081 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; RAM8:inst38|altsyncram:altsyncram_component|altsyncram_fgk1:auto_generated|sld_mod_ram_rom:mgl_prim2|sld_rom_sr:\ram_rom_logic_gen:name_gen:info_rom_sr|WORD_SR[3]                                      ;
+; 49.521 ; 49.624       ; 0.184          ; 0.081 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; RAM8:inst38|altsyncram:altsyncram_component|altsyncram_fgk1:auto_generated|sld_mod_ram_rom:mgl_prim2|sld_rom_sr:\ram_rom_logic_gen:name_gen:info_rom_sr|word_counter[0]                                 ;
+; 49.521 ; 49.624       ; 0.184          ; 0.081 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; RAM8:inst38|altsyncram:altsyncram_component|altsyncram_fgk1:auto_generated|sld_mod_ram_rom:mgl_prim2|sld_rom_sr:\ram_rom_logic_gen:name_gen:info_rom_sr|word_counter[1]                                 ;
+; 49.521 ; 49.624       ; 0.184          ; 0.081 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; RAM8:inst38|altsyncram:altsyncram_component|altsyncram_fgk1:auto_generated|sld_mod_ram_rom:mgl_prim2|sld_rom_sr:\ram_rom_logic_gen:name_gen:info_rom_sr|word_counter[2]                                 ;
+; 49.521 ; 49.624       ; 0.184          ; 0.081 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; RAM8:inst38|altsyncram:altsyncram_component|altsyncram_fgk1:auto_generated|sld_mod_ram_rom:mgl_prim2|sld_rom_sr:\ram_rom_logic_gen:name_gen:info_rom_sr|word_counter[3]                                 ;
+; 49.521 ; 49.624       ; 0.184          ; 0.081 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; RAM8:inst38|altsyncram:altsyncram_component|altsyncram_fgk1:auto_generated|sld_mod_ram_rom:mgl_prim2|sld_rom_sr:\ram_rom_logic_gen:name_gen:info_rom_sr|word_counter[4]                                 ;
+; 49.521 ; 49.624       ; 0.184          ; 0.081 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; sld_hub:sld_hub_inst|clr_reg                                                                                                                                                                            ;
+; 49.521 ; 49.624       ; 0.184          ; 0.081 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; sld_hub:sld_hub_inst|hub_mode_reg[0]                                                                                                                                                                    ;
+; 49.521 ; 49.625       ; 0.184          ; 0.080 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; sld_hub:sld_hub_inst|hub_mode_reg[1]                                                                                                                                                                    ;
+; 49.521 ; 49.625       ; 0.184          ; 0.080 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; sld_hub:sld_hub_inst|hub_mode_reg[2]                                                                                                                                                                    ;
+; 49.521 ; 49.625       ; 0.184          ; 0.080 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; sld_hub:sld_hub_inst|irf_reg[1][0]                                                                                                                                                                      ;
+; 49.521 ; 49.625       ; 0.184          ; 0.080 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; sld_hub:sld_hub_inst|irf_reg[1][1]                                                                                                                                                                      ;
+; 49.521 ; 49.625       ; 0.184          ; 0.080 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; sld_hub:sld_hub_inst|irf_reg[1][2]                                                                                                                                                                      ;
+; 49.521 ; 49.625       ; 0.184          ; 0.080 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; sld_hub:sld_hub_inst|irf_reg[1][3]                                                                                                                                                                      ;
+; 49.521 ; 49.625       ; 0.184          ; 0.080 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; sld_hub:sld_hub_inst|irf_reg[1][4]                                                                                                                                                                      ;
+; 49.521 ; 49.624       ; 0.184          ; 0.081 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; sld_hub:sld_hub_inst|irf_reg[2][0]                                                                                                                                                                      ;
+; 49.521 ; 49.624       ; 0.184          ; 0.081 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; sld_hub:sld_hub_inst|irf_reg[2][1]                                                                                                                                                                      ;
+; 49.521 ; 49.624       ; 0.184          ; 0.081 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; sld_hub:sld_hub_inst|irf_reg[2][2]                                                                                                                                                                      ;
+; 49.521 ; 49.624       ; 0.184          ; 0.081 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; sld_hub:sld_hub_inst|irf_reg[2][3]                                                                                                                                                                      ;
+; 49.521 ; 49.624       ; 0.184          ; 0.081 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; sld_hub:sld_hub_inst|irf_reg[2][4]                                                                                                                                                                      ;
+; 49.521 ; 49.624       ; 0.184          ; 0.081 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; sld_hub:sld_hub_inst|irsr_reg[0]                                                                                                                                                                        ;
+; 49.521 ; 49.624       ; 0.184          ; 0.081 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; sld_hub:sld_hub_inst|irsr_reg[1]                                                                                                                                                                        ;
+; 49.521 ; 49.624       ; 0.184          ; 0.081 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; sld_hub:sld_hub_inst|irsr_reg[2]                                                                                                                                                                        ;
+; 49.521 ; 49.624       ; 0.184          ; 0.081 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; sld_hub:sld_hub_inst|irsr_reg[3]                                                                                                                                                                        ;
+; 49.521 ; 49.624       ; 0.184          ; 0.081 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; sld_hub:sld_hub_inst|irsr_reg[4]                                                                                                                                                                        ;
+; 49.521 ; 49.624       ; 0.184          ; 0.081 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; sld_hub:sld_hub_inst|irsr_reg[5]                                                                                                                                                                        ;
+; 49.521 ; 49.624       ; 0.184          ; 0.081 ; Low Pulse Width  ; altera_reserved_tck ; Rise       ; sld_hub:sld_hub_inst|irsr_reg[6]                                                                                                                                                                        ;
++--------+--------------+----------------+-------+------------------+---------------------+------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------+
+; Setup Times                                                                                  ;
++---------------------+---------------------+-------+-------+------------+---------------------+
+; Data Port           ; Clock Port          ; Rise  ; Fall  ; Clock Edge ; Clock Reference     ;
++---------------------+---------------------+-------+-------+------------+---------------------+
+; altera_reserved_tdi ; altera_reserved_tck ; 1.406 ; 1.567 ; Rise       ; altera_reserved_tck ;
+; altera_reserved_tms ; altera_reserved_tck ; 3.449 ; 3.676 ; Rise       ; altera_reserved_tck ;
++---------------------+---------------------+-------+-------+------------+---------------------+
+
+
++------------------------------------------------------------------------------------------------+
+; Hold Times                                                                                     ;
++---------------------+---------------------+--------+--------+------------+---------------------+
+; Data Port           ; Clock Port          ; Rise   ; Fall   ; Clock Edge ; Clock Reference     ;
++---------------------+---------------------+--------+--------+------------+---------------------+
+; altera_reserved_tdi ; altera_reserved_tck ; 0.044  ; -0.171 ; Rise       ; altera_reserved_tck ;
+; altera_reserved_tms ; altera_reserved_tck ; -0.877 ; -1.065 ; Rise       ; altera_reserved_tck ;
++---------------------+---------------------+--------+--------+------------+---------------------+
+
+
++----------------------------------------------------------------------------------------------+
+; Clock to Output Times                                                                        ;
++---------------------+---------------------+-------+-------+------------+---------------------+
+; Data Port           ; Clock Port          ; Rise  ; Fall  ; Clock Edge ; Clock Reference     ;
++---------------------+---------------------+-------+-------+------------+---------------------+
+; altera_reserved_tdo ; altera_reserved_tck ; 7.546 ; 8.473 ; Fall       ; altera_reserved_tck ;
++---------------------+---------------------+-------+-------+------------+---------------------+
+
+
++----------------------------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                                                ;
++---------------------+---------------------+-------+-------+------------+---------------------+
+; Data Port           ; Clock Port          ; Rise  ; Fall  ; Clock Edge ; Clock Reference     ;
++---------------------+---------------------+-------+-------+------------+---------------------+
+; altera_reserved_tdo ; altera_reserved_tck ; 6.367 ; 7.292 ; Fall       ; altera_reserved_tck ;
++---------------------+---------------------+-------+-------+------------+---------------------+
+
+
++-------------------------------------------------------------+
+; Propagation Delay                                           ;
++------------+-------------+-------+--------+--------+--------+
+; Input Port ; Output Port ; RR    ; RF     ; FR     ; FF     ;
++------------+-------------+-------+--------+--------+--------+
+; IN[0]      ; P10_1       ; 9.981 ; 10.209 ; 11.053 ; 11.281 ;
+; IN[1]      ; P10_1       ; 8.487 ; 8.715  ; 9.399  ; 9.627  ;
+; IN[2]      ; P10_1       ; 9.492 ; 9.720  ; 10.556 ; 10.784 ;
+; IN[3]      ; P10_1       ; 8.342 ; 8.551  ; 9.241  ; 9.469  ;
+; IN[4]      ; P10_1       ; 8.417 ; 8.637  ; 9.320  ; 9.559  ;
+; IN[5]      ; P10_1       ; 8.517 ; 8.751  ; 9.403  ; 9.657  ;
+; IN[6]      ; P10_1       ; 8.812 ; 9.032  ; 9.811  ; 10.050 ;
+; IN[7]      ; P10_1       ; 8.530 ;        ;        ; 9.732  ;
+; RST        ; P10_1       ; 9.609 ; 9.837  ; 10.045 ; 10.273 ;
+; SWA        ; P10_1       ; 9.526 ; 9.754  ; 10.554 ; 10.782 ;
+; SWB        ; P10_1       ; 9.264 ; 9.492  ; 10.297 ; 10.525 ;
++------------+-------------+-------+--------+--------+--------+
+
+
++------------------------------------------------------------+
+; Minimum Propagation Delay                                  ;
++------------+-------------+-------+-------+--------+--------+
+; Input Port ; Output Port ; RR    ; RF    ; FR     ; FF     ;
++------------+-------------+-------+-------+--------+--------+
+; IN[0]      ; P10_1       ; 7.628 ; 7.829 ; 8.421  ; 8.622  ;
+; IN[1]      ; P10_1       ; 7.321 ; 7.522 ; 8.097  ; 8.298  ;
+; IN[2]      ; P10_1       ; 8.081 ; 8.282 ; 8.900  ; 9.101  ;
+; IN[3]      ; P10_1       ; 7.568 ; 7.769 ; 8.407  ; 8.627  ;
+; IN[4]      ; P10_1       ; 6.997 ; 7.210 ; 7.767  ; 7.999  ;
+; IN[5]      ; P10_1       ; 7.682 ; 7.937 ; 8.531  ; 8.741  ;
+; IN[6]      ; P10_1       ; 7.081 ; 7.294 ; 7.848  ; 8.080  ;
+; IN[7]      ; P10_1       ; 6.885 ;       ;        ; 7.885  ;
+; RST        ; P10_1       ; 7.556 ; 7.788 ; 8.042  ; 8.255  ;
+; SWA        ; P10_1       ; 9.061 ; 9.262 ; 10.057 ; 10.258 ;
+; SWB        ; P10_1       ; 8.881 ; 9.082 ; 9.887  ; 10.088 ;
++------------+-------------+-------+-------+--------+--------+
+
+
++----------------------------------------------------------------------------------+
+; Multicorner Timing Analysis Summary                                              ;
++----------------------+--------+-------+----------+---------+---------------------+
+; Clock                ; Setup  ; Hold  ; Recovery ; Removal ; Minimum Pulse Width ;
++----------------------+--------+-------+----------+---------+---------------------+
+; Worst-case Slack     ; 0.0    ; 0.0   ; 0.0      ; 0.0     ; 0.0                 ;
+;  altera_reserved_tck ; 46.532 ; 0.184 ; 48.604   ; 0.494   ; N/A                 ;
+; Design-wide TNS      ; 0.0    ; 0.0   ; 0.0      ; 0.0     ; N/A                 ;
+;  altera_reserved_tck ; 0.000  ; 0.000 ; 0.000    ; 0.000   ; N/A                 ;
++----------------------+--------+-------+----------+---------+---------------------+
+
+
++----------------------------------------------------------------------------------------------+
+; Setup Times                                                                                  ;
++---------------------+---------------------+-------+-------+------------+---------------------+
+; Data Port           ; Clock Port          ; Rise  ; Fall  ; Clock Edge ; Clock Reference     ;
++---------------------+---------------------+-------+-------+------------+---------------------+
+; altera_reserved_tdi ; altera_reserved_tck ; 3.383 ; 3.849 ; Rise       ; altera_reserved_tck ;
+; altera_reserved_tms ; altera_reserved_tck ; 8.606 ; 8.793 ; Rise       ; altera_reserved_tck ;
++---------------------+---------------------+-------+-------+------------+---------------------+
+
+
++------------------------------------------------------------------------------------------------+
+; Hold Times                                                                                     ;
++---------------------+---------------------+--------+--------+------------+---------------------+
+; Data Port           ; Clock Port          ; Rise   ; Fall   ; Clock Edge ; Clock Reference     ;
++---------------------+---------------------+--------+--------+------------+---------------------+
+; altera_reserved_tdi ; altera_reserved_tck ; 0.044  ; -0.171 ; Rise       ; altera_reserved_tck ;
+; altera_reserved_tms ; altera_reserved_tck ; -0.877 ; -1.065 ; Rise       ; altera_reserved_tck ;
++---------------------+---------------------+--------+--------+------------+---------------------+
+
+
++------------------------------------------------------------------------------------------------+
+; Clock to Output Times                                                                          ;
++---------------------+---------------------+--------+--------+------------+---------------------+
+; Data Port           ; Clock Port          ; Rise   ; Fall   ; Clock Edge ; Clock Reference     ;
++---------------------+---------------------+--------+--------+------------+---------------------+
+; altera_reserved_tdo ; altera_reserved_tck ; 15.524 ; 16.691 ; Fall       ; altera_reserved_tck ;
++---------------------+---------------------+--------+--------+------------+---------------------+
+
+
++----------------------------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                                                ;
++---------------------+---------------------+-------+-------+------------+---------------------+
+; Data Port           ; Clock Port          ; Rise  ; Fall  ; Clock Edge ; Clock Reference     ;
++---------------------+---------------------+-------+-------+------------+---------------------+
+; altera_reserved_tdo ; altera_reserved_tck ; 6.367 ; 7.292 ; Fall       ; altera_reserved_tck ;
++---------------------+---------------------+-------+-------+------------+---------------------+
+
+
++--------------------------------------------------------------+
+; Progagation Delay                                            ;
++------------+-------------+--------+--------+--------+--------+
+; Input Port ; Output Port ; RR     ; RF     ; FR     ; FF     ;
++------------+-------------+--------+--------+--------+--------+
+; IN[0]      ; P10_1       ; 23.256 ; 22.845 ; 22.912 ; 22.501 ;
+; IN[1]      ; P10_1       ; 19.342 ; 18.962 ; 19.355 ; 18.968 ;
+; IN[2]      ; P10_1       ; 21.855 ; 21.444 ; 21.774 ; 21.363 ;
+; IN[3]      ; P10_1       ; 19.153 ; 18.742 ; 19.138 ; 18.771 ;
+; IN[4]      ; P10_1       ; 19.245 ; 18.815 ; 19.157 ; 18.771 ;
+; IN[5]      ; P10_1       ; 19.591 ; 19.178 ; 19.355 ; 19.007 ;
+; IN[6]      ; P10_1       ; 20.356 ; 19.926 ; 20.237 ; 19.851 ;
+; IN[7]      ; P10_1       ; 19.602 ;        ;        ; 19.091 ;
+; RST        ; P10_1       ; 21.095 ; 20.684 ; 21.734 ; 21.323 ;
+; SWA        ; P10_1       ; 22.109 ; 21.698 ; 21.998 ; 21.587 ;
+; SWB        ; P10_1       ; 21.359 ; 20.979 ; 21.367 ; 20.980 ;
++------------+-------------+--------+--------+--------+--------+
+
+
++------------------------------------------------------------+
+; Minimum Progagation Delay                                  ;
++------------+-------------+-------+-------+--------+--------+
+; Input Port ; Output Port ; RR    ; RF    ; FR     ; FF     ;
++------------+-------------+-------+-------+--------+--------+
+; IN[0]      ; P10_1       ; 7.628 ; 7.829 ; 8.421  ; 8.622  ;
+; IN[1]      ; P10_1       ; 7.321 ; 7.522 ; 8.097  ; 8.298  ;
+; IN[2]      ; P10_1       ; 8.081 ; 8.282 ; 8.900  ; 9.101  ;
+; IN[3]      ; P10_1       ; 7.568 ; 7.769 ; 8.407  ; 8.627  ;
+; IN[4]      ; P10_1       ; 6.997 ; 7.210 ; 7.767  ; 7.999  ;
+; IN[5]      ; P10_1       ; 7.682 ; 7.937 ; 8.531  ; 8.741  ;
+; IN[6]      ; P10_1       ; 7.081 ; 7.294 ; 7.848  ; 8.080  ;
+; IN[7]      ; P10_1       ; 6.885 ;       ;        ; 7.885  ;
+; RST        ; P10_1       ; 7.556 ; 7.788 ; 8.042  ; 8.255  ;
+; SWA        ; P10_1       ; 9.061 ; 9.262 ; 10.057 ; 10.258 ;
+; SWB        ; P10_1       ; 8.881 ; 9.082 ; 9.887  ; 10.088 ;
++------------+-------------+-------+-------+--------+--------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Board Trace Model Assignments                                                                                                                                                                                                                                                                                                                                          ;
++---------------------+--------------+-------------------+-------------------------+-------------------------+---------------+---------------------+----------------+------------------+--------+------------------+------------------------+------------------------+--------------+---------------+-----------------+-------+---------------------+--------------------+
+; Pin                 ; I/O Standard ; Near Tline Length ; Near Tline L per Length ; Near Tline C per Length ; Near Series R ; Near Differential R ; Near Pull-up R ; Near Pull-down R ; Near C ; Far Tline Length ; Far Tline L per Length ; Far Tline C per Length ; Far Series R ; Far Pull-up R ; Far Pull-down R ; Far C ; Termination Voltage ; Far Differential R ;
++---------------------+--------------+-------------------+-------------------------+-------------------------+---------------+---------------------+----------------+------------------+--------+------------------+------------------------+------------------------+--------------+---------------+-----------------+-------+---------------------+--------------------+
+; RAMWE               ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ;
+; P10_1               ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ;
+; PA32                ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ;
+; PA33                ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ;
+; PA34                ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ;
+; altera_reserved_tdo ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ;
+; ~ALTERA_DCLK~       ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ;
++---------------------+--------------+-------------------+-------------------------+-------------------------+---------------+---------------------+----------------+------------------+--------+------------------+------------------------+------------------------+--------------+---------------+-----------------+-------+---------------------+--------------------+
+
+
++----------------------------------------------------------------------------+
+; Input Transition Times                                                     ;
++-------------------------+--------------+-----------------+-----------------+
+; Pin                     ; I/O Standard ; 10-90 Rise Time ; 90-10 Fall Time ;
++-------------------------+--------------+-----------------+-----------------+
+; IN[6]                   ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; IN[4]                   ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; IN[3]                   ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; IN[1]                   ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; IN[2]                   ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; IN[0]                   ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; IN[7]                   ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; IN[5]                   ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; P12_3                   ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; RST                     ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; P11_2                   ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; STEP                    ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; SWB                     ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; SWA                     ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; CLK0                    ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; altera_reserved_tms     ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; altera_reserved_tck     ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; altera_reserved_tdi     ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ~ALTERA_ASDO_DATA1~     ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ~ALTERA_FLASH_nCE_nCSO~ ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; ~ALTERA_DATA0~          ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
++-------------------------+--------------+-----------------+-----------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow Corner Signal Integrity Metrics                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             ;
++---------------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; Pin                 ; I/O Standard ; Board Delay on Rise ; Board Delay on Fall ; Steady State Voh at FPGA Pin ; Steady State Vol at FPGA Pin ; Voh Max at FPGA Pin ; Vol Min at FPGA Pin ; Ringback Voltage on Rise at FPGA Pin ; Ringback Voltage on Fall at FPGA Pin ; 10-90 Rise Time at FPGA Pin ; 90-10 Fall Time at FPGA Pin ; Monotonic Rise at FPGA Pin ; Monotonic Fall at FPGA Pin ; Steady State Voh at Far-end ; Steady State Vol at Far-end ; Voh Max at Far-end ; Vol Min at Far-end ; Ringback Voltage on Rise at Far-end ; Ringback Voltage on Fall at Far-end ; 10-90 Rise Time at Far-end ; 90-10 Fall Time at Far-end ; Monotonic Rise at Far-end ; Monotonic Fall at Far-end ;
++---------------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; RAMWE               ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 2.9e-007 V                   ; 2.35 V              ; -0.00108 V          ; 0.061 V                              ; 0.002 V                              ; 4.84e-010 s                 ; 4.97e-010 s                 ; Yes                        ; Yes                        ; 2.32 V                      ; 2.9e-007 V                  ; 2.35 V             ; -0.00108 V         ; 0.061 V                             ; 0.002 V                             ; 4.84e-010 s                ; 4.97e-010 s                ; Yes                       ; Yes                       ;
+; P10_1               ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 2.9e-007 V                   ; 2.35 V              ; -0.00108 V          ; 0.061 V                              ; 0.002 V                              ; 4.84e-010 s                 ; 4.97e-010 s                 ; Yes                        ; Yes                        ; 2.32 V                      ; 2.9e-007 V                  ; 2.35 V             ; -0.00108 V         ; 0.061 V                             ; 0.002 V                             ; 4.84e-010 s                ; 4.97e-010 s                ; Yes                       ; Yes                       ;
+; PA32                ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.95e-007 V                  ; 2.34 V              ; -0.00548 V          ; 0.078 V                              ; 0.022 V                              ; 9.09e-010 s                 ; 8.84e-010 s                 ; Yes                        ; Yes                        ; 2.32 V                      ; 1.95e-007 V                 ; 2.34 V             ; -0.00548 V         ; 0.078 V                             ; 0.022 V                             ; 9.09e-010 s                ; 8.84e-010 s                ; Yes                       ; Yes                       ;
+; PA33                ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.95e-007 V                  ; 2.34 V              ; -0.00548 V          ; 0.078 V                              ; 0.022 V                              ; 9.09e-010 s                 ; 8.84e-010 s                 ; Yes                        ; Yes                        ; 2.32 V                      ; 1.95e-007 V                 ; 2.34 V             ; -0.00548 V         ; 0.078 V                             ; 0.022 V                             ; 9.09e-010 s                ; 8.84e-010 s                ; Yes                       ; Yes                       ;
+; PA34                ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.95e-007 V                  ; 2.34 V              ; -0.00548 V          ; 0.078 V                              ; 0.022 V                              ; 9.09e-010 s                 ; 8.84e-010 s                 ; Yes                        ; Yes                        ; 2.32 V                      ; 1.95e-007 V                 ; 2.34 V             ; -0.00548 V         ; 0.078 V                             ; 0.022 V                             ; 9.09e-010 s                ; 8.84e-010 s                ; Yes                       ; Yes                       ;
+; altera_reserved_tdo ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.49e-006 V                  ; 2.33 V              ; 1.49e-006 V         ; 0.027 V                              ; 0.207 V                              ; 1.68e-009 s                 ; 4.49e-009 s                 ; Yes                        ; Yes                        ; 2.32 V                      ; 1.49e-006 V                 ; 2.33 V             ; 1.49e-006 V        ; 0.027 V                             ; 0.207 V                             ; 1.68e-009 s                ; 4.49e-009 s                ; Yes                       ; Yes                       ;
+; ~ALTERA_DCLK~       ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.53e-007 V                  ; 2.34 V              ; -0.00829 V          ; 0.106 V                              ; 0.016 V                              ; 6.53e-010 s                 ; 5.54e-010 s                 ; Yes                        ; Yes                        ; 2.32 V                      ; 1.53e-007 V                 ; 2.34 V             ; -0.00829 V         ; 0.106 V                             ; 0.016 V                             ; 6.53e-010 s                ; 5.54e-010 s                ; Yes                       ; Yes                       ;
++---------------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fast Corner Signal Integrity Metrics                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             ;
++---------------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; Pin                 ; I/O Standard ; Board Delay on Rise ; Board Delay on Fall ; Steady State Voh at FPGA Pin ; Steady State Vol at FPGA Pin ; Voh Max at FPGA Pin ; Vol Min at FPGA Pin ; Ringback Voltage on Rise at FPGA Pin ; Ringback Voltage on Fall at FPGA Pin ; 10-90 Rise Time at FPGA Pin ; 90-10 Fall Time at FPGA Pin ; Monotonic Rise at FPGA Pin ; Monotonic Fall at FPGA Pin ; Steady State Voh at Far-end ; Steady State Vol at Far-end ; Voh Max at Far-end ; Vol Min at Far-end ; Ringback Voltage on Rise at Far-end ; Ringback Voltage on Fall at Far-end ; 10-90 Rise Time at Far-end ; 90-10 Fall Time at Far-end ; Monotonic Rise at Far-end ; Monotonic Fall at Far-end ;
++---------------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+; RAMWE               ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 4.11e-008 V                  ; 2.73 V              ; -0.0567 V           ; 0.191 V                              ; 0.12 V                               ; 2.69e-010 s                 ; 2.76e-010 s                 ; Yes                        ; Yes                        ; 2.62 V                      ; 4.11e-008 V                 ; 2.73 V             ; -0.0567 V          ; 0.191 V                             ; 0.12 V                              ; 2.69e-010 s                ; 2.76e-010 s                ; Yes                       ; Yes                       ;
+; P10_1               ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 4.11e-008 V                  ; 2.73 V              ; -0.0567 V           ; 0.191 V                              ; 0.12 V                               ; 2.69e-010 s                 ; 2.76e-010 s                 ; Yes                        ; Yes                        ; 2.62 V                      ; 4.11e-008 V                 ; 2.73 V             ; -0.0567 V          ; 0.191 V                             ; 0.12 V                              ; 2.69e-010 s                ; 2.76e-010 s                ; Yes                       ; Yes                       ;
+; PA32                ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 2.78e-008 V                  ; 2.71 V              ; -0.0352 V           ; 0.253 V                              ; 0.068 V                              ; 4.96e-010 s                 ; 5.19e-010 s                 ; No                         ; Yes                        ; 2.62 V                      ; 2.78e-008 V                 ; 2.71 V             ; -0.0352 V          ; 0.253 V                             ; 0.068 V                             ; 4.96e-010 s                ; 5.19e-010 s                ; No                        ; Yes                       ;
+; PA33                ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 2.78e-008 V                  ; 2.71 V              ; -0.0352 V           ; 0.253 V                              ; 0.068 V                              ; 4.96e-010 s                 ; 5.19e-010 s                 ; No                         ; Yes                        ; 2.62 V                      ; 2.78e-008 V                 ; 2.71 V             ; -0.0352 V          ; 0.253 V                             ; 0.068 V                             ; 4.96e-010 s                ; 5.19e-010 s                ; No                        ; Yes                       ;
+; PA34                ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 2.78e-008 V                  ; 2.71 V              ; -0.0352 V           ; 0.253 V                              ; 0.068 V                              ; 4.96e-010 s                 ; 5.19e-010 s                 ; No                         ; Yes                        ; 2.62 V                      ; 2.78e-008 V                 ; 2.71 V             ; -0.0352 V          ; 0.253 V                             ; 0.068 V                             ; 4.96e-010 s                ; 5.19e-010 s                ; No                        ; Yes                       ;
+; altera_reserved_tdo ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 2.05e-007 V                  ; 2.65 V              ; 2.05e-007 V         ; 0.264 V                              ; 0.196 V                              ; 9.54e-010 s                 ; 2.67e-009 s                 ; No                         ; Yes                        ; 2.62 V                      ; 2.05e-007 V                 ; 2.65 V             ; 2.05e-007 V        ; 0.264 V                             ; 0.196 V                             ; 9.54e-010 s                ; 2.67e-009 s                ; No                        ; Yes                       ;
+; ~ALTERA_DCLK~       ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 2.19e-008 V                  ; 2.72 V              ; -0.0746 V           ; 0.28 V                               ; 0.169 V                              ; 3.1e-010 s                  ; 3.01e-010 s                 ; No                         ; Yes                        ; 2.62 V                      ; 2.19e-008 V                 ; 2.72 V             ; -0.0746 V          ; 0.28 V                              ; 0.169 V                             ; 3.1e-010 s                 ; 3.01e-010 s                ; No                        ; Yes                       ;
++---------------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
+
+
++---------------------------------------------------------------------------------------+
+; Setup Transfers                                                                       ;
++---------------------+---------------------+----------+----------+----------+----------+
+; From Clock          ; To Clock            ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++---------------------+---------------------+----------+----------+----------+----------+
+; altera_reserved_tck ; altera_reserved_tck ; 2109     ; 0        ; 25       ; 1        ;
++---------------------+---------------------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
++---------------------------------------------------------------------------------------+
+; Hold Transfers                                                                        ;
++---------------------+---------------------+----------+----------+----------+----------+
+; From Clock          ; To Clock            ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++---------------------+---------------------+----------+----------+----------+----------+
+; altera_reserved_tck ; altera_reserved_tck ; 2109     ; 0        ; 25       ; 1        ;
++---------------------+---------------------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
++---------------------------------------------------------------------------------------+
+; Recovery Transfers                                                                    ;
++---------------------+---------------------+----------+----------+----------+----------+
+; From Clock          ; To Clock            ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++---------------------+---------------------+----------+----------+----------+----------+
+; altera_reserved_tck ; altera_reserved_tck ; 87       ; 0        ; 1        ; 0        ;
++---------------------+---------------------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
++---------------------------------------------------------------------------------------+
+; Removal Transfers                                                                     ;
++---------------------+---------------------+----------+----------+----------+----------+
+; From Clock          ; To Clock            ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++---------------------+---------------------+----------+----------+----------+----------+
+; altera_reserved_tck ; altera_reserved_tck ; 87       ; 0        ; 1        ; 0        ;
++---------------------+---------------------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
+---------------
+; Report TCCS ;
+---------------
+No dedicated SERDES Transmitter circuitry present in device or used in design.
+
+
+---------------
+; Report RSKM ;
+---------------
+No dedicated SERDES Receiver circuitry present in device or used in design.
+
+
++------------------------------------------------+
+; Unconstrained Paths                            ;
++---------------------------------+-------+------+
+; Property                        ; Setup ; Hold ;
++---------------------------------+-------+------+
+; Illegal Clocks                  ; 0     ; 0    ;
+; Unconstrained Clocks            ; 7     ; 7    ;
+; Unconstrained Input Ports       ; 15    ; 15   ;
+; Unconstrained Input Port Paths  ; 217   ; 217  ;
+; Unconstrained Output Ports      ; 3     ; 3    ;
+; Unconstrained Output Port Paths ; 109   ; 109  ;
++---------------------------------+-------+------+
+
+
++------------------------------------+
+; TimeQuest Timing Analyzer Messages ;
++------------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II TimeQuest Timing Analyzer
+    Info: Version 9.0 Build 132 02/25/2009 SJ Full Version
+    Info: Processing started: Wed Oct 09 16:42:33 2024
+Info: Command: quartus_sta CPU5A -c CPU5A
+Info: qsta_default_script.tcl version: #3
+Info: Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info: Core supply voltage is 1.2V
+Info: Low junction temperature is 0 degrees C
+Info: High junction temperature is 85 degrees C
+Warning: Timing Analysis is analyzing one or more combinational loops as latches
+    Warning: Node "inst2|inst18|inst2~latch|combout" is a latch
+    Warning: Node "inst2|inst18|inst7~latch|combout" is a latch
+    Warning: Node "inst2|inst18|inst8~latch|combout" is a latch
+    Warning: Node "inst2|inst18|inst4~latch|combout" is a latch
+    Warning: Node "inst2|inst18|inst5~latch|combout" is a latch
+    Warning: Node "inst7|inst19|lpm_latch_component|latches[6]|combout" is a latch
+    Warning: Node "inst7|inst19|lpm_latch_component|latches[7]|combout" is a latch
+    Warning: Node "inst7|inst19|lpm_latch_component|latches[4]|combout" is a latch
+    Warning: Node "inst7|inst19|lpm_latch_component|latches[2]|combout" is a latch
+    Warning: Node "inst7|inst19|lpm_latch_component|latches[5]|combout" is a latch
+    Warning: Node "inst7|inst19|lpm_latch_component|latches[3]|combout" is a latch
+    Warning: Node "inst6|inst13|lpm_latch_component|latches[6]|combout" is a latch
+    Warning: Node "inst6|inst8|lpm_latch_component|latches[6]|combout" is a latch
+    Warning: Node "inst6|inst13|lpm_latch_component|latches[7]|combout" is a latch
+    Warning: Node "inst6|inst8|lpm_latch_component|latches[7]|combout" is a latch
+    Warning: Node "inst6|inst8|lpm_latch_component|latches[1]|combout" is a latch
+    Warning: Node "inst6|inst8|lpm_latch_component|latches[3]|combout" is a latch
+    Warning: Node "inst6|inst13|lpm_latch_component|latches[3]|combout" is a latch
+    Warning: Node "inst6|inst13|lpm_latch_component|latches[1]|combout" is a latch
+    Warning: Node "inst6|inst13|lpm_latch_component|latches[4]|combout" is a latch
+    Warning: Node "inst6|inst8|lpm_latch_component|latches[4]|combout" is a latch
+    Warning: Node "inst6|inst13|lpm_latch_component|latches[2]|combout" is a latch
+    Warning: Node "inst6|inst8|lpm_latch_component|latches[0]|combout" is a latch
+    Warning: Node "inst6|inst8|lpm_latch_component|latches[2]|combout" is a latch
+    Warning: Node "inst6|inst13|lpm_latch_component|latches[0]|combout" is a latch
+    Warning: Node "inst6|inst13|lpm_latch_component|latches[5]|combout" is a latch
+    Warning: Node "inst6|inst8|lpm_latch_component|latches[5]|combout" is a latch
+    Warning: Node "inst6|inst10|inst10|lpm_latch_component|latches[6]|combout" is a latch
+    Warning: Node "inst6|inst10|inst9|lpm_latch_component|latches[6]|combout" is a latch
+    Warning: Node "inst6|inst10|inst9|lpm_latch_component|latches[7]|combout" is a latch
+    Warning: Node "inst6|inst10|inst10|lpm_latch_component|latches[7]|combout" is a latch
+    Warning: Node "inst6|inst10|inst9|lpm_latch_component|latches[4]|combout" is a latch
+    Warning: Node "inst6|inst10|inst10|lpm_latch_component|latches[4]|combout" is a latch
+    Warning: Node "inst6|inst10|inst9|lpm_latch_component|latches[2]|combout" is a latch
+    Warning: Node "inst6|inst10|inst9|lpm_latch_component|latches[5]|combout" is a latch
+    Warning: Node "inst6|inst10|inst10|lpm_latch_component|latches[5]|combout" is a latch
+    Warning: Node "inst6|inst10|inst9|lpm_latch_component|latches[3]|combout" is a latch
+    Warning: Node "inst6|inst10|inst10|lpm_latch_component|latches[3]|combout" is a latch
+    Warning: Node "inst7|inst19|lpm_latch_component|latches[0]|combout" is a latch
+    Warning: Node "inst7|inst19|lpm_latch_component|latches[1]|combout" is a latch
+    Warning: Node "inst6|inst10|inst10|lpm_latch_component|latches[2]|combout" is a latch
+    Warning: Node "inst6|inst10|inst9|lpm_latch_component|latches[1]|combout" is a latch
+    Warning: Node "inst6|inst10|inst10|lpm_latch_component|latches[0]|combout" is a latch
+    Warning: Node "inst6|inst10|inst9|lpm_latch_component|latches[0]|combout" is a latch
+    Warning: Node "inst7|inst15|lpm_latch_component|latches[0]|combout" is a latch
+    Warning: Node "inst7|inst15|lpm_latch_component|latches[1]|combout" is a latch
+    Warning: Node "inst7|inst15|lpm_latch_component|latches[2]|combout" is a latch
+    Warning: Node "inst7|inst15|lpm_latch_component|latches[3]|combout" is a latch
+    Warning: Node "inst7|inst15|lpm_latch_component|latches[4]|combout" is a latch
+    Warning: Node "inst7|inst15|lpm_latch_component|latches[5]|combout" is a latch
+    Warning: Node "inst7|inst15|lpm_latch_component|latches[6]|combout" is a latch
+    Warning: Node "inst7|inst15|lpm_latch_component|latches[7]|combout" is a latch
+    Warning: Node "inst6|inst10|inst10|lpm_latch_component|latches[1]|combout" is a latch
+    Warning: Node "inst6|inst10|inst11|lpm_latch_component|latches[6]|combout" is a latch
+    Warning: Node "inst7|inst20|lpm_latch_component|latches[6]|combout" is a latch
+    Warning: Node "inst6|inst10|inst11|lpm_latch_component|latches[4]|combout" is a latch
+    Warning: Node "inst7|inst20|lpm_latch_component|latches[4]|combout" is a latch
+    Warning: Node "inst6|inst10|inst11|lpm_latch_component|latches[3]|combout" is a latch
+    Warning: Node "inst7|inst20|lpm_latch_component|latches[3]|combout" is a latch
+    Warning: Node "inst6|inst10|inst11|lpm_latch_component|latches[1]|combout" is a latch
+    Warning: Node "inst7|inst20|lpm_latch_component|latches[1]|combout" is a latch
+    Warning: Node "inst6|inst10|inst11|lpm_latch_component|latches[2]|combout" is a latch
+    Warning: Node "inst7|inst20|lpm_latch_component|latches[2]|combout" is a latch
+    Warning: Node "inst6|inst10|inst11|lpm_latch_component|latches[0]|combout" is a latch
+    Warning: Node "inst7|inst20|lpm_latch_component|latches[0]|combout" is a latch
+    Warning: Node "inst7|inst20|lpm_latch_component|latches[7]|combout" is a latch
+    Warning: Node "inst6|inst10|inst11|lpm_latch_component|latches[7]|combout" is a latch
+    Warning: Node "inst6|inst10|inst11|lpm_latch_component|latches[5]|combout" is a latch
+    Warning: Node "inst7|inst20|lpm_latch_component|latches[5]|combout" is a latch
+Info: Evaluating HDL-embedded SDC commands
+    Info: Entity sld_hub
+        Info: create_clock -period 10MHz -name altera_reserved_tck [get_ports {altera_reserved_tck}]
+Critical Warning: Synopsys Design Constraints File file not found: 'CPU5A.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Warning: Node: step3:inst43|inst was determined to be a clock but was found without an associated clock assignment.
+Warning: Node: step3:inst43|inst2 was determined to be a clock but was found without an associated clock assignment.
+Warning: Node: CLK0 was determined to be a clock but was found without an associated clock assignment.
+Warning: Node: step3:inst43|inst3 was determined to be a clock but was found without an associated clock assignment.
+Warning: Node: dsplay:inst3|dsp:48|cnt3:216|lpm_counter:1|cntr_26i:auto_generated|counter_reg_bit[0] was determined to be a clock but was found without an associated clock assignment.
+Warning: Node: P11_2 was determined to be a clock but was found without an associated clock assignment.
+Warning: Node: step3:inst43|inst1 was determined to be a clock but was found without an associated clock assignment.
+Info: PLL cross checking found inconsistent PLL clock settings:
+    Info: Node: inst1|altpll_component|auto_generated|pll1|clk[0] was found missing 1 generated clock that corresponds to a base clock with a period of: 50.000
+Critical Warning: The following clock transfers have no clock uncertainty assignment. For more accurate results, apply clock uncertainty assignments or use the derive_clock_uncertainty command.
+    Critical Warning: From altera_reserved_tck (Rise) to altera_reserved_tck (Rise) (setup and hold)
+    Critical Warning: From altera_reserved_tck (Rise) to altera_reserved_tck (Fall) (setup and hold)
+    Critical Warning: From altera_reserved_tck (Fall) to altera_reserved_tck (Fall) (setup and hold)
+Info: Analyzing Slow 1200mV 85C Model
+Info: Worst-case setup slack is 46.532
+    Info:     Slack End Point TNS Clock 
+    Info: ========= ============= =====================
+    Info:    46.532         0.000 altera_reserved_tck 
+Info: Worst-case hold slack is 0.451
+    Info:     Slack End Point TNS Clock 
+    Info: ========= ============= =====================
+    Info:     0.451         0.000 altera_reserved_tck 
+Info: Worst-case recovery slack is 48.604
+    Info:     Slack End Point TNS Clock 
+    Info: ========= ============= =====================
+    Info:    48.604         0.000 altera_reserved_tck 
+Info: Worst-case removal slack is 1.127
+    Info:     Slack End Point TNS Clock 
+    Info: ========= ============= =====================
+    Info:     1.127         0.000 altera_reserved_tck 
+Info: The Metastability Analysis global option is set to OFF.
+Info: No synchronizer chains to report.
+Info: Analyzing Slow 1200mV 0C Model
+Info: Started post-fitting delay annotation
+Info: Delay annotation completed successfully
+Warning: Node: step3:inst43|inst was determined to be a clock but was found without an associated clock assignment.
+Warning: Node: step3:inst43|inst2 was determined to be a clock but was found without an associated clock assignment.
+Warning: Node: CLK0 was determined to be a clock but was found without an associated clock assignment.
+Warning: Node: step3:inst43|inst3 was determined to be a clock but was found without an associated clock assignment.
+Warning: Node: dsplay:inst3|dsp:48|cnt3:216|lpm_counter:1|cntr_26i:auto_generated|counter_reg_bit[0] was determined to be a clock but was found without an associated clock assignment.
+Warning: Node: P11_2 was determined to be a clock but was found without an associated clock assignment.
+Warning: Node: step3:inst43|inst1 was determined to be a clock but was found without an associated clock assignment.
+Info: PLL cross checking found inconsistent PLL clock settings:
+    Info: Node: inst1|altpll_component|auto_generated|pll1|clk[0] was found missing 1 generated clock that corresponds to a base clock with a period of: 50.000
+Critical Warning: The following clock transfers have no clock uncertainty assignment. For more accurate results, apply clock uncertainty assignments or use the derive_clock_uncertainty command.
+    Critical Warning: From altera_reserved_tck (Rise) to altera_reserved_tck (Rise) (setup and hold)
+    Critical Warning: From altera_reserved_tck (Rise) to altera_reserved_tck (Fall) (setup and hold)
+    Critical Warning: From altera_reserved_tck (Fall) to altera_reserved_tck (Fall) (setup and hold)
+Info: Worst-case setup slack is 46.867
+    Info:     Slack End Point TNS Clock 
+    Info: ========= ============= =====================
+    Info:    46.867         0.000 altera_reserved_tck 
+Info: Worst-case hold slack is 0.400
+    Info:     Slack End Point TNS Clock 
+    Info: ========= ============= =====================
+    Info:     0.400         0.000 altera_reserved_tck 
+Info: Worst-case recovery slack is 48.885
+    Info:     Slack End Point TNS Clock 
+    Info: ========= ============= =====================
+    Info:    48.885         0.000 altera_reserved_tck 
+Info: Worst-case removal slack is 1.028
+    Info:     Slack End Point TNS Clock 
+    Info: ========= ============= =====================
+    Info:     1.028         0.000 altera_reserved_tck 
+Info: The Metastability Analysis global option is set to OFF.
+Info: No synchronizer chains to report.
+Info: Analyzing Fast 1200mV 0C Model
+Warning: Node: step3:inst43|inst was determined to be a clock but was found without an associated clock assignment.
+Warning: Node: step3:inst43|inst2 was determined to be a clock but was found without an associated clock assignment.
+Warning: Node: CLK0 was determined to be a clock but was found without an associated clock assignment.
+Warning: Node: step3:inst43|inst3 was determined to be a clock but was found without an associated clock assignment.
+Warning: Node: dsplay:inst3|dsp:48|cnt3:216|lpm_counter:1|cntr_26i:auto_generated|counter_reg_bit[0] was determined to be a clock but was found without an associated clock assignment.
+Warning: Node: P11_2 was determined to be a clock but was found without an associated clock assignment.
+Warning: Node: step3:inst43|inst1 was determined to be a clock but was found without an associated clock assignment.
+Info: PLL cross checking found inconsistent PLL clock settings:
+    Info: Node: inst1|altpll_component|auto_generated|pll1|clk[0] was found missing 1 generated clock that corresponds to a base clock with a period of: 50.000
+Critical Warning: The following clock transfers have no clock uncertainty assignment. For more accurate results, apply clock uncertainty assignments or use the derive_clock_uncertainty command.
+    Critical Warning: From altera_reserved_tck (Rise) to altera_reserved_tck (Rise) (setup and hold)
+    Critical Warning: From altera_reserved_tck (Rise) to altera_reserved_tck (Fall) (setup and hold)
+    Critical Warning: From altera_reserved_tck (Fall) to altera_reserved_tck (Fall) (setup and hold)
+Info: Worst-case setup slack is 48.745
+    Info:     Slack End Point TNS Clock 
+    Info: ========= ============= =====================
+    Info:    48.745         0.000 altera_reserved_tck 
+Info: Worst-case hold slack is 0.184
+    Info:     Slack End Point TNS Clock 
+    Info: ========= ============= =====================
+    Info:     0.184         0.000 altera_reserved_tck 
+Info: Worst-case recovery slack is 49.594
+    Info:     Slack End Point TNS Clock 
+    Info: ========= ============= =====================
+    Info:    49.594         0.000 altera_reserved_tck 
+Info: Worst-case removal slack is 0.494
+    Info:     Slack End Point TNS Clock 
+    Info: ========= ============= =====================
+    Info:     0.494         0.000 altera_reserved_tck 
+Info: The Metastability Analysis global option is set to OFF.
+Info: No synchronizer chains to report.
+Info: Design is not fully constrained for setup requirements
+Info: Design is not fully constrained for hold requirements
+Info: Quartus II TimeQuest Timing Analyzer was successful. 0 errors, 104 warnings
+    Info: Peak virtual memory: 257 megabytes
+    Info: Processing ended: Wed Oct 09 16:42:35 2024
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:02
+
+

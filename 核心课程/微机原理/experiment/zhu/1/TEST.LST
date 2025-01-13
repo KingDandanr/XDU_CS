@@ -1,0 +1,144 @@
+Turbo Assembler	 Version 4.1	    13/01/01 00:02:27	    Page 1
+F:\1\116\test.asm
+
+
+
+      1	0000			     MYSTACK SEGMENT PARA 'STACK'
+      2	0000  64*(????)		     DW	    100	DUP(?)
+      3	00C8			     MYSTACK ENDS
+      4
+      5	0000			     DATA    SEGMENT PARA 'DATA'
+      6	0000  49 4E 50 55 54 20	43+  tishi   DB	     'INPUT CHAR:$'
+      7	      48 41 52 3A 24
+      8	000C  4E 61 6D 65 3A 7A	68+  xinxi   DB	     'Name:zhutianfeng;	ID:22009200295$'
+      9	      75 74 69 61 6E 66	65+
+     10	      6E 67 3B 20 49 44	3A+
+     11	      32 32 30 30 39 32	30+
+     12	      30 32 39 35 24
+     13	002D  41 53 43 49 49 3A	24   ascii   DB	     'ASCII:$'
+     14	0034			     DATA    ENDS
+     15
+     16	0000			     CODE    SEGMENT PARA 'CODE'
+     17					     ASSUME  CS:CODE,DS:DATA,SS:MYSTACK
+     18	0000			     START:
+     19	0000  B8 0000s		     MOV     AX, DATA
+     20	0003  8E D8		     MOV     DS,AX
+     21	0005  8E C0		     MOV     ES,AX
+     22	0007  B8 0000s		     MOV     AX,MYSTACK
+     23	000A  8E D0		     MOV     SS,AX
+     24
+     25				     ;xingming xuehao
+     26	000C  BA 000Cr		     LEA     DX,xinxi
+     27	000F  B4 09		     MOV     AH,09H
+     28	0011  CD 21		     INT     21H
+     29	0013  B2 0D		     MOV     DL,0DH
+     30	0015  B4 02		     MOV     AH,2
+     31	0017  CD 21		     INT     21H
+     32	0019  B2 0A		     MOV     DL,0AH
+     33	001B  B4 02		     MOV     AH,2
+     34	001D  CD 21		     INT     21H
+     35	001F  BA 0000r		     LEA     DX,tishi
+     36	0022  B4 09		     MOV     AH,9
+     37	0024  CD 21		     INT     21H
+     38				     ;zifu huixian
+     39	0026			     NEXT:
+     40	0026  B2 0D		     MOV     DL,0DH
+     41	0028  B4 02		     MOV     AH,2
+     42	002A  CD 21		     INT     21H
+     43	002C  B2 0A		     MOV     DL,0AH
+     44	002E  B4 02		     MOV     AH,2
+     45	0030  CD 21		     INT     21H
+     46	0032  B4 01		     MOV     AH,1
+     47	0034  CD 21		     INT     21H
+     48	0036  3C 71		     CMP     AL,'q'
+     49	0038  74 5D		     JE	     ENDING
+     50	003A  3C 51		     CMP     AL,'Q'
+     51	003C  74 59		     JE	     ENDING
+     52	003E  8A D8		     MOV     BL,AL
+     53	0040  8A F8		     MOV     BH,AL
+     54	0042  B2 0D		     MOV     DL,0DH
+     55	0044  B4 02		     MOV     AH,2
+     56	0046  CD 21		     INT     21H
+     57	0048  B2 0A		     MOV     DL,0AH
+Turbo Assembler	 Version 4.1	    13/01/01 00:02:27	    Page 2
+F:\1\116\test.asm
+
+
+
+     58	004A  B4 02		     MOV     AH,2
+     59	004C  CD 21		     INT     21H
+     60	004E  BA 002Dr		     LEA     DX,ascii
+     61	0051  B4 09		     MOV     AH,9
+     62	0053  CD 21		     INT     21H
+     63				     ;GAOSI
+     64	0055  80 E3 F0		     AND     BL,0F0H
+     65				     ;MOV    CL,4
+     66	0058  D0 EB D0 EB D0 EB	D0+  SHR     BL,4
+     67	      EB
+     68	0060  80 FB 09		     CMP     BL,9
+     69	0063  77 1C		     JA	     GAOSI
+     70	0065  80 C3 30		     ADD     BL,'0';
+     71	0068  8A D3		     MOV     DL,BL
+     72	006A  B4 02		     MOV     AH,02H
+     73	006C  CD 21		     INT     21H
+     74				     ;DISI
+     75	006E			     num2:
+     76	006E  80 E7 0F		     AND     BH,0FH
+     77	0071  80 FF 09		     CMP     BH,9
+     78	0074  77 16		     JA	     DISI
+     79	0076  80 C7 30		     ADD     BH,'0'
+     80	0079  8A D7		     MOV     DL,BH
+     81	007B  B4 02		     MOV     AH,02H
+     82	007D  CD 21		     INT     21H
+     83	007F  EB A5		     JMP     NEXT
+     84	0081			     GAOSI:
+     85	0081  80 C3 37		     ADD     BL,37H
+     86	0084  8A D3		     MOV     DL,BL
+     87	0086  B4 02		     MOV     AH,02H
+     88	0088  CD 21		     INT     21H
+     89	008A  EB E2		     JMP     num2
+     90	008C			     DISI:
+     91	008C  80 C7 37		     ADD     BH,37H
+     92	008F  8A D7		     MOV     DL,BH
+     93	0091  B4 02		     MOV     AH,02H
+     94	0093  CD 21		     INT     21H
+     95	0095  EB 8F		     JMP     NEXT
+     96
+     97	0097			     ENDING:
+     98	0097  B4 4C		     MOV     AH,4CH
+     99	0099  CD 21		     INT     21H
+    100
+    101	009B			     CODE    ENDS
+    102				     END     START
+Turbo Assembler	 Version 4.1	    13/01/01 00:02:27	    Page 3
+Symbol Table
+
+
+
+
+Symbol Name			  Type	 Value
+
+??DATE				  Text	 "13/01/01"
+??FILENAME			  Text	 "test	  "
+??TIME				  Text	 "00:02:27"
+??VERSION			  Number 040A
+@CPU				  Text	 0101H
+@CURSEG				  Text	 CODE
+@FILENAME			  Text	 TEST
+@WORDSIZE			  Text	 2
+ASCII				  Byte	 DATA:002D
+DISI				  Near	 CODE:008C
+ENDING				  Near	 CODE:0097
+GAOSI				  Near	 CODE:0081
+NEXT				  Near	 CODE:0026
+NUM2				  Near	 CODE:006E
+START				  Near	 CODE:0000
+TISHI				  Byte	 DATA:0000
+XINXI				  Byte	 DATA:000C
+
+Groups & Segments		  Bit Size Align  Combine Class
+
+CODE				  16  009B Para	  none	  CODE
+DATA				  16  0034 Para	  none	  DATA
+MYSTACK				  16  00C8 Para	  none	  STACK
+

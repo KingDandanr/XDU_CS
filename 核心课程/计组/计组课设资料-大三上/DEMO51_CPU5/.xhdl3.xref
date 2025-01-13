@@ -1,0 +1,6 @@
+$VAR1 = {
+          'ALU181.vhd' => {
+                            '-path' => 'c:/EDA_FOR_PC_BOOK/CPU8B_PACK/',
+                            'ALU181_b.v' => 1
+                          }
+        };

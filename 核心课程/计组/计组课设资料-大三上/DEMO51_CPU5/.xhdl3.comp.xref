@@ -1,0 +1,64 @@
+$VAR1 = {
+          'alu181' => {
+                        'entity' => 'ALU181',
+                        'generics' => undef,
+                        'io' => [
+                                  {
+                                    '-type' => 'std_logic_vector',
+                                    '-name' => 'S',
+                                    '-range' => '[3:0]',
+                                    '-dir' => 'input',
+                                    '-val' => 'S'
+                                  },
+                                  {
+                                    '-type' => 'std_logic_vector',
+                                    '-name' => 'A',
+                                    '-range' => '[7:0]',
+                                    '-dir' => 'input',
+                                    '-val' => 'A'
+                                  },
+                                  {
+                                    '-type' => 'std_logic_vector',
+                                    '-name' => 'B',
+                                    '-range' => '[7:0]',
+                                    '-dir' => 'input',
+                                    '-val' => 'B'
+                                  },
+                                  {
+                                    '-type' => 'std_logic_vector',
+                                    '-name' => 'F',
+                                    '-range' => '[7:0]',
+                                    '-dir' => 'output',
+                                    '-val' => 'F'
+                                  },
+                                  {
+                                    '-type' => 'std_logic',
+                                    '-name' => 'M',
+                                    '-range' => '',
+                                    '-dir' => 'input',
+                                    '-val' => 'M'
+                                  },
+                                  {
+                                    '-type' => 'std_logic',
+                                    '-name' => 'CN',
+                                    '-range' => '',
+                                    '-dir' => 'input',
+                                    '-val' => 'CN'
+                                  },
+                                  {
+                                    '-type' => 'std_logic',
+                                    '-name' => 'CO',
+                                    '-range' => '',
+                                    '-dir' => 'output',
+                                    '-val' => 'CO'
+                                  },
+                                  {
+                                    '-type' => 'std_logic',
+                                    '-name' => 'FZ',
+                                    '-range' => '',
+                                    '-dir' => 'output',
+                                    '-val' => 'FZ'
+                                  }
+                                ]
+                      }
+        };

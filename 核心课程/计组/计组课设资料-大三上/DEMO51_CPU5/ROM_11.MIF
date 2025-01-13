@@ -1,0 +1,95 @@
+-- MAX+plus II - generated Memory Initialization File
+
+-- Copyright (C) 1988-2000 Altera Corporation
+-- Any megafunction design, and related net list (encrypted or decrypted),
+-- support information, device programming or simulation file, and any other
+-- associated documentation or information provided by Altera or a partner
+-- under Altera's Megafunction Partnership Program may be used only to
+-- program PLD devices (but not masked PLD devices) from Altera.  Any other
+-- use of such megafunction design, net list, support information, device
+-- programming or simulation file, or any other related documentation or
+-- information is prohibited for any other purpose, including, but not
+-- limited to modification, reverse engineering, de-compiling, or use with
+-- any other silicon devices, unless such use is explicitly licensed under
+-- a separate agreement with Altera or a megafunction partner.  Title to
+-- the intellectual property, including patents, copyrights, trademarks,
+-- trade secrets, or maskworks, embodied in any such megafunction design,
+-- net list, support information, device programming or simulation file, or
+-- any other related documentation or information provided by Altera or a
+-- megafunction partner, remains with Altera, the megafunction partner, or
+-- their respective licensors.  No other licenses, including any licenses
+-- needed under any third party's intellectual property, are provided herein.
+
+WIDTH = 24;
+DEPTH = 64;
+
+ADDRESS_RADIX = HEX;
+DATA_RADIX = HEX;
+
+CONTENT BEGIN
+	0	:	001001;
+	1	:	00ed82;
+	2	:	00c048;
+	3	:	00e004;
+	4	:	00b005;
+	5	:	01a206;
+	6	:	919a01;
+	7	:	00e00d;
+	8	:	001001;
+	9	:	00ed83;
+	a	:	00ed87;
+	b	:	00ed8e;
+	c	:	00ed96;
+	d	:	038201;
+	e	:	00e00f;
+	f	:	00a015;
+	10	:	01ed92;
+	11	:	01ed94;
+	12	:	00a001;
+	13	:	008001;
+	14	:	062011;
+	15	:	070a01;
+	16	:	00d181;
+	17	:	000000;
+	18	:	000000;
+	19	:	000000;
+	1a	:	000000;
+	1b	:	000000;
+	1c	:	000000;
+	1d	:	000000;
+	1e	:	000000;
+	1f	:	000000;
+	20	:	000000;
+	21	:	000000;
+	22	:	000000;
+	23	:	000000;
+	24	:	000000;
+	25	:	000000;
+	26	:	000000;
+	27	:	000000;
+	28	:	000000;
+	29	:	000000;
+	2a	:	000000;
+	2b	:	000000;
+	2c	:	000000;
+	2d	:	000000;
+	2e	:	000000;
+	2f	:	000000;
+	30	:	000000;
+	31	:	000000;
+	32	:	000000;
+	33	:	000000;
+	34	:	000000;
+	35	:	000000;
+	36	:	000000;
+	37	:	000000;
+	38	:	000000;
+	39	:	000000;
+	3a	:	000000;
+	3b	:	000000;
+	3c	:	000000;
+	3d	:	000000;
+	3e	:	000000;
+	3f	:	000000;
+END;
+

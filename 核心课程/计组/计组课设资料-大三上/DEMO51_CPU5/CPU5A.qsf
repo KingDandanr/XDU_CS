@@ -1,0 +1,134 @@
+# Copyright (C) 1991-2004 Altera Corporation
+# Any  megafunction  design,  and related netlist (encrypted  or  decrypted),
+# support information,  device programming or simulation file,  and any other
+# associated  documentation or information  provided by  Altera  or a partner
+# under  Altera's   Megafunction   Partnership   Program  may  be  used  only
+# to program  PLD  devices (but not masked  PLD  devices) from  Altera.   Any
+# other  use  of such  megafunction  design,  netlist,  support  information,
+# device programming or simulation file,  or any other  related documentation
+# or information  is prohibited  for  any  other purpose,  including, but not
+# limited to  modification,  reverse engineering,  de-compiling, or use  with
+# any other  silicon devices,  unless such use is  explicitly  licensed under
+# a separate agreement with  Altera  or a megafunction partner.  Title to the
+# intellectual property,  including patents,  copyrights,  trademarks,  trade
+# secrets,  or maskworks,  embodied in any such megafunction design, netlist,
+# support  information,  device programming or simulation file,  or any other
+# related documentation or information provided by  Altera  or a megafunction
+# partner, remains with Altera, the megafunction partner, or their respective
+# licensors. No other licenses, including any licenses needed under any third
+# party's intellectual property, are provided herein.
+
+
+# The default values for assignments are stored in the file
+#		CPU5A_assignment_defaults.qdf
+# If this file doesn't exist, and for assignments not listed, see file
+#		assignment_defaults.qdf
+
+# Altera recommends that you do not modify this file. This
+# file is updated automatically by the Quartus II software
+# and any changes you make may be lost or overwritten.
+
+
+# Project-Wide Assignments
+# ========================
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 5.1
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "16:02:06  JULY 23, 2006"
+set_global_assignment -name LAST_QUARTUS_VERSION 9.0
+
+# Pin & Location Assignments
+# ==========================
+
+# Analysis & Synthesis Assignments
+# ================================
+set_global_assignment -name DEVICE_FILTER_PACKAGE PQFP
+set_global_assignment -name DEVICE_FILTER_PIN_COUNT 240
+set_global_assignment -name DEVICE_FILTER_SPEED_GRADE 8
+set_global_assignment -name FAMILY "Cyclone III"
+set_global_assignment -name TOP_LEVEL_ENTITY CPU5A
+set_global_assignment -name AUTO_ENABLE_SMART_COMPILE ON
+
+# Fitter Assignments
+# ==================
+set_global_assignment -name DEVICE EP3C40Q240C8
+
+# SignalTap II Assignments
+# ========================
+set_global_assignment -name USE_SIGNALTAP_FILE stp1.stp
+set_global_assignment -name ENABLE_SIGNALTAP OFF
+
+# LogicLock Region Assignments
+# ============================
+set_global_assignment -name LOGICLOCK_INCREMENTAL_COMPILE_ASSIGNMENT OFF
+
+# ----------------------------------------
+# start AUTO_INSERT_SLD_NODE_ENTITY(SSCPU)
+
+	# SignalTap II Assignments
+	# ========================
+
+# end AUTO_INSERT_SLD_NODE_ENTITY(SSCPU)
+# --------------------------------------
+
+set_global_assignment -name QIP_FILE CV.qip
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name NOMINAL_CORE_SUPPLY_VOLTAGE 1.2V
+set_global_assignment -name USE_CONFIGURATION_DEVICE ON
+set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"
+set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Root Region"
+set_global_assignment -name SIGNALTAP_FILE stp5.stp
+set_global_assignment -name QIP_FILE PLL20.qip
+set_location_assignment PIN_31 -to CLK0
+set_global_assignment -name BDF_FILE step3.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE CPU5A.vwf
+set_global_assignment -name QIP_FILE RAM8.qip
+set_global_assignment -name QIP_FILE uA_ROM.qip
+set_global_assignment -name BDF_FILE uPC.bdf
+set_global_assignment -name BDF_FILE ALU_MD.bdf
+set_global_assignment -name BDF_FILE REGS_MD.bdf
+set_global_assignment -name VERILOG_FILE ALU181A.v
+set_global_assignment -name QIP_FILE uP_ROM.qip
+set_global_assignment -name BDF_FILE uPC22.bdf
+set_global_assignment -name BDF_FILE REGS_MD2.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE CPU5A2.vwf
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE CPU5A.vwf
+set_global_assignment -name BDF_FILE decoder_D.bdf
+set_global_assignment -name SIGNALTAP_FILE stp1.stp
+set_global_assignment -name QIP_FILE CC.qip
+set_global_assignment -name QIP_FILE JTAG_SP.qip
+set_global_assignment -name SOURCE_FILE Spf11111111.spf
+set_global_assignment -name QIP_FILE CNT8B.qip
+set_global_assignment -name QIP_FILE DFF8B.qip
+set_global_assignment -name QIP_FILE BUSTRI.qip
+set_global_assignment -name QIP_FILE LATCH8B.qip
+set_global_assignment -name BDF_FILE ../../CMPUTER_PRNCPL/KX_DN7_3C10_COMPT/EDA_MCU_SYS_DESIN/4_COMPUTER_PRL/EXPMENT_4_5_RAM/RAM_TEST.bdf
+set_global_assignment -name BDF_FILE ../../CMPUTER_PRNCPL/KX_DN7_3C10_COMPT/EDA_MCU_SYS_DESIN/4_COMPUTER_PRL/EXPT_4_8_1_uIC/uI_C.bdf
+set_location_assignment PIN_239 -to P10_1
+set_location_assignment PIN_186 -to P11_2
+set_location_assignment PIN_184 -to P12_3
+set_global_assignment -name SOURCE_FILE Spf1_A.spf
+set_global_assignment -name CYCLONEII_RESERVE_NCEO_AFTER_CONFIGURATION "USE AS REGULAR IO"
+set_location_assignment PIN_43 -to RST
+set_location_assignment PIN_41 -to STEP
+set_location_assignment PIN_9 -to PA32
+set_location_assignment PIN_171 -to PA33
+set_location_assignment PIN_176 -to PA34
+set_global_assignment -name FITTER_EFFORT "STANDARD FIT"
+set_global_assignment -name CYCLONEII_OPTIMIZATION_TECHNIQUE SPEED
+set_global_assignment -name OPTIMIZE_POWER_DURING_SYNTHESIS "EXTRA EFFORT"
+set_global_assignment -name QIP_FILE cpu5.qip
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_location_assignment PIN_44 -to IN[0]
+set_location_assignment PIN_45 -to IN[1]
+set_location_assignment PIN_46 -to IN[2]
+set_location_assignment PIN_49 -to IN[3]
+set_location_assignment PIN_50 -to IN[4]
+set_location_assignment PIN_51 -to IN[5]
+set_location_assignment PIN_52 -to IN[6]
+set_location_assignment PIN_55 -to IN[7]
+set_location_assignment PIN_22 -to SWA
+set_location_assignment PIN_37 -to SWB
+set_global_assignment -name MISC_FILE "E:/xian_Electronics_Department/xian_Electronics_Department/CH5_Expt/CH5_Expt/DEMO51_CPU5/CPU5A.dpf"
+set_global_assignment -name MISC_FILE "C:/组成原理/CH5_Expt/DEMO51_CPU5/CPU5A.dpf"

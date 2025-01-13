@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="CPU5A">
+		<CBX_INST_ENTRY INSTANCE_NAME="|CPU5A|dsplay:inst3|dsp:48|LPM_MUX:131" CBX_FILE_NAME="mux_6qc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|CPU5A|uPC:inst2|uP_ROM:inst|altsyncram:altsyncram_component|altsyncram_hfd1:auto_generated|altsyncram_jte2:altsyncram1|altsyncram:ram_block3a0" CBX_FILE_NAME="altsyncram_guk3.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|CPU5A|PLL20:inst1|altpll:altpll_component" CBX_FILE_NAME="PLL20_altpll.v"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|CPU5A|RAM8:inst38|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_fgk1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|CPU5A|REGS_MD:inst7|counter:inst2|lpm_counter1:inst|lpm_counter:lpm_counter_component" CBX_FILE_NAME="cntr_k5j.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|CPU5A|dsplay:inst3|dsp:48|LPM_MUX:127" CBX_FILE_NAME="mux_vrc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|CPU5A|dsplay:inst3|dsp:48|cnt3:216|lpm_counter:1" CBX_FILE_NAME="cntr_26i.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|CPU5A|dsplay:inst3|dsp:48|cnt4:212|lpm_counter:1" CBX_FILE_NAME="cntr_46i.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|CPU5A|uPC:inst2|uP_ROM:inst|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_hfd1.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

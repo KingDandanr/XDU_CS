@@ -1,0 +1,16 @@
+Fitter Status : Successful - Fri Mar 16 17:50:50 2012
+Quartus II Version : 9.0 Build 132 02/25/2009 SJ Full Version
+Revision Name : uPC22
+Top-level Entity Name : uPC22
+Family : Cyclone III
+Device : EP3C55F484C8
+Timing Models : Final
+Total logic elements : 0 / 55,856 ( 0 % )
+    Total combinational functions : 0 / 55,856 ( 0 % )
+    Dedicated logic registers : 0 / 55,856 ( 0 % )
+Total registers : 0
+Total pins : 14 / 328 ( 4 % )
+Total virtual pins : 0
+Total memory bits : 0 / 2,396,160 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 312 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )

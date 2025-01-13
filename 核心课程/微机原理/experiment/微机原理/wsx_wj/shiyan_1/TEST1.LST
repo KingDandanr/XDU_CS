@@ -1,0 +1,197 @@
+Turbo Assembler	 Version 4.1	    24/12/01 17:40:58	    Page 1
+D:\wsx_wj\shiyan_1\test1.asm
+
+
+
+      1	0000			     mystack segment stack
+      2	0000  80*(00)			 db 128	dup(0)
+      3	0080			     mystack ends
+      4
+      5	0000			     data segment
+      6	0000  0A 0D 24			 nextl db 0ah,0dh,'$'
+      7	0003  4E 75 6D 62 65 72	3A+	 msg1 db 'Number:22009290060',0ah,0dh,'$'
+      8	      32 32 30 30 39 32	39+
+      9	      30 30 36 30 0A 0D	24
+     10	0018  4E 61 6D 65 3A 57	61+	 msg2 db 'Name:WangShuXian',0ah,0dh,'$'
+     11	      6E 67 53 68 75 58	69+
+     12	      61 6E 0A 0D 24
+     13	002B  65 6E 74 65 72 3A	24	 msg3 db 'enter:','$'
+     14	0032  41 53 43 49 49 3A	24	 msg4 db 'ASCII:','$'
+     15	0039  48 65 6C 6C 6F 20	57+	 num db	'Hello World',0ah,0dh,'$'
+     16	      6F 72 6C 64 0A 0D	24
+     17
+     18	0047			     data ends
+     19
+     20	0000			     code segment
+     21	0000			     start:
+     22					 assume	ds:data,cs:code,ss:mystack
+     23	0000  B8 0000s			 mov ax,data
+     24	0003  8E D8			 mov ds,ax
+     25
+     26	0005  BA 0003r			 mov dx,offset msg1
+     27	0008  B4 09			 mov ah,9
+     28	000A  CD 21			 int 21h
+     29
+     30
+     31	000C  BA 0018r			 mov dx,offset msg2
+     32	000F  B4 09			 mov ah,9
+     33	0011  CD 21			 int 21h
+     34
+     35	0013  BA 0039r			 mov dx,offset num
+     36	0016  B4 09			 mov ah,9
+     37	0018  CD 21			 int 21h
+     38
+     39	001A  BE 0039r			 mov si, offset	num
+     40	001D  E8 006E			 call PrintStringAsASCII
+     41
+     42
+     43	0020			     L1:
+     44	0020  BA 002Br			 mov dx,offset msg3
+     45	0023  B4 09			 mov ah,9
+     46	0025  CD 21			 int 21h
+     47	0027  B4 01			 mov ah,1
+     48	0029  B0 00			 mov al,00h
+     49	002B  CD 21			 int 21h
+     50	002D  8A F8			 mov bh,al
+     51	002F  BA 0000r			 mov dx,offset nextl
+     52	0032  B4 09			 mov ah,9
+     53	0034  CD 21			 int 21h
+     54	0036  BA 0032r			 mov dx,offset msg4
+     55	0039  B4 09			 mov ah,9
+     56	003B  CD 21			 int 21h
+     57
+Turbo Assembler	 Version 4.1	    24/12/01 17:40:58	    Page 2
+D:\wsx_wj\shiyan_1\test1.asm
+
+
+
+     58	003D  8A DF			 mov bl,bh
+     59	003F  D0 EB D0 EB D0 EB	D0+	 shr bl,4
+     60	      EB
+     61	0047  80 FB 0A			 cmp bl,0ah
+     62	004A  72 03			 jb  next1
+     63	004C  80 C3 07			 add bl,7
+     64	004F			     next1:
+     65	004F  80 C3 30			 add bl,30h
+     66	0052  8A D3			 mov dl,bl
+     67	0054  B4 02			 mov ah,2
+     68	0056  CD 21			 int 21h
+     69
+     70	0058  8A DF			 mov bl,bh
+     71	005A  80 E3 0F			 and bl,0fh
+     72	005D  80 FB 0A			 cmp bl,0ah
+     73	0060  72 03			 jb  next2
+     74	0062  80 C3 07			 add bl,7
+     75	0065			     next2:
+     76	0065  80 C3 30			 add bl,30h
+     77	0068  8A D3			 mov dl,bl
+     78	006A  B4 02			 mov ah,2
+     79	006C  CD 21			 int 21h
+     80
+     81	006E  BA 0000r			 mov dx,offset nextl
+     82	0071  B4 09			 mov ah,9
+     83	0073  CD 21			 int 21h
+     84
+     85	0075  B9 0000			 mov cx,0
+     86	0078  80 FF 51			 cmp bh,'Q'
+     87	007B  75 03			 jnz next3
+     88	007D  B9 0001			 mov cx,1
+     89	0080			     next3:
+     90	0080  80 FF 71			 cmp bh,'q'
+     91	0083  75 03			 jnz next4
+     92	0085  B9 0001			 mov cx,1
+     93	0088			     next4:
+     94	0088  E3 96			 jcxz L1
+     95	008A  B4 4C			 mov ah,4ch
+     96	008C  CD 21			 int 21h
+     97
+     98	008E			     PrintStringAsASCII	proc
+     99	008E  B4 00			 mov ah,0
+    100	0090			     nextChar:
+    101	0090  AC			 lodsb
+    102	0091  3C 24			 cmp al,'$'
+    103	0093  74 07			 je done
+    104	0095  50			 push ax
+    105	0096  E8 0004			 call PrintASCII
+    106	0099  58			 pop ax
+    107	009A  EB F4			 jmp nextChar
+    108	009C			     done:
+    109	009C  C3			 ret
+    110	009D			     PrintStringAsASCII	endp
+    111
+    112	009D			     PrintASCII	proc
+    113	009D  50			 push ax
+    114	009E  B4 02			 mov ah,2
+Turbo Assembler	 Version 4.1	    24/12/01 17:40:58	    Page 3
+D:\wsx_wj\shiyan_1\test1.asm
+
+
+
+    115	00A0  8A D0			 mov dl,al
+    116	00A2  D0 EA D0 EA D0 EA	D0+	 shr dl,4
+    117	      EA
+    118	00AA  80 FA 0A			 cmp dl,0ah
+    119	00AD  72 03			 jb nextHigh
+    120	00AF  80 C2 07			 add dl,7
+    121	00B2			     nextHigh:
+    122	00B2  80 C2 30			 add dl,30h
+    123	00B5  CD 21			 int 21h
+    124
+    125	00B7  8A D0			 mov dl,al
+    126	00B9  80 E2 0F			 and dl,0fh
+    127	00BC  80 FA 0A			 cmp dl,0ah
+    128	00BF  72 03			 jb nextLow
+    129	00C1  80 C2 07			 add dl,7
+    130	00C4			     nextLow:
+    131	00C4  80 C2 30			 add dl,30h
+    132	00C7  CD 21			 int 21h
+    133
+    134	00C9  BA 0000r			 mov dx,offset nextl
+    135	00CC  B4 09			 mov ah,9
+    136	00CE  CD 21			 int 21h
+    137	00D0  58			 pop ax
+    138	00D1  C3			 ret
+    139	00D2			     PrintASCII	endp
+    140	00D2			     code ends
+    141				     end start
+Turbo Assembler	 Version 4.1	    24/12/01 17:40:58	    Page 4
+Symbol Table
+
+
+
+
+Symbol Name			  Type	 Value
+
+??DATE				  Text	 "24/12/01"
+??FILENAME			  Text	 "test1	  "
+??TIME				  Text	 "17:40:58"
+??VERSION			  Number 040A
+@CPU				  Text	 0101H
+@CURSEG				  Text	 CODE
+@FILENAME			  Text	 TEST1
+@WORDSIZE			  Text	 2
+DONE				  Near	 CODE:009C
+L1				  Near	 CODE:0020
+MSG1				  Byte	 DATA:0003
+MSG2				  Byte	 DATA:0018
+MSG3				  Byte	 DATA:002B
+MSG4				  Byte	 DATA:0032
+NEXT1				  Near	 CODE:004F
+NEXT2				  Near	 CODE:0065
+NEXT3				  Near	 CODE:0080
+NEXT4				  Near	 CODE:0088
+NEXTCHAR			  Near	 CODE:0090
+NEXTHIGH			  Near	 CODE:00B2
+NEXTL				  Byte	 DATA:0000
+NEXTLOW				  Near	 CODE:00C4
+NUM				  Byte	 DATA:0039
+PRINTASCII			  Near	 CODE:009D
+PRINTSTRINGASASCII		  Near	 CODE:008E
+START				  Near	 CODE:0000
+
+Groups & Segments		  Bit Size Align  Combine Class
+
+CODE				  16  00D2 Para	  none
+DATA				  16  0047 Para	  none
+MYSTACK				  16  0080 Para	  Stack
+
