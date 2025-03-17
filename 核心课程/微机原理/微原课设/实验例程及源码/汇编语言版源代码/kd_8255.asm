@@ -1,0 +1,133 @@
+COM_8255	EQU	0273H		;8255控制口
+PA_8255		EQU	0270H
+PB_8255		EQU	0271H
+PC_8255		EQU	0272H
+
+_STACK		SEGMENT	STACK	
+		DW	100 DUP(?)	
+_STACK		ENDS		
+			
+_DATA		SEGMENT	WORD PUBLIC 'DATA'
+buffer          DB      8 DUP(?)					;8个字节显示缓冲区
+SEG_TAB		DB	0C0H,0F9H,0A4H,0B0H, 99H, 92H, 82H,0F8H
+		DB	080H, 90H, 88H, 83H,0C6H,0A1H, 86H, 8EH,0FFH 
+_DATA		ENDS		
+			
+CODE		SEGMENT		
+START		PROC	NEAR	
+		ASSUME	CS:CODE, DS:_DATA, SS:_STACK
+		MOV	AX,_DATA	
+        	MOV     DS,AX
+        	MOV	ES,AX
+        	NOP
+		CLD				;0->DF, 地址自动递增
+		MOV	DX,COM_8255
+		MOV	AL,89H
+		OUT	DX,AL			;PA、PB输出，PC输入
+        	LEA	DI,buffer
+		MOV	AL,10H
+		MOV	CX,08H
+		REP 	STOSB
+		CALL	DIR
+MAIN3:		LEA	DI,buffer
+MAIN2:		CALL	keyi
+		STOSB
+		CALL	DIR
+		CMP	DI,offset buffer+8
+		JNZ	MAIN2
+		JMP	MAIN3
+
+DIR		PROC	NEAR
+		PUSH	AX
+		PUSH	BX
+		PUSH	DX
+		LEA	SI,buffer		;置显示缓冲器初值
+		MOV	AH,0FEH
+		LEA	BX,SEG_TAB
+LD0:		MOV	DX,PA_8255
+		LODSB
+		XLAT				;取显示数据
+		OUT	DX,AL			;段数据->8255 PA口
+		INC	DX			;扫描模式->8255 PB口
+		MOV	AL,AH
+		OUT	DX,AL
+		CALL	DL1			;延迟1ms
+		MOV	DX,PB_8255
+		MOV	AL,0FFH
+		OUT	DX,AL
+		TEST	AH,80H
+		JZ	LD1
+		ROL	AH,01H
+		JMP	LD0
+LD1:		POP	DX
+		POP	BX
+		POP	AX
+		RET
+DIR		ENDP
+
+DL1		PROC	NEAR			;延迟子程序
+		PUSH	CX
+		MOV	CX,500
+		LOOP	$
+		POP	CX
+		RET
+DL1		ENDP
+
+KEYI		PROC	NEAR		
+		PUSH	BX
+		PUSH	DX
+LK:		CALL	AllKey			;调用判有无闭合键子程序
+		JNZ	LK1
+		CALL	DIR
+		CALL	DIR			;调用显示子程序,延迟6ms
+		JMP	LK
+LK1:		CALL	DIR
+		CALL	DIR
+		CALL	AllKey			;调用判有无闭合键子程序
+		JNZ	LK2
+		CALL	DIR
+		JMP	LK
+LK2:		MOV	BL,0FEH		;R2
+		MOV	BH,0		;R4
+LK4:		MOV	DX,PB_8255
+		MOV	AL,BL
+		OUT	DX,AL
+		INC	DX
+		IN	AL,DX
+		TEST	AL,01H
+		JNZ	LONE
+		XOR	AL,AL			;0行有键闭合
+		JMP	LKP			
+LONE:		TEST	AL,02H
+		JNZ	NEXT
+		MOV	AL,08H			;1行有键闭合
+LKP:		ADD	BH,AL
+LK3:		CALL	DIR			;判断释放否
+		CALL	AllKey
+		JNZ	LK3
+		MOV	AL,BH			;键号->AL
+		POP	DX
+		POP	BX
+		RET
+NEXT:		INC	BH			;列计数器加1
+		TEST	BL,80H
+		JZ	KND			;判是否已扫到最后一列
+		ROL	BL,01H
+		JMP	LK4
+KND:		JMP	LK
+KEYI		ENDP
+
+AllKey		PROC	NEAR
+		MOV	DX,PB_8255
+		XOR	AL,AL
+		OUT	DX,AL			;全"0"->扫描口
+		INC	DX
+		IN	AL,DX			;读键状态
+		NOT	AL
+		AND	AL,03H			;取低二位
+		RET
+AllKey		ENDP
+				
+START		ENDP		
+CODE		ENDS		
+		END	START

@@ -1,0 +1,69 @@
+IO244	EQU	0230H	;74LS244端口地址
+IO273	EQU	0230H	;74LS273端口地址
+
+_STACK	SEGMENT	STACK
+		DW	100	DUP(?)
+_STACK	ENDS
+
+_DATA	SEGMENT WORD	 PUBLIC 'DATA'
+_DATA	ENDS
+
+CODE		SEGMENT
+ASSUME CS:CODE, DS:_DATA, SS:_STACK
+START	PROC	 NEAR
+		MOV	AX, _DATA
+        	MOV DS, AX
+INPUT:	
+		MOV	DX, IO244
+		IN	AX, DX
+		CMP	AX, 0FFFFH	;若开关全为低电平
+		JZ	Q1			;从右往左依次点亮	
+		CMP	AX, 0		;若开关全为高电平
+		JZ	Q2			;从左往右依次点亮
+		CMP     AX, 7FFEH
+		;JZ	Q3
+		MOV	DX, IO273
+		MOV	AH, AL
+		;NOT	AX			;AX取非送给273,点亮对应的二极管
+		OUT	DX, AX
+		JMP	INPUT
+Q1:
+		MOV	AX, 7FFFH
+		MOV	DX, IO273
+R2L:
+		CALL	 DELAY		;延时
+		OUT	DX, AX		;送给273,点亮对应的二极管
+		ROL	AX, 1
+		CMP	AX, 7FFFH
+		JNE	R2L			;若相等,说明一轮从右往左已经完成,若不等,则继续循环
+		JMP	INPUT
+		
+Q2:
+		MOV	AX, 0FFFEH
+		MOV	DX, IO273
+L2R:
+		CALL	 DELAY
+		OUT	DX, AX
+		ROR	AX, 1
+		CMP	AX, 0FFFEH
+		JNE	L2R			;若相等,说明一轮从左往右已经完成,若不等,则继续循环
+		JMP	INPUT		;继续读入开关状态
+Q3:
+		MOV	AX, 0FFFEH
+		MOV	DX, IO273
+CNT:
+		CALL	Delay
+		OUT	DX, AX
+		DEC	AX
+		CMP	AX, 0000H
+		JNE	CNT
+		JMP	INPUT
+Delay 	PROC NEAR		;延时子程序
+Delay1:	
+XOR	CX,CX		;做一个异或操作将CX清零,仅循环一次
+		LOOP	$
+		RET
+Delay	ENDP
+START	ENDP		
+CODE		ENDS		
+END		START
