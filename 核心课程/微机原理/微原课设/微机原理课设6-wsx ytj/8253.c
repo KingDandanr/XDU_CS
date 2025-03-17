@@ -57,7 +57,7 @@ void interrupt Timer1Int(void)
 	sign=0;
 	outportb(IO8259_0,0x20); // 8259发送EOI
 }
-// num - ms为单位的延迟
+// num - ms为单位的延迟，125就是需要125ms
 
 void Delay_ms(int num)
 {

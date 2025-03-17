@@ -83,8 +83,8 @@ int main()
 			if(start==1)
 			{
 				switch(song_num){
-					case 0:Play_Music(tt_h,tt_f,tt_t,28);break;		//播放两只老虎
-					case 1:Play_Music(hb_h,hb_f,hb_t,29);break;		//播放生日歌
+					case 0:Play_Music(tt_h,tt_f,tt_t,28);break;		/
+					case 1:Play_Music(hb_h,hb_f,hb_t,29);break;		
 					case 2:Play_Music(day_one_h,day_one_f,day_one_t,48);break;	
 					default:break;
 				}
