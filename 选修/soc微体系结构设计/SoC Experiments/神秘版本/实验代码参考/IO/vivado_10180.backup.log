@@ -1,0 +1,42 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Thu May  5 14:02:26 2022
+# Process ID: 10180
+# Current directory: F:/soc/IO
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5232 F:\soc\IO\IO.xpr
+# Log file: F:/soc/IO/vivado.log
+# Journal file: F:/soc/IO\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/soc/IO/IO.xpr
+INFO: [Project 1-313] Project file moved from 'F:/SocCase/IO' since last save.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/Administrator/Desktop/PC_IO/PC_IO/PC_IO.srcs/sources_1/new/PC_IO.vhd'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:09 . Memory (MB): peak = 683.609 ; gain = 95.465
+update_compile_order -fileset sources_1
+add_files -norecurse F:/soc/IO/IO.srcs/sources_1/imports/new/PC_IO.vhd
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -jobs 3
+[Thu May  5 14:13:50 2022] Launched synth_1...
+Run output will be captured here: F:/soc/IO/IO.runs/synth_1/runme.log
+[Thu May  5 14:13:50 2022] Launched impl_1...
+Run output will be captured here: F:/soc/IO/IO.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -jobs 3
+[Thu May  5 14:15:04 2022] Launched synth_1...
+Run output will be captured here: F:/soc/IO/IO.runs/synth_1/runme.log
+[Thu May  5 14:15:04 2022] Launched impl_1...
+Run output will be captured here: F:/soc/IO/IO.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 3
+[Thu May  5 14:22:34 2022] Launched impl_1...
+Run output will be captured here: F:/soc/IO/IO.runs/impl_1/runme.log
+open_hw
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu May  5 14:31:49 2022...

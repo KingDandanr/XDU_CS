@@ -1,0 +1,15 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Sat May 27 19:37:55 2023
+| Host         : LAPTOP-JZH running 64-bit major release  (build 9200)
+| Command      : report_bus_skew -warn_on_violation -file RN_bus_skew_routed.rpt -pb RN_bus_skew_routed.pb -rpx RN_bus_skew_routed.rpx
+| Design       : RN
+| Device       : 7k160t-fbg676
+| Speed File   : -2  PRODUCTION 1.12 2017-02-17
+---------------------------------------------------------------------------------------------------------------------------------------
+
+Bus Skew Report
+
+No bus skew constraints
+

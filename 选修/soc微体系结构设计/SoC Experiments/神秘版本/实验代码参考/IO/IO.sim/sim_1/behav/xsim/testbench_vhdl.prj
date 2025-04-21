@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"C:/Users/Administrator/Desktop/PC_IO/PC_IO/PC_IO.srcs/sources_1/new/PC_IO.vhd" \
+"../../../../IO.srcs/sim_1/imports/new/testbench.vhd" \
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,15 @@
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/software/work/xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 30e757cde12743af97d55262740f5cbd --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot IR_tb_behav xil_defaultlib.IR_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling architecture behavioral of entity xil_defaultlib.IR [ir_default]
+Compiling architecture behavioral of entity xil_defaultlib.ir_tb
+Built simulation snapshot IR_tb_behav

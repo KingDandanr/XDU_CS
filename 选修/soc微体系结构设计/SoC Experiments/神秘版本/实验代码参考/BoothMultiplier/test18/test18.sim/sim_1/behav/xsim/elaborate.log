@@ -1,0 +1,15 @@
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: F:/vivado/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 8261f7dce2ba417890d07e4b512cbc14 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_booth_multiplier_behav xil_defaultlib.tb_booth_multiplier -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling architecture structural of entity xil_defaultlib.booth_multiplier [booth_multiplier_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_booth_multiplier
+Built simulation snapshot tb_booth_multiplier_behav

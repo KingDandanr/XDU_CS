@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/akyna/Codes/vivado/experiment1/test19/test19.sim/sim_1/synth/func/xsim/tb_timper_func_synth.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'timper'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/akyna/Codes/vivado/experiment1/test19/test19.srcs/sim_1/new/tb_timper.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_timper'

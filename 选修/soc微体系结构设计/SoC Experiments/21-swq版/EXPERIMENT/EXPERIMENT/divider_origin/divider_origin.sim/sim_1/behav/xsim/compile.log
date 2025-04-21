@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/soc/EXPERIMENT/divider_origin/divider_origin.srcs/sources_1/new/divider_origin.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'divider_origin'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/soc/EXPERIMENT/divider_origin/divider_origin.srcs/sim_1/new/divider_origin_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'divider_origin_tb'

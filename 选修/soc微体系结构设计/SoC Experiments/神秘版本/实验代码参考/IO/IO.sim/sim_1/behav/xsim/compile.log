@@ -1,0 +1,10 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "F:/SocCase/IO/IO.srcs/sources_1/new/IO_top.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'IO_top'
+INFO: [VRFC 10-163] Analyzing VHDL file "F:/SocCase/IO/IO.srcs/sources_1/imports/new/data2seg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'data2seg'
+INFO: [VRFC 10-163] Analyzing VHDL file "F:/SocCase/IO/IO.srcs/sources_1/imports/new/seg_dis.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'seg_dis'
+INFO: [VRFC 10-163] Analyzing VHDL file "F:/SocCase/IO/IO.srcs/sources_1/imports/new/seg_dis_keyin.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'seg_dis_keyin'
+INFO: [VRFC 10-163] Analyzing VHDL file "F:/SocCase/IO/IO.srcs/sim_1/new/IO_test_bench.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'IO_test_bench'

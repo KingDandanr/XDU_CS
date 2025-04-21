@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Sat May 13 12:05:19 2023
+# Process ID: 11528
+# Current directory: C:/Users/akyna/Codes/vivado/Decoder3to8/Decoder3to8.runs/synth_2
+# Command line: vivado.exe -log Decoder3to8.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Decoder3to8.tcl
+# Log file: C:/Users/akyna/Codes/vivado/Decoder3to8/Decoder3to8.runs/synth_2/Decoder3to8.vds
+# Journal file: C:/Users/akyna/Codes/vivado/Decoder3to8/Decoder3to8.runs/synth_2\vivado.jou
+#-----------------------------------------------------------
+source Decoder3to8.tcl -notrace

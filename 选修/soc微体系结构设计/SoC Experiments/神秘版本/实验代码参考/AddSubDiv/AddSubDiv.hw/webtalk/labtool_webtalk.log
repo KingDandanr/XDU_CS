@@ -1,0 +1,9 @@
+
+****** Webtalk v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source E:/QuanCunDeXiWang/Vivado/SocWenjian/AddSubDiv/AddSubDiv.hw/webtalk/labtool_webtalk.tcl -notrace
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 83.164 ; gain = 1.270
+INFO: [Common 17-206] Exiting Webtalk at Mon May 22 16:58:55 2023...

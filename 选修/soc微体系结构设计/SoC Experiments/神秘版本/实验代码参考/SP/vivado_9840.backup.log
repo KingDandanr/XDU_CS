@@ -1,0 +1,25 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Thu May  5 15:39:53 2022
+# Process ID: 9840
+# Current directory: F:/soc/SP
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2144 F:\soc\SP\SP.xpr
+# Log file: F:/soc/SP/vivado.log
+# Journal file: F:/soc/SP\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/soc/SP/SP.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 3
+[Thu May  5 15:40:11 2022] Launched synth_1...
+Run output will be captured here: F:/soc/SP/SP.runs/synth_1/runme.log
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu May  5 15:40:44 2022...

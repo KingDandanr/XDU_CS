@@ -1,0 +1,846 @@
+
+*** Running vivado
+    with args -log CPU_test.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source CPU_test.tcl
+
+
+****** Vivado v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source CPU_test.tcl -notrace
+Command: synth_design -top CPU_test -part xc7k160tfbg676-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7k160t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k160t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 16152 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 430.625 ; gain = 98.672
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'CPU_test' [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/CPU_test.vhd:24]
+	Parameter CLK_FRE bound to: 100000000 - type: integer 
+	Parameter DIV_NUM bound to: 1000000 - type: integer 
+INFO: [Synth 8-3491] module 'clk_div' declared at 'D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/clk_div.vhd:8' bound to instance 'clk_div_inst' of component 'clk_div' [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/CPU_test.vhd:61]
+INFO: [Synth 8-638] synthesizing module 'clk_div' [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/clk_div.vhd:19]
+	Parameter DIV_NUM bound to: 1000000 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'clk_div' (1#1) [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/clk_div.vhd:19]
+INFO: [Synth 8-3491] module 'seg_dis' declared at 'D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/seg_dis.vhd:9' bound to instance 'seg_dis_inst' of component 'seg_dis' [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/CPU_test.vhd:62]
+INFO: [Synth 8-638] synthesizing module 'seg_dis' [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/seg_dis.vhd:20]
+INFO: [Synth 8-226] default block is never used [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/seg_dis.vhd:40]
+WARNING: [Synth 8-614] signal 'data_in_A' is read in the process but is not in the sensitivity list [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/seg_dis.vhd:38]
+WARNING: [Synth 8-614] signal 'data_in_B' is read in the process but is not in the sensitivity list [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/seg_dis.vhd:38]
+WARNING: [Synth 8-614] signal 'data_in_C' is read in the process but is not in the sensitivity list [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/seg_dis.vhd:38]
+WARNING: [Synth 8-614] signal 'data_in_D' is read in the process but is not in the sensitivity list [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/seg_dis.vhd:38]
+INFO: [Synth 8-226] default block is never used [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/seg_dis.vhd:63]
+INFO: [Synth 8-256] done synthesizing module 'seg_dis' (2#1) [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/seg_dis.vhd:20]
+	Parameter CLK_FRE bound to: 100000000 - type: integer 
+INFO: [Synth 8-3491] module 'CPU' declared at 'D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/CPU.vhd:8' bound to instance 'CPU_inst' of component 'CPU' [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/CPU_test.vhd:63]
+INFO: [Synth 8-638] synthesizing module 'CPU' [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/CPU.vhd:22]
+	Parameter CLK_FRE bound to: 100000000 - type: integer 
+INFO: [Synth 8-3491] module 'clock' declared at 'D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/clock.vhd:34' bound to instance 'clock_inst' of component 'clock' [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/CPU.vhd:188]
+INFO: [Synth 8-638] synthesizing module 'clock' [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/clock.vhd:43]
+WARNING: [Synth 8-614] signal 'rst' is read in the process but is not in the sensitivity list [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/clock.vhd:46]
+INFO: [Synth 8-256] done synthesizing module 'clock' (3#1) [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/clock.vhd:43]
+INFO: [Synth 8-3491] module 'pc' declared at 'D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/pc.vhd:9' bound to instance 'PC_inst' of component 'pc' [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/CPU.vhd:189]
+INFO: [Synth 8-638] synthesizing module 'pc' [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/pc.vhd:20]
+WARNING: [Synth 8-614] signal 'PC_in' is read in the process but is not in the sensitivity list [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/pc.vhd:27]
+WARNING: [Synth 8-614] signal 'pc_count' is read in the process but is not in the sensitivity list [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/pc.vhd:27]
+INFO: [Synth 8-256] done synthesizing module 'pc' (4#1) [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/pc.vhd:20]
+	Parameter depth bound to: 12 - type: integer 
+	Parameter width bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'ROM' declared at 'D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/ROM.vhd:11' bound to instance 'ROM_inst' of component 'ROM' [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/CPU.vhd:190]
+INFO: [Synth 8-638] synthesizing module 'ROM' [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/ROM.vhd:23]
+	Parameter depth bound to: 12 - type: integer 
+	Parameter width bound to: 8 - type: integer 
+WARNING: [Synth 8-3848] Net rom[6] in module/entity ROM does not have driver. [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/ROM.vhd:25]
+WARNING: [Synth 8-3848] Net rom[7] in module/entity ROM does not have driver. [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/ROM.vhd:25]
+WARNING: [Synth 8-3848] Net rom[8] in module/entity ROM does not have driver. [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/ROM.vhd:25]
+WARNING: [Synth 8-3848] Net rom[9] in module/entity ROM does not have driver. [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/ROM.vhd:25]
+WARNING: [Synth 8-3848] Net rom[10] in module/entity ROM does not have driver. [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/ROM.vhd:25]
+WARNING: [Synth 8-3848] Net rom[11] in module/entity ROM does not have driver. [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/ROM.vhd:25]
+WARNING: [Synth 8-3848] Net rom[12] in module/entity ROM does not have driver. [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/ROM.vhd:25]
+WARNING: [Synth 8-3848] Net rom[13] in module/entity ROM does not have driver. [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/ROM.vhd:25]
+WARNING: [Synth 8-3848] Net rom[14] in module/entity ROM does not have driver. [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/ROM.vhd:25]
+WARNING: [Synth 8-3848] Net rom[15] in module/entity ROM does not have driver. [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/ROM.vhd:25]
+WARNING: [Synth 8-3848] Net rom[16] in module/entity ROM does not have driver. [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/ROM.vhd:25]
+WARNING: [Synth 8-3848] Net rom[17] in module/entity ROM does not have driver. [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/ROM.vhd:25]
+WARNING: [Synth 8-3848] Net rom[18] in module/entity ROM does not have driver. [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/ROM.vhd:25]
+WARNING: [Synth 8-3848] Net rom[19] in module/entity ROM does not have driver. [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/ROM.vhd:25]
+WARNING: [Synth 8-3848] Net rom[20] in module/entity ROM does not have driver. [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/ROM.vhd:25]
+WARNING: [Synth 8-3848] Net rom[21] in module/entity ROM does not have driver. [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/ROM.vhd:25]
+WARNING: [Synth 8-3848] Net rom[22] in module/entity ROM does not have driver. [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/ROM.vhd:25]
+WARNING: [Synth 8-3848] Net rom[23] in module/entity ROM does not have driver. [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/ROM.vhd:25]
+WARNING: [Synth 8-3848] Net rom[24] in module/entity ROM does not have driver. [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/ROM.vhd:25]
+WARNING: [Synth 8-3848] Net rom[25] in module/entity ROM does not have driver. [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/ROM.vhd:25]
+WARNING: [Synth 8-3848] Net rom[26] in module/entity ROM does not have driver. [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/ROM.vhd:25]
+WARNING: [Synth 8-3848] Net rom[27] in module/entity ROM does not have driver. [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/ROM.vhd:25]
+WARNING: [Synth 8-3848] Net rom[28] in module/entity ROM does not have driver. [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/ROM.vhd:25]
+WARNING: [Synth 8-3848] Net rom[29] in module/entity ROM does not have driver. [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/ROM.vhd:25]
+WARNING: [Synth 8-3848] Net rom[30] in module/entity ROM does not have driver. [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/ROM.vhd:25]
+WARNING: [Synth 8-3848] Net rom[31] in module/entity ROM does not have driver. [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/ROM.vhd:25]
+WARNING: [Synth 8-3848] Net rom[32] in module/entity ROM does not have driver. [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/ROM.vhd:25]
+WARNING: [Synth 8-3848] Net rom[33] in module/entity ROM does not have driver. [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/ROM.vhd:25]
+WARNING: [Synth 8-3848] Net rom[34] in module/entity ROM does not have driver. [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/ROM.vhd:25]
+WARNING: [Synth 8-3848] Net rom[35] in module/entity ROM does not have driver. [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/ROM.vhd:25]
+WARNING: [Synth 8-3848] Net rom[36] in module/entity ROM does not have driver. [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/ROM.vhd:25]
+WARNING: [Synth 8-3848] Net rom[37] in module/entity ROM does not have driver. [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/ROM.vhd:25]
+WARNING: [Synth 8-3848] Net rom[38] in module/entity ROM does not have driver. [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/ROM.vhd:25]
+WARNING: [Synth 8-3848] Net rom[39] in module/entity ROM does not have driver. [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/ROM.vhd:25]
+WARNING: [Synth 8-3848] Net rom[40] in module/entity ROM does not have driver. [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/ROM.vhd:25]
+WARNING: [Synth 8-3848] Net rom[41] in module/entity ROM does not have driver. [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/ROM.vhd:25]
+WARNING: [Synth 8-3848] Net rom[42] in module/entity ROM does not have driver. [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/ROM.vhd:25]
+WARNING: [Synth 8-3848] Net rom[43] in module/entity ROM does not have driver. [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/ROM.vhd:25]
+WARNING: [Synth 8-3848] Net rom[44] in module/entity ROM does not have driver. [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/ROM.vhd:25]
+WARNING: [Synth 8-3848] Net rom[45] in module/entity ROM does not have driver. [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/ROM.vhd:25]
+WARNING: [Synth 8-3848] Net rom[46] in module/entity ROM does not have driver. [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/ROM.vhd:25]
+WARNING: [Synth 8-3848] Net rom[47] in module/entity ROM does not have driver. [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/ROM.vhd:25]
+WARNING: [Synth 8-3848] Net rom[48] in module/entity ROM does not have driver. [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/ROM.vhd:25]
+WARNING: [Synth 8-3848] Net rom[49] in module/entity ROM does not have driver. [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/ROM.vhd:25]
+WARNING: [Synth 8-3848] Net rom[50] in module/entity ROM does not have driver. [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/ROM.vhd:25]
+WARNING: [Synth 8-3848] Net rom[51] in module/entity ROM does not have driver. [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/ROM.vhd:25]
+WARNING: [Synth 8-3848] Net rom[52] in module/entity ROM does not have driver. [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/ROM.vhd:25]
+WARNING: [Synth 8-3848] Net rom[53] in module/entity ROM does not have driver. [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/ROM.vhd:25]
+WARNING: [Synth 8-3848] Net rom[54] in module/entity ROM does not have driver. [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/ROM.vhd:25]
+WARNING: [Synth 8-3848] Net rom[55] in module/entity ROM does not have driver. [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/ROM.vhd:25]
+WARNING: [Synth 8-3848] Net rom[56] in module/entity ROM does not have driver. [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/ROM.vhd:25]
+WARNING: [Synth 8-3848] Net rom[57] in module/entity ROM does not have driver. [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/ROM.vhd:25]
+WARNING: [Synth 8-3848] Net rom[58] in module/entity ROM does not have driver. [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/ROM.vhd:25]
+WARNING: [Synth 8-3848] Net rom[59] in module/entity ROM does not have driver. [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/ROM.vhd:25]
+WARNING: [Synth 8-3848] Net rom[60] in module/entity ROM does not have driver. [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/ROM.vhd:25]
+WARNING: [Synth 8-3848] Net rom[61] in module/entity ROM does not have driver. [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/ROM.vhd:25]
+WARNING: [Synth 8-3848] Net rom[62] in module/entity ROM does not have driver. [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/ROM.vhd:25]
+WARNING: [Synth 8-3848] Net rom[63] in module/entity ROM does not have driver. [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/ROM.vhd:25]
+WARNING: [Synth 8-3848] Net rom[64] in module/entity ROM does not have driver. [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/ROM.vhd:25]
+WARNING: [Synth 8-3848] Net rom[65] in module/entity ROM does not have driver. [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/ROM.vhd:25]
+WARNING: [Synth 8-3848] Net rom[66] in module/entity ROM does not have driver. [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/ROM.vhd:25]
+WARNING: [Synth 8-3848] Net rom[67] in module/entity ROM does not have driver. [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/ROM.vhd:25]
+WARNING: [Synth 8-3848] Net rom[68] in module/entity ROM does not have driver. [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/ROM.vhd:25]
+WARNING: [Synth 8-3848] Net rom[69] in module/entity ROM does not have driver. [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/ROM.vhd:25]
+WARNING: [Synth 8-3848] Net rom[70] in module/entity ROM does not have driver. [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/ROM.vhd:25]
+WARNING: [Synth 8-3848] Net rom[71] in module/entity ROM does not have driver. [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/ROM.vhd:25]
+WARNING: [Synth 8-3848] Net rom[72] in module/entity ROM does not have driver. [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/ROM.vhd:25]
+WARNING: [Synth 8-3848] Net rom[73] in module/entity ROM does not have driver. [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/ROM.vhd:25]
+WARNING: [Synth 8-3848] Net rom[74] in module/entity ROM does not have driver. [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/ROM.vhd:25]
+WARNING: [Synth 8-3848] Net rom[75] in module/entity ROM does not have driver. [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/ROM.vhd:25]
+WARNING: [Synth 8-3848] Net rom[76] in module/entity ROM does not have driver. [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/ROM.vhd:25]
+WARNING: [Synth 8-3848] Net rom[77] in module/entity ROM does not have driver. [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/ROM.vhd:25]
+WARNING: [Synth 8-3848] Net rom[78] in module/entity ROM does not have driver. [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/ROM.vhd:25]
+WARNING: [Synth 8-3848] Net rom[79] in module/entity ROM does not have driver. [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/ROM.vhd:25]
+WARNING: [Synth 8-3848] Net rom[80] in module/entity ROM does not have driver. [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/ROM.vhd:25]
+WARNING: [Synth 8-3848] Net rom[81] in module/entity ROM does not have driver. [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/ROM.vhd:25]
+WARNING: [Synth 8-3848] Net rom[82] in module/entity ROM does not have driver. [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/ROM.vhd:25]
+WARNING: [Synth 8-3848] Net rom[83] in module/entity ROM does not have driver. [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/ROM.vhd:25]
+WARNING: [Synth 8-3848] Net rom[84] in module/entity ROM does not have driver. [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/ROM.vhd:25]
+WARNING: [Synth 8-3848] Net rom[85] in module/entity ROM does not have driver. [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/ROM.vhd:25]
+WARNING: [Synth 8-3848] Net rom[86] in module/entity ROM does not have driver. [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/ROM.vhd:25]
+WARNING: [Synth 8-3848] Net rom[87] in module/entity ROM does not have driver. [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/ROM.vhd:25]
+WARNING: [Synth 8-3848] Net rom[88] in module/entity ROM does not have driver. [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/ROM.vhd:25]
+WARNING: [Synth 8-3848] Net rom[89] in module/entity ROM does not have driver. [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/ROM.vhd:25]
+WARNING: [Synth 8-3848] Net rom[90] in module/entity ROM does not have driver. [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/ROM.vhd:25]
+WARNING: [Synth 8-3848] Net rom[91] in module/entity ROM does not have driver. [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/ROM.vhd:25]
+WARNING: [Synth 8-3848] Net rom[92] in module/entity ROM does not have driver. [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/ROM.vhd:25]
+WARNING: [Synth 8-3848] Net rom[93] in module/entity ROM does not have driver. [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/ROM.vhd:25]
+WARNING: [Synth 8-3848] Net rom[94] in module/entity ROM does not have driver. [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/ROM.vhd:25]
+WARNING: [Synth 8-3848] Net rom[95] in module/entity ROM does not have driver. [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/ROM.vhd:25]
+WARNING: [Synth 8-3848] Net rom[96] in module/entity ROM does not have driver. [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/ROM.vhd:25]
+WARNING: [Synth 8-3848] Net rom[97] in module/entity ROM does not have driver. [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/ROM.vhd:25]
+WARNING: [Synth 8-3848] Net rom[98] in module/entity ROM does not have driver. [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/ROM.vhd:25]
+WARNING: [Synth 8-3848] Net rom[99] in module/entity ROM does not have driver. [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/ROM.vhd:25]
+WARNING: [Synth 8-3848] Net rom[100] in module/entity ROM does not have driver. [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/ROM.vhd:25]
+WARNING: [Synth 8-3848] Net rom[101] in module/entity ROM does not have driver. [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/ROM.vhd:25]
+WARNING: [Synth 8-3848] Net rom[102] in module/entity ROM does not have driver. [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/ROM.vhd:25]
+WARNING: [Synth 8-3848] Net rom[103] in module/entity ROM does not have driver. [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/ROM.vhd:25]
+WARNING: [Synth 8-3848] Net rom[104] in module/entity ROM does not have driver. [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/ROM.vhd:25]
+WARNING: [Synth 8-3848] Net rom[105] in module/entity ROM does not have driver. [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/ROM.vhd:25]
+INFO: [Common 17-14] Message 'Synth 8-3848' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-256] done synthesizing module 'ROM' (5#1) [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/ROM.vhd:23]
+INFO: [Synth 8-3491] module 'uC' declared at 'D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/uC.vhd:8' bound to instance 'uC_inst' of component 'uC' [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/CPU.vhd:191]
+INFO: [Synth 8-638] synthesizing module 'uC' [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/uC.vhd:20]
+INFO: [Synth 8-3491] module 'uC_uA' declared at 'D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/uC_uA.vhd:8' bound to instance 'uC_uA_inst' of component 'uC_uA' [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/uC.vhd:69]
+INFO: [Synth 8-638] synthesizing module 'uC_uA' [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/uC_uA.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'uC_uA' (6#1) [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/uC_uA.vhd:20]
+INFO: [Synth 8-3491] module 'uC_uAR' declared at 'D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/uC_uAR.vhd:8' bound to instance 'uC_uAR_inst' of component 'uC_uAR' [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/uC.vhd:70]
+INFO: [Synth 8-638] synthesizing module 'uC_uAR' [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/uC_uAR.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'uC_uAR' (7#1) [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/uC_uAR.vhd:18]
+	Parameter width bound to: 48 - type: integer 
+	Parameter depth bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'uC_CM' declared at 'D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/uC_CM.vhd:11' bound to instance 'uC_uCM_inst' of component 'uC_CM' [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/uC.vhd:71]
+INFO: [Synth 8-638] synthesizing module 'uC_CM' [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/uC_CM.vhd:25]
+	Parameter width bound to: 48 - type: integer 
+	Parameter depth bound to: 8 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'uC_CM' (8#1) [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/uC_CM.vhd:25]
+INFO: [Synth 8-3491] module 'uC_uIR' declared at 'D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/uC_uIR.vhd:8' bound to instance 'uC_uIR_inst' of component 'uC_uIR' [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/uC.vhd:72]
+INFO: [Synth 8-638] synthesizing module 'uC_uIR' [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/uC_uIR.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'uC_uIR' (9#1) [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/uC_uIR.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'uC' (10#1) [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/uC.vhd:20]
+INFO: [Synth 8-3491] module 'IR' declared at 'D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/IR.vhd:8' bound to instance 'IR_inst' of component 'IR' [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/CPU.vhd:192]
+INFO: [Synth 8-638] synthesizing module 'IR' [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/IR.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'IR' (11#1) [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/IR.vhd:20]
+	Parameter depth bound to: 7 - type: integer 
+	Parameter width bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'RAM' declared at 'D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/RAM.vhd:9' bound to instance 'RAM_inst' of component 'RAM' [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/CPU.vhd:193]
+INFO: [Synth 8-638] synthesizing module 'RAM' [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/RAM.vhd:28]
+	Parameter depth bound to: 7 - type: integer 
+	Parameter width bound to: 8 - type: integer 
+WARNING: [Synth 8-614] signal 'AR' is read in the process but is not in the sensitivity list [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/RAM.vhd:36]
+INFO: [Synth 8-256] done synthesizing module 'RAM' (12#1) [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/RAM.vhd:28]
+INFO: [Synth 8-3491] module 'IO' declared at 'D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/IO.vhd:8' bound to instance 'IO_inst' of component 'IO' [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/CPU.vhd:194]
+INFO: [Synth 8-638] synthesizing module 'IO' [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/IO.vhd:24]
+WARNING: [Synth 8-614] signal 'RO_EN' is read in the process but is not in the sensitivity list [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/IO.vhd:45]
+INFO: [Synth 8-256] done synthesizing module 'IO' (13#1) [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/IO.vhd:24]
+INFO: [Synth 8-3491] module 'ALU' declared at 'D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/ALU.vhd:9' bound to instance 'ALU_inst' of component 'ALU' [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/CPU.vhd:196]
+INFO: [Synth 8-638] synthesizing module 'ALU' [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/ALU.vhd:30]
+INFO: [Synth 8-3491] module 'array_multiplier' declared at 'D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/array_multiplier.vhd:8' bound to instance 'array_multiplier_inst' of component 'array_multiplier' [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/ALU.vhd:65]
+INFO: [Synth 8-638] synthesizing module 'array_multiplier' [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/array_multiplier.vhd:16]
+INFO: [Synth 8-3491] module 'array_multiplier_top' declared at 'D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/array_multiplier_top.vhd:8' bound to instance 'array_multiplier_top_inst' of component 'array_multiplier_top' [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/array_multiplier.vhd:59]
+INFO: [Synth 8-638] synthesizing module 'array_multiplier_top' [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/array_multiplier_top.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'array_multiplier_top' (14#1) [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/array_multiplier_top.vhd:16]
+INFO: [Synth 8-3491] module 'array_multiplier_unit' declared at 'D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/array_multiplier_unit.vhd:8' bound to instance 'array_multiplier_unit_inst1' of component 'array_multiplier_unit' [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/array_multiplier.vhd:60]
+INFO: [Synth 8-638] synthesizing module 'array_multiplier_unit' [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/array_multiplier_unit.vhd:19]
+INFO: [Synth 8-3491] module 'adder_1bit' declared at 'D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/adder_1bit.vhd:8' bound to instance 'adder_1bit_inst1' of component 'adder_1bit' [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/array_multiplier_unit.vhd:31]
+INFO: [Synth 8-638] synthesizing module 'adder_1bit' [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/adder_1bit.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'adder_1bit' (15#1) [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/adder_1bit.vhd:15]
+INFO: [Synth 8-3491] module 'adder_1bit' declared at 'D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/adder_1bit.vhd:8' bound to instance 'adder_1bit_inst2' of component 'adder_1bit' [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/array_multiplier_unit.vhd:32]
+INFO: [Synth 8-3491] module 'adder_1bit' declared at 'D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/adder_1bit.vhd:8' bound to instance 'adder_1bit_inst3' of component 'adder_1bit' [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/array_multiplier_unit.vhd:33]
+INFO: [Synth 8-3491] module 'adder_1bit' declared at 'D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/adder_1bit.vhd:8' bound to instance 'adder_1bit_inst4' of component 'adder_1bit' [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/array_multiplier_unit.vhd:34]
+INFO: [Synth 8-3491] module 'adder_1bit' declared at 'D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/adder_1bit.vhd:8' bound to instance 'adder_1bit_inst5' of component 'adder_1bit' [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/array_multiplier_unit.vhd:35]
+INFO: [Synth 8-3491] module 'adder_1bit' declared at 'D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/adder_1bit.vhd:8' bound to instance 'adder_1bit_inst6' of component 'adder_1bit' [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/array_multiplier_unit.vhd:36]
+INFO: [Synth 8-3491] module 'adder_1bit' declared at 'D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/adder_1bit.vhd:8' bound to instance 'adder_1bit_inst7' of component 'adder_1bit' [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/array_multiplier_unit.vhd:37]
+WARNING: [Synth 8-3936] Found unconnected internal register 'a_line_reg' and it is trimmed from '8' to '7' bits. [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/array_multiplier_unit.vhd:31]
+INFO: [Synth 8-256] done synthesizing module 'array_multiplier_unit' (16#1) [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/array_multiplier_unit.vhd:19]
+INFO: [Synth 8-3491] module 'array_multiplier_unit' declared at 'D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/array_multiplier_unit.vhd:8' bound to instance 'array_multiplier_unit_inst2' of component 'array_multiplier_unit' [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/array_multiplier.vhd:61]
+INFO: [Synth 8-3491] module 'array_multiplier_unit' declared at 'D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/array_multiplier_unit.vhd:8' bound to instance 'array_multiplier_unit_inst3' of component 'array_multiplier_unit' [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/array_multiplier.vhd:62]
+INFO: [Synth 8-3491] module 'array_multiplier_unit' declared at 'D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/array_multiplier_unit.vhd:8' bound to instance 'array_multiplier_unit_inst4' of component 'array_multiplier_unit' [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/array_multiplier.vhd:63]
+INFO: [Synth 8-3491] module 'array_multiplier_unit' declared at 'D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/array_multiplier_unit.vhd:8' bound to instance 'array_multiplier_unit_inst5' of component 'array_multiplier_unit' [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/array_multiplier.vhd:64]
+INFO: [Synth 8-3491] module 'array_multiplier_unit' declared at 'D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/array_multiplier_unit.vhd:8' bound to instance 'array_multiplier_unit_inst6' of component 'array_multiplier_unit' [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/array_multiplier.vhd:65]
+INFO: [Synth 8-3491] module 'array_multiplier_unit' declared at 'D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/array_multiplier_unit.vhd:8' bound to instance 'array_multiplier_unit_inst7' of component 'array_multiplier_unit' [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/array_multiplier.vhd:66]
+INFO: [Synth 8-3491] module 'array_multiplier_low' declared at 'D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/array_multiplier_low.vhd:8' bound to instance 'array_multiplier_low_inst' of component 'array_multiplier_low' [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/array_multiplier.vhd:67]
+INFO: [Synth 8-638] synthesizing module 'array_multiplier_low' [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/array_multiplier_low.vhd:15]
+INFO: [Synth 8-3491] module 'adder_1bit' declared at 'D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/adder_1bit.vhd:8' bound to instance 'adder_1bit_inst0' of component 'adder_1bit' [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/array_multiplier_low.vhd:27]
+INFO: [Synth 8-3491] module 'adder_1bit' declared at 'D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/adder_1bit.vhd:8' bound to instance 'adder_1bit_inst1' of component 'adder_1bit' [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/array_multiplier_low.vhd:28]
+INFO: [Synth 8-3491] module 'adder_1bit' declared at 'D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/adder_1bit.vhd:8' bound to instance 'adder_1bit_inst2' of component 'adder_1bit' [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/array_multiplier_low.vhd:29]
+INFO: [Synth 8-3491] module 'adder_1bit' declared at 'D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/adder_1bit.vhd:8' bound to instance 'adder_1bit_inst3' of component 'adder_1bit' [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/array_multiplier_low.vhd:30]
+INFO: [Synth 8-3491] module 'adder_1bit' declared at 'D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/adder_1bit.vhd:8' bound to instance 'adder_1bit_inst4' of component 'adder_1bit' [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/array_multiplier_low.vhd:31]
+INFO: [Synth 8-3491] module 'adder_1bit' declared at 'D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/adder_1bit.vhd:8' bound to instance 'adder_1bit_inst5' of component 'adder_1bit' [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/array_multiplier_low.vhd:32]
+INFO: [Synth 8-3491] module 'adder_1bit' declared at 'D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/adder_1bit.vhd:8' bound to instance 'adder_1bit_inst6' of component 'adder_1bit' [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/array_multiplier_low.vhd:33]
+INFO: [Synth 8-256] done synthesizing module 'array_multiplier_low' (17#1) [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/array_multiplier_low.vhd:15]
+WARNING: [Synth 8-614] signal 'z_in0' is read in the process but is not in the sensitivity list [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/array_multiplier.vhd:69]
+WARNING: [Synth 8-614] signal 'z_in1' is read in the process but is not in the sensitivity list [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/array_multiplier.vhd:69]
+WARNING: [Synth 8-614] signal 'z_in2' is read in the process but is not in the sensitivity list [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/array_multiplier.vhd:69]
+WARNING: [Synth 8-614] signal 'z_in3' is read in the process but is not in the sensitivity list [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/array_multiplier.vhd:69]
+WARNING: [Synth 8-614] signal 'z_in4' is read in the process but is not in the sensitivity list [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/array_multiplier.vhd:69]
+WARNING: [Synth 8-614] signal 'z_in5' is read in the process but is not in the sensitivity list [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/array_multiplier.vhd:69]
+WARNING: [Synth 8-614] signal 'z_in6' is read in the process but is not in the sensitivity list [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/array_multiplier.vhd:69]
+WARNING: [Synth 8-614] signal 'z_in7' is read in the process but is not in the sensitivity list [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/array_multiplier.vhd:69]
+INFO: [Synth 8-256] done synthesizing module 'array_multiplier' (18#1) [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/array_multiplier.vhd:16]
+INFO: [Synth 8-226] default block is never used [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/ALU.vhd:148]
+WARNING: [Synth 8-614] signal 'nALU_EN' is read in the process but is not in the sensitivity list [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/ALU.vhd:145]
+WARNING: [Synth 8-614] signal 'F_in' is read in the process but is not in the sensitivity list [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/ALU.vhd:145]
+WARNING: [Synth 8-614] signal 'CY_signal' is read in the process but is not in the sensitivity list [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/ALU.vhd:145]
+WARNING: [Synth 8-614] signal 'nPSW_EN' is read in the process but is not in the sensitivity list [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/ALU.vhd:145]
+WARNING: [Synth 8-6014] Unused sequential element OV_signal_reg was removed.  [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/ALU.vhd:98]
+WARNING: [Synth 8-6014] Unused sequential element divider_ina_reg was removed.  [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/ALU.vhd:106]
+WARNING: [Synth 8-6014] Unused sequential element start_reg was removed.  [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/ALU.vhd:72]
+WARNING: [Synth 8-6014] Unused sequential element count_reg was removed.  [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/ALU.vhd:104]
+INFO: [Synth 8-256] done synthesizing module 'ALU' (19#1) [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/ALU.vhd:30]
+INFO: [Synth 8-3491] module 'RN' declared at 'D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/RN.vhd:9' bound to instance 'RN_inst' of component 'RN' [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/CPU.vhd:197]
+INFO: [Synth 8-638] synthesizing module 'RN' [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/RN.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'RN' (20#1) [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/RN.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'CPU' (21#1) [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/CPU.vhd:22]
+INFO: [Synth 8-256] done synthesizing module 'CPU_test' (22#1) [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/CPU_test.vhd:24]
+WARNING: [Synth 8-3331] design array_multiplier_unit has unconnected port z_in[0]
+WARNING: [Synth 8-3331] design array_multiplier has unconnected port clk
+WARNING: [Synth 8-3331] design ALU has unconnected port clk
+WARNING: [Synth 8-3331] design ALU has unconnected port M_F
+WARNING: [Synth 8-3331] design uC_uIR has unconnected port clk
+WARNING: [Synth 8-3331] design uC_uAR has unconnected port clk
+WARNING: [Synth 8-3331] design uC_uAR has unconnected port nreset
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 512.262 ; gain = 180.309
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 512.262 ; gain = 180.309
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 512.262 ; gain = 180.309
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7k160tfbg676-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/soc/EXPERIMENT/CPU/CPU.srcs/constrs_1/new/pin.xdc]
+Finished Parsing XDC File [D:/soc/EXPERIMENT/CPU/CPU.srcs/constrs_1/new/pin.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/soc/EXPERIMENT/CPU/CPU.srcs/constrs_1/new/pin.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/CPU_test_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/CPU_test_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 866.121 ; gain = 0.000
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 866.121 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 866.121 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 866.121 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 866.121 ; gain = 534.168
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7k160tfbg676-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 866.121 ; gain = 534.168
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 866.121 ; gain = 534.168
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'seg_dis'
+INFO: [Synth 8-5544] ROM "seg_dig" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'count_clk2_reg' in module 'clock'
+INFO: [Synth 8-5545] ROM "nclk2" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clk2" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "count_clk2" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/ALU.vhd:88]
+INFO: [Synth 8-5546] ROM "regA" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "result" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "CY_signal" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                      s0 |                             0000 |                             0000
+                      s1 |                             0001 |                             0001
+                      s2 |                             0010 |                             0010
+                      s3 |                             0011 |                             0011
+                      s4 |                             0100 |                             0100
+                      s5 |                             0101 |                             0101
+                      s6 |                             0110 |                             0110
+                      s7 |                             0111 |                             0111
+                      s8 |                             1000 |                             1000
+                      s9 |                             1001 |                             1001
+                     s10 |                             1010 |                             1010
+                     s11 |                             1011 |                             1011
+                     s12 |                             1100 |                             1100
+                     s13 |                             1101 |                             1101
+                     s14 |                             1110 |                             1110
+                     s15 |                             1111 |                             1111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'seg_dis'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE0 |                                0 | 00000000000000000000000000000000
+                  iSTATE |                                1 | 00000000000000000000000000000001
+*
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'count_clk2_reg' using encoding 'sequential' in module 'clock'
+WARNING: [Synth 8-327] inferring latch for variable 'IO_out_reg' [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/IO.vhd:47]
+WARNING: [Synth 8-327] inferring latch for variable 'IO_out_reg' [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/IO.vhd:30]
+WARNING: [Synth 8-327] inferring latch for variable 'DATA_BUS_reg' [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/ALU.vhd:76]
+WARNING: [Synth 8-327] inferring latch for variable 'AC_reg' [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/ALU.vhd:77]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 866.121 ; gain = 534.168
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     12 Bit       Adders := 1     
+	   3 Input      9 Bit       Adders := 1     
++---XORs : 
+	   2 Input      9 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 112   
++---Registers : 
+	               48 Bit    Registers := 1     
+	               12 Bit    Registers := 4     
+	                9 Bit    Registers := 2     
+	                8 Bit    Registers := 7     
+	                7 Bit    Registers := 1     
+	                1 Bit    Registers := 13    
++---RAMs : 
+	               1K Bit         RAMs := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	  16 Input     16 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 6     
+	   2 Input      9 Bit        Muxes := 1     
+	  14 Input      9 Bit        Muxes := 1     
+	  11 Input      9 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 15    
+	   3 Input      8 Bit        Muxes := 2     
+	   4 Input      8 Bit        Muxes := 1     
+	  16 Input      4 Bit        Muxes := 2     
+	  11 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   5 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 9     
+	  11 Input      1 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module clk_div 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+Module seg_dis 
+Detailed RTL Component Info : 
++---Muxes : 
+	  16 Input     16 Bit        Muxes := 1     
+	  16 Input      4 Bit        Muxes := 2     
+Module clock 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+Module pc 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     12 Bit       Adders := 1     
++---Registers : 
+	               12 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 5     
+	   2 Input      8 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 3     
+Module uC_uA 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module uC_CM 
+Detailed RTL Component Info : 
++---Registers : 
+	               48 Bit    Registers := 1     
+Module IR 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 1     
+Module RAM 
+Detailed RTL Component Info : 
++---RAMs : 
+	               1K Bit         RAMs := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 1     
+Module IO 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 5     
+	   3 Input      8 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module adder_1bit 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
+Module ALU 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      9 Bit       Adders := 1     
++---XORs : 
+	   2 Input      9 Bit         XORs := 1     
++---Registers : 
+	                9 Bit    Registers := 2     
+	                8 Bit    Registers := 2     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 1     
+	  14 Input      9 Bit        Muxes := 1     
+	  11 Input      9 Bit        Muxes := 2     
+	   4 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   3 Input      8 Bit        Muxes := 1     
+	  11 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   5 Input      2 Bit        Muxes := 1     
+	  11 Input      1 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+Module RN 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 600 (col length:100)
+BRAMs: 650 (col length: RAMB18 100 RAMB36 50)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-3886] merging instance 'CPU_inst/IR_inst/IR_out_reg[1]' (FDCE) to 'CPU_inst/IR_inst/RD_reg'
+INFO: [Synth 8-3886] merging instance 'CPU_inst/uC_inst/uC_uCM_inst/data_out_reg[7]' (FDR_1) to 'CPU_inst/uC_inst/uC_uCM_inst/data_out_reg[35]'
+INFO: [Synth 8-3886] merging instance 'CPU_inst/uC_inst/uC_uCM_inst/data_out_reg[21]' (FDS_1) to 'CPU_inst/uC_inst/uC_uCM_inst/data_out_reg[8]'
+INFO: [Synth 8-3886] merging instance 'CPU_inst/uC_inst/uC_uCM_inst/data_out_reg[20]' (FDS_1) to 'CPU_inst/uC_inst/uC_uCM_inst/data_out_reg[8]'
+INFO: [Synth 8-3886] merging instance 'CPU_inst/IR_inst/IR_out_reg[0]' (FDCE) to 'CPU_inst/IR_inst/RS_reg'
+INFO: [Synth 8-3886] merging instance 'CPU_inst/uC_inst/uC_uCM_inst/data_out_reg[8]' (FDS_1) to 'CPU_inst/uC_inst/uC_uCM_inst/data_out_reg[36]'
+INFO: [Synth 8-3886] merging instance 'DATA_BUS_reg__0i_17' (FDCE) to 'DATA_BUS_reg__0i_13'
+INFO: [Synth 8-3886] merging instance 'DATA_BUS_reg__0__0i_38' (FDCE) to 'DATA_BUS_reg__0__0i_36'
+INFO: [Synth 8-3886] merging instance 'DATA_BUS_reg__0__1i_78' (FDE) to 'DATA_BUS_reg__0__1i_76'
+INFO: [Synth 8-3886] merging instance 'CPU_insti_102' (LD) to 'CPU_inst/ALU_inst/DATA_BUS_reg[7]'
+INFO: [Synth 8-3886] merging instance 'CPU_inst/ALU_inst/AC_reg' (LD) to 'CPU_inst/ALU_inst/DATA_BUS_reg[7]'
+INFO: [Synth 8-3886] merging instance 'CPU_inst/ALU_inst/DATA_BUS_reg[4]' (LD) to 'CPU_inst/ALU_inst/DATA_BUS_reg[7]'
+INFO: [Synth 8-3886] merging instance 'DATA_BUS_reg__0__3i_121' (FDCE) to 'DATA_BUS_reg__0__3i_129'
+INFO: [Synth 8-3886] merging instance 'DATA_BUS_reg__0i_25' (FDCE) to 'DATA_BUS_reg__0i_13'
+INFO: [Synth 8-3886] merging instance 'DATA_BUS_reg__0__0i_42' (FDCE) to 'DATA_BUS_reg__0__0i_36'
+INFO: [Synth 8-3886] merging instance 'DATA_BUS_reg__0__1i_82' (FDE) to 'DATA_BUS_reg__0__1i_76'
+INFO: [Synth 8-3886] merging instance 'CPU_insti_106' (LD) to 'CPU_inst/ALU_inst/DATA_BUS_reg[7]'
+INFO: [Synth 8-3886] merging instance 'CPU_inst/ALU_inst/DATA_BUS_reg[0]' (LD) to 'CPU_inst/ALU_inst/DATA_BUS_reg[7]'
+INFO: [Synth 8-3886] merging instance 'DATA_BUS_reg__0__3i_129' (FDCE) to 'DATA_BUS_reg__0__3i_127'
+INFO: [Synth 8-3886] merging instance 'DATA_BUS_reg__0i_15' (FDCE) to 'DATA_BUS_reg__0i_13'
+INFO: [Synth 8-3886] merging instance 'DATA_BUS_reg__0__0i_37' (FDCE) to 'DATA_BUS_reg__0__0i_36'
+INFO: [Synth 8-3886] merging instance 'DATA_BUS_reg__0__1i_77' (FDE) to 'DATA_BUS_reg__0__1i_76'
+INFO: [Synth 8-3886] merging instance 'CPU_insti_101' (LD) to 'CPU_inst/ALU_inst/DATA_BUS_reg[7]'
+INFO: [Synth 8-3886] merging instance 'CPU_inst/ALU_inst/DATA_BUS_reg[5]' (LD) to 'CPU_inst/ALU_inst/DATA_BUS_reg[7]'
+INFO: [Synth 8-3886] merging instance 'DATA_BUS_reg__0__3i_119' (FDCE) to 'DATA_BUS_reg__0__3i_127'
+INFO: [Synth 8-3886] merging instance 'DATA_BUS_reg__0i_23' (FDCE) to 'DATA_BUS_reg__0i_13'
+INFO: [Synth 8-3886] merging instance 'DATA_BUS_reg__0__0i_41' (FDCE) to 'DATA_BUS_reg__0__0i_36'
+INFO: [Synth 8-3886] merging instance 'DATA_BUS_reg__0__1i_81' (FDE) to 'DATA_BUS_reg__0__1i_76'
+INFO: [Synth 8-3886] merging instance 'CPU_insti_105' (LD) to 'CPU_inst/ALU_inst/DATA_BUS_reg[7]'
+INFO: [Synth 8-3886] merging instance 'CPU_inst/ALU_inst/DATA_BUS_reg[1]' (LD) to 'CPU_inst/ALU_inst/DATA_BUS_reg[7]'
+INFO: [Synth 8-3886] merging instance 'DATA_BUS_reg__0__3i_127' (FDCE) to 'DATA_BUS_reg__0__3i_125'
+INFO: [Synth 8-3886] merging instance 'DATA_BUS_reg__0i_13' (FDCE) to 'DATA_BUS_reg__0i_21'
+INFO: [Synth 8-3886] merging instance 'DATA_BUS_reg__0__0i_36' (FDCE) to 'DATA_BUS_reg__0__0i_40'
+INFO: [Synth 8-3886] merging instance 'DATA_BUS_reg__0__1i_76' (FDE) to 'DATA_BUS_reg__0__1i_80'
+INFO: [Synth 8-3886] merging instance 'CPU_insti_100' (LD) to 'CPU_inst/ALU_inst/DATA_BUS_reg[7]'
+INFO: [Synth 8-3886] merging instance 'CPU_inst/ALU_inst/DATA_BUS_reg[6]' (LD) to 'CPU_inst/ALU_inst/DATA_BUS_reg[7]'
+INFO: [Synth 8-3886] merging instance 'DATA_BUS_reg__0__3i_117' (FDCE) to 'DATA_BUS_reg__0__3i_125'
+INFO: [Synth 8-3886] merging instance 'DATA_BUS_reg__0i_21' (FDCE) to 'DATA_BUS_reg__0i_19'
+INFO: [Synth 8-3886] merging instance 'DATA_BUS_reg__0__0i_40' (FDCE) to 'DATA_BUS_reg__0__0i_39'
+INFO: [Synth 8-3886] merging instance 'DATA_BUS_reg__0__1i_80' (FDE) to 'DATA_BUS_reg__0__1i_79'
+INFO: [Synth 8-3886] merging instance 'CPU_insti_104' (LD) to 'CPU_inst/ALU_inst/DATA_BUS_reg[7]'
+INFO: [Synth 8-3886] merging instance 'CPU_inst/ALU_inst/DATA_BUS_reg[2]' (LD) to 'CPU_inst/ALU_inst/DATA_BUS_reg[7]'
+INFO: [Synth 8-3886] merging instance 'DATA_BUS_reg__0__3i_125' (FDCE) to 'DATA_BUS_reg__0__3i_123'
+INFO: [Synth 8-3886] merging instance 'DATA_BUS_reg__0i_11' (FDCE) to 'DATA_BUS_reg__0i_19'
+INFO: [Synth 8-3886] merging instance 'DATA_BUS_reg__0__0i_35' (FDCE) to 'DATA_BUS_reg__0__0i_39'
+INFO: [Synth 8-3886] merging instance 'DATA_BUS_reg__0__1i_75' (FDE) to 'DATA_BUS_reg__0__1i_79'
+INFO: [Synth 8-3886] merging instance 'CPU_insti_99' (LD) to 'CPU_inst/ALU_inst/DATA_BUS_reg[7]'
+INFO: [Synth 8-3886] merging instance 'CPU_inst/ALU_inst/DATA_BUS_reg[7]' (LD) to 'CPU_inst/ALU_inst/DATA_BUS_reg[3]'
+INFO: [Synth 8-3886] merging instance 'DATA_BUS_reg__0__3i_115' (FDCE) to 'DATA_BUS_reg__0__3i_123'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (DATA_BUS_reg__0__1i_79)
+INFO: [Synth 8-3886] merging instance 'CPU_insti_103' (LD) to 'CPU_inst/ALU_inst/DATA_BUS_reg[3]'
+INFO: [Synth 8-3886] merging instance 'CPU_inst/ALU_inst/DATA_BUS_reg[3]' (LD) to 'CPU_inst/IO_inst/IO_out_reg[7]__0'
+INFO: [Synth 8-3886] merging instance 'CPU_inst/uC_inst/uC_uCM_inst/data_out_reg[39]' (FDR_1) to 'CPU_inst/uC_inst/uC_uCM_inst/data_out_reg[35]'
+INFO: [Synth 8-3886] merging instance 'CPU_inst/uC_inst/uC_uCM_inst/data_out_reg[38]' (FDR_1) to 'CPU_inst/uC_inst/uC_uCM_inst/data_out_reg[35]'
+INFO: [Synth 8-3886] merging instance 'CPU_inst/uC_inst/uC_uCM_inst/data_out_reg[35]' (FDR_1) to 'CPU_inst/uC_inst/uC_uCM_inst/data_out_reg[41]'
+INFO: [Synth 8-3886] merging instance 'CPU_inst/uC_inst/uC_uCM_inst/data_out_reg[43]' (FDR_1) to 'CPU_inst/uC_inst/uC_uCM_inst/data_out_reg[41]'
+INFO: [Synth 8-3886] merging instance 'CPU_inst/uC_inst/uC_uCM_inst/data_out_reg[44]' (FDR_1) to 'CPU_inst/uC_inst/uC_uCM_inst/data_out_reg[41]'
+INFO: [Synth 8-3886] merging instance 'CPU_inst/uC_inst/uC_uCM_inst/data_out_reg[42]' (FDR_1) to 'CPU_inst/uC_inst/uC_uCM_inst/data_out_reg[41]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\CPU_inst/uC_inst/uC_uCM_inst /\data_out_reg[41] )
+INFO: [Synth 8-3886] merging instance 'CPU_insti_54' (LD) to 'CPU_inst/IO_inst/IO_out_reg[7]__0'
+INFO: [Synth 8-3886] merging instance 'CPU_inst/IO_inst/IO_out_reg[4]__0' (LD) to 'CPU_inst/IO_inst/IO_out_reg[7]__0'
+INFO: [Synth 8-3886] merging instance 'CPU_insti_58' (LD) to 'CPU_inst/IO_inst/IO_out_reg[7]__0'
+INFO: [Synth 8-3886] merging instance 'CPU_inst/IO_inst/IO_out_reg[0]__0' (LD) to 'CPU_inst/IO_inst/IO_out_reg[7]__0'
+INFO: [Synth 8-3886] merging instance 'CPU_insti_53' (LD) to 'CPU_inst/IO_inst/IO_out_reg[7]__0'
+INFO: [Synth 8-3886] merging instance 'CPU_inst/IO_inst/IO_out_reg[5]__0' (LD) to 'CPU_inst/IO_inst/IO_out_reg[7]__0'
+INFO: [Synth 8-3886] merging instance 'CPU_insti_57' (LD) to 'CPU_inst/IO_inst/IO_out_reg[7]__0'
+INFO: [Synth 8-3886] merging instance 'CPU_inst/IO_inst/IO_out_reg[1]__0' (LD) to 'CPU_inst/IO_inst/IO_out_reg[7]__0'
+INFO: [Synth 8-3886] merging instance 'CPU_insti_52' (LD) to 'CPU_inst/IO_inst/IO_out_reg[7]__0'
+INFO: [Synth 8-3886] merging instance 'CPU_inst/IO_inst/IO_out_reg[6]__0' (LD) to 'CPU_inst/IO_inst/IO_out_reg[7]__0'
+INFO: [Synth 8-3886] merging instance 'CPU_insti_56' (LD) to 'CPU_inst/IO_inst/IO_out_reg[7]__0'
+INFO: [Synth 8-3886] merging instance 'CPU_inst/IO_inst/IO_out_reg[2]__0' (LD) to 'CPU_inst/IO_inst/IO_out_reg[7]__0'
+INFO: [Synth 8-3886] merging instance 'CPU_insti_51' (LD) to 'CPU_inst/IO_inst/IO_out_reg[7]__0'
+INFO: [Synth 8-3886] merging instance 'CPU_inst/IO_inst/IO_out_reg[7]__0' (LD) to 'CPU_inst/IO_inst/IO_out_reg[3]__0'
+INFO: [Synth 8-3886] merging instance 'CPU_insti_55' (LD) to 'CPU_inst/IO_inst/IO_out_reg[3]__0'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\CPU_inst/IO_inst/IO_out_reg[3]__0 )
+WARNING: [Synth 8-3332] Sequential element (DATA_BUS_reg__0__1i_79) is unused and will be removed from module CPU_test.
+WARNING: [Synth 8-3332] Sequential element (CPU_inst/IO_inst/IO_out_reg[3]__0) is unused and will be removed from module CPU_test.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 866.121 ; gain = 534.168
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++------------+----------------------------+-----------+----------------------+---------------------------------------------+
+|Module Name | RTL Object                 | Inference | Size (Depth x Width) | Primitives                                  | 
++------------+----------------------------+-----------+----------------------+---------------------------------------------+
+|CPU_test    | CPU_inst/RAM_inst/SRAM_reg | Implied   | 128 x 8              | RAM16X1S x 16  RAM32X1S x 8  RAM64X1S x 8   | 
++------------+----------------------------+-----------+----------------------+---------------------------------------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 869.832 ; gain = 537.879
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 870.277 ; gain = 538.324
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping  Report
++------------+----------------------------+-----------+----------------------+---------------------------------------------+
+|Module Name | RTL Object                 | Inference | Size (Depth x Width) | Primitives                                  | 
++------------+----------------------------+-----------+----------------------+---------------------------------------------+
+|CPU_test    | CPU_inst/RAM_inst/SRAM_reg | Implied   | 128 x 8              | RAM16X1S x 16  RAM32X1S x 8  RAM64X1S x 8   | 
++------------+----------------------------+-----------+----------------------+---------------------------------------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3332] Sequential element (CPU_inst/PC_inst/ADDR_reg[0]_C) is unused and will be removed from module CPU_test.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\CPU_inst/PC_inst/DATA_BUS_tristate_oe_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\CPU_inst/PC_inst/DATA_BUS_tristate_oe_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\CPU_inst/PC_inst/DATA_BUS_tristate_oe_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\CPU_inst/PC_inst/DATA_BUS_tristate_oe_reg[7] )
+WARNING: [Synth 8-3332] Sequential element (CPU_inst/PC_inst/ADDR_reg[7]_LDC) is unused and will be removed from module CPU_test.
+WARNING: [Synth 8-3332] Sequential element (CPU_inst/PC_inst/ADDR_reg[7]_C) is unused and will be removed from module CPU_test.
+WARNING: [Synth 8-3332] Sequential element (CPU_inst/PC_inst/ADDR_reg[7]_P) is unused and will be removed from module CPU_test.
+WARNING: [Synth 8-3332] Sequential element (CPU_inst/PC_inst/ADDR_reg[6]_LDC) is unused and will be removed from module CPU_test.
+WARNING: [Synth 8-3332] Sequential element (CPU_inst/PC_inst/ADDR_reg[6]_C) is unused and will be removed from module CPU_test.
+WARNING: [Synth 8-3332] Sequential element (CPU_inst/PC_inst/ADDR_reg[6]_P) is unused and will be removed from module CPU_test.
+WARNING: [Synth 8-3332] Sequential element (CPU_inst/PC_inst/ADDR_reg[5]_LDC) is unused and will be removed from module CPU_test.
+WARNING: [Synth 8-3332] Sequential element (CPU_inst/PC_inst/ADDR_reg[5]_C) is unused and will be removed from module CPU_test.
+WARNING: [Synth 8-3332] Sequential element (CPU_inst/PC_inst/ADDR_reg[5]_P) is unused and will be removed from module CPU_test.
+WARNING: [Synth 8-3332] Sequential element (CPU_inst/PC_inst/ADDR_reg[4]_LDC) is unused and will be removed from module CPU_test.
+WARNING: [Synth 8-3332] Sequential element (CPU_inst/PC_inst/ADDR_reg[4]_C) is unused and will be removed from module CPU_test.
+WARNING: [Synth 8-3332] Sequential element (CPU_inst/PC_inst/ADDR_reg[4]_P) is unused and will be removed from module CPU_test.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 887.320 ; gain = 555.367
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 887.320 ; gain = 555.367
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin CPU_inst/DATA_BUS[7] with 1st driver pin 'i_549/O' [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/CPU_test.vhd:10]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin CPU_inst/DATA_BUS[7] with 2nd driver pin 'CPU_inst/ROM_inst/DATA_BUS_reg[7]/Q' [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/ROM.vhd:49]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin CPU_inst/DATA_BUS[6] with 1st driver pin 'i_548/O' [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/CPU_test.vhd:10]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin CPU_inst/DATA_BUS[6] with 2nd driver pin 'CPU_inst/ROM_inst/DATA_BUS_reg[6]/Q' [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/ROM.vhd:49]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin CPU_inst/DATA_BUS[5] with 1st driver pin 'i_547/O' [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/CPU_test.vhd:10]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin CPU_inst/DATA_BUS[5] with 2nd driver pin 'CPU_inst/ROM_inst/DATA_BUS_reg[5]/Q' [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/ROM.vhd:49]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin CPU_inst/DATA_BUS[4] with 1st driver pin 'i_546/O' [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/CPU_test.vhd:10]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin CPU_inst/DATA_BUS[4] with 2nd driver pin 'CPU_inst/ROM_inst/DATA_BUS_reg[4]/Q' [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/ROM.vhd:49]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin CPU_inst/DATA_BUS[3] with 1st driver pin 'i_545/O' [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/CPU_test.vhd:10]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin CPU_inst/DATA_BUS[3] with 2nd driver pin 'CPU_inst/ROM_inst/DATA_BUS_reg[3]/Q' [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/ROM.vhd:49]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin CPU_inst/DATA_BUS[2] with 1st driver pin 'i_540/O' [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/CPU_test.vhd:10]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin CPU_inst/DATA_BUS[2] with 2nd driver pin 'CPU_inst/ROM_inst/DATA_BUS_reg[2]/Q' [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/ROM.vhd:49]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin CPU_inst/DATA_BUS[1] with 1st driver pin 'i_535/O' [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/CPU_test.vhd:10]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin CPU_inst/DATA_BUS[1] with 2nd driver pin 'CPU_inst/ROM_inst/DATA_BUS_reg[1]/Q' [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/ROM.vhd:49]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin CPU_inst/DATA_BUS[0] with 1st driver pin 'i_530/O' [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/CPU_test.vhd:10]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin CPU_inst/DATA_BUS[0] with 2nd driver pin 'CPU_inst/ROM_inst/DATA_BUS_reg[0]/Q' [D:/soc/EXPERIMENT/CPU/CPU.srcs/sources_1/new/ROM.vhd:49]
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        8|Failed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 887.320 ; gain = 555.367
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 887.320 ; gain = 555.367
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 887.320 ; gain = 555.367
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 887.320 ; gain = 555.367
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 887.320 ; gain = 555.367
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     6|
+|2     |CARRY4   |    42|
+|3     |LUT1     |     6|
+|4     |LUT2     |   218|
+|5     |LUT3     |   113|
+|6     |LUT4     |    91|
+|7     |LUT5     |    30|
+|8     |LUT6     |    59|
+|9     |MUXF7    |     8|
+|10    |MUXF8    |     4|
+|11    |RAM16X1S |    16|
+|12    |RAM32X1S |     8|
+|13    |RAM64X1S |     8|
+|14    |FDCE     |   147|
+|15    |FDPE     |    17|
+|16    |FDRE     |    99|
+|17    |FDSE     |    10|
+|18    |LD       |     8|
+|19    |LDC      |    16|
+|20    |IBUF     |    10|
+|21    |OBUF     |    24|
++------+---------+------+
+
+Report Instance Areas: 
++------+------------------+--------+------+
+|      |Instance          |Module  |Cells |
++------+------------------+--------+------+
+|1     |top               |        |   940|
+|2     |  CPU_inst        |CPU     |   739|
+|3     |    ALU_inst      |ALU     |   100|
+|4     |    IO_inst       |IO      |    28|
+|5     |    IR_inst       |IR      |    55|
+|6     |    PC_inst       |pc      |   105|
+|7     |    RAM_inst      |RAM     |    64|
+|8     |    RN_inst       |RN      |    58|
+|9     |    ROM_inst      |ROM     |    14|
+|10    |    clock_inst    |clock   |   158|
+|11    |    uC_inst       |uC      |   157|
+|12    |      uC_uA_inst  |uC_uA   |    15|
+|13    |      uC_uCM_inst |uC_CM   |   142|
+|14    |  clk_div_inst    |clk_div |   134|
+|15    |  seg_dis_inst    |seg_dis |    24|
++------+------------------+--------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 887.320 ; gain = 555.367
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 16 critical warnings and 19 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:25 . Memory (MB): peak = 887.320 ; gain = 201.508
+Synthesis Optimization Complete : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 887.320 ; gain = 555.367
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 110 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 887.320 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 56 instances were transformed.
+  LD => LDCE: 8 instances
+  LDC => LDCE: 16 instances
+  RAM16X1S => RAM32X1S (RAMS32): 16 instances
+  RAM32X1S => RAM32X1S (RAMS32): 8 instances
+  RAM64X1S => RAM64X1S (RAMS64E): 8 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+192 Infos, 152 Warnings, 16 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 887.320 ; gain = 568.438
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 887.320 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'D:/soc/EXPERIMENT/CPU/CPU.runs/synth_1/CPU_test.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file CPU_test_utilization_synth.rpt -pb CPU_test_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue May  7 11:17:23 2024...

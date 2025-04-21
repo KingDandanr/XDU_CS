@@ -1,0 +1,88 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed Apr 17 15:23:43 2024
+# Process ID: 3376
+# Current directory: C:/SOC/adder
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2300 C:\SOC\adder\adder.xpr
+# Log file: C:/SOC/adder/vivado.log
+# Journal file: C:/SOC/adder\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/SOC/adder/adder.xpr
+INFO: [Project 1-313] Project file moved from 'D:/soc/EXPERIMENT/adder' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Wed Apr 17 15:24:34 2024] Launched synth_1...
+Run output will be captured here: C:/SOC/adder/adder.runs/synth_1/runme.log
+[Wed Apr 17 15:24:34 2024] Launched impl_1...
+Run output will be captured here: C:/SOC/adder/adder.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  7 2018-00:40:27
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210203367162A
+set_property PROGRAM.FILE {C:/SOC/adder/adder.runs/impl_1/adder.bit} [get_hw_devices xc7k160t_0]
+current_hw_device [get_hw_devices xc7k160t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7k160t_0] 0]
+INFO: [Labtools 27-1434] Device xc7k160t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property PROGRAM.FILE {C:/SOC/adder/adder.runs/impl_1/adder.bit} [get_hw_devices xc7k160t_0]
+program_hw_devices [get_hw_devices xc7k160t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7k160t_0] 0]
+INFO: [Labtools 27-1434] Device xc7k160t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/SOC/adder/adder.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'adder_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/SOC/adder/adder.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj adder_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/SOC/adder/adder.srcs/sources_1/new/adder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'adder'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/SOC/adder/adder.srcs/sources_1/new/data2seg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'data2seg'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/SOC/adder/adder.srcs/sources_1/new/decoder4_16.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'decoder4_16'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/SOC/adder/adder.srcs/sources_1/new/seg_dis.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'seg_dis'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/SOC/adder/adder.srcs/sim_1/new/adder_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'adder_tb'
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/SOC/adder/adder.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 00c8c7e5e7c94519b20a9b1ad29b8d48 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot adder_tb_behav xil_defaultlib.adder_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-718] formal port <seg_data> does not exist in entity <seg_dis>.  Please compare the definition of block <seg_dis> to its component declaration and its instantion to detect the mismatch. [C:/SOC/adder/adder.srcs/sources_1/new/adder.vhd:22]
+ERROR: [XSIM 43-3321] Static elaboration of top level VHDL design unit adder_tb in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/SOC/adder/adder.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/SOC/adder/adder.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Apr 17 15:34:22 2024...

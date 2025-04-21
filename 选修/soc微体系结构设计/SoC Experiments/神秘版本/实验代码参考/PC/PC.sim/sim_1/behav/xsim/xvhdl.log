@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/MySOC/PC/PC.srcs/sources_1/new/PC.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'PC'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Study/MySOC/PC/PC.srcs/sim_1/new/pcSim.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'pcSim'

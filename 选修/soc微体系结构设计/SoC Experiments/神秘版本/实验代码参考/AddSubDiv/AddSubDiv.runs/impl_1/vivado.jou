@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Sat May 27 17:03:28 2023
+# Process ID: 2592
+# Current directory: C:/Users/akyna/Codes/vivado/AddSubDiv/AddSubDiv.runs/impl_1
+# Command line: vivado.exe -log Divider.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source Divider.tcl -notrace
+# Log file: C:/Users/akyna/Codes/vivado/AddSubDiv/AddSubDiv.runs/impl_1/Divider.vdi
+# Journal file: C:/Users/akyna/Codes/vivado/AddSubDiv/AddSubDiv.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source Divider.tcl -notrace

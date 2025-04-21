@@ -1,0 +1,1 @@
+-wto "fc1609e0dc964106b2ffb5cf6c77ad78" --incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" --snapshot "tb_timper_func_synth" "xil_defaultlib.tb_timper" -log "elaborate.log" 

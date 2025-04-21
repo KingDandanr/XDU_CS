@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/akyna/Codes/vivado/ALU/alutest/alutest/alutest.srcs/sources_1/imports/project/alu/alu.srcs/sources_1/new/cal.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'cal'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/akyna/Codes/vivado/ALU/alutest/alutest/alutest.srcs/sim_1/new/test_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'test_tb'

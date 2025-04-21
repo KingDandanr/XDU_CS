@@ -1,0 +1,131 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Sat May 20 15:58:58 2023
+# Process ID: 19856
+# Current directory: C:/Users/akyna/Codes/vivado/experiment1/test2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5932 C:\Users\akyna\Codes\vivado\experiment1\test2\test2.xpr
+# Log file: C:/Users/akyna/Codes/vivado/experiment1/test2/vivado.log
+# Journal file: C:/Users/akyna/Codes/vivado/experiment1/test2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/akyna/Codes/vivado/experiment1/test2/test2.xpr
+update_compile_order -fileset sources_1
+open_run impl_1
+place_ports {sum_out[0]} C19
+place_ports {sum_out[1]} B19
+place_ports {sum_out[2]} C17
+place_ports {sum_out[3]} C18
+place_ports {sum_out[4]} D15
+place_ports {sum_out[5]} D16
+place_ports {sum_out[6]} H16
+place_ports {sum_out[7]} G16
+place_ports c_out A17
+save_constraints -force
+export_ip_user_files -of_objects  [get_files C:/Users/akyna/Codes/vivado/experiment1/test2/test2.srcs/constrs_2/new/pa.xdc] -no_script -reset -force -quiet
+remove_files  -fileset constrs_2 C:/Users/akyna/Codes/vivado/experiment1/test2/test2.srcs/constrs_2/new/pa.xdc
+delete_fileset [ get_filesets constrs_1 ]
+file delete -force C:/Users/akyna/Codes/vivado/experiment1/test2/test2.srcs/constrs_1
+file mkdir C:/Users/akyna/Codes/vivado/experiment1/test2/test2.srcs/constrs_2/new
+close [ open C:/Users/akyna/Codes/vivado/experiment1/test2/test2.srcs/constrs_2/new/pa.xdc w ]
+add_files -fileset constrs_2 C:/Users/akyna/Codes/vivado/experiment1/test2/test2.srcs/constrs_2/new/pa.xdc
+set_property target_constrs_file C:/Users/akyna/Codes/vivado/experiment1/test2/test2.srcs/constrs_2/new/pa.xdc [current_fileset -constrset]
+save_constraints -force
+place_ports {sum_out[15]} K16
+place_ports {sum_out[14]} L20
+place_ports {sum_out[13]} L19
+place_ports {sum_out[12]} J19
+place_ports {sum_out[11]} J18
+place_ports {sum_out[10]} J20
+place_ports {sum_out[9]} K20
+place_ports {sum_out[8]} B17
+save_constraints -force
+save_constraints_as constrs_3
+export_ip_user_files -of_objects  [get_files C:/Users/akyna/Codes/vivado/experiment1/test2/test2.srcs/constrs_2/new/pa.xdc] -no_script -reset -force -quiet
+remove_files  -fileset constrs_2 C:/Users/akyna/Codes/vivado/experiment1/test2/test2.srcs/constrs_2/new/pa.xdc
+save_constraints_as constrs_3 -target_constrs_file pa.xdc
+close [ open C:/Users/akyna/Codes/vivado/experiment1/test2/test2.srcs/constrs_2/new/pa2.xdc w ]
+add_files -fileset constrs_2 C:/Users/akyna/Codes/vivado/experiment1/test2/test2.srcs/constrs_2/new/pa2.xdc
+set_property target_constrs_file C:/Users/akyna/Codes/vivado/experiment1/test2/test2.srcs/constrs_2/new/pa2.xdc [current_fileset -constrset]
+save_constraints -force
+save_constraints -force
+reset_run synth_1
+launch_runs synth_1 -jobs 10
+wait_on_run synth_1
+launch_runs impl_1 -jobs 10
+wait_on_run impl_1
+refresh_design
+place_ports c_in G16
+place_ports c_out H16
+place_ports {a[0]} D16
+place_ports {a[1]} D15
+place_ports {a[2]} C18
+place_ports {a[3]} C17
+place_ports {a[4]} B19
+place_ports {a[5]} C19
+place_ports {a[6]} A17
+place_ports {a[7]} B17
+place_ports {a[0]} C9
+place_ports {a[1]} B9
+place_ports {a[2]} G11
+place_ports {a[3]} F10
+place_ports {a[4]} D10
+place_ports {a[5]} E11
+place_ports {a[6]} D11
+place_ports {a[7]} A14
+place_ports {b[0]} A10
+place_ports {b[0]} B10
+place_ports {b[1]} A10
+place_ports {b[2]} B15
+place_ports {b[3]} A15
+place_ports {b[4]} A13
+place_ports {b[5]} A12
+place_ports {b[6]} D8
+place_ports {b[7]} D9
+startgroup
+set_property package_pin "" [get_ports [list  c_in]]
+place_ports {sum_out[0]} G16
+endgroup
+startgroup
+set_property package_pin "" [get_ports [list  c_out]]
+place_ports {sum_out[1]} H16
+endgroup
+place_ports {sum_out[2]} D16
+place_ports {sum_out[3]} D15
+place_ports {sum_out[4]} C18
+place_ports {sum_out[5]} C17
+place_ports {sum_out[6]} B19
+place_ports {sum_out[7]} C19
+place_ports {sel_out[0]} A17
+place_ports {sel_out[1]} B17
+place_ports {sel_out[2]} K20
+place_ports {sel_out[3]} J20
+place_ports {sel_in[0]} J18
+place_ports {sel_in[1]} J19
+place_ports {sel_in[2]} L19
+place_ports {sel_in[3]} L20
+set_property package_pin "" [get_ports [list  c_in]]
+set_property package_pin "" [get_ports [list  c_in]]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+disconnect_hw_server localhost:3121
+connect_hw_server -allow_non_jtag
+disconnect_hw_server localhost:3121
+connect_hw_server -allow_non_jtag
+close_hw_manager
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/akyna/Codes/vivado/experiment1/test2/test2.runs/impl_1/parellel_adder.bit} [get_hw_devices xc7k160t_0]
+current_hw_device [get_hw_devices xc7k160t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7k160t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property PROGRAM.FILE {C:/Users/akyna/Codes/vivado/experiment1/test2/test2.runs/impl_1/parellel_adder.bit} [get_hw_devices xc7k160t_0]
+program_hw_devices [get_hw_devices xc7k160t_0]
+refresh_hw_device [lindex [get_hw_devices xc7k160t_0] 0]
+save_constraints -force

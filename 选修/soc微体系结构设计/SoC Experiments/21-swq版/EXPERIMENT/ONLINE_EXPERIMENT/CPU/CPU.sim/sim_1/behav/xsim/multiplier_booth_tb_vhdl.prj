@@ -1,0 +1,12 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../CPU.srcs/sources_1/new/multiplier_booth.vhd" \
+"../../../../CPU.srcs/sources_1/new/multiplier_booth_16bitreg.vhd" \
+"../../../../CPU.srcs/sources_1/new/multiplier_booth_8bitadder.vhd" \
+"../../../../CPU.srcs/sources_1/new/multiplier_booth_8bitshiftreg.vhd" \
+"../../../../CPU.srcs/sources_1/new/multiplier_booth_ctrl.vhd" \
+"../../../../CPU.srcs/sources_1/new/multiplier_booth_selector.vhd" \
+"../../../../CPU.srcs/sim_1/new/multiplier_booth_tb.vhd" \
+
+# Do not sort compile order
+nosort

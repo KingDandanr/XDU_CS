@@ -1,0 +1,239 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Apr 18 19:21:50 2025
+# Process ID: 9764
+# Current directory: C:/Users/Administrator/Desktop/ROM
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1584 C:\Users\Administrator\Desktop\ROM\ROM.xpr
+# Log file: C:/Users/Administrator/Desktop/ROM/vivado.log
+# Journal file: C:/Users/Administrator/Desktop/ROM\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Administrator/Desktop/ROM/ROM.xpr
+INFO: [Project 1-313] Project file moved from 'D:/soc/EXPERIMENT/ROM' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 3
+[Fri Apr 18 19:22:13 2025] Launched synth_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/ROM/ROM.runs/synth_1/runme.log
+[Fri Apr 18 19:22:13 2025] Launched impl_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/ROM/ROM.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210203367162A
+set_property PROGRAM.FILE {C:/Users/Administrator/Desktop/ROM/ROM.runs/impl_1/ROM.bit} [get_hw_devices xc7k160t_0]
+current_hw_device [get_hw_devices xc7k160t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7k160t_0] 0]
+INFO: [Labtools 27-1434] Device xc7k160t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property PROGRAM.FILE {C:/Users/Administrator/Desktop/ROM/ROM.runs/impl_1/ROM.bit} [get_hw_devices xc7k160t_0]
+program_hw_devices [get_hw_devices xc7k160t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7k160t_0] 0]
+INFO: [Labtools 27-1434] Device xc7k160t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210203367162A
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 1727.367 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210203367162A
+ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf/Digilent/210203367162A.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
+ERROR: [Common 17-39] 'open_hw_target' failed due to earlier errors.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210203367162A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210203367162A
+INFO: [Labtools 27-1434] Device xc7k160t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 3
+[Fri Apr 18 19:26:15 2025] Launched synth_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/ROM/ROM.runs/synth_1/runme.log
+[Fri Apr 18 19:26:15 2025] Launched impl_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/ROM/ROM.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property PROGRAM.FILE {C:/Users/Administrator/Desktop/ROM/ROM.runs/impl_1/ROM.bit} [get_hw_devices xc7k160t_0]
+program_hw_devices [get_hw_devices xc7k160t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7k160t_0] 0]
+INFO: [Labtools 27-1434] Device xc7k160t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property PROGRAM.FILE {C:/Users/Administrator/Desktop/ROM/ROM.runs/impl_1/ROM.bit} [get_hw_devices xc7k160t_0]
+program_hw_devices [get_hw_devices xc7k160t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7k160t_0] 0]
+INFO: [Labtools 27-1434] Device xc7k160t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 3
+[Fri Apr 18 19:28:43 2025] Launched impl_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/ROM/ROM.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property PROGRAM.FILE {C:/Users/Administrator/Desktop/ROM/ROM.runs/impl_1/ROM.bit} [get_hw_devices xc7k160t_0]
+program_hw_devices [get_hw_devices xc7k160t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7k160t_0] 0]
+INFO: [Labtools 27-1434] Device xc7k160t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 3
+[Fri Apr 18 19:30:32 2025] Launched synth_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/ROM/ROM.runs/synth_1/runme.log
+[Fri Apr 18 19:30:32 2025] Launched impl_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/ROM/ROM.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property PROGRAM.FILE {C:/Users/Administrator/Desktop/ROM/ROM.runs/impl_1/ROM.bit} [get_hw_devices xc7k160t_0]
+program_hw_devices [get_hw_devices xc7k160t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7k160t_0] 0]
+INFO: [Labtools 27-1434] Device xc7k160t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210203367162A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210203367162A
+INFO: [Labtools 27-1435] Device xc7k160t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property PROGRAM.FILE {C:/Users/Administrator/Desktop/ROM/ROM.runs/impl_1/ROM.bit} [get_hw_devices xc7k160t_0]
+program_hw_devices [get_hw_devices xc7k160t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7k160t_0] 0]
+INFO: [Labtools 27-1434] Device xc7k160t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 3
+[Fri Apr 18 19:39:19 2025] Launched synth_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/ROM/ROM.runs/synth_1/runme.log
+[Fri Apr 18 19:39:19 2025] Launched impl_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/ROM/ROM.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 3
+[Fri Apr 18 19:39:48 2025] Launched synth_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/ROM/ROM.runs/synth_1/runme.log
+[Fri Apr 18 19:39:48 2025] Launched impl_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/ROM/ROM.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property PROGRAM.FILE {C:/Users/Administrator/Desktop/ROM/ROM.runs/impl_1/ROM.bit} [get_hw_devices xc7k160t_0]
+program_hw_devices [get_hw_devices xc7k160t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7k160t_0] 0]
+INFO: [Labtools 27-1434] Device xc7k160t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 3
+[Fri Apr 18 19:48:05 2025] Launched synth_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/ROM/ROM.runs/synth_1/runme.log
+[Fri Apr 18 19:48:05 2025] Launched impl_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/ROM/ROM.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 3
+[Fri Apr 18 19:48:29 2025] Launched synth_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/ROM/ROM.runs/synth_1/runme.log
+[Fri Apr 18 19:48:29 2025] Launched impl_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/ROM/ROM.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property PROGRAM.FILE {C:/Users/Administrator/Desktop/ROM/ROM.runs/impl_1/ROM.bit} [get_hw_devices xc7k160t_0]
+program_hw_devices [get_hw_devices xc7k160t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7k160t_0] 0]
+INFO: [Labtools 27-1434] Device xc7k160t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 3
+[Fri Apr 18 19:52:50 2025] Launched synth_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/ROM/ROM.runs/synth_1/runme.log
+[Fri Apr 18 19:52:50 2025] Launched impl_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/ROM/ROM.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property PROGRAM.FILE {C:/Users/Administrator/Desktop/ROM/ROM.runs/impl_1/ROM.bit} [get_hw_devices xc7k160t_0]
+program_hw_devices [get_hw_devices xc7k160t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7k160t_0] 0]
+INFO: [Labtools 27-1434] Device xc7k160t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 3
+[Fri Apr 18 19:57:28 2025] Launched synth_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/ROM/ROM.runs/synth_1/runme.log
+[Fri Apr 18 19:57:28 2025] Launched impl_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/ROM/ROM.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 3
+[Fri Apr 18 19:59:12 2025] Launched synth_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/ROM/ROM.runs/synth_1/runme.log
+[Fri Apr 18 19:59:12 2025] Launched impl_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/ROM/ROM.runs/impl_1/runme.log
+refresh_hw_device [lindex [get_hw_devices xc7k160t_0] 0]
+INFO: [Labtools 27-1434] Device xc7k160t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property PROGRAM.FILE {C:/Users/Administrator/Desktop/ROM/ROM.runs/impl_1/ROM.bit} [get_hw_devices xc7k160t_0]
+program_hw_devices [get_hw_devices xc7k160t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7k160t_0] 0]
+INFO: [Labtools 27-1434] Device xc7k160t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 3
+[Fri Apr 18 20:08:10 2025] Launched synth_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/ROM/ROM.runs/synth_1/runme.log
+[Fri Apr 18 20:08:10 2025] Launched impl_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/ROM/ROM.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property PROGRAM.FILE {C:/Users/Administrator/Desktop/ROM/ROM.runs/impl_1/ROM.bit} [get_hw_devices xc7k160t_0]
+program_hw_devices [get_hw_devices xc7k160t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7k160t_0] 0]
+INFO: [Labtools 27-1434] Device xc7k160t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 3
+[Fri Apr 18 20:12:20 2025] Launched synth_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/ROM/ROM.runs/synth_1/runme.log
+[Fri Apr 18 20:12:20 2025] Launched impl_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/ROM/ROM.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property PROGRAM.FILE {C:/Users/Administrator/Desktop/ROM/ROM.runs/impl_1/ROM.bit} [get_hw_devices xc7k160t_0]
+program_hw_devices [get_hw_devices xc7k160t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7k160t_0] 0]
+INFO: [Labtools 27-1434] Device xc7k160t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 3
+[Fri Apr 18 20:15:53 2025] Launched impl_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/ROM/ROM.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property PROGRAM.FILE {C:/Users/Administrator/Desktop/ROM/ROM.runs/impl_1/ROM.bit} [get_hw_devices xc7k160t_0]
+program_hw_devices [get_hw_devices xc7k160t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7k160t_0] 0]
+INFO: [Labtools 27-1434] Device xc7k160t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 3
+[Fri Apr 18 20:18:23 2025] Launched synth_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/ROM/ROM.runs/synth_1/runme.log
+[Fri Apr 18 20:18:23 2025] Launched impl_1...
+Run output will be captured here: C:/Users/Administrator/Desktop/ROM/ROM.runs/impl_1/runme.log
+add_files -norecurse C:/Users/Administrator/Desktop/ROM/romfile.mem
+set_property PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property PROGRAM.FILE {C:/Users/Administrator/Desktop/ROM/ROM.runs/impl_1/ROM.bit} [get_hw_devices xc7k160t_0]
+program_hw_devices [get_hw_devices xc7k160t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7k160t_0] 0]
+INFO: [Labtools 27-1434] Device xc7k160t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Apr 18 20:23:33 2025...

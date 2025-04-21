@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed Apr 17 19:40:44 2024
+# Process ID: 5276
+# Current directory: F:/soc/EXPERIMENT/PC/PC.runs/impl_1
+# Command line: vivado.exe -log pc.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source pc.tcl -notrace
+# Log file: F:/soc/EXPERIMENT/PC/PC.runs/impl_1/pc.vdi
+# Journal file: F:/soc/EXPERIMENT/PC/PC.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source pc.tcl -notrace

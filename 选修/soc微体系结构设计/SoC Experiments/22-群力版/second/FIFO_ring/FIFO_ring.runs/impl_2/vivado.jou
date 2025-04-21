@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed Apr 24 08:43:03 2024
+# Process ID: 4288
+# Current directory: D:/soc/EXPERIMENT/FIFO_ring/FIFO_ring.runs/impl_2
+# Command line: vivado.exe -log FIFO_ring_test.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source FIFO_ring_test.tcl -notrace
+# Log file: D:/soc/EXPERIMENT/FIFO_ring/FIFO_ring.runs/impl_2/FIFO_ring_test.vdi
+# Journal file: D:/soc/EXPERIMENT/FIFO_ring/FIFO_ring.runs/impl_2\vivado.jou
+#-----------------------------------------------------------
+source FIFO_ring_test.tcl -notrace

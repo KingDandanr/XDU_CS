@@ -1,0 +1,8 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/SOC_code/IR_storge/IR_storge/IR_storge.srcs/sources_1/new/IR.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'IR'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/SOC_code/IR_storge/IR_storge/IR_storge.srcs/sources_1/new/data2seg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'data2seg'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/SOC_code/IR_storge/IR_storge/IR_storge.srcs/sources_1/new/seg_dis.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'seg_dis'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/SOC_code/IR_storge/IR_storge/IR_storge.srcs/sim_1/new/test_IR.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'test_IR'

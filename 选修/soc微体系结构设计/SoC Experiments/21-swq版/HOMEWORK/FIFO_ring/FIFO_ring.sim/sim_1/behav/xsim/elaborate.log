@@ -1,0 +1,22 @@
+Vivado Simulator v2023.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: E:/software/work/xilinx/Vivado/2023.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot FIFO_ring_tb_behav xil_defaultlib.FIFO_ring_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behavioral of entity xil_defaultlib.duaram [duaram_default]
+Compiling architecture behavioral of entity xil_defaultlib.write_pointer [\write_pointer(depth=8)\]
+Compiling architecture behavioral of entity xil_defaultlib.read_pointer [\read_pointer(depth=8)\]
+Compiling architecture behavioral of entity xil_defaultlib.judge_status [\judge_status(depth=8)\]
+Compiling architecture behavioral of entity xil_defaultlib.FIFO_ring [fifo_ring_default]
+Compiling architecture behavioral of entity xil_defaultlib.fifo_ring_tb
+Built simulation snapshot FIFO_ring_tb_behav

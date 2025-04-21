@@ -1,0 +1,223 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Wed Apr 17 19:42:05 2024
+| Host         : PC505-003 running 64-bit major release  (build 9200)
+| Command      : report_drc -file pc_drc_routed.rpt -pb pc_drc_routed.pb -rpx pc_drc_routed.rpx
+| Design       : pc
+| Device       : xc7k160tfbg676-2
+| Speed File   : -2
+| Design State : Fully Routed
+------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 34
++----------+----------+-----------------------------------------------------+------------+
+| Rule     | Severity | Description                                         | Violations |
++----------+----------+-----------------------------------------------------+------------+
+| CFGBVS-1 | Warning  | Missing CFGBVS and CONFIG_VOLTAGE Design Properties | 1          |
+| PDRC-153 | Warning  | Gated clock check                                   | 24         |
+| PLCK-12  | Warning  | Clock Placer Checks                                 | 1          |
+| RPBF-3   | Warning  | IO port buffering is incomplete                     | 8          |
++----------+----------+-----------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+CFGBVS-1#1 Warning
+Missing CFGBVS and CONFIG_VOLTAGE Design Properties  
+Neither the CFGBVS nor CONFIG_VOLTAGE voltage property is set in the current_design.  Configuration bank voltage select (CFGBVS) must be set to VCCO or GND, and CONFIG_VOLTAGE must be set to the correct configuration voltage, in order to determine the I/O voltage support for the pins in bank 0.  It is suggested to specify these either using the 'Edit Device Properties' function in the GUI or directly in the XDC file using the following syntax:
+
+ set_property CFGBVS value1 [current_design]
+ #where value1 is either VCCO or GND
+
+ set_property CONFIG_VOLTAGE value2 [current_design]
+ #where value2 is the voltage provided to configuration bank 0
+
+Refer to the device configuration user guide for more information.
+Related violations: <none>
+
+PDRC-153#1 Warning
+Gated clock check  
+Net ADDR_reg[0]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin ADDR_reg[0]_LDC_i_1/O, cell ADDR_reg[0]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#2 Warning
+Gated clock check  
+Net ADDR_reg[10]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin ADDR_reg[10]_LDC_i_1/O, cell ADDR_reg[10]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#3 Warning
+Gated clock check  
+Net ADDR_reg[11]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin ADDR_reg[11]_LDC_i_1/O, cell ADDR_reg[11]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#4 Warning
+Gated clock check  
+Net ADDR_reg[1]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin ADDR_reg[1]_LDC_i_1/O, cell ADDR_reg[1]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#5 Warning
+Gated clock check  
+Net ADDR_reg[2]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin ADDR_reg[2]_LDC_i_1/O, cell ADDR_reg[2]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#6 Warning
+Gated clock check  
+Net ADDR_reg[3]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin ADDR_reg[3]_LDC_i_1/O, cell ADDR_reg[3]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#7 Warning
+Gated clock check  
+Net ADDR_reg[4]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin ADDR_reg[4]_LDC_i_1/O, cell ADDR_reg[4]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#8 Warning
+Gated clock check  
+Net ADDR_reg[5]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin ADDR_reg[5]_LDC_i_1/O, cell ADDR_reg[5]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#9 Warning
+Gated clock check  
+Net ADDR_reg[6]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin ADDR_reg[6]_LDC_i_1/O, cell ADDR_reg[6]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#10 Warning
+Gated clock check  
+Net ADDR_reg[7]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin ADDR_reg[7]_LDC_i_1/O, cell ADDR_reg[7]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#11 Warning
+Gated clock check  
+Net ADDR_reg[8]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin ADDR_reg[8]_LDC_i_1/O, cell ADDR_reg[8]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#12 Warning
+Gated clock check  
+Net ADDR_reg[9]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin ADDR_reg[9]_LDC_i_1/O, cell ADDR_reg[9]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#13 Warning
+Gated clock check  
+Net pc_count_reg[0]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin pc_count_reg[0]_LDC_i_1/O, cell pc_count_reg[0]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#14 Warning
+Gated clock check  
+Net pc_count_reg[10]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin pc_count_reg[10]_LDC_i_1/O, cell pc_count_reg[10]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#15 Warning
+Gated clock check  
+Net pc_count_reg[11]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin pc_count_reg[11]_LDC_i_1/O, cell pc_count_reg[11]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#16 Warning
+Gated clock check  
+Net pc_count_reg[1]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin pc_count_reg[1]_LDC_i_1/O, cell pc_count_reg[1]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#17 Warning
+Gated clock check  
+Net pc_count_reg[2]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin pc_count_reg[2]_LDC_i_1/O, cell pc_count_reg[2]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#18 Warning
+Gated clock check  
+Net pc_count_reg[3]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin pc_count_reg[3]_LDC_i_1/O, cell pc_count_reg[3]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#19 Warning
+Gated clock check  
+Net pc_count_reg[4]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin pc_count_reg[4]_LDC_i_1/O, cell pc_count_reg[4]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#20 Warning
+Gated clock check  
+Net pc_count_reg[5]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin pc_count_reg[5]_LDC_i_1/O, cell pc_count_reg[5]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#21 Warning
+Gated clock check  
+Net pc_count_reg[6]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin pc_count_reg[6]_LDC_i_1/O, cell pc_count_reg[6]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#22 Warning
+Gated clock check  
+Net pc_count_reg[7]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin pc_count_reg[7]_LDC_i_1/O, cell pc_count_reg[7]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#23 Warning
+Gated clock check  
+Net pc_count_reg[8]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin pc_count_reg[8]_LDC_i_1/O, cell pc_count_reg[8]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#24 Warning
+Gated clock check  
+Net pc_count_reg[9]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin pc_count_reg[9]_LDC_i_1/O, cell pc_count_reg[9]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PLCK-12#1 Warning
+Clock Placer Checks  
+Poor placement for routing between an IO pin and BUFG. 
+Resolution: Poor placement of an IO pin and a BUFG has resulted in the router using a non-dedicated path between the two.  There are several things that could trigger this DRC, each of which can cause unpredictable clock insertion delays that result in poor timing.  This DRC could be caused by any of the following: (a) a clock port was placed on a pin that is not a CCIO-pin (b)the BUFG has not been placed in the same half of the device or SLR as the CCIO-pin (c) a single ended clock has been placed on the N-Side of a differential pair CCIO-pin.
+ This is normally an ERROR but the CLOCK_DEDICATED_ROUTE constraint is set to FALSE allowing your design to continue. The use of this override is highly discouraged as it may lead to very poor timing results. It is recommended that this error condition be corrected in the design.
+
+	clk_PC_IBUF_inst (IBUF.O) is locked to J14
+	clk_PC_IBUF_BUFG_inst (BUFG.I) is provisionally placed by clockplacer on BUFGCTRL_X0Y0
+
+Related violations: <none>
+
+RPBF-3#1 Warning
+IO port buffering is incomplete  
+Device port DATA_BUS[0] expects both input and output buffering but the buffers are incomplete.
+Related violations: <none>
+
+RPBF-3#2 Warning
+IO port buffering is incomplete  
+Device port DATA_BUS[1] expects both input and output buffering but the buffers are incomplete.
+Related violations: <none>
+
+RPBF-3#3 Warning
+IO port buffering is incomplete  
+Device port DATA_BUS[2] expects both input and output buffering but the buffers are incomplete.
+Related violations: <none>
+
+RPBF-3#4 Warning
+IO port buffering is incomplete  
+Device port DATA_BUS[3] expects both input and output buffering but the buffers are incomplete.
+Related violations: <none>
+
+RPBF-3#5 Warning
+IO port buffering is incomplete  
+Device port DATA_BUS[4] expects both input and output buffering but the buffers are incomplete.
+Related violations: <none>
+
+RPBF-3#6 Warning
+IO port buffering is incomplete  
+Device port DATA_BUS[5] expects both input and output buffering but the buffers are incomplete.
+Related violations: <none>
+
+RPBF-3#7 Warning
+IO port buffering is incomplete  
+Device port DATA_BUS[6] expects both input and output buffering but the buffers are incomplete.
+Related violations: <none>
+
+RPBF-3#8 Warning
+IO port buffering is incomplete  
+Device port DATA_BUS[7] expects both input and output buffering but the buffers are incomplete.
+Related violations: <none>
+
+

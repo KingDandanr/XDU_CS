@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../test19.srcs/sources_1/new/timper.vhd" \
+"../../../../test19.srcs/sim_1/new/tb_timper.vhd" \
+
+# Do not sort compile order
+nosort

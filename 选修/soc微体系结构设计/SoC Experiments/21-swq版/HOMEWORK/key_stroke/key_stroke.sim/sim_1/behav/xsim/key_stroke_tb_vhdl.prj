@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../key_stroke.srcs/sources_1/new/key_stroke.vhd" \
+"../../../../key_stroke.srcs/sim_1/new/key_stroke_tb.vhd" \
+
+# Do not sort compile order
+nosort

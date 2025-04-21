@@ -1,0 +1,513 @@
+
+*** Running vivado
+    with args -log uC_test.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source uC_test.tcl
+
+
+****** Vivado v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source uC_test.tcl -notrace
+Command: synth_design -top uC_test -part xc7k160tfbg676-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7k160t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k160t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 21280 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 430.891 ; gain = 98.387
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'uC_test' [D:/soc/EXPERIMENT/uC/uC.srcs/sources_1/new/uC_test.vhd:21]
+INFO: [Synth 8-3491] module 'uC' declared at 'D:/soc/EXPERIMENT/uC/uC.srcs/sources_1/new/uC.vhd:8' bound to instance 'uC_inst' of component 'uC' [D:/soc/EXPERIMENT/uC/uC.srcs/sources_1/new/uC_test.vhd:67]
+INFO: [Synth 8-638] synthesizing module 'uC' [D:/soc/EXPERIMENT/uC/uC.srcs/sources_1/new/uC.vhd:20]
+INFO: [Synth 8-3491] module 'uC_uA' declared at 'D:/soc/EXPERIMENT/uC/uC.srcs/sources_1/new/uC_uA.vhd:8' bound to instance 'uC_uA_inst' of component 'uC_uA' [D:/soc/EXPERIMENT/uC/uC.srcs/sources_1/new/uC.vhd:69]
+INFO: [Synth 8-638] synthesizing module 'uC_uA' [D:/soc/EXPERIMENT/uC/uC.srcs/sources_1/new/uC_uA.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'uC_uA' (1#1) [D:/soc/EXPERIMENT/uC/uC.srcs/sources_1/new/uC_uA.vhd:20]
+INFO: [Synth 8-3491] module 'uC_uAR' declared at 'D:/soc/EXPERIMENT/uC/uC.srcs/sources_1/new/uC_uAR.vhd:8' bound to instance 'uC_uAR_inst' of component 'uC_uAR' [D:/soc/EXPERIMENT/uC/uC.srcs/sources_1/new/uC.vhd:70]
+INFO: [Synth 8-638] synthesizing module 'uC_uAR' [D:/soc/EXPERIMENT/uC/uC.srcs/sources_1/new/uC_uAR.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'uC_uAR' (2#1) [D:/soc/EXPERIMENT/uC/uC.srcs/sources_1/new/uC_uAR.vhd:18]
+	Parameter width bound to: 48 - type: integer 
+	Parameter depth bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'uC_CM' declared at 'D:/soc/EXPERIMENT/uC/uC.srcs/sources_1/new/uC_CM.vhd:11' bound to instance 'uC_uCM_inst' of component 'uC_CM' [D:/soc/EXPERIMENT/uC/uC.srcs/sources_1/new/uC.vhd:71]
+INFO: [Synth 8-638] synthesizing module 'uC_CM' [D:/soc/EXPERIMENT/uC/uC.srcs/sources_1/new/uC_CM.vhd:25]
+	Parameter width bound to: 48 - type: integer 
+	Parameter depth bound to: 8 - type: integer 
+WARNING: [Synth 8-3848] Net uC_ROM[8] in module/entity uC_CM does not have driver. [D:/soc/EXPERIMENT/uC/uC.srcs/sources_1/new/uC_CM.vhd:28]
+WARNING: [Synth 8-3848] Net uC_ROM[9] in module/entity uC_CM does not have driver. [D:/soc/EXPERIMENT/uC/uC.srcs/sources_1/new/uC_CM.vhd:28]
+WARNING: [Synth 8-3848] Net uC_ROM[10] in module/entity uC_CM does not have driver. [D:/soc/EXPERIMENT/uC/uC.srcs/sources_1/new/uC_CM.vhd:28]
+WARNING: [Synth 8-3848] Net uC_ROM[11] in module/entity uC_CM does not have driver. [D:/soc/EXPERIMENT/uC/uC.srcs/sources_1/new/uC_CM.vhd:28]
+WARNING: [Synth 8-3848] Net uC_ROM[12] in module/entity uC_CM does not have driver. [D:/soc/EXPERIMENT/uC/uC.srcs/sources_1/new/uC_CM.vhd:28]
+WARNING: [Synth 8-3848] Net uC_ROM[13] in module/entity uC_CM does not have driver. [D:/soc/EXPERIMENT/uC/uC.srcs/sources_1/new/uC_CM.vhd:28]
+WARNING: [Synth 8-3848] Net uC_ROM[14] in module/entity uC_CM does not have driver. [D:/soc/EXPERIMENT/uC/uC.srcs/sources_1/new/uC_CM.vhd:28]
+WARNING: [Synth 8-3848] Net uC_ROM[15] in module/entity uC_CM does not have driver. [D:/soc/EXPERIMENT/uC/uC.srcs/sources_1/new/uC_CM.vhd:28]
+WARNING: [Synth 8-3848] Net uC_ROM[16] in module/entity uC_CM does not have driver. [D:/soc/EXPERIMENT/uC/uC.srcs/sources_1/new/uC_CM.vhd:28]
+WARNING: [Synth 8-3848] Net uC_ROM[17] in module/entity uC_CM does not have driver. [D:/soc/EXPERIMENT/uC/uC.srcs/sources_1/new/uC_CM.vhd:28]
+WARNING: [Synth 8-3848] Net uC_ROM[18] in module/entity uC_CM does not have driver. [D:/soc/EXPERIMENT/uC/uC.srcs/sources_1/new/uC_CM.vhd:28]
+WARNING: [Synth 8-3848] Net uC_ROM[19] in module/entity uC_CM does not have driver. [D:/soc/EXPERIMENT/uC/uC.srcs/sources_1/new/uC_CM.vhd:28]
+WARNING: [Synth 8-3848] Net uC_ROM[20] in module/entity uC_CM does not have driver. [D:/soc/EXPERIMENT/uC/uC.srcs/sources_1/new/uC_CM.vhd:28]
+WARNING: [Synth 8-3848] Net uC_ROM[21] in module/entity uC_CM does not have driver. [D:/soc/EXPERIMENT/uC/uC.srcs/sources_1/new/uC_CM.vhd:28]
+WARNING: [Synth 8-3848] Net uC_ROM[22] in module/entity uC_CM does not have driver. [D:/soc/EXPERIMENT/uC/uC.srcs/sources_1/new/uC_CM.vhd:28]
+WARNING: [Synth 8-3848] Net uC_ROM[23] in module/entity uC_CM does not have driver. [D:/soc/EXPERIMENT/uC/uC.srcs/sources_1/new/uC_CM.vhd:28]
+WARNING: [Synth 8-3848] Net uC_ROM[24] in module/entity uC_CM does not have driver. [D:/soc/EXPERIMENT/uC/uC.srcs/sources_1/new/uC_CM.vhd:28]
+WARNING: [Synth 8-3848] Net uC_ROM[25] in module/entity uC_CM does not have driver. [D:/soc/EXPERIMENT/uC/uC.srcs/sources_1/new/uC_CM.vhd:28]
+WARNING: [Synth 8-3848] Net uC_ROM[26] in module/entity uC_CM does not have driver. [D:/soc/EXPERIMENT/uC/uC.srcs/sources_1/new/uC_CM.vhd:28]
+WARNING: [Synth 8-3848] Net uC_ROM[27] in module/entity uC_CM does not have driver. [D:/soc/EXPERIMENT/uC/uC.srcs/sources_1/new/uC_CM.vhd:28]
+WARNING: [Synth 8-3848] Net uC_ROM[28] in module/entity uC_CM does not have driver. [D:/soc/EXPERIMENT/uC/uC.srcs/sources_1/new/uC_CM.vhd:28]
+WARNING: [Synth 8-3848] Net uC_ROM[29] in module/entity uC_CM does not have driver. [D:/soc/EXPERIMENT/uC/uC.srcs/sources_1/new/uC_CM.vhd:28]
+WARNING: [Synth 8-3848] Net uC_ROM[30] in module/entity uC_CM does not have driver. [D:/soc/EXPERIMENT/uC/uC.srcs/sources_1/new/uC_CM.vhd:28]
+WARNING: [Synth 8-3848] Net uC_ROM[31] in module/entity uC_CM does not have driver. [D:/soc/EXPERIMENT/uC/uC.srcs/sources_1/new/uC_CM.vhd:28]
+WARNING: [Synth 8-3848] Net uC_ROM[32] in module/entity uC_CM does not have driver. [D:/soc/EXPERIMENT/uC/uC.srcs/sources_1/new/uC_CM.vhd:28]
+WARNING: [Synth 8-3848] Net uC_ROM[33] in module/entity uC_CM does not have driver. [D:/soc/EXPERIMENT/uC/uC.srcs/sources_1/new/uC_CM.vhd:28]
+WARNING: [Synth 8-3848] Net uC_ROM[34] in module/entity uC_CM does not have driver. [D:/soc/EXPERIMENT/uC/uC.srcs/sources_1/new/uC_CM.vhd:28]
+WARNING: [Synth 8-3848] Net uC_ROM[35] in module/entity uC_CM does not have driver. [D:/soc/EXPERIMENT/uC/uC.srcs/sources_1/new/uC_CM.vhd:28]
+WARNING: [Synth 8-3848] Net uC_ROM[36] in module/entity uC_CM does not have driver. [D:/soc/EXPERIMENT/uC/uC.srcs/sources_1/new/uC_CM.vhd:28]
+WARNING: [Synth 8-3848] Net uC_ROM[37] in module/entity uC_CM does not have driver. [D:/soc/EXPERIMENT/uC/uC.srcs/sources_1/new/uC_CM.vhd:28]
+WARNING: [Synth 8-3848] Net uC_ROM[38] in module/entity uC_CM does not have driver. [D:/soc/EXPERIMENT/uC/uC.srcs/sources_1/new/uC_CM.vhd:28]
+WARNING: [Synth 8-3848] Net uC_ROM[39] in module/entity uC_CM does not have driver. [D:/soc/EXPERIMENT/uC/uC.srcs/sources_1/new/uC_CM.vhd:28]
+WARNING: [Synth 8-3848] Net uC_ROM[40] in module/entity uC_CM does not have driver. [D:/soc/EXPERIMENT/uC/uC.srcs/sources_1/new/uC_CM.vhd:28]
+WARNING: [Synth 8-3848] Net uC_ROM[41] in module/entity uC_CM does not have driver. [D:/soc/EXPERIMENT/uC/uC.srcs/sources_1/new/uC_CM.vhd:28]
+WARNING: [Synth 8-3848] Net uC_ROM[42] in module/entity uC_CM does not have driver. [D:/soc/EXPERIMENT/uC/uC.srcs/sources_1/new/uC_CM.vhd:28]
+WARNING: [Synth 8-3848] Net uC_ROM[43] in module/entity uC_CM does not have driver. [D:/soc/EXPERIMENT/uC/uC.srcs/sources_1/new/uC_CM.vhd:28]
+WARNING: [Synth 8-3848] Net uC_ROM[44] in module/entity uC_CM does not have driver. [D:/soc/EXPERIMENT/uC/uC.srcs/sources_1/new/uC_CM.vhd:28]
+WARNING: [Synth 8-3848] Net uC_ROM[45] in module/entity uC_CM does not have driver. [D:/soc/EXPERIMENT/uC/uC.srcs/sources_1/new/uC_CM.vhd:28]
+WARNING: [Synth 8-3848] Net uC_ROM[46] in module/entity uC_CM does not have driver. [D:/soc/EXPERIMENT/uC/uC.srcs/sources_1/new/uC_CM.vhd:28]
+WARNING: [Synth 8-3848] Net uC_ROM[47] in module/entity uC_CM does not have driver. [D:/soc/EXPERIMENT/uC/uC.srcs/sources_1/new/uC_CM.vhd:28]
+WARNING: [Synth 8-3848] Net uC_ROM[48] in module/entity uC_CM does not have driver. [D:/soc/EXPERIMENT/uC/uC.srcs/sources_1/new/uC_CM.vhd:28]
+WARNING: [Synth 8-3848] Net uC_ROM[49] in module/entity uC_CM does not have driver. [D:/soc/EXPERIMENT/uC/uC.srcs/sources_1/new/uC_CM.vhd:28]
+WARNING: [Synth 8-3848] Net uC_ROM[50] in module/entity uC_CM does not have driver. [D:/soc/EXPERIMENT/uC/uC.srcs/sources_1/new/uC_CM.vhd:28]
+WARNING: [Synth 8-3848] Net uC_ROM[51] in module/entity uC_CM does not have driver. [D:/soc/EXPERIMENT/uC/uC.srcs/sources_1/new/uC_CM.vhd:28]
+WARNING: [Synth 8-3848] Net uC_ROM[52] in module/entity uC_CM does not have driver. [D:/soc/EXPERIMENT/uC/uC.srcs/sources_1/new/uC_CM.vhd:28]
+WARNING: [Synth 8-3848] Net uC_ROM[53] in module/entity uC_CM does not have driver. [D:/soc/EXPERIMENT/uC/uC.srcs/sources_1/new/uC_CM.vhd:28]
+WARNING: [Synth 8-3848] Net uC_ROM[54] in module/entity uC_CM does not have driver. [D:/soc/EXPERIMENT/uC/uC.srcs/sources_1/new/uC_CM.vhd:28]
+WARNING: [Synth 8-3848] Net uC_ROM[55] in module/entity uC_CM does not have driver. [D:/soc/EXPERIMENT/uC/uC.srcs/sources_1/new/uC_CM.vhd:28]
+WARNING: [Synth 8-3848] Net uC_ROM[56] in module/entity uC_CM does not have driver. [D:/soc/EXPERIMENT/uC/uC.srcs/sources_1/new/uC_CM.vhd:28]
+WARNING: [Synth 8-3848] Net uC_ROM[57] in module/entity uC_CM does not have driver. [D:/soc/EXPERIMENT/uC/uC.srcs/sources_1/new/uC_CM.vhd:28]
+WARNING: [Synth 8-3848] Net uC_ROM[58] in module/entity uC_CM does not have driver. [D:/soc/EXPERIMENT/uC/uC.srcs/sources_1/new/uC_CM.vhd:28]
+WARNING: [Synth 8-3848] Net uC_ROM[59] in module/entity uC_CM does not have driver. [D:/soc/EXPERIMENT/uC/uC.srcs/sources_1/new/uC_CM.vhd:28]
+WARNING: [Synth 8-3848] Net uC_ROM[60] in module/entity uC_CM does not have driver. [D:/soc/EXPERIMENT/uC/uC.srcs/sources_1/new/uC_CM.vhd:28]
+WARNING: [Synth 8-3848] Net uC_ROM[61] in module/entity uC_CM does not have driver. [D:/soc/EXPERIMENT/uC/uC.srcs/sources_1/new/uC_CM.vhd:28]
+WARNING: [Synth 8-3848] Net uC_ROM[62] in module/entity uC_CM does not have driver. [D:/soc/EXPERIMENT/uC/uC.srcs/sources_1/new/uC_CM.vhd:28]
+WARNING: [Synth 8-3848] Net uC_ROM[63] in module/entity uC_CM does not have driver. [D:/soc/EXPERIMENT/uC/uC.srcs/sources_1/new/uC_CM.vhd:28]
+WARNING: [Synth 8-3848] Net uC_ROM[64] in module/entity uC_CM does not have driver. [D:/soc/EXPERIMENT/uC/uC.srcs/sources_1/new/uC_CM.vhd:28]
+WARNING: [Synth 8-3848] Net uC_ROM[65] in module/entity uC_CM does not have driver. [D:/soc/EXPERIMENT/uC/uC.srcs/sources_1/new/uC_CM.vhd:28]
+WARNING: [Synth 8-3848] Net uC_ROM[66] in module/entity uC_CM does not have driver. [D:/soc/EXPERIMENT/uC/uC.srcs/sources_1/new/uC_CM.vhd:28]
+WARNING: [Synth 8-3848] Net uC_ROM[67] in module/entity uC_CM does not have driver. [D:/soc/EXPERIMENT/uC/uC.srcs/sources_1/new/uC_CM.vhd:28]
+WARNING: [Synth 8-3848] Net uC_ROM[68] in module/entity uC_CM does not have driver. [D:/soc/EXPERIMENT/uC/uC.srcs/sources_1/new/uC_CM.vhd:28]
+WARNING: [Synth 8-3848] Net uC_ROM[69] in module/entity uC_CM does not have driver. [D:/soc/EXPERIMENT/uC/uC.srcs/sources_1/new/uC_CM.vhd:28]
+WARNING: [Synth 8-3848] Net uC_ROM[70] in module/entity uC_CM does not have driver. [D:/soc/EXPERIMENT/uC/uC.srcs/sources_1/new/uC_CM.vhd:28]
+WARNING: [Synth 8-3848] Net uC_ROM[71] in module/entity uC_CM does not have driver. [D:/soc/EXPERIMENT/uC/uC.srcs/sources_1/new/uC_CM.vhd:28]
+WARNING: [Synth 8-3848] Net uC_ROM[72] in module/entity uC_CM does not have driver. [D:/soc/EXPERIMENT/uC/uC.srcs/sources_1/new/uC_CM.vhd:28]
+WARNING: [Synth 8-3848] Net uC_ROM[73] in module/entity uC_CM does not have driver. [D:/soc/EXPERIMENT/uC/uC.srcs/sources_1/new/uC_CM.vhd:28]
+WARNING: [Synth 8-3848] Net uC_ROM[74] in module/entity uC_CM does not have driver. [D:/soc/EXPERIMENT/uC/uC.srcs/sources_1/new/uC_CM.vhd:28]
+WARNING: [Synth 8-3848] Net uC_ROM[75] in module/entity uC_CM does not have driver. [D:/soc/EXPERIMENT/uC/uC.srcs/sources_1/new/uC_CM.vhd:28]
+WARNING: [Synth 8-3848] Net uC_ROM[76] in module/entity uC_CM does not have driver. [D:/soc/EXPERIMENT/uC/uC.srcs/sources_1/new/uC_CM.vhd:28]
+WARNING: [Synth 8-3848] Net uC_ROM[77] in module/entity uC_CM does not have driver. [D:/soc/EXPERIMENT/uC/uC.srcs/sources_1/new/uC_CM.vhd:28]
+WARNING: [Synth 8-3848] Net uC_ROM[78] in module/entity uC_CM does not have driver. [D:/soc/EXPERIMENT/uC/uC.srcs/sources_1/new/uC_CM.vhd:28]
+WARNING: [Synth 8-3848] Net uC_ROM[79] in module/entity uC_CM does not have driver. [D:/soc/EXPERIMENT/uC/uC.srcs/sources_1/new/uC_CM.vhd:28]
+WARNING: [Synth 8-3848] Net uC_ROM[80] in module/entity uC_CM does not have driver. [D:/soc/EXPERIMENT/uC/uC.srcs/sources_1/new/uC_CM.vhd:28]
+WARNING: [Synth 8-3848] Net uC_ROM[81] in module/entity uC_CM does not have driver. [D:/soc/EXPERIMENT/uC/uC.srcs/sources_1/new/uC_CM.vhd:28]
+WARNING: [Synth 8-3848] Net uC_ROM[82] in module/entity uC_CM does not have driver. [D:/soc/EXPERIMENT/uC/uC.srcs/sources_1/new/uC_CM.vhd:28]
+WARNING: [Synth 8-3848] Net uC_ROM[83] in module/entity uC_CM does not have driver. [D:/soc/EXPERIMENT/uC/uC.srcs/sources_1/new/uC_CM.vhd:28]
+WARNING: [Synth 8-3848] Net uC_ROM[84] in module/entity uC_CM does not have driver. [D:/soc/EXPERIMENT/uC/uC.srcs/sources_1/new/uC_CM.vhd:28]
+WARNING: [Synth 8-3848] Net uC_ROM[85] in module/entity uC_CM does not have driver. [D:/soc/EXPERIMENT/uC/uC.srcs/sources_1/new/uC_CM.vhd:28]
+WARNING: [Synth 8-3848] Net uC_ROM[86] in module/entity uC_CM does not have driver. [D:/soc/EXPERIMENT/uC/uC.srcs/sources_1/new/uC_CM.vhd:28]
+WARNING: [Synth 8-3848] Net uC_ROM[87] in module/entity uC_CM does not have driver. [D:/soc/EXPERIMENT/uC/uC.srcs/sources_1/new/uC_CM.vhd:28]
+WARNING: [Synth 8-3848] Net uC_ROM[88] in module/entity uC_CM does not have driver. [D:/soc/EXPERIMENT/uC/uC.srcs/sources_1/new/uC_CM.vhd:28]
+WARNING: [Synth 8-3848] Net uC_ROM[89] in module/entity uC_CM does not have driver. [D:/soc/EXPERIMENT/uC/uC.srcs/sources_1/new/uC_CM.vhd:28]
+WARNING: [Synth 8-3848] Net uC_ROM[90] in module/entity uC_CM does not have driver. [D:/soc/EXPERIMENT/uC/uC.srcs/sources_1/new/uC_CM.vhd:28]
+WARNING: [Synth 8-3848] Net uC_ROM[91] in module/entity uC_CM does not have driver. [D:/soc/EXPERIMENT/uC/uC.srcs/sources_1/new/uC_CM.vhd:28]
+WARNING: [Synth 8-3848] Net uC_ROM[92] in module/entity uC_CM does not have driver. [D:/soc/EXPERIMENT/uC/uC.srcs/sources_1/new/uC_CM.vhd:28]
+WARNING: [Synth 8-3848] Net uC_ROM[93] in module/entity uC_CM does not have driver. [D:/soc/EXPERIMENT/uC/uC.srcs/sources_1/new/uC_CM.vhd:28]
+WARNING: [Synth 8-3848] Net uC_ROM[94] in module/entity uC_CM does not have driver. [D:/soc/EXPERIMENT/uC/uC.srcs/sources_1/new/uC_CM.vhd:28]
+WARNING: [Synth 8-3848] Net uC_ROM[95] in module/entity uC_CM does not have driver. [D:/soc/EXPERIMENT/uC/uC.srcs/sources_1/new/uC_CM.vhd:28]
+WARNING: [Synth 8-3848] Net uC_ROM[96] in module/entity uC_CM does not have driver. [D:/soc/EXPERIMENT/uC/uC.srcs/sources_1/new/uC_CM.vhd:28]
+WARNING: [Synth 8-3848] Net uC_ROM[97] in module/entity uC_CM does not have driver. [D:/soc/EXPERIMENT/uC/uC.srcs/sources_1/new/uC_CM.vhd:28]
+WARNING: [Synth 8-3848] Net uC_ROM[98] in module/entity uC_CM does not have driver. [D:/soc/EXPERIMENT/uC/uC.srcs/sources_1/new/uC_CM.vhd:28]
+WARNING: [Synth 8-3848] Net uC_ROM[99] in module/entity uC_CM does not have driver. [D:/soc/EXPERIMENT/uC/uC.srcs/sources_1/new/uC_CM.vhd:28]
+WARNING: [Synth 8-3848] Net uC_ROM[100] in module/entity uC_CM does not have driver. [D:/soc/EXPERIMENT/uC/uC.srcs/sources_1/new/uC_CM.vhd:28]
+WARNING: [Synth 8-3848] Net uC_ROM[101] in module/entity uC_CM does not have driver. [D:/soc/EXPERIMENT/uC/uC.srcs/sources_1/new/uC_CM.vhd:28]
+WARNING: [Synth 8-3848] Net uC_ROM[102] in module/entity uC_CM does not have driver. [D:/soc/EXPERIMENT/uC/uC.srcs/sources_1/new/uC_CM.vhd:28]
+WARNING: [Synth 8-3848] Net uC_ROM[103] in module/entity uC_CM does not have driver. [D:/soc/EXPERIMENT/uC/uC.srcs/sources_1/new/uC_CM.vhd:28]
+WARNING: [Synth 8-3848] Net uC_ROM[104] in module/entity uC_CM does not have driver. [D:/soc/EXPERIMENT/uC/uC.srcs/sources_1/new/uC_CM.vhd:28]
+WARNING: [Synth 8-3848] Net uC_ROM[105] in module/entity uC_CM does not have driver. [D:/soc/EXPERIMENT/uC/uC.srcs/sources_1/new/uC_CM.vhd:28]
+WARNING: [Synth 8-3848] Net uC_ROM[106] in module/entity uC_CM does not have driver. [D:/soc/EXPERIMENT/uC/uC.srcs/sources_1/new/uC_CM.vhd:28]
+WARNING: [Synth 8-3848] Net uC_ROM[107] in module/entity uC_CM does not have driver. [D:/soc/EXPERIMENT/uC/uC.srcs/sources_1/new/uC_CM.vhd:28]
+INFO: [Common 17-14] Message 'Synth 8-3848' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-256] done synthesizing module 'uC_CM' (3#1) [D:/soc/EXPERIMENT/uC/uC.srcs/sources_1/new/uC_CM.vhd:25]
+INFO: [Synth 8-3491] module 'uC_uIR' declared at 'D:/soc/EXPERIMENT/uC/uC.srcs/sources_1/new/uC_uIR.vhd:8' bound to instance 'uC_uIR_inst' of component 'uC_uIR' [D:/soc/EXPERIMENT/uC/uC.srcs/sources_1/new/uC.vhd:72]
+INFO: [Synth 8-638] synthesizing module 'uC_uIR' [D:/soc/EXPERIMENT/uC/uC.srcs/sources_1/new/uC_uIR.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'uC_uIR' (4#1) [D:/soc/EXPERIMENT/uC/uC.srcs/sources_1/new/uC_uIR.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'uC' (5#1) [D:/soc/EXPERIMENT/uC/uC.srcs/sources_1/new/uC.vhd:20]
+INFO: [Synth 8-3491] module 'clock' declared at 'D:/soc/EXPERIMENT/uC/uC.srcs/sources_1/new/clock.vhd:34' bound to instance 'clock_inst' of component 'clock' [D:/soc/EXPERIMENT/uC/uC.srcs/sources_1/new/uC_test.vhd:68]
+INFO: [Synth 8-638] synthesizing module 'clock' [D:/soc/EXPERIMENT/uC/uC.srcs/sources_1/new/clock.vhd:43]
+WARNING: [Synth 8-614] signal 'rst' is read in the process but is not in the sensitivity list [D:/soc/EXPERIMENT/uC/uC.srcs/sources_1/new/clock.vhd:46]
+INFO: [Synth 8-256] done synthesizing module 'clock' (6#1) [D:/soc/EXPERIMENT/uC/uC.srcs/sources_1/new/clock.vhd:43]
+	Parameter DIV_NUM bound to: 10000 - type: integer 
+INFO: [Synth 8-3491] module 'clk_div' declared at 'D:/soc/EXPERIMENT/uC/uC.srcs/sources_1/new/clk_div.vhd:8' bound to instance 'clk_div_inst' of component 'clk_div' [D:/soc/EXPERIMENT/uC/uC.srcs/sources_1/new/uC_test.vhd:69]
+INFO: [Synth 8-638] synthesizing module 'clk_div' [D:/soc/EXPERIMENT/uC/uC.srcs/sources_1/new/clk_div.vhd:19]
+	Parameter DIV_NUM bound to: 10000 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'clk_div' (7#1) [D:/soc/EXPERIMENT/uC/uC.srcs/sources_1/new/clk_div.vhd:19]
+	Parameter DIV_NUM bound to: 10000000 - type: integer 
+INFO: [Synth 8-3491] module 'clk_div' declared at 'D:/soc/EXPERIMENT/uC/uC.srcs/sources_1/new/clk_div.vhd:8' bound to instance 'clk_div_inst2' of component 'clk_div' [D:/soc/EXPERIMENT/uC/uC.srcs/sources_1/new/uC_test.vhd:70]
+INFO: [Synth 8-638] synthesizing module 'clk_div__parameterized1' [D:/soc/EXPERIMENT/uC/uC.srcs/sources_1/new/clk_div.vhd:19]
+	Parameter DIV_NUM bound to: 10000000 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'clk_div__parameterized1' (7#1) [D:/soc/EXPERIMENT/uC/uC.srcs/sources_1/new/clk_div.vhd:19]
+INFO: [Synth 8-3491] module 'seg_dis' declared at 'D:/soc/EXPERIMENT/uC/uC.srcs/sources_1/new/seg_dis.vhd:9' bound to instance 'seg_dis_inst' of component 'seg_dis' [D:/soc/EXPERIMENT/uC/uC.srcs/sources_1/new/uC_test.vhd:71]
+INFO: [Synth 8-638] synthesizing module 'seg_dis' [D:/soc/EXPERIMENT/uC/uC.srcs/sources_1/new/seg_dis.vhd:20]
+INFO: [Synth 8-226] default block is never used [D:/soc/EXPERIMENT/uC/uC.srcs/sources_1/new/seg_dis.vhd:40]
+WARNING: [Synth 8-614] signal 'data_in_A' is read in the process but is not in the sensitivity list [D:/soc/EXPERIMENT/uC/uC.srcs/sources_1/new/seg_dis.vhd:38]
+WARNING: [Synth 8-614] signal 'data_in_B' is read in the process but is not in the sensitivity list [D:/soc/EXPERIMENT/uC/uC.srcs/sources_1/new/seg_dis.vhd:38]
+WARNING: [Synth 8-614] signal 'data_in_C' is read in the process but is not in the sensitivity list [D:/soc/EXPERIMENT/uC/uC.srcs/sources_1/new/seg_dis.vhd:38]
+WARNING: [Synth 8-614] signal 'data_in_D' is read in the process but is not in the sensitivity list [D:/soc/EXPERIMENT/uC/uC.srcs/sources_1/new/seg_dis.vhd:38]
+INFO: [Synth 8-226] default block is never used [D:/soc/EXPERIMENT/uC/uC.srcs/sources_1/new/seg_dis.vhd:63]
+INFO: [Synth 8-256] done synthesizing module 'seg_dis' (8#1) [D:/soc/EXPERIMENT/uC/uC.srcs/sources_1/new/seg_dis.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'uC_test' (9#1) [D:/soc/EXPERIMENT/uC/uC.srcs/sources_1/new/uC_test.vhd:21]
+WARNING: [Synth 8-3331] design uC_uIR has unconnected port clk
+WARNING: [Synth 8-3331] design uC_CM has unconnected port clk
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 487.449 ; gain = 154.945
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 487.449 ; gain = 154.945
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 487.449 ; gain = 154.945
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7k160tfbg676-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/soc/EXPERIMENT/uC/uC.srcs/constrs_1/new/pin.xdc]
+Finished Parsing XDC File [D:/soc/EXPERIMENT/uC/uC.srcs/constrs_1/new/pin.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/soc/EXPERIMENT/uC/uC.srcs/constrs_1/new/pin.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/uC_test_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/uC_test_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 800.668 ; gain = 0.000
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 800.668 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 800.668 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 800.668 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 800.668 ; gain = 468.164
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7k160tfbg676-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 800.668 ; gain = 468.164
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 800.668 ; gain = 468.164
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'count_clk2_reg' in module 'clock'
+INFO: [Synth 8-5545] ROM "nclk2" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clk2" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "count_clk2" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'seg_dis'
+INFO: [Synth 8-5544] ROM "seg_dig" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE0 |                                0 | 00000000000000000000000000000000
+                  iSTATE |                                1 | 00000000000000000000000000000001
+*
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'count_clk2_reg' using encoding 'sequential' in module 'clock'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                      s0 |                             0000 |                             0000
+                      s1 |                             0001 |                             0001
+                      s2 |                             0010 |                             0010
+                      s3 |                             0011 |                             0011
+                      s4 |                             0100 |                             0100
+                      s5 |                             0101 |                             0101
+                      s6 |                             0110 |                             0110
+                      s7 |                             0111 |                             0111
+                      s8 |                             1000 |                             1000
+                      s9 |                             1001 |                             1001
+                     s10 |                             1010 |                             1010
+                     s11 |                             1011 |                             1011
+                     s12 |                             1100 |                             1100
+                     s13 |                             1101 |                             1101
+                     s14 |                             1110 |                             1110
+                     s15 |                             1111 |                             1111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'seg_dis'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 800.668 ; gain = 468.164
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
++---Registers : 
+	                8 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   2 Input     48 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 4     
+	  16 Input     16 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	  16 Input      4 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module uC_uA 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module uC_uAR 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+Module uC_CM 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     48 Bit        Muxes := 1     
+Module clock 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+Module clk_div 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+Module clk_div__parameterized1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+Module seg_dis 
+Detailed RTL Component Info : 
++---Muxes : 
+	  16 Input     16 Bit        Muxes := 1     
+	  16 Input      4 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 600 (col length:100)
+BRAMs: 650 (col length: RAMB18 100 RAMB36 50)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3331] design uC_CM has unconnected port clk
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 800.668 ; gain = 468.164
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 845.621 ; gain = 513.117
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 845.844 ; gain = 513.340
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 856.406 ; gain = 523.902
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 856.406 ; gain = 523.902
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 856.406 ; gain = 523.902
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 856.406 ; gain = 523.902
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 856.406 ; gain = 523.902
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 856.406 ; gain = 523.902
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 856.406 ; gain = 523.902
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     2|
+|2     |CARRY4 |    52|
+|3     |LUT1   |     9|
+|4     |LUT2   |   197|
+|5     |LUT3   |    66|
+|6     |LUT4   |    29|
+|7     |LUT5   |     2|
+|8     |LUT6   |     8|
+|9     |FDCE   |   119|
+|10    |FDRE   |     2|
+|11    |IBUF   |    10|
+|12    |OBUF   |    24|
++------+-------+------+
+
+Report Instance Areas: 
++------+----------------+------------------------+------+
+|      |Instance        |Module                  |Cells |
++------+----------------+------------------------+------+
+|1     |top             |                        |   520|
+|2     |  clk_div_inst  |clk_div                 |   130|
+|3     |  clk_div_inst2 |clk_div__parameterized1 |   130|
+|4     |  clock_inst    |clock                   |   158|
+|5     |  seg_dis_inst  |seg_dis                 |    37|
+|6     |  uC_inst       |uC                      |    29|
+|7     |    uC_uAR_inst |uC_uAR                  |    15|
+|8     |    uC_uA_inst  |uC_uA                   |    13|
+|9     |    uC_uCM_inst |uC_CM                   |     1|
++------+----------------+------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 856.406 ; gain = 523.902
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 856.406 ; gain = 210.684
+Synthesis Optimization Complete : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 856.406 ; gain = 523.902
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 52 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 864.473 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+53 Infos, 108 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 864.473 ; gain = 544.797
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 864.473 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'D:/soc/EXPERIMENT/uC/uC.runs/synth_1/uC_test.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file uC_test_utilization_synth.rpt -pb uC_test_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Apr 25 17:45:45 2024...

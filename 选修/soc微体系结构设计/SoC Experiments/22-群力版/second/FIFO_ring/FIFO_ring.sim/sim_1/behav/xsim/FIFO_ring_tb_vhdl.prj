@@ -1,0 +1,11 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../FIFO_ring.srcs/sources_1/new/FIFO_ring.vhd" \
+"../../../../FIFO_ring.srcs/sources_1/new/FIFO_ring_duaram_controller.vhd" \
+"../../../../FIFO_ring.srcs/sources_1/new/FIFO_ring_test.vhd" \
+"../../../../FIFO_ring.srcs/sources_1/new/duaram.vhd" \
+"../../../../FIFO_ring.srcs/sources_1/new/key_stroke.vhd" \
+"../../../../FIFO_ring.srcs/sim_1/new/FIFO_ring_tb.vhd" \
+
+# Do not sort compile order
+nosort

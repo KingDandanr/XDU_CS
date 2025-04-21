@@ -1,0 +1,11 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../divider_origin.srcs/sources_1/new/divider_origin.vhd" \
+"../../../../divider_origin.srcs/sources_1/new/divider_origin_16bitreg.vhd" \
+"../../../../divider_origin.srcs/sources_1/new/divider_origin_8bitadder.vhd" \
+"../../../../divider_origin.srcs/sources_1/new/divider_origin_ctrl.vhd" \
+"../../../../divider_origin.srcs/sources_1/new/divider_origin_selector.vhd" \
+"../../../../divider_origin.srcs/sim_1/new/divider_origin_tb.vhd" \
+
+# Do not sort compile order
+nosort

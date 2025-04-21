@@ -1,0 +1,11 @@
+0.6
+2018.3
+Dec  7 2018
+00:33:28
+C:/Users/Administrator/Desktop/PC_IO/PC_IO/PC_IO.srcs/sources_1/new/PC_IO.vhd,1651602309,vhdl,,,,pc_io,,,,,,,,
+F:/SocCase/IO/IO.srcs/sim_1/imports/new/testbench.vhd,1651593546,vhdl,,,,testbench,,,,,,,,
+F:/SocCase/IO/IO.srcs/sim_1/new/IO_test_bench.vhd,1651604253,vhdl,,,,io_test_bench,,,,,,,,
+F:/SocCase/IO/IO.srcs/sources_1/imports/new/data2seg.vhd,1650969072,vhdl,,,,data2seg,,,,,,,,
+F:/SocCase/IO/IO.srcs/sources_1/imports/new/seg_dis.vhd,1651604291,vhdl,,,,seg_dis,,,,,,,,
+F:/SocCase/IO/IO.srcs/sources_1/imports/new/seg_dis_keyin.vhd,1651602857,vhdl,,,,seg_dis_keyin,,,,,,,,
+F:/SocCase/IO/IO.srcs/sources_1/new/IO_top.vhd,1651603415,vhdl,,,,io_top,,,,,,,,

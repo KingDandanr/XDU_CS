@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"Decoder3to8_tb_func_synth.vhd" \
+"../../../../../Decoder3to8.srcs/sim_1/new/decoder3to8.vhd" \
+
+# Do not sort compile order
+nosort

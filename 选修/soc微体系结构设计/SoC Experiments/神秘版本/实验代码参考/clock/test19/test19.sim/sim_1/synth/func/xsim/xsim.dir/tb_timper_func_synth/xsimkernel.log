@@ -1,0 +1,7 @@
+Running: xsim.dir/tb_timper_func_synth/xsimk.exe -simmode gui -wdb tb_timper_func_synth.wdb -simrunnum 0 -socket 45061
+Design successfully loaded
+Design Loading Memory Usage: 8556 KB (Peak: 8556 KB)
+Design Loading CPU Usage: 30 ms
+Simulation completed
+Simulation Memory Usage: 9224 KB (Peak: 9224 KB)
+Simulation CPU Usage: 30 ms

@@ -1,0 +1,10 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../SP.srcs/sources_1/imports/Desktop/imports/new/data2seg.vhd" \
+"../../../../SP.srcs/sources_1/imports/Desktop/module_SP/module_SP/module_SP.srcs/sources_1/new/module_SP.vhd" \
+"../../../../SP.srcs/sources_1/imports/Desktop/imports/new/seg_dis.vhd" \
+"../../../../SP.srcs/sources_1/imports/Desktop/imports/new/seg_dis_keyin.vhd" \
+"../../../../SP.srcs/sources_1/new/sp_top.vhd" \
+
+# Do not sort compile order
+nosort

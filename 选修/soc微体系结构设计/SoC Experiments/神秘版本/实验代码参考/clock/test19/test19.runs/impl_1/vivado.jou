@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Wed May 24 17:56:10 2023
+# Process ID: 5072
+# Current directory: C:/Users/akyna/Codes/vivado/experiment1/test19/test19.runs/impl_1
+# Command line: vivado.exe -log timper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source timper.tcl -notrace
+# Log file: C:/Users/akyna/Codes/vivado/experiment1/test19/test19.runs/impl_1/timper.vdi
+# Journal file: C:/Users/akyna/Codes/vivado/experiment1/test19/test19.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source timper.tcl -notrace

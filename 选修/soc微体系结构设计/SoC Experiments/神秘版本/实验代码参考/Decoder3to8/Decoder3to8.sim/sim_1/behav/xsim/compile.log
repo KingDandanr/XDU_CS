@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/akyna/Codes/vivado/Decoder3to8/Decoder3to8.srcs/sources_1/new/decoder3to8.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Decoder3to8'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/akyna/Codes/vivado/Decoder3to8/Decoder3to8.srcs/sim_1/new/decoder3to8.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Decoder3to8_tb'

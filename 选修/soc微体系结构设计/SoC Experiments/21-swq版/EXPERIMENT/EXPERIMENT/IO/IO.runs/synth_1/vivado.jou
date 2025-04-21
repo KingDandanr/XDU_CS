@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Thu Apr 25 15:57:19 2024
+# Process ID: 20520
+# Current directory: D:/soc/EXPERIMENT/IO/IO.runs/synth_1
+# Command line: vivado.exe -log IO_test.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source IO_test.tcl
+# Log file: D:/soc/EXPERIMENT/IO/IO.runs/synth_1/IO_test.vds
+# Journal file: D:/soc/EXPERIMENT/IO/IO.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source IO_test.tcl -notrace

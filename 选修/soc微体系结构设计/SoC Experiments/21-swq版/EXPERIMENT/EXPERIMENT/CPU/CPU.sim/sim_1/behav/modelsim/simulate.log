@@ -1,0 +1,117 @@
+# //  ModelSim SE-64 10.5 Feb 13 2016 
+# //
+# //  Copyright 1991-2016 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim SE-64 and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# do {CPU_test_simulate.do}
+# vsim -voptargs=""+acc"" -L xil_defaultlib -L secureip -lib xil_defaultlib xil_defaultlib.CPU_test 
+# Start time: 22:57:09 on Apr 26,2024
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.cpu_test(behavioral)#1
+# Loading work.cpu(behavioral)#1
+# Loading work.clock(behavioral)#1
+# Loading work.uc(behavioral)#1
+# Loading work.uc_ua(behavioral)#1
+# Loading work.uc_uar(behavioral)#1
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.uc_cm(behavioral)#1
+# Loading work.uc_uir(behavioral)#1
+# Loading work.sp(behavioral)#1
+# Loading work.io(behavioral)#1
+# Loading work.ram(behavioral)#1
+# Loading work.alu(behavioral)#1
+# Loading work.array_multiplier(behavioral)#1
+# Loading work.array_multiplier_top(behavioral)#1
+# Loading work.array_multiplier_unit(behavioral)#1
+# Loading work.adder_1bit(behavioral)#1
+# Loading work.array_multiplier_low(behavioral)#1
+# Loading work.rn(behavioral)#1
+# Loading work.ir(behavioral)#1
+# Loading work.rom(behavioral)#1
+# Loading work.pc(behavioral)#1
+# ** Warning: (vsim-8683) Uninitialized inout port /cpu_test/CPU_inst/SP_inst/DATA_BUS(7) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized inout port /cpu_test/CPU_inst/SP_inst/DATA_BUS(6) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized inout port /cpu_test/CPU_inst/SP_inst/DATA_BUS(5) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized inout port /cpu_test/CPU_inst/SP_inst/DATA_BUS(4) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized inout port /cpu_test/CPU_inst/SP_inst/DATA_BUS(3) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized inout port /cpu_test/CPU_inst/SP_inst/DATA_BUS(2) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized inout port /cpu_test/CPU_inst/SP_inst/DATA_BUS(1) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized inout port /cpu_test/CPU_inst/SP_inst/DATA_BUS(0) has no driver.
+# This port will contribute value (U) to the signal network.
+# 1
+# 1
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: SWQ2003  Hostname: SWQ2003  ProcessID: 11312
+#           Attempting to use alternate WLF file "./wlftgn8nys".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftgn8nys
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# End time: 22:58:47 on Apr 26,2024, Elapsed time: 0:01:38
+# Errors: 0, Warnings: 10
+ signal network.
+# ** Warning: (vsim-8683) Uninitialized inout port /cpu_test/CPU_inst/SP_inst/DATA_BUS(5) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized inout port /cpu_test/CPU_inst/SP_inst/DATA_BUS(4) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized inout port /cpu_test/CPU_inst/SP_inst/DATA_BUS(3) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized inout port /cpu_test/CPU_inst/SP_inst/DATA_BUS(2) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized inout port /cpu_test/CPU_inst/SP_inst/DATA_BUS(1) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized inout port /cpu_test/CPU_inst/SP_inst/DATA_BUS(0) has no driver.
+# This port will contribute value (U) to the signal network.
+run
+add wave -position insertpoint  \
+sim:/cpu_test/CPU_inst/ROM_inst/clk_ROM
+add wave -position insertpoint  \
+sim:/cpu_test/CPU_inst/ROM_inst/data_out
+restart
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# ** Warning: (vsim-8683) Uninitialized inout port /cpu_test/CPU_inst/SP_inst/DATA_BUS(7) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized inout port /cpu_test/CPU_inst/SP_inst/DATA_BUS(6) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized inout port /cpu_test/CPU_inst/SP_inst/DATA_BUS(5) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized inout port /cpu_test/CPU_inst/SP_inst/DATA_BUS(4) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized inout port /cpu_test/CPU_inst/SP_inst/DATA_BUS(3) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized inout port /cpu_test/CPU_inst/SP_inst/DATA_BUS(2) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized inout port /cpu_test/CPU_inst/SP_inst/DATA_BUS(1) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized inout port /cpu_test/CPU_inst/SP_inst/DATA_BUS(0) has no driver.
+# This port will contribute value (U) to the signal network.
+run
+run
+run
+run
+run
+run
+run
+# End time: 23:02:00 on Apr 26,2024, Elapsed time: 0:05:01
+# Errors: 0, Warnings: 24

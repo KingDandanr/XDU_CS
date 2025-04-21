@@ -1,0 +1,58 @@
+
+*** Running vivado
+    with args -log CPU_test.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source CPU_test.tcl -notrace
+
+
+****** Vivado v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source CPU_test.tcl -notrace
+Command: link_design -top CPU_test -part xc7k160tfbg676-2
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Netlist 29-17] Analyzing 86 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Device 21-403] Loading part xc7k160tfbg676-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [D:/soc/EXPERIMENT/CPU/CPU.srcs/constrs_1/new/pin.xdc]
+Finished Parsing XDC File [D:/soc/EXPERIMENT/CPU/CPU.srcs/constrs_1/new/pin.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 667.469 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 32 instances were transformed.
+  RAM16X1S => RAM32X1S (RAMS32): 16 instances
+  RAM32X1S => RAM32X1S (RAMS32): 8 instances
+  RAM64X1S => RAM64X1S (RAMS64E): 8 instances
+
+7 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 667.469 ; gain = 342.918
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7k160t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7k160t'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net CPU_inst/ROM_inst/D[0] has multiple drivers: CPU_inst/RN_inst/PC_out[8]_i_1__0/O, and CPU_inst/ROM_inst/DATA_BUS_reg[0]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net CPU_inst/ROM_inst/D[1] has multiple drivers: CPU_inst/RN_inst/PC_out[9]_i_1__0/O, and CPU_inst/ROM_inst/DATA_BUS_reg[1]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net CPU_inst/ROM_inst/D[2] has multiple drivers: CPU_inst/RN_inst/PC_out[10]_i_1__0/O, and CPU_inst/ROM_inst/DATA_BUS_reg[2]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net CPU_inst/ROM_inst/D[3] has multiple drivers: CPU_inst/RN_inst/PC_out[11]_i_1__0/O, and CPU_inst/ROM_inst/DATA_BUS_reg[3]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net CPU_inst/ROM_inst/D[4] has multiple drivers: CPU_inst/RN_inst/PC_out[4]_i_1__0/O, and CPU_inst/ROM_inst/DATA_BUS_reg[4]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net CPU_inst/ROM_inst/D[5] has multiple drivers: CPU_inst/RN_inst/PC_out[5]_i_1__0/O, and CPU_inst/ROM_inst/DATA_BUS_reg[5]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net CPU_inst/ROM_inst/D[6] has multiple drivers: CPU_inst/RN_inst/PC_out[6]_i_1__0/O, and CPU_inst/ROM_inst/DATA_BUS_reg[6]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net CPU_inst/ROM_inst/D[7] has multiple drivers: CPU_inst/RN_inst/PC_out[7]_i_2/O, and CPU_inst/ROM_inst/DATA_BUS_reg[7]/Q.
+INFO: [Project 1-461] DRC finished with 8 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+ERROR: [Vivado_Tcl 4-78] Error(s) found during DRC. Opt_design not run.
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.626 . Memory (MB): peak = 684.008 ; gain = 16.539
+INFO: [Common 17-83] Releasing license: Implementation
+12 Infos, 0 Warnings, 0 Critical Warnings and 9 Errors encountered.
+opt_design failed
+ERROR: [Common 17-39] 'opt_design' failed due to earlier errors.
+
+INFO: [Common 17-206] Exiting Vivado at Tue May  7 11:17:42 2024...

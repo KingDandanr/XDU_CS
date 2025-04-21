@@ -1,0 +1,12 @@
+
+{ 
+    crc :  5032414177088214873  , 
+    ccp_crc :  0  , 
+    cmdline : " -wto fc1609e0dc964106b2ffb5cf6c77ad78 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_timper_func_synth xil_defaultlib.tb_timper" , 
+    buildDate : "Nov  6 2019" , 
+    buildTime : "21:57:16" , 
+    linkCmd : "C:\\Xilinx\\Vivado\\2019.2\\data\\..\\tps\\mingw\\6.2.0\\win64.o\\nt\\bin\\gcc.exe -Wa,-W  -O -Wl,--stack,104857600 -o \"xsim.dir/tb_timper_func_synth/xsimk.exe\"   \"xsim.dir/tb_timper_func_synth/obj/xsim_0.win64.obj\" \"xsim.dir/tb_timper_func_synth/obj/xsim_1.win64.obj\" -L\"C:\\Xilinx\\Vivado\\2019.2\\lib\\win64.o\" -lrdi_simulator_kernel   -lrdi_simbridge_kernel" , 
+    aggregate_nets : 
+    [ 
+    ] 
+} 

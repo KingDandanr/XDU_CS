@@ -1,0 +1,265 @@
+/*
+
+Xilinx Vivado v2018.3 (64-bit) [Major: 2018, Minor: 3]
+SW Build: 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build: 2404404 on Fri Dec  7 01:43:56 MST 2018
+
+Process ID (PID): 4348
+License: Customer
+
+Current time: 	Sat May 27 18:24:53 CST 2023
+Time zone: 	China Standard Time (Asia/Shanghai)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 6
+
+Screen size: 1920x1080
+Screen resolution (DPI): 96
+Available screens: 1
+Available disk space: 25 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	9.0.4 64-bit
+Java home: 	C:/Xilinx/Vivado/2018.3/tps/win64/jre9.0.4
+Java executable location: 	C:/Xilinx/Vivado/2018.3/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	Administrator
+User home directory: C:/Users/Administrator
+User working directory: C:/Users/Administrator/Desktop/IR_storge/IR_storge
+User country: 	CN
+User language: 	zh
+User locale: 	zh_CN
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2018.3
+RDI_DATADIR: C:/Xilinx/Vivado/2018.3/data
+RDI_BINDIR: C:/Xilinx/Vivado/2018.3/bin
+
+Vivado preferences file location: C:/Users/Administrator/AppData/Roaming/Xilinx/Vivado/2018.3/vivado.xml
+Vivado preferences directory: C:/Users/Administrator/AppData/Roaming/Xilinx/Vivado/2018.3/
+Vivado layouts directory: C:/Users/Administrator/AppData/Roaming/Xilinx/Vivado/2018.3/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2018.3/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/Administrator/Desktop/IR_storge/IR_storge/vivado.log
+Vivado journal file location: 	C:/Users/Administrator/Desktop/IR_storge/IR_storge/vivado.jou
+Engine tmp dir: 	C:/Users/Administrator/Desktop/IR_storge/IR_storge/.Xil/Vivado-4348-PC505-066
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Xilinx/Vivado/2018.3/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2018.3/ids_lite/ISE
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2018.3
+XILINX_SDK: C:/Xilinx/SDK/2018.3
+XILINX_VIVADO: C:/Xilinx/Vivado/2018.3
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2018.3
+
+
+GUI allocated memory:	185 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 712 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bx (cp):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\Administrator\Desktop\IR_storge\IR_storge\IR_storge.xpr. Version: Vivado v2018.3 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project C:/Users/Administrator/Desktop/IR_storge/IR_storge/IR_storge.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'. 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 87 MB (+88620kb) [00:00:06]
+// [Engine Memory]: 636 MB (+515176kb) [00:00:06]
+// [GUI Memory]: 104 MB (+13239kb) [00:00:07]
+// [Engine Memory]: 677 MB (+10042kb) [00:00:07]
+// WARNING: HEventQueue.dispatchEvent() is taking  1991 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 722 MB. GUI used memory: 50 MB. Current time: 5/27/23, 6:24:54 PM CST
+// Project name: IR_storge; location: C:/Users/Administrator/Desktop/IR_storge/IR_storge; part: xc7k70tfbg676-1
+// [Engine Memory]: 722 MB (+11009kb) [00:00:09]
+dismissDialog("Open Project"); // bx (cp)
+// Tcl Message: update_compile_order -fileset sources_1 
+selectButton(RDIResourceCommand.RDICommands_SETTINGS, "xc7k70tfbg676-1"); // h (Q, cp)
+// Run Command: RDIResourceCommand.RDICommands_SETTINGS
+// Tcl Command: 'rdi::info_commands {device::*}'
+// Tcl Command: 'rdi::info_commands {debug::*}'
+// Tcl Command: 'rdi::info_commands {*}'
+// F (cp): Settings: addNotify
+// [Engine Memory]: 791 MB (+35200kb) [00:00:15]
+// WARNING: HEventQueue.dispatchEvent() is taking  1528 ms.
+selectButton(RDIResourceCommand.RDICommands_SETTINGS, "xc7k70tfbg676-1"); // h (Q, cp)
+// Run Command: RDIResourceCommand.RDICommands_SETTINGS
+selectButton(PAResourceQtoS.SettingsProjectGeneralPage_CHOOSE_DEVICE_FOR_YOUR_PROJECT, (String) null); // q (a, F)
+// c (F): Select Device: addNotify
+selectComboBox(PAResourceEtoH.FPGAChooser_FAMILY, "Kintex-7", 6); // w (D, c)
+// [GUI Memory]: 122 MB (+13272kb) [00:00:21]
+selectComboBox(PAResourceEtoH.FPGAChooser_PACKAGE, "fbg676", 2); // w (D, c)
+selectTable(PAResourceEtoH.FPGAChooser_FPGA_TABLE, "xc7k160tfbg676-2 ; 676 ; 400 ; 101400 ; 202800 ; 325 ; 0 ; 600 ; 8 ; 0 ; 8 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 1 ; 8 ;  ;  ;  ;  ; 0.97 ; 0.97 ; 1.03", 5, "676", 1); // x (Q, c)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (c)
+dismissDialog("Select Device"); // c (F)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (F)
+// A (cp): Create New Run: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// b (cp): Create Run: addNotify
+dismissDialog("Create New Run"); // A (cp)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (b)
+// TclEventType: RUN_ADD
+// Tcl Command: 'set_property INCLUDE_IN_ARCHIVE [ get_property INCLUDE_IN_ARCHIVE [get_runs synth_1]] [get_runs synth_2]'
+// TclEventType: RUN_ADD
+// TclEventType: RUN_CURRENT
+// bx (cp):  Change Settings : addNotify
+// Tcl Message: create_run synth_2 -flow {Vivado Synthesis 2018} -strategy {Vivado Synthesis Defaults} -report_strategy {Vivado Synthesis Default Reports} 
+// Tcl Message: Run is defaulting to srcset: sources_1 Run is defaulting to constrset: constrs_1 Run is defaulting to part: xc7k70tfbg676-1 
+// Tcl Message: current_run [get_runs synth_2] 
+// TclEventType: RUN_MODIFY
+dismissDialog("Create Run"); // b (cp)
+// TclEventType: PART_MODIFIED
+// Tcl Message: set_property part xc7k160tfbg676-2 [current_project] 
+dismissDialog("Change Settings"); // bx (cp)
+dismissDialog("Settings"); // F (cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, IR(Behavioral) (IR.vhd)]", 1, true); // B (D, cp) - Node
+// [GUI Memory]: 128 MB (+140kb) [00:00:41]
+// [GUI Memory]: 135 MB (+1130kb) [00:00:41]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, IR(Behavioral) (IR.vhd)]", 1, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, IR(Behavioral) (IR.vhd)]", 1, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cp): No Implementation Results Available: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (cp):  Resetting Runs : addNotify
+// f (cp): Launch Runs: addNotify
+dismissDialog("No Implementation Results Available"); // A (cp)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// TclEventType: RUN_LAUNCH
+dismissDialog("Launch Runs"); // f (cp)
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_2 -to_step write_bitstream -jobs 6 
+// Tcl Message: [Sat May 27 18:25:30 2023] Launched synth_2... Run output will be captured here: C:/Users/Administrator/Desktop/IR_storge/IR_storge/IR_storge.runs/synth_2/runme.log [Sat May 27 18:25:30 2023] Launched impl_2... Run output will be captured here: C:/Users/Administrator/Desktop/IR_storge/IR_storge/IR_storge.runs/impl_2/runme.log 
+// HMemoryUtils.trashcanNow. Engine heap size: 833 MB. GUI used memory: 69 MB. Current time: 5/27/23, 6:25:39 PM CST
+// [Engine Memory]: 833 MB (+2420kb) [00:01:05]
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah (cp): Bitstream Generation Completed: addNotify
+// Elapsed time: 95 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+dismissDialog("Bitstream Generation Completed"); // ah (cp)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 21, true); // u (Q, cp) - Node
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Tcl Command: 'load_features labtools'
+// TclEventType: LOAD_FEATURE
+// bx (cp):  Open Hardware Manager : addNotify
+// TclEventType: HW_SESSION_OPEN
+// Tcl Message: open_hw 
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+dismissDialog("Open Hardware Manager"); // bx (cp)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Open Target]", 22, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // af (al, cp)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// WARNING: HEventQueue.dispatchEvent() is taking  3145 ms.
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210203367162A 
+// bx (cp):  Auto Connect : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/Administrator/Desktop/IR_storge/IR_storge/IR_storge.runs/impl_2/IR.bit} [get_hw_devices xc7k160t_0] 
+// Tcl Message: current_hw_device [get_hw_devices xc7k160t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// [Engine Memory]: 1,762 MB (+930569kb) [00:02:28]
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7k160t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7k160t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Auto Connect"); // bx (cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,770 MB. GUI used memory: 73 MB. Current time: 5/27/23, 6:27:14 PM CST
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 23, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7k160t_0"); // af (al, cp)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cp): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bx (cp):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC (cp)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7k160t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7k160t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/Administrator/Desktop/IR_storge/IR_storge/IR_storge.runs/impl_2/IR.bit} [get_hw_devices xc7k160t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7k160t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7k160t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7k160t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 5 seconds
+dismissDialog("Program Device"); // bx (cp)
+// Elapsed time: 281 seconds
+selectCodeEditor("IR.vhd", 414, 232); // cl (w, cp)
+// Elapsed time: 35 seconds
+selectCodeEditor("IR.vhd", 238, 316); // cl (w, cp)
+// Elapsed time: 233 seconds
+selectCodeEditor("IR.vhd", 602, 182); // cl (w, cp)
+selectCodeEditor("IR.vhd", 579, 168); // cl (w, cp)
+selectCodeEditor("IR.vhd", 569, 163); // cl (w, cp)
+// Elapsed time: 10 seconds
+selectCodeEditor("IR.vhd", 481, 174); // cl (w, cp)
+selectCodeEditor("IR.vhd", 489, 162); // cl (w, cp)
+selectCodeEditor("IR.vhd", 659, 151); // cl (w, cp)
+selectCodeEditor("IR.vhd", 655, 163); // cl (w, cp)
+selectCodeEditor("IR.vhd", 601, 171); // cl (w, cp)
+selectCodeEditor("IR.vhd", 600, 178); // cl (w, cp)
+selectCodeEditor("IR.vhd", 590, 206); // cl (w, cp)
+selectCodeEditor("IR.vhd", 618, 219); // cl (w, cp)
+// Elapsed time: 22 seconds
+selectCodeEditor("IR.vhd", 611, 214); // cl (w, cp)
+selectCodeEditor("IR.vhd", 497, 183); // cl (w, cp)
+// Elapsed time: 25 seconds
+selectCodeEditor("IR.vhd", 527, 191); // cl (w, cp)
+// TclEventType: RUN_COMPLETED
+// HMemoryUtils.trashcanNow. Engine heap size: 1,781 MB. GUI used memory: 74 MB. Current time: 5/27/23, 6:57:14 PM CST

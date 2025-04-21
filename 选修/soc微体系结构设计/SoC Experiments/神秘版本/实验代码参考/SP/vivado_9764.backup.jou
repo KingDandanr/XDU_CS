@@ -1,0 +1,17 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Thu May  5 14:02:17 2022
+# Process ID: 9764
+# Current directory: F:/soc/SP
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9508 F:\soc\SP\SP.xpr
+# Log file: F:/soc/SP/vivado.log
+# Journal file: F:/soc/SP\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/soc/SP/SP.xpr
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 3
+wait_on_run impl_1

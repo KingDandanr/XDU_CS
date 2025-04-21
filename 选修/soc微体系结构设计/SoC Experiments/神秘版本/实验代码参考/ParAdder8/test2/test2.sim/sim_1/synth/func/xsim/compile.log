@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "F:/desktop/study/test/soc/experiment/test2/test2.sim/sim_1/synth/func/xsim/tb_adder_func_synth.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'parellel_adder'
+INFO: [VRFC 10-163] Analyzing VHDL file "F:/desktop/study/test/soc/experiment/test2/test2.srcs/sim_1/new/tb_adder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_adder'

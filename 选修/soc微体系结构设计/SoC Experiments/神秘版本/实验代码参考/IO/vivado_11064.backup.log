@@ -1,0 +1,132 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed May  4 14:48:17 2022
+# Process ID: 11064
+# Current directory: F:/SocCase/IO
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12316 F:\SocCase\IO\IO.xpr
+# Log file: F:/SocCase/IO/vivado.log
+# Journal file: F:/SocCase/IO\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/SocCase/IO/IO.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specifieININFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2018.3/data/ip'opopen_project: Time (s): cpu = 00:00:28 ; elapsed = 00:00:24 . Memory (MB): peak = 779.543 ; gain = 155.25upupdate_compile_order -fileset sources_launch_runs synth_1 -jobs 4
+[Wed May  4 14:51:54 2022] Launched synth_1...
+Run output will be captured here: F:/SocCase/IO/IO.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 4
+[Wed May  4 14:55:19 2022] Launched impl_1...
+Run output will be captured here: F:/SocCase/IO/IO.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 16 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Device 21-403] Loading part xc7k160tfbg676-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.137 . Memory (MB): peak = 1081.039 ; gain = 0.074
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.143 . Memory (MB): peak = 1081.039 ; gain = 0.074
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1081.105 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:17 ; elapsed = 00:00:12 . Memory (MB): peak = 1214.309 ; gain = 415.488
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+place_ports clk E10
+place_ports rst J8
+place_ports P0_CS J14
+place_ports P0_IEN H9
+place_ports InEN H8
+place_ports P0_OEN G10
+place_ports OutEN G9
+set_property IOSTANDARD LVCMOS18 [get_ports [list clk]]
+set_property IOSTANDARD LVCMOS18 [get_ports [list InEN]]
+set_property IOSTANDARD LVCMOS18 [get_ports [list OutEN]]
+set_property IOSTANDARD LVCMOS18 [get_ports [list P0_CS]]
+set_property IOSTANDARD LVCMOS25 [get_ports [list P0_IEN]]
+set_property IOSTANDARD LVCMOS18 [get_ports [list P0_IEN]]
+set_property IOSTANDARD LVCMOS18 [get_ports [list P0_OEN]]
+set_property IOSTANDARD LVCMOS18 [get_ports [list rst]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {seg_sel[15]} {seg_sel[14]} {seg_sel[13]} {seg_sel[12]} {seg_sel[11]} {seg_sel[10]} {seg_sel[9]} {seg_sel[8]} {seg_sel[7]} {seg_sel[6]} {seg_sel[5]} {seg_sel[4]} {seg_sel[3]} {seg_sel[2]} {seg_sel[1]} {seg_sel[0]}]]
+set_property IOSTANDARD LVCMOS18 [get_ports [list {seg_data[7]} {seg_data[6]} {seg_data[5]} {seg_data[4]} {seg_data[3]} {seg_data[2]} {seg_data[1]} {seg_data[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {seg_data[7]} {seg_data[6]} {seg_data[5]} {seg_data[4]} {seg_data[3]} {seg_data[2]} {seg_data[1]} {seg_data[0]}]]
+set_property IOSTANDARD LVCMOS18 [get_ports [list {P0_IN[7]} {P0_IN[6]} {P0_IN[5]} {P0_IN[4]} {P0_IN[3]} {P0_IN[2]} {P0_IN[1]} {P0_IN[0]}]]
+set_property IOSTANDARD LVCMOS18 [get_ports [list {data_in[7]} {data_in[6]} {data_in[5]} {data_in[4]} {data_in[3]} {data_in[2]} {data_in[1]} {data_in[0]}]]
+place_ports {P0_IN[0]} F8
+place_ports {P0_IN[1]} F9
+place_ports {P0_IN[2]} H11
+place_ports {P0_IN[3]} H12
+place_ports {P0_IN[4]} G14
+place_ports {P0_IN[5]} J10
+place_ports {P0_IN[6]} H14
+place_ports {P0_IN[7]} J11
+place_ports {data_in[0]} C9
+place_ports {data_in[1]} B9
+place_ports {data_in[2]} G11
+place_ports {data_in[3]} F10
+place_ports {data_in[4]} D10
+place_ports {data_in[5]} E11
+place_ports {data_in[6]} D11
+place_ports {data_in[7]} A14
+place_ports {seg_data[7]} J21
+place_ports {seg_data[6]} H24
+place_ports {seg_data[5]} H23
+place_ports {seg_data[4]} G21
+place_ports {seg_data[3]} H21
+place_ports {seg_data[2]} H26
+place_ports {seg_data[1]} J26
+place_ports {seg_data[0]} E26
+place_ports {seg_sel[0]} B20
+place_ports {seg_sel[1]} C22
+place_ports {seg_sel[2]} D21
+place_ports {seg_sel[3]} C24
+place_ports {seg_sel[4]} B26
+place_ports {seg_sel[5]} B25
+place_ports {seg_sel[6]} L23
+place_ports {seg_sel[7]} K21
+place_ports {seg_sel[8]} H22
+place_ports {seg_sel[9]} J24
+place_ports {seg_sel[10]} J25
+place_ports {seg_sel[11]} A20
+place_ports {seg_sel[12]} C26
+place_ports {seg_sel[13]} D26
+place_ports {seg_sel[14]} A24
+place_ports {seg_sel[15]} A23
+file mkdir F:/SocCase/IO/IO.srcs/constrs_1/new
+close [ open F:/SocCase/IO/IO.srcs/constrs_1/new/CONS.xdc w ]
+add_files -fileset constrs_1 F:/SocCase/IO/IO.srcs/constrs_1/new/CONS.xdc
+set_property target_constrs_file F:/SocCase/IO/IO.srcs/constrs_1/new/CONS.xdc [current_fileset -constrset]
+save_constraints -force
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1753.484 ; gain = 0.000
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+[Wed May  4 15:13:25 2022] Launched synth_1...
+Run output will be captured here: F:/SocCase/IO/IO.runs/synth_1/runme.log
+[Wed May  4 15:13:25 2022] Launched impl_1...
+Run output will be captured here: F:/SocCase/IO/IO.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed May  4 15:20:08 2022] Launched impl_1...
+Run output will be captured here: F:/SocCase/IO/IO.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  7 2018-00:40:27
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+INFO: [Labtools 27-2058] connect_hw_server command cancelled.
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 1934.312 ; gain = 0.000
+INFO: [Common 17-344] 'connect_hw_server' was cancelled
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed May  4 15:23:13 2022...

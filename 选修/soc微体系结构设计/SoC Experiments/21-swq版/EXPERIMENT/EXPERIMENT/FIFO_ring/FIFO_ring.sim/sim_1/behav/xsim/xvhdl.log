@@ -1,0 +1,6 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/soc/EXPERIMENT/FIFO_ring/FIFO_ring.srcs/sources_1/new/FIFO_ring.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'FIFO_ring'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/soc/EXPERIMENT/FIFO_ring/FIFO_ring.srcs/sources_1/new/FIFO_ring_test.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'FIFO_ring_test'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/soc/EXPERIMENT/FIFO_ring/FIFO_ring.srcs/sim_1/new/FIFO_ring_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'FIFO_ring_tb'

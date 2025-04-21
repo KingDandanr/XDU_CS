@@ -1,0 +1,150 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Sat May 20 15:22:25 2023
+# Process ID: 16060
+# Current directory: C:/Users/akyna/Codes/vivado/experiment1/test2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent22208 C:\Users\akyna\Codes\vivado\experiment1\test2\test2.xpr
+# Log file: C:/Users/akyna/Codes/vivado/experiment1/test2/vivado.log
+# Journal file: C:/Users/akyna/Codes/vivado/experiment1/test2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/akyna/Codes/vivado/experiment1/test2/test2.xpr
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 10
+wait_on_run synth_1
+launch_runs impl_1 -jobs 10
+wait_on_run impl_1
+open_run impl_1
+place_ports {a[0]} C9
+place_ports {a[1]} B9
+place_ports {a[2]} G11
+place_ports {a[3]} F10
+place_ports {a[4]} D10
+place_ports {a[5]} E11
+place_ports {a[6]} D11
+place_ports {a[7]} A14
+place_ports {b[7]} D9
+place_ports {b[6]} D8
+place_ports {b[5]} A12
+place_ports {b[4]} A13
+place_ports {b[3]} A15
+place_ports {b[2]} B15
+place_ports {b[1]} A10
+place_ports {b[0]} B10
+place_ports c_in F8
+place_ports c_out F9
+place_ports {sel_in[0]} H11
+place_ports {sel_in[1]} H12
+place_ports {sel_in[2]} G14
+place_ports {sel_in[3]} J10
+place_ports {sel_out[0]} H14
+place_ports {sel_out[1]} J11
+place_ports {sel_out[2]} H13
+place_ports {sel_out[3]} J13
+place_ports {sum_out[0]} B20
+place_ports {sum_out[1]} C22
+place_ports {sum_out[2]} D21
+place_ports {sum_out[3]} C24
+place_ports {sum_out[4]} B26
+place_ports {sum_out[5]} B25
+place_ports {sum_out[6]} L23
+place_ports {sum_out[7]} K21
+place_ports c_out H22
+file mkdir C:/Users/akyna/Codes/vivado/experiment1/test2/test2.srcs/constrs_1/new
+close [ open C:/Users/akyna/Codes/vivado/experiment1/test2/test2.srcs/constrs_1/new/pa.xdc w ]
+add_files -fileset constrs_1 C:/Users/akyna/Codes/vivado/experiment1/test2/test2.srcs/constrs_1/new/pa.xdc
+set_property target_constrs_file C:/Users/akyna/Codes/vivado/experiment1/test2/test2.srcs/constrs_1/new/pa.xdc [current_fileset -constrset]
+save_constraints -force
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+wait_on_run impl_1
+export_ip_user_files -of_objects  [get_files C:/Users/akyna/Codes/vivado/experiment1/test2/test2.srcs/constrs_1/new/pa.xdc] -no_script -reset -force -quiet
+remove_files  -fileset constrs_1 C:/Users/akyna/Codes/vivado/experiment1/test2/test2.srcs/constrs_1/new/pa.xdc
+set_property IOSTANDARD 33 [get_ports [list c_in]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list c_in]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list c_in]]
+close [ open C:/Users/akyna/Codes/vivado/experiment1/test2/test2.srcs/constrs_1/new/pa.xdc w ]
+add_files -fileset constrs_1 C:/Users/akyna/Codes/vivado/experiment1/test2/test2.srcs/constrs_1/new/pa.xdc
+set_property target_constrs_file C:/Users/akyna/Codes/vivado/experiment1/test2/test2.srcs/constrs_1/new/pa.xdc [current_fileset -constrset]
+save_constraints -force
+export_ip_user_files -of_objects  [get_files C:/Users/akyna/Codes/vivado/experiment1/test2/test2.srcs/constrs_1/new/pa.xdc] -no_script -reset -force -quiet
+remove_files  -fileset constrs_1 C:/Users/akyna/Codes/vivado/experiment1/test2/test2.srcs/constrs_1/new/pa.xdc
+set_property IOSTANDARD LVCMOS33 [get_ports [list c_out]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {a[7]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {a[6]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {a[5]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {a[4]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {sum_out[3]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {sel_out[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {sum_out[15]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {sum_out[14]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {sum_out[13]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {sum_out[12]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {sum_out[11]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {sum_out[10]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {sum_out[9]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {sum_out[8]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {sum_out[7]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {sum_out[6]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {sum_out[5]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {sum_out[4]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {sum_out[2]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {sum_out[1]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {sum_out[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {sel_out[1]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {sel_out[2]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {sel_out[3]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {sel_in[1]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {sel_in[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {sel_in[2]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {sel_in[3]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {b[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {b[1]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {b[2]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {b[3]}]]
+set_property IOSTANDARD LVDCI_15 [get_ports [list {b[4]}]]
+set_property IOSTANDARD LVDCI_15 [get_ports [list {b[4]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {b[5]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {b[4]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {b[6]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {b[7]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {a[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {a[3]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {a[2]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {a[1]}]]
+close [ open C:/Users/akyna/Codes/vivado/experiment1/test2/test2.srcs/constrs_1/new/pa.xdc w ]
+add_files -fileset constrs_1 C:/Users/akyna/Codes/vivado/experiment1/test2/test2.srcs/constrs_1/new/pa.xdc
+set_property target_constrs_file C:/Users/akyna/Codes/vivado/experiment1/test2/test2.srcs/constrs_1/new/pa.xdc [current_fileset -constrset]
+save_constraints -force
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+wait_on_run impl_1
+set_property is_enabled false [get_files  C:/Users/akyna/Codes/vivado/experiment1/test2/test2.srcs/constrs_1/new/pa.xdc]
+export_ip_user_files -of_objects  [get_files C:/Users/akyna/Codes/vivado/experiment1/test2/test2.srcs/constrs_1/new/pa.xdc] -no_script -reset -force -quiet
+remove_files  -fileset constrs_1 C:/Users/akyna/Codes/vivado/experiment1/test2/test2.srcs/constrs_1/new/pa.xdc
+file delete -force C:/Users/akyna/Codes/vivado/experiment1/test2/test2.srcs/constrs_1/new/pa.xdc
+set_property IOSTANDARD LVCMOS33 [get_ports [list {a[7]}]]
+place_ports {sum_out[7]} C19
+place_ports {sum_out[6]} B19
+place_ports {sum_out[5]} C17
+place_ports {sum_out[4]} C18
+place_ports {sum_out[3]} D15
+place_ports {sum_out[2]} D16
+place_ports {sum_out[1]} H16
+place_ports {sum_out[0]} G16
+close [ open C:/Users/akyna/Codes/vivado/experiment1/test2/test2.srcs/constrs_1/new/parellel_adder.xdc w ]
+add_files -fileset constrs_1 C:/Users/akyna/Codes/vivado/experiment1/test2/test2.srcs/constrs_1/new/parellel_adder.xdc
+set_property target_constrs_file C:/Users/akyna/Codes/vivado/experiment1/test2/test2.srcs/constrs_1/new/parellel_adder.xdc [current_fileset -constrset]
+save_constraints -force
+export_ip_user_files -of_objects  [get_files C:/Users/akyna/Codes/vivado/experiment1/test2/test2.srcs/constrs_1/new/parellel_adder.xdc] -no_script -reset -force -quiet
+remove_files  -fileset constrs_1 C:/Users/akyna/Codes/vivado/experiment1/test2/test2.srcs/constrs_1/new/parellel_adder.xdc
+file delete -force C:/Users/akyna/Codes/vivado/experiment1/test2/test2.srcs/constrs_1/new/parellel_adder.xdc
+refresh_design
+set_property IOSTANDARD LVCMOS33 [get_ports [list {sum_out[2]}]]
+save_constraints_as constrs_2 -target_constrs_file pa.xdc
+set_property constrset constrs_2 [get_runs synth_1]
+set_property constrset constrs_2 [get_runs impl_1]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {sum_out[1]}]]
+save_constraints_as constrs

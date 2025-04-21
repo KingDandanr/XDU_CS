@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_2" LaunchPart="xc7k160tfbg676-2" LaunchTime="1684574279">
+  <File Type="BITSTR-BMM" Name="mul8_c_bd.bmm"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="mul8_c_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="mul8_c_timing_summary_init.rpt"/>
+  <File Type="ROUTE-PWR" Name="mul8_c_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="mul8_c.tcl"/>
+  <File Type="OPT-TIMING" Name="mul8_c_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="mul8_c_opt.dcp"/>
+  <File Type="ROUTE-PWR-SUM" Name="mul8_c_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="mul8_c_reports.tcl"/>
+  <File Type="OPT-DRC" Name="mul8_c_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="mul8_c.hwdef"/>
+  <File Type="PWROPT-DCP" Name="mul8_c_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="mul8_c_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="mul8_c_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="mul8_c_placed.dcp"/>
+  <File Type="PLACE-IO" Name="mul8_c_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="mul8_c_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="mul8_c_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="mul8_c_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="mul8_c_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="mul8_c_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="mul8_c_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-TIMING" Name="mul8_c_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="mul8_c_postplace_pwropt.dcp"/>
+  <File Type="BG-BIN" Name="mul8_c.bin"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="mul8_c_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="mul8_c_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="mul8_c_drc_physopted.rpt"/>
+  <File Type="BITSTR-MSK" Name="mul8_c.msk"/>
+  <File Type="PHYSOPT-TIMING" Name="mul8_c_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="mul8_c_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="mul8_c_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="mul8_c_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="mul8_c_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="mul8_c_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="mul8_c_drc_routed.rpx"/>
+  <File Type="BITSTR-MMI" Name="mul8_c.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="mul8_c_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="mul8_c_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="mul8_c_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="mul8_c_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="mul8_c_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="mul8_c_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="mul8_c_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="mul8_c_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="mul8_c_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="mul8_c_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="mul8_c_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="mul8_c_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="mul8_c_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="mul8_c_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="mul8_c_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="mul8_c_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="mul8_c_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="mul8_c_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="mul8_c_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="mul8_c_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="mul8_c_bus_skew_postroute_physopted.pb"/>
+  <File Type="BG-BIT" Name="mul8_c.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="mul8_c_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BITSTR-RBT" Name="mul8_c.rbt"/>
+  <File Type="BITSTR-NKY" Name="mul8_c.nky"/>
+  <File Type="PDI-FILE" Name="mul8_c.pdi"/>
+  <File Type="RCFI_FILE" Name="mul8_c.rcfi"/>
+  <File Type="CFI_FILE" Name="mul8_c.cfi"/>
+  <File Type="RNPI_FILE" Name="mul8_c.rnpi"/>
+  <File Type="NPI_FILE" Name="mul8_c.npi"/>
+  <File Type="RBD_FILE" Name="mul8_c.rbd"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="mul8_c.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="mul8_c.sysdef"/>
+  <File Type="BG-BGN" Name="mul8_c.bgn"/>
+  <File Type="BG-DRC" Name="mul8_c.drc"/>
+  <File Type="RDI-RDI" Name="mul8_c.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/adder.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../experiment/test4/test4.srcs/sources_1/new/adder.vhd"/>
+        <Attr Name="ImportTime" Val="1650521824"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/mul4_c.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../experiment/test4/test4.srcs/sources_1/new/mul4_c.vhd"/>
+        <Attr Name="ImportTime" Val="1650530268"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/mul_add.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../experiment/test4/test4.srcs/sources_1/new/mul_add.vhd"/>
+        <Attr Name="ImportTime" Val="1650505532"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/mul8_c.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../experiment/test4/test4.srcs/sources_1/new/mul8_c.vhd"/>
+        <Attr Name="ImportTime" Val="1650535792"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="mul8_c"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/mul8.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/new/mul8.xdc"/>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019">
+      <Desc>Default settings for Implementation.</Desc>
+    </StratHandle>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design" EnableStepBool="1"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

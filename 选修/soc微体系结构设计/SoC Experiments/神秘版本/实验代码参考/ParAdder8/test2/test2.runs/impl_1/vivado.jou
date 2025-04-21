@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Sat May 20 16:19:02 2023
+# Process ID: 3032
+# Current directory: C:/Users/akyna/Codes/vivado/experiment1/test2/test2.runs/impl_1
+# Command line: vivado.exe -log parellel_adder.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source parellel_adder.tcl -notrace
+# Log file: C:/Users/akyna/Codes/vivado/experiment1/test2/test2.runs/impl_1/parellel_adder.vdi
+# Journal file: C:/Users/akyna/Codes/vivado/experiment1/test2/test2.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source parellel_adder.tcl -notrace

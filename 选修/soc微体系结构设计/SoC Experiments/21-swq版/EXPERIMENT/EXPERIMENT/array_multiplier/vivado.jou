@@ -1,0 +1,104 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed Apr 17 15:23:52 2024
+# Process ID: 7116
+# Current directory: C:/SOC/EXPERIMENT/array_multiplier
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8088 C:\SOC\EXPERIMENT\array_multiplier\array_multiplier.xpr
+# Log file: C:/SOC/EXPERIMENT/array_multiplier/vivado.log
+# Journal file: C:/SOC/EXPERIMENT/array_multiplier\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/SOC/EXPERIMENT/array_multiplier/array_multiplier.xpr
+update_compile_order -fileset sources_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/SOC/EXPERIMENT/array_multiplier/array_multiplier.runs/impl_1/array_multiplier_seg.bit} [get_hw_devices xc7k160t_0]
+set_property PROBES.FILE {C:\SOC\CSLAB_XD_test_all_2.0.xpr\CSLAB_XD_test_all_2.0\CSLAB_XD_test_all_2.0.runs\impl_1\design_1_wrapper.ltx} [get_hw_devices xc7k160t_0]
+set_property FULL_PROBES.FILE {C:\SOC\CSLAB_XD_test_all_2.0.xpr\CSLAB_XD_test_all_2.0\CSLAB_XD_test_all_2.0.runs\impl_1\design_1_wrapper.ltx} [get_hw_devices xc7k160t_0]
+current_hw_device [get_hw_devices xc7k160t_0]
+refresh_hw_device [lindex [get_hw_devices xc7k160t_0] 0]
+set_property PROBES.FILE {C:/SOC/CSLAB_XD_test_all_2.0.xpr/CSLAB_XD_test_all_2.0/CSLAB_XD_test_all_2.0.runs/impl_1/design_1_wrapper.ltx} [get_hw_devices xc7k160t_0]
+set_property FULL_PROBES.FILE {C:/SOC/CSLAB_XD_test_all_2.0.xpr/CSLAB_XD_test_all_2.0/CSLAB_XD_test_all_2.0.runs/impl_1/design_1_wrapper.ltx} [get_hw_devices xc7k160t_0]
+set_property PROGRAM.FILE {C:/SOC/EXPERIMENT/array_multiplier/array_multiplier.runs/impl_1/array_multiplier_seg.bit} [get_hw_devices xc7k160t_0]
+program_hw_devices [get_hw_devices xc7k160t_0]
+refresh_hw_device [lindex [get_hw_devices xc7k160t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+set_property PROBES.FILE {C:/SOC/CSLAB_XD_test_all_2.0.xpr/CSLAB_XD_test_all_2.0/CSLAB_XD_test_all_2.0.runs/impl_1/design_1_wrapper.ltx} [get_hw_devices xc7k160t_0]
+set_property FULL_PROBES.FILE {C:/SOC/CSLAB_XD_test_all_2.0.xpr/CSLAB_XD_test_all_2.0/CSLAB_XD_test_all_2.0.runs/impl_1/design_1_wrapper.ltx} [get_hw_devices xc7k160t_0]
+set_property PROGRAM.FILE {C:/SOC/EXPERIMENT/array_multiplier/array_multiplier.runs/impl_1/array_multiplier_seg.bit} [get_hw_devices xc7k160t_0]
+program_hw_devices [get_hw_devices xc7k160t_0]
+refresh_hw_device [lindex [get_hw_devices xc7k160t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+set_property PROBES.FILE {C:/SOC/CSLAB_XD_test_all_2.0.xpr/CSLAB_XD_test_all_2.0/CSLAB_XD_test_all_2.0.runs/impl_1/design_1_wrapper.ltx} [get_hw_devices xc7k160t_0]
+set_property FULL_PROBES.FILE {C:/SOC/CSLAB_XD_test_all_2.0.xpr/CSLAB_XD_test_all_2.0/CSLAB_XD_test_all_2.0.runs/impl_1/design_1_wrapper.ltx} [get_hw_devices xc7k160t_0]
+set_property PROGRAM.FILE {C:/SOC/EXPERIMENT/array_multiplier/array_multiplier.runs/impl_1/array_multiplier_seg.bit} [get_hw_devices xc7k160t_0]
+program_hw_devices [get_hw_devices xc7k160t_0]
+refresh_hw_device [lindex [get_hw_devices xc7k160t_0] 0]
+set_property PROBES.FILE {C:/SOC/CSLAB_XD_test_all_2.0.xpr/CSLAB_XD_test_all_2.0/CSLAB_XD_test_all_2.0.runs/impl_1/design_1_wrapper.ltx} [get_hw_devices xc7k160t_0]
+set_property FULL_PROBES.FILE {C:/SOC/CSLAB_XD_test_all_2.0.xpr/CSLAB_XD_test_all_2.0/CSLAB_XD_test_all_2.0.runs/impl_1/design_1_wrapper.ltx} [get_hw_devices xc7k160t_0]
+set_property PROGRAM.FILE {C:/SOC/EXPERIMENT/array_multiplier/array_multiplier.runs/impl_1/array_multiplier_seg.bit} [get_hw_devices xc7k160t_0]
+program_hw_devices [get_hw_devices xc7k160t_0]
+refresh_hw_device [lindex [get_hw_devices xc7k160t_0] 0]
+set_property needs_refresh false [get_runs synth_1]
+set_property needs_refresh false [get_runs impl_1]
+set_property PROBES.FILE {C:/SOC/CSLAB_XD_test_all_2.0.xpr/CSLAB_XD_test_all_2.0/CSLAB_XD_test_all_2.0.runs/impl_1/design_1_wrapper.ltx} [get_hw_devices xc7k160t_0]
+set_property FULL_PROBES.FILE {C:/SOC/CSLAB_XD_test_all_2.0.xpr/CSLAB_XD_test_all_2.0/CSLAB_XD_test_all_2.0.runs/impl_1/design_1_wrapper.ltx} [get_hw_devices xc7k160t_0]
+set_property PROGRAM.FILE {C:/SOC/EXPERIMENT/array_multiplier/array_multiplier.runs/impl_1/array_multiplier_seg.bit} [get_hw_devices xc7k160t_0]
+program_hw_devices [get_hw_devices xc7k160t_0]
+refresh_hw_device [lindex [get_hw_devices xc7k160t_0] 0]
+add_files -norecurse C:/SOC/EXPERIMENT/array_multiplier/array_multiplier.srcs/sources_1/new/clk_div.vhd
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+set_property needs_refresh false [get_runs synth_1]
+set_property needs_refresh false [get_runs impl_1]
+reset_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6 -scripts_only
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6 -scripts_only
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+set_property PROBES.FILE {C:/SOC/CSLAB_XD_test_all_2.0.xpr/CSLAB_XD_test_all_2.0/CSLAB_XD_test_all_2.0.runs/impl_1/design_1_wrapper.ltx} [get_hw_devices xc7k160t_0]
+set_property FULL_PROBES.FILE {C:/SOC/CSLAB_XD_test_all_2.0.xpr/CSLAB_XD_test_all_2.0/CSLAB_XD_test_all_2.0.runs/impl_1/design_1_wrapper.ltx} [get_hw_devices xc7k160t_0]
+set_property PROGRAM.FILE {C:/SOC/EXPERIMENT/array_multiplier/array_multiplier.runs/impl_1/array_multiplier_seg.bit} [get_hw_devices xc7k160t_0]
+program_hw_devices [get_hw_devices xc7k160t_0]
+refresh_hw_device [lindex [get_hw_devices xc7k160t_0] 0]
+set_property PROBES.FILE {C:/SOC/CSLAB_XD_test_all_2.0.xpr/CSLAB_XD_test_all_2.0/CSLAB_XD_test_all_2.0.runs/impl_1/design_1_wrapper.ltx} [get_hw_devices xc7k160t_0]
+set_property FULL_PROBES.FILE {C:/SOC/CSLAB_XD_test_all_2.0.xpr/CSLAB_XD_test_all_2.0/CSLAB_XD_test_all_2.0.runs/impl_1/design_1_wrapper.ltx} [get_hw_devices xc7k160t_0]
+set_property PROGRAM.FILE {C:/SOC/EXPERIMENT/array_multiplier/array_multiplier.runs/impl_1/array_multiplier_seg.bit} [get_hw_devices xc7k160t_0]
+program_hw_devices [get_hw_devices xc7k160t_0]
+refresh_hw_device [lindex [get_hw_devices xc7k160t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+set_property PROBES.FILE {C:/SOC/CSLAB_XD_test_all_2.0.xpr/CSLAB_XD_test_all_2.0/CSLAB_XD_test_all_2.0.runs/impl_1/design_1_wrapper.ltx} [get_hw_devices xc7k160t_0]
+set_property FULL_PROBES.FILE {C:/SOC/CSLAB_XD_test_all_2.0.xpr/CSLAB_XD_test_all_2.0/CSLAB_XD_test_all_2.0.runs/impl_1/design_1_wrapper.ltx} [get_hw_devices xc7k160t_0]
+set_property PROGRAM.FILE {C:/SOC/EXPERIMENT/array_multiplier/array_multiplier.runs/impl_1/array_multiplier_seg.bit} [get_hw_devices xc7k160t_0]
+program_hw_devices [get_hw_devices xc7k160t_0]
+refresh_hw_device [lindex [get_hw_devices xc7k160t_0] 0]

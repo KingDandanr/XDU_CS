@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Thu May  5 15:40:13 2022
+# Process ID: 10156
+# Current directory: F:/soc/SP/SP.runs/synth_1
+# Command line: vivado.exe -log sp_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source sp_top.tcl
+# Log file: F:/soc/SP/SP.runs/synth_1/sp_top.vds
+# Journal file: F:/soc/SP/SP.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source sp_top.tcl -notrace

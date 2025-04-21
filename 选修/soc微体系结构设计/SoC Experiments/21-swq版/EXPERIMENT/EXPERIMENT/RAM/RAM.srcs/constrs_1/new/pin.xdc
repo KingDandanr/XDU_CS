@@ -1,0 +1,88 @@
+#----------------------------------------------------------------------------------
+#-- Engineer: switch_swq
+#-- Create Date: 2024/04/23 21:55:51
+#----------------------------------------------------------------------------------
+#sw0~6
+set_property IOSTANDARD LVCMOS18 [get_ports {AR[0]}]
+set_property IOSTANDARD LVCMOS18 [get_ports {AR[1]}]
+set_property IOSTANDARD LVCMOS18 [get_ports {AR[2]}]
+set_property IOSTANDARD LVCMOS18 [get_ports {AR[3]}]
+set_property IOSTANDARD LVCMOS18 [get_ports {AR[4]}]
+set_property IOSTANDARD LVCMOS18 [get_ports {AR[5]}]
+set_property IOSTANDARD LVCMOS18 [get_ports {AR[6]}]
+set_property PACKAGE_PIN C9 [get_ports {AR[0]}]
+set_property PACKAGE_PIN B9 [get_ports {AR[1]}]
+set_property PACKAGE_PIN G11 [get_ports {AR[2]}]
+set_property PACKAGE_PIN F10 [get_ports {AR[3]}]
+set_property PACKAGE_PIN D10 [get_ports {AR[4]}]
+set_property PACKAGE_PIN E11 [get_ports {AR[5]}]
+set_property PACKAGE_PIN D11 [get_ports {AR[6]}]
+
+#LED
+#set_property IOSTANDARD LVCMOS33 [get_ports {DATA_BUS[0]}]
+#set_property IOSTANDARD LVCMOS33 [get_ports {DATA_BUS[1]}]
+#set_property IOSTANDARD LVCMOS33 [get_ports {DATA_BUS[2]}]
+#set_property IOSTANDARD LVCMOS33 [get_ports {DATA_BUS[3]}]
+#set_property IOSTANDARD LVCMOS33 [get_ports {DATA_BUS[4]}]
+#set_property IOSTANDARD LVCMOS33 [get_ports {DATA_BUS[5]}]
+#set_property IOSTANDARD LVCMOS33 [get_ports {DATA_BUS[6]}]
+#set_property IOSTANDARD LVCMOS33 [get_ports {DATA_BUS[7]}]
+#set_property PACKAGE_PIN G16 [get_ports {DATA_BUS[0]}]
+#set_property PACKAGE_PIN H16 [get_ports {DATA_BUS[1]}]
+#set_property PACKAGE_PIN D16 [get_ports {DATA_BUS[2]}]
+#set_property PACKAGE_PIN D15 [get_ports {DATA_BUS[3]}]
+#set_property PACKAGE_PIN C18 [get_ports {DATA_BUS[4]}]
+#set_property PACKAGE_PIN C17 [get_ports {DATA_BUS[5]}]
+#set_property PACKAGE_PIN B19 [get_ports {DATA_BUS[6]}]
+#set_property PACKAGE_PIN C19 [get_ports {DATA_BUS[7]}]
+
+#sw31
+set_property PACKAGE_PIN J8 [get_ports n_reset]
+set_property IOSTANDARD LVCMOS18 [get_ports n_reset]
+
+#sw30~28
+set_property PACKAGE_PIN J14 [get_ports RAM_CS]
+set_property IOSTANDARD LVCMOS18 [get_ports RAM_CS]
+set_property PACKAGE_PIN H9         [get_ports nRAM_EN]
+set_property IOSTANDARD LVCMOS18    [get_ports nRAM_EN]
+set_property PACKAGE_PIN H8         [get_ports Wr_nRD]
+set_property IOSTANDARD LVCMOS18    [get_ports Wr_nRD]
+
+#clk
+set_property PACKAGE_PIN E10 [get_ports clk_RAM]
+set_property IOSTANDARD LVCMOS18 [get_ports clk_RAM]
+
+#LED
+set_property IOSTANDARD LVCMOS33 		[get_ports {data_out[0]}]
+set_property IOSTANDARD LVCMOS33 		[get_ports {data_out[1]}]
+set_property IOSTANDARD LVCMOS33 		[get_ports {data_out[2]}]
+set_property IOSTANDARD LVCMOS33 		[get_ports {data_out[3]}]
+set_property IOSTANDARD LVCMOS33 		[get_ports {data_out[4]}]
+set_property IOSTANDARD LVCMOS33 		[get_ports {data_out[5]}]
+set_property IOSTANDARD LVCMOS33 		[get_ports {data_out[6]}]
+set_property IOSTANDARD LVCMOS33 		[get_ports {data_out[7]}]
+set_property PACKAGE_PIN G16			[get_ports {data_out[0]}]
+set_property PACKAGE_PIN H16 			[get_ports {data_out[1]}]
+set_property PACKAGE_PIN D16 			[get_ports {data_out[2]}]
+set_property PACKAGE_PIN D15 			[get_ports {data_out[3]}]
+set_property PACKAGE_PIN C18 			[get_ports {data_out[4]}]
+set_property PACKAGE_PIN C17 			[get_ports {data_out[5]}]
+set_property PACKAGE_PIN B19 			[get_ports {data_out[6]}]
+set_property PACKAGE_PIN C19 			[get_ports {data_out[7]}]
+
+set_property IOSTANDARD LVCMOS18    [get_ports {data_in[0]}]
+set_property IOSTANDARD LVCMOS18    [get_ports {data_in[1]}]
+set_property IOSTANDARD LVCMOS18    [get_ports {data_in[2]}]
+set_property IOSTANDARD LVCMOS18    [get_ports {data_in[3]}]
+set_property IOSTANDARD LVCMOS18    [get_ports {data_in[4]}]
+set_property IOSTANDARD LVCMOS18    [get_ports {data_in[5]}]
+set_property IOSTANDARD LVCMOS18    [get_ports {data_in[6]}]
+set_property IOSTANDARD LVCMOS18    [get_ports {data_in[7]}]
+set_property PACKAGE_PIN B10        [get_ports {data_in[0]}]
+set_property PACKAGE_PIN A10        [get_ports {data_in[1]}]
+set_property PACKAGE_PIN B15        [get_ports {data_in[2]}]
+set_property PACKAGE_PIN A15        [get_ports {data_in[3]}]
+set_property PACKAGE_PIN A13        [get_ports {data_in[4]}]
+set_property PACKAGE_PIN A12        [get_ports {data_in[5]}]
+set_property PACKAGE_PIN D8         [get_ports {data_in[6]}]
+set_property PACKAGE_PIN D9         [get_ports {data_in[7]}]

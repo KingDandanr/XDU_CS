@@ -1,0 +1,14 @@
+0.6
+2018.3
+Dec  7 2018
+00:33:28
+D:/soc/EXPERIMENT/array_multiplier/array_multiplier.srcs/sim_1/new/array_multiplier_tb.vhd,1713276159,vhdl,,,,array_multiplier_tb,,,,,,,,
+D:/soc/EXPERIMENT/array_multiplier/array_multiplier.srcs/sources_1/new/adder_1bit.vhd,1713257325,vhdl,,,,adder_1bit,,,,,,,,
+D:/soc/EXPERIMENT/array_multiplier/array_multiplier.srcs/sources_1/new/array_multiplier.vhd,1713275572,vhdl,,,,array_multiplier,,,,,,,,
+D:/soc/EXPERIMENT/array_multiplier/array_multiplier.srcs/sources_1/new/array_multiplier_low.vhd,1713269565,vhdl,,,,array_multiplier_low,,,,,,,,
+D:/soc/EXPERIMENT/array_multiplier/array_multiplier.srcs/sources_1/new/array_multiplier_seg.vhd,1713275582,vhdl,,,,array_multiplier_seg,,,,,,,,
+D:/soc/EXPERIMENT/array_multiplier/array_multiplier.srcs/sources_1/new/array_multiplier_top.vhd,1713259690,vhdl,,,,array_multiplier_top,,,,,,,,
+D:/soc/EXPERIMENT/array_multiplier/array_multiplier.srcs/sources_1/new/array_multiplier_unit.vhd,1713273203,vhdl,,,,array_multiplier_unit,,,,,,,,
+D:/soc/EXPERIMENT/array_multiplier/array_multiplier.srcs/sources_1/new/data2seg.vhd,1713247806,vhdl,,,,data2seg,,,,,,,,
+D:/soc/EXPERIMENT/array_multiplier/array_multiplier.srcs/sources_1/new/decoder4_16.vhd,1713253757,vhdl,,,,decoder4_16,,,,,,,,
+D:/soc/EXPERIMENT/array_multiplier/array_multiplier.srcs/sources_1/new/seg_dis.vhd,1713254851,vhdl,,,,seg_dis,,,,,,,,

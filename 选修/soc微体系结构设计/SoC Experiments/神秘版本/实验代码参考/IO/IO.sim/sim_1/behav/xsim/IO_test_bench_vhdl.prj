@@ -1,0 +1,11 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../IO.srcs/sources_1/new/IO_top.vhd" \
+"C:/Users/Administrator/Desktop/PC_IO/PC_IO/PC_IO.srcs/sources_1/new/PC_IO.vhd" \
+"../../../../IO.srcs/sources_1/imports/new/data2seg.vhd" \
+"../../../../IO.srcs/sources_1/imports/new/seg_dis.vhd" \
+"../../../../IO.srcs/sources_1/imports/new/seg_dis_keyin.vhd" \
+"../../../../IO.srcs/sim_1/new/IO_test_bench.vhd" \
+
+# Do not sort compile order
+nosort

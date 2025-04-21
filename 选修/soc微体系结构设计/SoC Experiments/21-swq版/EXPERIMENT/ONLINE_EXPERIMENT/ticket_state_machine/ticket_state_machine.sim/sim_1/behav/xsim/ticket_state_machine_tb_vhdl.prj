@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../ticket_state_machine.srcs/sources_1/new/ticket_state_machine.vhd" \
+"../../../../ticket_state_machine.srcs/sim_1/new/ticket_state_machine_tb.vhd" \
+
+# Do not sort compile order
+nosort

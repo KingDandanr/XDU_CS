@@ -1,0 +1,68 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Mon Jun  5 15:01:47 2023
+# Process ID: 28172
+# Current directory: C:/Users/akyna/Codes/vivado/ALU/alutest/alutest
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2932 C:\Users\akyna\Codes\vivado\ALU\alutest\alutest\alutest.xpr
+# Log file: C:/Users/akyna/Codes/vivado/ALU/alutest/alutest/vivado.log
+# Journal file: C:/Users/akyna/Codes/vivado/ALU/alutest/alutest\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/akyna/Codes/vivado/ALU/alutest/alutest/alutest.xpr
+update_compile_order -fileset sources_1
+file mkdir C:/Users/akyna/Codes/vivado/ALU/alutest/alutest/alutest.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/akyna/Codes/vivado/ALU/alutest/alutest/alutest.srcs/sim_1/new/test_tb.vhd w ]
+add_files -fileset sim_1 C:/Users/akyna/Codes/vivado/ALU/alutest/alutest/alutest.srcs/sim_1/new/test_tb.vhd
+update_compile_order -fileset sim_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top test_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+reset_run synth_1
+launch_runs synth_1 -jobs 12
+wait_on_run synth_1
+launch_simulation -mode post-synthesis -type timing
+source test_tb.tcl
+close_sim
+launch_simulation -mode post-synthesis -type timing
+source test_tb.tcl
+close_sim
+launch_simulation -mode post-synthesis -type timing
+source test_tb.tcl
+close_sim
+launch_simulation -mode post-synthesis -type timing
+source test_tb.tcl
+close_sim
+launch_simulation -mode post-synthesis -type timing
+launch_simulation -mode post-synthesis -type timing
+source test_tb.tcl
+close_sim
+launch_simulation -mode post-synthesis -type timing
+source test_tb.tcl
+reset_run synth_1
+launch_runs synth_1 -jobs 12
+wait_on_run synth_1
+close_sim
+close_design
+launch_simulation -mode post-synthesis -type timing
+source test_tb.tcl
+close_sim
+launch_simulation -mode post-synthesis -type timing
+source test_tb.tcl
+close_sim
+launch_simulation -mode post-synthesis -type timing
+launch_simulation -mode post-synthesis -type timing
+source test_tb.tcl
+close_sim
+launch_simulation -mode post-synthesis -type timing
+source test_tb.tcl
+close_sim
+launch_simulation -mode post-synthesis -type timing
+source test_tb.tcl
+close_sim

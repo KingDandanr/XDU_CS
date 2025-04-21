@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sat May 27 11:15:24 2023
+# Process ID: 15132
+# Current directory: D:/SOC_code/IR_storge/IR_storge
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16800 D:\SOC_code\IR_storge\IR_storge\IR_storge.xpr
+# Log file: D:/SOC_code/IR_storge/IR_storge/vivado.log
+# Journal file: D:/SOC_code/IR_storge/IR_storge\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/SOC_code/IR_storge/IR_storge/IR_storge.xpr
+update_compile_order -fileset sources_1

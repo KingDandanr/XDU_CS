@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Webtalk v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Sat May 13 11:43:46 2023
+# Process ID: 22488
+# Current directory: C:/Users/akyna/Codes/vivado/Decoder3to8/Decoder3to8.sim/sim_1/synth/timing/xsim
+# Command line: wbtcv.exe -mode batch -source C:/Users/akyna/Codes/vivado/Decoder3to8/Decoder3to8.sim/sim_1/synth/timing/xsim/xsim.dir/Decoder3to8_tb_time_synth/webtalk/xsim_webtalk.tcl -notrace
+# Log file: C:/Users/akyna/Codes/vivado/Decoder3to8/Decoder3to8.sim/sim_1/synth/timing/xsim/webtalk.log
+# Journal file: C:/Users/akyna/Codes/vivado/Decoder3to8/Decoder3to8.sim/sim_1/synth/timing/xsim\webtalk.jou
+#-----------------------------------------------------------
+source C:/Users/akyna/Codes/vivado/Decoder3to8/Decoder3to8.sim/sim_1/synth/timing/xsim/xsim.dir/Decoder3to8_tb_time_synth/webtalk/xsim_webtalk.tcl -notrace
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 109.867 ; gain = 17.488
+INFO: [Common 17-206] Exiting Webtalk at Sat May 13 11:43:51 2023...

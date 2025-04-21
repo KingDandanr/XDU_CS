@@ -1,0 +1,12 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Administrator/Desktop/soc/SP/SP.srcs/sources_1/imports/Desktop/imports/new/data2seg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'data2seg'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Administrator/Desktop/soc/SP/SP.srcs/sources_1/imports/Desktop/module_SP/module_SP/module_SP.srcs/sources_1/new/module_SP.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'module_SP'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Administrator/Desktop/soc/SP/SP.srcs/sources_1/imports/Desktop/imports/new/seg_dis.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'seg_dis'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Administrator/Desktop/soc/SP/SP.srcs/sources_1/imports/Desktop/imports/new/seg_dis_keyin.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'seg_dis_keyin'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Administrator/Desktop/soc/SP/SP.srcs/sources_1/new/sp_top.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'sp_top'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Administrator/Desktop/soc/SP/SP.srcs/sim_1/new/testBench.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'testBench'
