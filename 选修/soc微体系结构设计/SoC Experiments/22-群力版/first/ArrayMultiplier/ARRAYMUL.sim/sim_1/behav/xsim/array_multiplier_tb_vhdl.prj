@@ -1,0 +1,16 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../4TO16.vhd" \
+"../../../../CLK.vhd" \
+"../../../../DATA2SEG.vhd" \
+"../../../../FLOOR_1.vhd" \
+"../../../../FLOOR_2.vhd" \
+"../../../../MODE_1.vhd" \
+"../../../../MODE_2.vhd" \
+"../../../../MODE_3.vhd" \
+"../../../../MODE_4.vhd" \
+"../../../../SEG.vhd" \
+"../../../../TESTBENCH.vhd" \
+
+# Do not sort compile order
+nosort

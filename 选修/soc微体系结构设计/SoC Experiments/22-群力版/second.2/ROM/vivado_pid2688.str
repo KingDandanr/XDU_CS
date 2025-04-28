@@ -1,0 +1,556 @@
+/*
+
+Xilinx Vivado v2018.3 (64-bit) [Major: 2018, Minor: 3]
+SW Build: 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build: 2404404 on Fri Dec  7 01:43:56 MST 2018
+
+Process ID (PID): 2688
+License: Customer
+
+Current time: 	Fri Apr 18 16:57:08 CST 2025
+Time zone: 	China Standard Time (Asia/Shanghai)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 6
+
+Screen size: 1920x1080
+Screen resolution (DPI): 96
+Available screens: 1
+Available disk space: 25 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	9.0.4 64-bit
+Java home: 	C:/Xilinx/Vivado/2018.3/tps/win64/jre9.0.4
+Java executable location: 	C:/Xilinx/Vivado/2018.3/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	Administrator
+User home directory: C:/Users/Administrator
+User working directory: C:/Users/Administrator/Desktop/ROM
+User country: 	CN
+User language: 	zh
+User locale: 	zh_CN
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2018.3
+RDI_DATADIR: C:/Xilinx/Vivado/2018.3/data
+RDI_BINDIR: C:/Xilinx/Vivado/2018.3/bin
+
+Vivado preferences file location: C:/Users/Administrator/AppData/Roaming/Xilinx/Vivado/2018.3/vivado.xml
+Vivado preferences directory: C:/Users/Administrator/AppData/Roaming/Xilinx/Vivado/2018.3/
+Vivado layouts directory: C:/Users/Administrator/AppData/Roaming/Xilinx/Vivado/2018.3/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2018.3/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/Administrator/Desktop/ROM/vivado.log
+Vivado journal file location: 	C:/Users/Administrator/Desktop/ROM/vivado.jou
+Engine tmp dir: 	C:/Users/Administrator/Desktop/ROM/.Xil/Vivado-2688-PC505-067
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Xilinx/Vivado/2018.3/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2018.3/ids_lite/ISE
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2018.3
+XILINX_SDK: C:/Xilinx/SDK/2018.3
+XILINX_VIVADO: C:/Xilinx/Vivado/2018.3
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2018.3
+
+
+GUI allocated memory:	185 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 716 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// TclEventType: PROJECT_OPEN_DIALOG
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bx (cp):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\Administrator\Desktop\ROM\ROM.xpr. Version: Vivado v2018.3 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project C:/Users/Administrator/Desktop/ROM/ROM.xpr 
+// Tcl Message: open_project C:/Users/Administrator/Desktop/ROM/ROM.xpr 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'D:/soc/EXPERIMENT/ROM' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'. 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 83 MB (+84876kb) [00:00:05]
+// [Engine Memory]: 636 MB (+515901kb) [00:00:05]
+// [GUI Memory]: 100 MB (+13155kb) [00:00:06]
+// WARNING: HEventQueue.dispatchEvent() is taking  1812 ms.
+// [Engine Memory]: 728 MB (+62652kb) [00:00:08]
+// Project name: ROM; location: C:/Users/Administrator/Desktop/ROM; part: xc7k160tfbg676-2
+// [GUI Memory]: 108 MB (+3317kb) [00:00:08]
+dismissDialog("Open Project"); // bx (cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 728 MB. GUI used memory: 50 MB. Current time: 4/18/25, 4:57:09 PM CST
+// Tcl Message: update_compile_order -fileset sources_1 
+// [Engine Memory]: 771 MB (+7100kb) [00:00:19]
+// Elapsed time: 13 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ROM(Behavioral) (ROM.vhd)]", 1, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ROM(Behavioral) (ROM.vhd)]", 1, false, false, false, false, false, true); // B (D, cp) - Double Click
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Memory File]", 2); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Memory File, romfile.mem]", 3, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Memory File, romfile.mem]", 3, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectCodeEditor("romfile.mem", 175, 46); // cl (w, cp)
+selectCodeEditor("romfile.mem", 104, 16); // cl (w, cp)
+selectCodeEditor("romfile.mem", 99, 25); // cl (w, cp)
+selectCodeEditor("romfile.mem", 108, 13); // cl (w, cp)
+selectCodeEditor("romfile.mem", 100, 23); // cl (w, cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 779 MB. GUI used memory: 53 MB. Current time: 4/18/25, 4:57:29 PM CST
+selectCodeEditor("romfile.mem", 105, 14); // cl (w, cp)
+selectCodeEditor("romfile.mem", 97, 22); // cl (w, cp)
+selectCodeEditor("romfile.mem", 101, 16); // cl (w, cp)
+selectCodeEditor("romfile.mem", 98, 25); // cl (w, cp)
+selectCodeEditor("romfile.mem", 101, 15); // cl (w, cp)
+selectCodeEditor("romfile.mem", 97, 32); // cl (w, cp)
+selectCodeEditor("romfile.mem", 85, 3); // cl (w, cp)
+selectCodeEditor("romfile.mem", 53, 5); // cl (w, cp)
+selectCodeEditor("romfile.mem", 133, 55); // cl (w, cp)
+selectCodeEditor("romfile.mem", 110, 10); // cl (w, cp)
+// Elapsed time: 20 seconds
+selectCodeEditor("romfile.mem", 102, 166); // cl (w, cp)
+selectCodeEditor("romfile.mem", 153, 135); // cl (w, cp)
+selectCodeEditor("romfile.mem", 142, 189); // cl (w, cp)
+selectCodeEditor("romfile.mem", 155, 135); // cl (w, cp)
+selectCodeEditor("romfile.mem", 113, 171); // cl (w, cp)
+selectCodeEditor("romfile.mem", 130, 141); // cl (w, cp)
+selectCodeEditor("romfile.mem", 82, 166); // cl (w, cp)
+selectCodeEditor("romfile.mem", 100, 146); // cl (w, cp)
+selectCodeEditor("romfile.mem", 94, 149); // cl (w, cp)
+selectCodeEditor("romfile.mem", 88, 157); // cl (w, cp)
+selectCodeEditor("romfile.mem", 141, 134); // cl (w, cp)
+selectCodeEditor("romfile.mem", 99, 179); // cl (w, cp)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cp)
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("romfile.mem", 139, 11); // cl (w, cp)
+selectCodeEditor("romfile.mem", 193, 87); // cl (w, cp)
+selectCodeEditor("romfile.mem", 2, 11); // cl (w, cp)
+selectCodeEditor("romfile.mem", 72, 7); // cl (w, cp)
+selectCodeEditor("romfile.mem", 103, 18); // cl (w, cp)
+selectCodeEditor("romfile.mem", 96, 63); // cl (w, cp)
+selectCodeEditor("romfile.mem", 76, 13); // cl (w, cp)
+selectCodeEditor("romfile.mem", 79, 29); // cl (w, cp)
+selectCodeEditor("romfile.mem", 106, 53); // cl (w, cp)
+selectCodeEditor("romfile.mem", 101, 65); // cl (w, cp)
+selectCodeEditor("romfile.mem", 95, 95); // cl (w, cp)
+selectCodeEditor("romfile.mem", 99, 87); // cl (w, cp)
+selectCodeEditor("romfile.mem", 100, 113); // cl (w, cp)
+selectCodeEditor("romfile.mem", 103, 131); // cl (w, cp)
+selectCodeEditor("romfile.mem", 109, 146); // cl (w, cp)
+selectCodeEditor("romfile.mem", 111, 165); // cl (w, cp)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cp)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// A (cp): Run Synthesis: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// bx (cp):  Resetting Runs : addNotify
+dismissDialog("Run Synthesis"); // A (cp)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cp): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bx (cp):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (cp)
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 3 
+// Tcl Message: [Fri Apr 18 16:58:46 2025] Launched synth_1... Run output will be captured here: C:/Users/Administrator/Desktop/ROM/ROM.runs/synth_1/runme.log 
+// 'k' command handler elapsed time: 3 seconds
+dismissDialog("Starting Design Runs"); // bx (cp)
+// Elapsed time: 30 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ROM.vhd", 1); // k (j, cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 4); // B (D, cp)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 4); // B (D, cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 5); // B (D, cp)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 5); // B (D, cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 5); // B (D, cp)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 5); // B (D, cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 5); // B (D, cp)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 5); // B (D, cp)
+// TclEventType: RUN_COMPLETED
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "romfile.mem", 2); // k (j, cp)
+// ah (cp): Synthesis Completed: addNotify
+selectRadioButton(PAResourceCommand.PACommandNames_GOTO_NETLIST_DESIGN, "Open Synthesized Design"); // a (Q, ah)
+selectRadioButton(PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION, "Run Implementation"); // a (Q, ah)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// f (cp): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bx (cp):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (cp)
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -jobs 3 
+// Tcl Message: [Fri Apr 18 16:59:36 2025] Launched impl_1... Run output will be captured here: C:/Users/Administrator/Desktop/ROM/ROM.runs/impl_1/runme.log 
+dismissDialog("Starting Design Runs"); // bx (cp)
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah (cp): Implementation Completed: addNotify
+// Elapsed time: 55 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_RUN_BITGEN, "Generate Bitstream"); // a (Q, ah)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// f (cp): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+dismissDialog("Launch Runs"); // f (cp)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 3 
+// Tcl Message: [Fri Apr 18 17:00:35 2025] Launched impl_1... Run output will be captured here: C:/Users/Administrator/Desktop/ROM/ROM.runs/impl_1/runme.log 
+// TclEventType: RUN_COMPLETED
+// ah (cp): Bitstream Generation Completed: addNotify
+// Elapsed time: 48 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER, "Open Hardware Manager"); // a (Q, ah)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Tcl Command: 'load_features labtools'
+// TclEventType: LOAD_FEATURE
+// bx (cp):  Open Hardware Manager : addNotify
+// TclEventType: HW_SESSION_OPEN
+// Tcl Message: open_hw 
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+dismissDialog("Open Hardware Manager"); // bx (cp)
+// [GUI Memory]: 121 MB (+7807kb) [00:04:28]
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Open Target]", 22, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // af (al, cp)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// bx (cp):  Auto Connect : addNotify
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// Tcl Message: INFO: [Labtools 27-2222] Launching hw_server... 
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:  ****** Xilinx hw_server v2018.3   **** Build date : Dec  7 2018-00:40:27     ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.   
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// WARNING: HEventQueue.dispatchEvent() is taking  3091 ms.
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210203367162A 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/Administrator/Desktop/ROM/ROM.runs/impl_1/ROM.bit} [get_hw_devices xc7k160t_0] 
+// Tcl Message: current_hw_device [get_hw_devices xc7k160t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// [Engine Memory]: 1,663 MB (+894584kb) [00:04:37]
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7k160t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7k160t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Auto Connect"); // bx (cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,666 MB. GUI used memory: 58 MB. Current time: 4/18/25, 5:01:39 PM CST
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cQ, cp)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cp): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bx (cp):  Program Device : addNotify
+dismissDialog("Program Device"); // bC (cp)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7k160t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7k160t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/Administrator/Desktop/ROM/ROM.runs/impl_1/ROM.bit} [get_hw_devices xc7k160t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7k160t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7k160t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7k160t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 6 seconds
+dismissDialog("Program Device"); // bx (cp)
+// Elapsed time: 39 seconds
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k (aA, cp)
+closeTask("Program and Debug", "Hardware Manager", "DesignTask.PROGRAM_DEBUG");
+// A (cp): Confirm Close: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// bx (cp):  Close Hardware Manager : addNotify
+// TclEventType: HW_OBJECT_DELETE
+dismissDialog("Confirm Close"); // A (cp)
+// TclEventType: HW_SERVER_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: HW_SESSION_CLOSE
+// Tcl Message: close_hw 
+dismissDialog("Close Hardware Manager"); // bx (cp)
+selectCodeEditor("romfile.mem", 120, 50); // cl (w, cp)
+selectCodeEditor("romfile.mem", 113, 27); // cl (w, cp)
+selectCodeEditor("romfile.mem", 113, 47); // cl (w, cp)
+selectCodeEditor("romfile.mem", 117, 38); // cl (w, cp)
+selectCodeEditor("romfile.mem", 119, 25); // cl (w, cp)
+selectCodeEditor("romfile.mem", 105, 41); // cl (w, cp)
+selectCodeEditor("romfile.mem", 120, 33); // cl (w, cp)
+selectCodeEditor("romfile.mem", 115, 46); // cl (w, cp)
+selectCodeEditor("romfile.mem", 134, 27); // cl (w, cp)
+selectCodeEditor("romfile.mem", 122, 45); // cl (w, cp)
+selectCodeEditor("romfile.mem", 128, 34); // cl (w, cp)
+selectCodeEditor("romfile.mem", 108, 44); // cl (w, cp)
+selectCodeEditor("romfile.mem", 120, 37); // cl (w, cp)
+selectCodeEditor("romfile.mem", 108, 56); // cl (w, cp)
+selectCodeEditor("romfile.mem", 119, 41); // cl (w, cp)
+selectCodeEditor("romfile.mem", 109, 36); // cl (w, cp)
+selectCodeEditor("romfile.mem", 86, 41); // cl (w, cp)
+selectCodeEditor("romfile.mem", 101, 36); // cl (w, cp)
+selectCodeEditor("romfile.mem", 79, 47); // cl (w, cp)
+selectCodeEditor("romfile.mem", 123, 25); // cl (w, cp)
+selectCodeEditor("romfile.mem", 81, 46); // cl (w, cp)
+selectCodeEditor("romfile.mem", 123, 33); // cl (w, cp)
+selectCodeEditor("romfile.mem", 97, 39); // cl (w, cp)
+selectCodeEditor("romfile.mem", 93, 27); // cl (w, cp)
+selectCodeEditor("romfile.mem", 59, 38); // cl (w, cp)
+selectCodeEditor("romfile.mem", 59, 32); // cl (w, cp)
+selectCodeEditor("romfile.mem", 61, 44); // cl (w, cp)
+selectCodeEditor("romfile.mem", 90, 27); // cl (w, cp)
+selectCodeEditor("romfile.mem", 71, 49); // cl (w, cp)
+selectCodeEditor("romfile.mem", 100, 38); // cl (w, cp)
+selectCodeEditor("romfile.mem", 100, 26); // cl (w, cp)
+selectCodeEditor("romfile.mem", 112, 4); // cl (w, cp)
+selectCodeEditor("romfile.mem", 73, 21); // cl (w, cp)
+selectCodeEditor("romfile.mem", 81, 14); // cl (w, cp)
+// Elapsed time: 49 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Open Target]", 22, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // af (al, cp)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// bx (cp):  Open Hardware Manager : addNotify
+// TclEventType: HW_SESSION_OPEN
+// Tcl Message: open_hw 
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+dismissDialog("Open Hardware Manager"); // bx (cp)
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210203367162A 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/Administrator/Desktop/ROM/ROM.runs/impl_1/ROM.bit} [get_hw_devices xc7k160t_0] 
+// Tcl Message: current_hw_device [get_hw_devices xc7k160t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7k160t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7k160t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 23, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7k160t_0"); // af (al, cp)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cp): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bx (cp):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC (cp)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7k160t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7k160t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/Administrator/Desktop/ROM/ROM.runs/impl_1/ROM.bit} [get_hw_devices xc7k160t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7k160t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7k160t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7k160t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 5 seconds
+dismissDialog("Program Device"); // bx (cp)
+// Elapsed time: 12 seconds
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k (aA, cp)
+closeTask("Program and Debug", "Hardware Manager", "DesignTask.PROGRAM_DEBUG");
+// A (cp): Confirm Close: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// bx (cp):  Close Hardware Manager : addNotify
+// TclEventType: HW_OBJECT_DELETE
+dismissDialog("Confirm Close"); // A (cp)
+// TclEventType: HW_SERVER_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: HW_SESSION_CLOSE
+// Tcl Message: close_hw 
+dismissDialog("Close Hardware Manager"); // bx (cp)
+selectCodeEditor("romfile.mem", 112, 201); // cl (w, cp)
+selectCodeEditor("romfile.mem", 111, 213); // cl (w, cp)
+// Elapsed time: 123 seconds
+selectCodeEditor("romfile.mem", 204, 60); // cl (w, cp)
+selectCodeEditor("romfile.mem", 151, 34); // cl (w, cp)
+selectCodeEditor("romfile.mem", 89, 16); // cl (w, cp)
+// Elapsed time: 188 seconds
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k (aA, cp)
+closeTask("Project Manager", "Project Manager", "DesignTask.PROJECT_MANAGER");
+// Run Command: PAResourceCommand.PACommandNames_CLOSE_PROJECT
+// A (cp): Close Project: addNotify
+dismissDialog("Close Project"); // A (cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ROM.vhd", 1); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "romfile.mem", 2); // k (j, cp)
+selectCodeEditor("romfile.mem", 98, 76); // cl (w, cp)
+selectCodeEditor("romfile.mem", 98, 156); // cl (w, cp)
+selectCodeEditor("romfile.mem", 101, 24); // cl (w, cp)
+selectCodeEditor("romfile.mem", 60, 43); // cl (w, cp)
+selectCodeEditor("romfile.mem", 62, 25); // cl (w, cp)
+selectCodeEditor("romfile.mem", 55, 11); // cl (w, cp)
+selectCodeEditor("romfile.mem", 69, 38); // cl (w, cp)
+selectCodeEditor("romfile.mem", 75, 19); // cl (w, cp)
+selectCodeEditor("romfile.mem", 70, 49); // cl (w, cp)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Open Target]", 22, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // af (al, cp)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// bx (cp):  Open Hardware Manager : addNotify
+// TclEventType: HW_SESSION_OPEN
+// Tcl Message: open_hw 
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+dismissDialog("Open Hardware Manager"); // bx (cp)
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210203367162A 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/Administrator/Desktop/ROM/ROM.runs/impl_1/ROM.bit} [get_hw_devices xc7k160t_0] 
+// Tcl Message: current_hw_device [get_hw_devices xc7k160t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// bx (cp):  Auto Connect : addNotify
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7k160t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7k160t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Auto Connect"); // bx (cp)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 23, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7k160t_0"); // af (al, cp)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cp): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bx (cp):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bC (cp)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7k160t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7k160t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/Administrator/Desktop/ROM/ROM.runs/impl_1/ROM.bit} [get_hw_devices xc7k160t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7k160t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7k160t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7k160t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 5 seconds
+dismissDialog("Program Device"); // bx (cp)
+// Elapsed time: 64 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "romfile.mem", 1); // k (j, cp)
+selectCodeEditor("romfile.mem", 63, 39); // cl (w, cp)
+selectCodeEditor("romfile.mem", 58, 62); // cl (w, cp)
+selectCodeEditor("romfile.mem", 58, 92); // cl (w, cp)
+selectCodeEditor("romfile.mem", 71, 165); // cl (w, cp)
+selectCodeEditor("romfile.mem", 77, 209); // cl (w, cp)
+selectCodeEditor("romfile.mem", 86, 173); // cl (w, cp)
+selectCodeEditor("romfile.mem", 86, 203); // cl (w, cp)
+selectCodeEditor("romfile.mem", 96, 96); // cl (w, cp)
+selectCodeEditor("romfile.mem", 79, 45); // cl (w, cp)
+selectCodeEditor("romfile.mem", 65, 85); // cl (w, cp)
+selectCodeEditor("romfile.mem", 69, 137); // cl (w, cp)
+selectCodeEditor("romfile.mem", 69, 164); // cl (w, cp)
+selectCodeEditor("romfile.mem", 69, 172); // cl (w, cp)
+selectCodeEditor("romfile.mem", 68, 184); // cl (w, cp)
+selectCodeEditor("romfile.mem", 67, 203); // cl (w, cp)
+selectCodeEditor("romfile.mem", 85, 46); // cl (w, cp)
+selectCodeEditor("romfile.mem", 29, 63); // cl (w, cp)
+selectCodeEditor("romfile.mem", 59, 114); // cl (w, cp)
+selectCodeEditor("romfile.mem", 53, 67); // cl (w, cp)
+selectCodeEditor("romfile.mem", 52, 22); // cl (w, cp)
+selectCodeEditor("romfile.mem", 35, 26); // cl (w, cp)
+selectCodeEditor("romfile.mem", 45, 25); // cl (w, cp)
+selectCodeEditor("romfile.mem", 71, 24); // cl (w, cp)
+selectCodeEditor("romfile.mem", 43, 32); // cl (w, cp)
+selectCodeEditor("romfile.mem", 49, 16); // cl (w, cp)
+selectCodeEditor("romfile.mem", 54, 32); // cl (w, cp)
+selectCodeEditor("romfile.mem", 56, 47); // cl (w, cp)
+selectCodeEditor("romfile.mem", 77, 75); // cl (w, cp)
+selectCodeEditor("romfile.mem", 61, 23); // cl (w, cp)
+selectCodeEditor("romfile.mem", 67, 7); // cl (w, cp)
+// Elapsed time: 62 seconds
+selectCodeEditor("romfile.mem", 170, 110); // cl (w, cp)
+selectCodeEditor("romfile.mem", 154, 87); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ROM.vhd", 0); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "romfile.mem", 1); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ROM.vhd", 0); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "romfile.mem", 1); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ROM.vhd", 0); // k (j, cp)
+// Elapsed time: 572 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "romfile.mem", 1); // k (j, cp)

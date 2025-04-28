@@ -1,0 +1,12 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../ALU.srcs/sources_1/new/ALU.vhd" \
+"../../../../ALU.srcs/sources_1/new/adder_1bit.vhd" \
+"../../../../ALU.srcs/sources_1/new/array_multiplier.vhd" \
+"../../../../ALU.srcs/sources_1/new/array_multiplier_low.vhd" \
+"../../../../ALU.srcs/sources_1/new/array_multiplier_top.vhd" \
+"../../../../ALU.srcs/sources_1/new/array_multiplier_unit.vhd" \
+"../../../../ALU.srcs/sim_1/new/ALU_tb.vhd" \
+
+# Do not sort compile order
+nosort

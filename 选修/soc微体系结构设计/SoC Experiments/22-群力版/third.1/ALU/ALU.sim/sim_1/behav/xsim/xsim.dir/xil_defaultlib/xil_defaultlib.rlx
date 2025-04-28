@@ -1,0 +1,20 @@
+0.6
+2018.3
+Dec  7 2018
+00:33:28
+D:/soc/EXPERIMENT/ALU/ALU.srcs/sim_1/new/ALU_tb.vhd,1713879105,vhdl,,,,alu_tb,,,,,,,,
+D:/soc/EXPERIMENT/ALU/ALU.srcs/sources_1/new/ALU.vhd,1713879518,vhdl,,,,alu,,,,,,,,
+D:/soc/EXPERIMENT/ALU/ALU.srcs/sources_1/new/ALU_test.vhd,1713850223,vhdl,,,,alu_test,,,,,,,,
+D:/soc/EXPERIMENT/ALU/ALU.srcs/sources_1/new/adder_1bit.vhd,1713420855,vhdl,,,,adder_1bit,,,,,,,,
+D:/soc/EXPERIMENT/ALU/ALU.srcs/sources_1/new/array_multiplier.vhd,1713420808,vhdl,,,,array_multiplier,,,,,,,,
+D:/soc/EXPERIMENT/ALU/ALU.srcs/sources_1/new/array_multiplier_low.vhd,1713420850,vhdl,,,,array_multiplier_low,,,,,,,,
+D:/soc/EXPERIMENT/ALU/ALU.srcs/sources_1/new/array_multiplier_top.vhd,1713420834,vhdl,,,,array_multiplier_top,,,,,,,,
+D:/soc/EXPERIMENT/ALU/ALU.srcs/sources_1/new/array_multiplier_unit.vhd,1713420838,vhdl,,,,array_multiplier_unit,,,,,,,,
+D:/soc/EXPERIMENT/ALU/ALU.srcs/sources_1/new/clk_div.vhd,1713421430,vhdl,,,,clk_div,,,,,,,,
+D:/soc/EXPERIMENT/ALU/ALU.srcs/sources_1/new/clock.vhd,1711978897,vhdl,,,,clock,,,,,,,,
+D:/soc/EXPERIMENT/ALU/ALU.srcs/sources_1/new/divider_origin.vhd,1713531253,vhdl,,,,divider_origin,,,,,,,,
+D:/soc/EXPERIMENT/ALU/ALU.srcs/sources_1/new/divider_origin_16bitreg.vhd,1713528651,vhdl,,,,divider_origin_16bitreg,,,,,,,,
+D:/soc/EXPERIMENT/ALU/ALU.srcs/sources_1/new/divider_origin_8bitadder.vhd,1713528894,vhdl,,,,divider_origin_8bitadder,,,,,,,,
+D:/soc/EXPERIMENT/ALU/ALU.srcs/sources_1/new/divider_origin_ctrl.vhd,1713516257,vhdl,,,,divider_origin_ctrl,,,,,,,,
+D:/soc/EXPERIMENT/ALU/ALU.srcs/sources_1/new/divider_origin_selector.vhd,1713516024,vhdl,,,,divider_origin_selector,,,,,,,,
+D:/soc/EXPERIMENT/ALU/ALU.srcs/sources_1/new/seg_dis.vhd,1713876920,vhdl,,,,seg_dis,,,,,,,,

@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../alutest.srcs/sources_1/imports/project/ir/ir.srcs/sources_1/imports/new/data2seg.vhd" \
+"../../../../alutest.srcs/sources_1/imports/project/ir/ir.srcs/sources_1/imports/new/state.vhd" \
+
+# Do not sort compile order
+nosort

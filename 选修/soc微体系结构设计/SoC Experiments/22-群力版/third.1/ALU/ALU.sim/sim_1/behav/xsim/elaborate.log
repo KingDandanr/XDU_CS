@@ -1,0 +1,22 @@
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/software/work/xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 8c9a3d3adac3492dafd5e1f0584f65ec --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot ALU_tb_behav xil_defaultlib.ALU_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behavioral of entity xil_defaultlib.array_multiplier_top [array_multiplier_top_default]
+Compiling architecture behavioral of entity xil_defaultlib.adder_1bit [adder_1bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.array_multiplier_unit [array_multiplier_unit_default]
+Compiling architecture behavioral of entity xil_defaultlib.array_multiplier_low [array_multiplier_low_default]
+Compiling architecture behavioral of entity xil_defaultlib.array_multiplier [array_multiplier_default]
+Compiling architecture behavioral of entity xil_defaultlib.ALU [alu_default]
+Compiling architecture behavioral of entity xil_defaultlib.alu_tb
+Built simulation snapshot ALU_tb_behav

@@ -1,0 +1,175 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Sun Apr 20 15:13:23 2025
+| Host         : PC505 running 64-bit major release  (build 9200)
+| Command      : report_drc -file divider_origin_test_drc_routed.rpt -pb divider_origin_test_drc_routed.pb -rpx divider_origin_test_drc_routed.rpx
+| Design       : divider_origin_test
+| Device       : xc7k160tfbg676-2
+| Speed File   : -2
+| Design State : Fully Routed
+---------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 26
++----------+----------+-----------------------------------------------------+------------+
+| Rule     | Severity | Description                                         | Violations |
++----------+----------+-----------------------------------------------------+------------+
+| CFGBVS-1 | Warning  | Missing CFGBVS and CONFIG_VOLTAGE Design Properties | 1          |
+| PDRC-153 | Warning  | Gated clock check                                   | 25         |
++----------+----------+-----------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+CFGBVS-1#1 Warning
+Missing CFGBVS and CONFIG_VOLTAGE Design Properties  
+Neither the CFGBVS nor CONFIG_VOLTAGE voltage property is set in the current_design.  Configuration bank voltage select (CFGBVS) must be set to VCCO or GND, and CONFIG_VOLTAGE must be set to the correct configuration voltage, in order to determine the I/O voltage support for the pins in bank 0.  It is suggested to specify these either using the 'Edit Device Properties' function in the GUI or directly in the XDC file using the following syntax:
+
+ set_property CFGBVS value1 [current_design]
+ #where value1 is either VCCO or GND
+
+ set_property CONFIG_VOLTAGE value2 [current_design]
+ #where value2 is the voltage provided to configuration bank 0
+
+Refer to the device configuration user guide for more information.
+Related violations: <none>
+
+PDRC-153#1 Warning
+Gated clock check  
+Net divider_origin_inst/divider_origin_16bitreg_inst/c_out_reg_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin divider_origin_inst/divider_origin_16bitreg_inst/c_out_reg_LDC_i_1/O, cell divider_origin_inst/divider_origin_16bitreg_inst/c_out_reg_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#2 Warning
+Gated clock check  
+Net divider_origin_inst/divider_origin_16bitreg_inst/sr16b_reg[10]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin divider_origin_inst/divider_origin_16bitreg_inst/sr16b_reg[10]_LDC_i_1/O, cell divider_origin_inst/divider_origin_16bitreg_inst/sr16b_reg[10]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#3 Warning
+Gated clock check  
+Net divider_origin_inst/divider_origin_16bitreg_inst/sr16b_reg[11]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin divider_origin_inst/divider_origin_16bitreg_inst/sr16b_reg[11]_LDC_i_1/O, cell divider_origin_inst/divider_origin_16bitreg_inst/sr16b_reg[11]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#4 Warning
+Gated clock check  
+Net divider_origin_inst/divider_origin_16bitreg_inst/sr16b_reg[12]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin divider_origin_inst/divider_origin_16bitreg_inst/sr16b_reg[12]_LDC_i_1/O, cell divider_origin_inst/divider_origin_16bitreg_inst/sr16b_reg[12]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#5 Warning
+Gated clock check  
+Net divider_origin_inst/divider_origin_16bitreg_inst/sr16b_reg[13]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin divider_origin_inst/divider_origin_16bitreg_inst/sr16b_reg[13]_LDC_i_1/O, cell divider_origin_inst/divider_origin_16bitreg_inst/sr16b_reg[13]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#6 Warning
+Gated clock check  
+Net divider_origin_inst/divider_origin_16bitreg_inst/sr16b_reg[14]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin divider_origin_inst/divider_origin_16bitreg_inst/sr16b_reg[14]_LDC_i_1/O, cell divider_origin_inst/divider_origin_16bitreg_inst/sr16b_reg[14]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#7 Warning
+Gated clock check  
+Net divider_origin_inst/divider_origin_16bitreg_inst/sr16b_reg[15]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin divider_origin_inst/divider_origin_16bitreg_inst/sr16b_reg[15]_LDC_i_1/O, cell divider_origin_inst/divider_origin_16bitreg_inst/sr16b_reg[15]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#8 Warning
+Gated clock check  
+Net divider_origin_inst/divider_origin_16bitreg_inst/sr16b_reg[1]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin divider_origin_inst/divider_origin_16bitreg_inst/sr16b_reg[1]_LDC_i_1/O, cell divider_origin_inst/divider_origin_16bitreg_inst/sr16b_reg[1]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#9 Warning
+Gated clock check  
+Net divider_origin_inst/divider_origin_16bitreg_inst/sr16b_reg[2]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin divider_origin_inst/divider_origin_16bitreg_inst/sr16b_reg[2]_LDC_i_1/O, cell divider_origin_inst/divider_origin_16bitreg_inst/sr16b_reg[2]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#10 Warning
+Gated clock check  
+Net divider_origin_inst/divider_origin_16bitreg_inst/sr16b_reg[3]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin divider_origin_inst/divider_origin_16bitreg_inst/sr16b_reg[3]_LDC_i_1/O, cell divider_origin_inst/divider_origin_16bitreg_inst/sr16b_reg[3]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#11 Warning
+Gated clock check  
+Net divider_origin_inst/divider_origin_16bitreg_inst/sr16b_reg[4]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin divider_origin_inst/divider_origin_16bitreg_inst/sr16b_reg[4]_LDC_i_1/O, cell divider_origin_inst/divider_origin_16bitreg_inst/sr16b_reg[4]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#12 Warning
+Gated clock check  
+Net divider_origin_inst/divider_origin_16bitreg_inst/sr16b_reg[5]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin divider_origin_inst/divider_origin_16bitreg_inst/sr16b_reg[5]_LDC_i_1/O, cell divider_origin_inst/divider_origin_16bitreg_inst/sr16b_reg[5]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#13 Warning
+Gated clock check  
+Net divider_origin_inst/divider_origin_16bitreg_inst/sr16b_reg[6]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin divider_origin_inst/divider_origin_16bitreg_inst/sr16b_reg[6]_LDC_i_1/O, cell divider_origin_inst/divider_origin_16bitreg_inst/sr16b_reg[6]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#14 Warning
+Gated clock check  
+Net divider_origin_inst/divider_origin_16bitreg_inst/sr16b_reg[7]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin divider_origin_inst/divider_origin_16bitreg_inst/sr16b_reg[7]_LDC_i_1/O, cell divider_origin_inst/divider_origin_16bitreg_inst/sr16b_reg[7]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#15 Warning
+Gated clock check  
+Net divider_origin_inst/divider_origin_16bitreg_inst/sr16b_reg[8]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin divider_origin_inst/divider_origin_16bitreg_inst/sr16b_reg[8]_LDC_i_1/O, cell divider_origin_inst/divider_origin_16bitreg_inst/sr16b_reg[8]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#16 Warning
+Gated clock check  
+Net divider_origin_inst/divider_origin_16bitreg_inst/sr16b_reg[9]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin divider_origin_inst/divider_origin_16bitreg_inst/sr16b_reg[9]_LDC_i_1/O, cell divider_origin_inst/divider_origin_16bitreg_inst/sr16b_reg[9]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#17 Warning
+Gated clock check  
+Net divider_origin_inst/divider_origin_ctrl_inst/E[0] is a gated clock net sourced by a combinational pin divider_origin_inst/divider_origin_ctrl_inst/sout_reg[8]_i_1/O, cell divider_origin_inst/divider_origin_ctrl_inst/sout_reg[8]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#18 Warning
+Gated clock check  
+Net divider_origin_inst/divider_origin_selector_inst/dout_reg[0]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin divider_origin_inst/divider_origin_selector_inst/dout_reg[0]_LDC_i_1/O, cell divider_origin_inst/divider_origin_selector_inst/dout_reg[0]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#19 Warning
+Gated clock check  
+Net divider_origin_inst/divider_origin_selector_inst/dout_reg[1]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin divider_origin_inst/divider_origin_selector_inst/dout_reg[1]_LDC_i_1/O, cell divider_origin_inst/divider_origin_selector_inst/dout_reg[1]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#20 Warning
+Gated clock check  
+Net divider_origin_inst/divider_origin_selector_inst/dout_reg[2]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin divider_origin_inst/divider_origin_selector_inst/dout_reg[2]_LDC_i_1/O, cell divider_origin_inst/divider_origin_selector_inst/dout_reg[2]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#21 Warning
+Gated clock check  
+Net divider_origin_inst/divider_origin_selector_inst/dout_reg[3]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin divider_origin_inst/divider_origin_selector_inst/dout_reg[3]_LDC_i_1/O, cell divider_origin_inst/divider_origin_selector_inst/dout_reg[3]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#22 Warning
+Gated clock check  
+Net divider_origin_inst/divider_origin_selector_inst/dout_reg[4]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin divider_origin_inst/divider_origin_selector_inst/dout_reg[4]_LDC_i_1/O, cell divider_origin_inst/divider_origin_selector_inst/dout_reg[4]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#23 Warning
+Gated clock check  
+Net divider_origin_inst/divider_origin_selector_inst/dout_reg[5]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin divider_origin_inst/divider_origin_selector_inst/dout_reg[5]_LDC_i_1/O, cell divider_origin_inst/divider_origin_selector_inst/dout_reg[5]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#24 Warning
+Gated clock check  
+Net divider_origin_inst/divider_origin_selector_inst/dout_reg[6]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin divider_origin_inst/divider_origin_selector_inst/dout_reg[6]_LDC_i_1/O, cell divider_origin_inst/divider_origin_selector_inst/dout_reg[6]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#25 Warning
+Gated clock check  
+Net divider_origin_inst/divider_origin_selector_inst/dout_reg[7]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin divider_origin_inst/divider_origin_selector_inst/dout_reg[7]_LDC_i_1/O, cell divider_origin_inst/divider_origin_selector_inst/dout_reg[7]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+

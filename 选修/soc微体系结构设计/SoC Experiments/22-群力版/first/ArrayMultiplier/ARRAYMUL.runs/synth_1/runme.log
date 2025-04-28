@@ -1,0 +1,388 @@
+
+*** Running vivado
+    with args -log array_multiplier_seg.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source array_multiplier_seg.tcl
+
+
+****** Vivado v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source array_multiplier_seg.tcl -notrace
+Command: synth_design -top array_multiplier_seg -part xc7k160tfbg676-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7k160t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k160t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 2112 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 349.813 ; gain = 84.426
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'array_multiplier_seg' [C:/Users/Administrator/Desktop/SOC_trial/ARRAYMUL/FLOOR_1.vhd:14]
+WARNING: [Synth 8-5640] Port 'rst' is missing in component declaration [C:/Users/Administrator/Desktop/SOC_trial/ARRAYMUL/FLOOR_1.vhd:16]
+	Parameter DIV_NUM bound to: 10000 - type: integer 
+INFO: [Synth 8-3491] module 'clk_div' declared at 'C:/Users/Administrator/Desktop/SOC_trial/ARRAYMUL/CLK.vhd:4' bound to instance 'clk_div_inst' of component 'clk_div' [C:/Users/Administrator/Desktop/SOC_trial/ARRAYMUL/FLOOR_1.vhd:53]
+INFO: [Synth 8-638] synthesizing module 'clk_div' [C:/Users/Administrator/Desktop/SOC_trial/ARRAYMUL/CLK.vhd:15]
+	Parameter DIV_NUM bound to: 10000 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'clk_div' (1#1) [C:/Users/Administrator/Desktop/SOC_trial/ARRAYMUL/CLK.vhd:15]
+INFO: [Synth 8-3491] module 'array_multiplier' declared at 'C:/Users/Administrator/Desktop/SOC_trial/ARRAYMUL/FLOOR_2.vhd:4' bound to instance 'array_multiplier_inst' of component 'array_multiplier' [C:/Users/Administrator/Desktop/SOC_trial/ARRAYMUL/FLOOR_1.vhd:54]
+INFO: [Synth 8-638] synthesizing module 'array_multiplier' [C:/Users/Administrator/Desktop/SOC_trial/ARRAYMUL/FLOOR_2.vhd:12]
+INFO: [Synth 8-3491] module 'array_multiplier_top' declared at 'C:/Users/Administrator/Desktop/SOC_trial/ARRAYMUL/MODE_1.vhd:4' bound to instance 'array_multiplier_top_inst' of component 'array_multiplier_top' [C:/Users/Administrator/Desktop/SOC_trial/ARRAYMUL/FLOOR_2.vhd:55]
+INFO: [Synth 8-638] synthesizing module 'array_multiplier_top' [C:/Users/Administrator/Desktop/SOC_trial/ARRAYMUL/MODE_1.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'array_multiplier_top' (2#1) [C:/Users/Administrator/Desktop/SOC_trial/ARRAYMUL/MODE_1.vhd:12]
+INFO: [Synth 8-3491] module 'array_multiplier_unit' declared at 'C:/Users/Administrator/Desktop/SOC_trial/ARRAYMUL/MODE_2.vhd:4' bound to instance 'array_multiplier_unit_inst1' of component 'array_multiplier_unit' [C:/Users/Administrator/Desktop/SOC_trial/ARRAYMUL/FLOOR_2.vhd:56]
+INFO: [Synth 8-638] synthesizing module 'array_multiplier_unit' [C:/Users/Administrator/Desktop/SOC_trial/ARRAYMUL/MODE_2.vhd:15]
+INFO: [Synth 8-3491] module 'adder_1bit' declared at 'C:/Users/Administrator/Desktop/SOC_trial/ARRAYMUL/MODE_4.vhd:4' bound to instance 'adder_1bit_inst1' of component 'adder_1bit' [C:/Users/Administrator/Desktop/SOC_trial/ARRAYMUL/MODE_2.vhd:27]
+INFO: [Synth 8-638] synthesizing module 'adder_1bit' [C:/Users/Administrator/Desktop/SOC_trial/ARRAYMUL/MODE_4.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'adder_1bit' (3#1) [C:/Users/Administrator/Desktop/SOC_trial/ARRAYMUL/MODE_4.vhd:11]
+INFO: [Synth 8-3491] module 'adder_1bit' declared at 'C:/Users/Administrator/Desktop/SOC_trial/ARRAYMUL/MODE_4.vhd:4' bound to instance 'adder_1bit_inst2' of component 'adder_1bit' [C:/Users/Administrator/Desktop/SOC_trial/ARRAYMUL/MODE_2.vhd:28]
+INFO: [Synth 8-3491] module 'adder_1bit' declared at 'C:/Users/Administrator/Desktop/SOC_trial/ARRAYMUL/MODE_4.vhd:4' bound to instance 'adder_1bit_inst3' of component 'adder_1bit' [C:/Users/Administrator/Desktop/SOC_trial/ARRAYMUL/MODE_2.vhd:29]
+INFO: [Synth 8-3491] module 'adder_1bit' declared at 'C:/Users/Administrator/Desktop/SOC_trial/ARRAYMUL/MODE_4.vhd:4' bound to instance 'adder_1bit_inst4' of component 'adder_1bit' [C:/Users/Administrator/Desktop/SOC_trial/ARRAYMUL/MODE_2.vhd:30]
+INFO: [Synth 8-3491] module 'adder_1bit' declared at 'C:/Users/Administrator/Desktop/SOC_trial/ARRAYMUL/MODE_4.vhd:4' bound to instance 'adder_1bit_inst5' of component 'adder_1bit' [C:/Users/Administrator/Desktop/SOC_trial/ARRAYMUL/MODE_2.vhd:31]
+INFO: [Synth 8-3491] module 'adder_1bit' declared at 'C:/Users/Administrator/Desktop/SOC_trial/ARRAYMUL/MODE_4.vhd:4' bound to instance 'adder_1bit_inst6' of component 'adder_1bit' [C:/Users/Administrator/Desktop/SOC_trial/ARRAYMUL/MODE_2.vhd:32]
+INFO: [Synth 8-3491] module 'adder_1bit' declared at 'C:/Users/Administrator/Desktop/SOC_trial/ARRAYMUL/MODE_4.vhd:4' bound to instance 'adder_1bit_inst7' of component 'adder_1bit' [C:/Users/Administrator/Desktop/SOC_trial/ARRAYMUL/MODE_2.vhd:33]
+WARNING: [Synth 8-3936] Found unconnected internal register 'a_line_reg' and it is trimmed from '8' to '7' bits. [C:/Users/Administrator/Desktop/SOC_trial/ARRAYMUL/MODE_2.vhd:27]
+INFO: [Synth 8-256] done synthesizing module 'array_multiplier_unit' (4#1) [C:/Users/Administrator/Desktop/SOC_trial/ARRAYMUL/MODE_2.vhd:15]
+INFO: [Synth 8-3491] module 'array_multiplier_unit' declared at 'C:/Users/Administrator/Desktop/SOC_trial/ARRAYMUL/MODE_2.vhd:4' bound to instance 'array_multiplier_unit_inst2' of component 'array_multiplier_unit' [C:/Users/Administrator/Desktop/SOC_trial/ARRAYMUL/FLOOR_2.vhd:57]
+INFO: [Synth 8-3491] module 'array_multiplier_unit' declared at 'C:/Users/Administrator/Desktop/SOC_trial/ARRAYMUL/MODE_2.vhd:4' bound to instance 'array_multiplier_unit_inst3' of component 'array_multiplier_unit' [C:/Users/Administrator/Desktop/SOC_trial/ARRAYMUL/FLOOR_2.vhd:58]
+INFO: [Synth 8-3491] module 'array_multiplier_unit' declared at 'C:/Users/Administrator/Desktop/SOC_trial/ARRAYMUL/MODE_2.vhd:4' bound to instance 'array_multiplier_unit_inst4' of component 'array_multiplier_unit' [C:/Users/Administrator/Desktop/SOC_trial/ARRAYMUL/FLOOR_2.vhd:59]
+INFO: [Synth 8-3491] module 'array_multiplier_unit' declared at 'C:/Users/Administrator/Desktop/SOC_trial/ARRAYMUL/MODE_2.vhd:4' bound to instance 'array_multiplier_unit_inst5' of component 'array_multiplier_unit' [C:/Users/Administrator/Desktop/SOC_trial/ARRAYMUL/FLOOR_2.vhd:60]
+INFO: [Synth 8-3491] module 'array_multiplier_unit' declared at 'C:/Users/Administrator/Desktop/SOC_trial/ARRAYMUL/MODE_2.vhd:4' bound to instance 'array_multiplier_unit_inst6' of component 'array_multiplier_unit' [C:/Users/Administrator/Desktop/SOC_trial/ARRAYMUL/FLOOR_2.vhd:61]
+INFO: [Synth 8-3491] module 'array_multiplier_unit' declared at 'C:/Users/Administrator/Desktop/SOC_trial/ARRAYMUL/MODE_2.vhd:4' bound to instance 'array_multiplier_unit_inst7' of component 'array_multiplier_unit' [C:/Users/Administrator/Desktop/SOC_trial/ARRAYMUL/FLOOR_2.vhd:62]
+INFO: [Synth 8-3491] module 'array_multiplier_low' declared at 'C:/Users/Administrator/Desktop/SOC_trial/ARRAYMUL/MODE_3.vhd:4' bound to instance 'array_multiplier_low_inst' of component 'array_multiplier_low' [C:/Users/Administrator/Desktop/SOC_trial/ARRAYMUL/FLOOR_2.vhd:63]
+INFO: [Synth 8-638] synthesizing module 'array_multiplier_low' [C:/Users/Administrator/Desktop/SOC_trial/ARRAYMUL/MODE_3.vhd:11]
+INFO: [Synth 8-3491] module 'adder_1bit' declared at 'C:/Users/Administrator/Desktop/SOC_trial/ARRAYMUL/MODE_4.vhd:4' bound to instance 'adder_1bit_inst0' of component 'adder_1bit' [C:/Users/Administrator/Desktop/SOC_trial/ARRAYMUL/MODE_3.vhd:23]
+INFO: [Synth 8-3491] module 'adder_1bit' declared at 'C:/Users/Administrator/Desktop/SOC_trial/ARRAYMUL/MODE_4.vhd:4' bound to instance 'adder_1bit_inst1' of component 'adder_1bit' [C:/Users/Administrator/Desktop/SOC_trial/ARRAYMUL/MODE_3.vhd:24]
+INFO: [Synth 8-3491] module 'adder_1bit' declared at 'C:/Users/Administrator/Desktop/SOC_trial/ARRAYMUL/MODE_4.vhd:4' bound to instance 'adder_1bit_inst2' of component 'adder_1bit' [C:/Users/Administrator/Desktop/SOC_trial/ARRAYMUL/MODE_3.vhd:25]
+INFO: [Synth 8-3491] module 'adder_1bit' declared at 'C:/Users/Administrator/Desktop/SOC_trial/ARRAYMUL/MODE_4.vhd:4' bound to instance 'adder_1bit_inst3' of component 'adder_1bit' [C:/Users/Administrator/Desktop/SOC_trial/ARRAYMUL/MODE_3.vhd:26]
+INFO: [Synth 8-3491] module 'adder_1bit' declared at 'C:/Users/Administrator/Desktop/SOC_trial/ARRAYMUL/MODE_4.vhd:4' bound to instance 'adder_1bit_inst4' of component 'adder_1bit' [C:/Users/Administrator/Desktop/SOC_trial/ARRAYMUL/MODE_3.vhd:27]
+INFO: [Synth 8-3491] module 'adder_1bit' declared at 'C:/Users/Administrator/Desktop/SOC_trial/ARRAYMUL/MODE_4.vhd:4' bound to instance 'adder_1bit_inst5' of component 'adder_1bit' [C:/Users/Administrator/Desktop/SOC_trial/ARRAYMUL/MODE_3.vhd:28]
+INFO: [Synth 8-3491] module 'adder_1bit' declared at 'C:/Users/Administrator/Desktop/SOC_trial/ARRAYMUL/MODE_4.vhd:4' bound to instance 'adder_1bit_inst6' of component 'adder_1bit' [C:/Users/Administrator/Desktop/SOC_trial/ARRAYMUL/MODE_3.vhd:29]
+INFO: [Synth 8-256] done synthesizing module 'array_multiplier_low' (5#1) [C:/Users/Administrator/Desktop/SOC_trial/ARRAYMUL/MODE_3.vhd:11]
+WARNING: [Synth 8-614] signal 'z_in0' is read in the process but is not in the sensitivity list [C:/Users/Administrator/Desktop/SOC_trial/ARRAYMUL/FLOOR_2.vhd:65]
+WARNING: [Synth 8-614] signal 'z_in1' is read in the process but is not in the sensitivity list [C:/Users/Administrator/Desktop/SOC_trial/ARRAYMUL/FLOOR_2.vhd:65]
+WARNING: [Synth 8-614] signal 'z_in2' is read in the process but is not in the sensitivity list [C:/Users/Administrator/Desktop/SOC_trial/ARRAYMUL/FLOOR_2.vhd:65]
+WARNING: [Synth 8-614] signal 'z_in3' is read in the process but is not in the sensitivity list [C:/Users/Administrator/Desktop/SOC_trial/ARRAYMUL/FLOOR_2.vhd:65]
+WARNING: [Synth 8-614] signal 'z_in4' is read in the process but is not in the sensitivity list [C:/Users/Administrator/Desktop/SOC_trial/ARRAYMUL/FLOOR_2.vhd:65]
+WARNING: [Synth 8-614] signal 'z_in5' is read in the process but is not in the sensitivity list [C:/Users/Administrator/Desktop/SOC_trial/ARRAYMUL/FLOOR_2.vhd:65]
+WARNING: [Synth 8-614] signal 'z_in6' is read in the process but is not in the sensitivity list [C:/Users/Administrator/Desktop/SOC_trial/ARRAYMUL/FLOOR_2.vhd:65]
+WARNING: [Synth 8-614] signal 'z_in7' is read in the process but is not in the sensitivity list [C:/Users/Administrator/Desktop/SOC_trial/ARRAYMUL/FLOOR_2.vhd:65]
+INFO: [Synth 8-256] done synthesizing module 'array_multiplier' (6#1) [C:/Users/Administrator/Desktop/SOC_trial/ARRAYMUL/FLOOR_2.vhd:12]
+INFO: [Synth 8-3491] module 'seg_dis' declared at 'C:/Users/Administrator/Desktop/SOC_trial/ARRAYMUL/SEG.vhd:5' bound to instance 'seg_dis_inst' of component 'seg_dis' [C:/Users/Administrator/Desktop/SOC_trial/ARRAYMUL/FLOOR_1.vhd:55]
+INFO: [Synth 8-638] synthesizing module 'seg_dis' [C:/Users/Administrator/Desktop/SOC_trial/ARRAYMUL/SEG.vhd:15]
+INFO: [Synth 8-3491] module 'data2seg' declared at 'C:/Users/Administrator/Desktop/SOC_trial/ARRAYMUL/DATA2SEG.vhd:5' bound to instance 'data2seg_inst' of component 'data2seg' [C:/Users/Administrator/Desktop/SOC_trial/ARRAYMUL/SEG.vhd:30]
+INFO: [Synth 8-638] synthesizing module 'data2seg' [C:/Users/Administrator/Desktop/SOC_trial/ARRAYMUL/DATA2SEG.vhd:13]
+INFO: [Synth 8-226] default block is never used [C:/Users/Administrator/Desktop/SOC_trial/ARRAYMUL/DATA2SEG.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'data2seg' (7#1) [C:/Users/Administrator/Desktop/SOC_trial/ARRAYMUL/DATA2SEG.vhd:13]
+INFO: [Synth 8-226] default block is never used [C:/Users/Administrator/Desktop/SOC_trial/ARRAYMUL/SEG.vhd:41]
+WARNING: [Synth 8-614] signal 'data_in_A' is read in the process but is not in the sensitivity list [C:/Users/Administrator/Desktop/SOC_trial/ARRAYMUL/SEG.vhd:39]
+WARNING: [Synth 8-614] signal 'data_in_B' is read in the process but is not in the sensitivity list [C:/Users/Administrator/Desktop/SOC_trial/ARRAYMUL/SEG.vhd:39]
+WARNING: [Synth 8-614] signal 'data_in_C' is read in the process but is not in the sensitivity list [C:/Users/Administrator/Desktop/SOC_trial/ARRAYMUL/SEG.vhd:39]
+WARNING: [Synth 8-614] signal 'data_in_D' is read in the process but is not in the sensitivity list [C:/Users/Administrator/Desktop/SOC_trial/ARRAYMUL/SEG.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'seg_dis' (8#1) [C:/Users/Administrator/Desktop/SOC_trial/ARRAYMUL/SEG.vhd:15]
+INFO: [Synth 8-3491] module 'decoder4_16' declared at 'C:/Users/Administrator/Desktop/SOC_trial/ARRAYMUL/4TO16.vhd:4' bound to instance 'decoder4_16_inst' of component 'decoder4_16' [C:/Users/Administrator/Desktop/SOC_trial/ARRAYMUL/FLOOR_1.vhd:56]
+INFO: [Synth 8-638] synthesizing module 'decoder4_16' [C:/Users/Administrator/Desktop/SOC_trial/ARRAYMUL/4TO16.vhd:11]
+INFO: [Synth 8-226] default block is never used [C:/Users/Administrator/Desktop/SOC_trial/ARRAYMUL/4TO16.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'decoder4_16' (9#1) [C:/Users/Administrator/Desktop/SOC_trial/ARRAYMUL/4TO16.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'array_multiplier_seg' (10#1) [C:/Users/Administrator/Desktop/SOC_trial/ARRAYMUL/FLOOR_1.vhd:14]
+WARNING: [Synth 8-3331] design array_multiplier_unit has unconnected port z_in[0]
+WARNING: [Synth 8-3331] design array_multiplier has unconnected port clk
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 405.891 ; gain = 140.504
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin clk_div_inst:rst to constant 0 [C:/Users/Administrator/Desktop/SOC_trial/ARRAYMUL/FLOOR_1.vhd:53]
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 405.891 ; gain = 140.504
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 405.891 ; gain = 140.504
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7k160tfbg676-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Administrator/Desktop/SOC_trial/ARRAYMUL/XDC.xdc]
+Finished Parsing XDC File [C:/Users/Administrator/Desktop/SOC_trial/ARRAYMUL/XDC.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Administrator/Desktop/SOC_trial/ARRAYMUL/XDC.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/array_multiplier_seg_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/array_multiplier_seg_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 762.277 ; gain = 0.000
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 762.277 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 762.277 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 762.277 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 762.277 ; gain = 496.891
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7k160tfbg676-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 762.277 ; gain = 496.891
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 762.277 ; gain = 496.891
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'seg_dis'
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                      s0 |                             0000 |                             0000
+                      s1 |                             0001 |                             0001
+                      s2 |                             0010 |                             0010
+                      s3 |                             0011 |                             0011
+                      s4 |                             0100 |                             0100
+                      s5 |                             0101 |                             0101
+                      s6 |                             0110 |                             0110
+                      s7 |                             0111 |                             0111
+                      s8 |                             1000 |                             1000
+                      s9 |                             1001 |                             1001
+                     s10 |                             1010 |                             1010
+                     s11 |                             1011 |                             1011
+                     s12 |                             1100 |                             1100
+                     s13 |                             1101 |                             1101
+                     s14 |                             1110 |                             1110
+                     s15 |                             1111 |                             1111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'seg_dis'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 762.277 ; gain = 496.891
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 112   
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	  16 Input      4 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module clk_div 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+Module adder_1bit 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
+Module seg_dis 
+Detailed RTL Component Info : 
++---Muxes : 
+	  16 Input      4 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 600 (col length:100)
+BRAMs: 650 (col length: RAMB18 100 RAMB36 50)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 762.277 ; gain = 496.891
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 762.277 ; gain = 496.891
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 762.277 ; gain = 496.891
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 780.254 ; gain = 514.867
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 780.254 ; gain = 514.867
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 780.254 ; gain = 514.867
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 780.254 ; gain = 514.867
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 780.254 ; gain = 514.867
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 780.254 ; gain = 514.867
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 780.254 ; gain = 514.867
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    16|
+|3     |LUT1   |     2|
+|4     |LUT2   |    64|
+|5     |LUT3   |    40|
+|6     |LUT4   |    49|
+|7     |LUT5   |    13|
+|8     |LUT6   |    52|
+|9     |FDCE   |     4|
+|10    |FDRE   |    33|
+|11    |IBUF   |    18|
+|12    |OBUF   |    24|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------------+--------+------+
+|      |Instance       |Module  |Cells |
++------+---------------+--------+------+
+|1     |top            |        |   316|
+|2     |  clk_div_inst |clk_div |   130|
+|3     |  seg_dis_inst |seg_dis |    48|
++------+---------------+--------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 780.254 ; gain = 514.867
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 780.254 ; gain = 158.480
+Synthesis Optimization Complete : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 780.254 ; gain = 514.867
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 16 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 786.191 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+66 Infos, 17 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 786.191 ; gain = 520.805
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 786.191 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Administrator/Desktop/SOC_trial/ARRAYMUL/ARRAYMUL.runs/synth_1/array_multiplier_seg.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file array_multiplier_seg_utilization_synth.rpt -pb array_multiplier_seg_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Apr 16 14:23:30 2025...

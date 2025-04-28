@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Apr 18 18:42:20 2025
+# Process ID: 14828
+# Current directory: C:/Users/Administrator/Desktop/fifo+rom/ROM/ROM.runs/synth_1
+# Command line: vivado.exe -log ROM.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ROM.tcl
+# Log file: C:/Users/Administrator/Desktop/fifo+rom/ROM/ROM.runs/synth_1/ROM.vds
+# Journal file: C:/Users/Administrator/Desktop/fifo+rom/ROM/ROM.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source ROM.tcl -notrace

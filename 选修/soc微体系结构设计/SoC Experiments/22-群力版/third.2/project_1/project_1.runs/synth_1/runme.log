@@ -1,0 +1,440 @@
+
+*** Running vivado
+    with args -log test.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source test.tcl
+
+
+****** Vivado v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source test.tcl -notrace
+Command: synth_design -top test -part xc7k160tfbg676-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7k160t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k160t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 3088 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 349.898 ; gain = 85.047
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'test' [E:/0423/project_1/project_1.srcs/sources_1/new/test.vhd:46]
+INFO: [Synth 8-3491] module 'alu' declared at 'E:/0423/project_1/project_1.srcs/sources_1/imports/project/alu/alu.srcs/sources_1/new/alu.vhd:34' bound to instance 'u1' of component 'alu' [E:/0423/project_1/project_1.srcs/sources_1/new/test.vhd:65]
+INFO: [Synth 8-638] synthesizing module 'alu' [E:/0423/project_1/project_1.srcs/sources_1/imports/project/alu/alu.srcs/sources_1/new/alu.vhd:43]
+INFO: [Synth 8-3491] module 'cal' declared at 'E:/0423/project_1/project_1.srcs/sources_1/imports/project/alu/alu.srcs/sources_1/new/cal.vhd:5' bound to instance 'ls181' of component 'cal' [E:/0423/project_1/project_1.srcs/sources_1/imports/project/alu/alu.srcs/sources_1/new/alu.vhd:58]
+INFO: [Synth 8-638] synthesizing module 'cal' [E:/0423/project_1/project_1.srcs/sources_1/imports/project/alu/alu.srcs/sources_1/new/cal.vhd:15]
+INFO: [Synth 8-226] default block is never used [E:/0423/project_1/project_1.srcs/sources_1/imports/project/alu/alu.srcs/sources_1/new/cal.vhd:23]
+WARNING: [Synth 8-614] signal 'S' is read in the process but is not in the sensitivity list [E:/0423/project_1/project_1.srcs/sources_1/imports/project/alu/alu.srcs/sources_1/new/cal.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'cal' (1#1) [E:/0423/project_1/project_1.srcs/sources_1/imports/project/alu/alu.srcs/sources_1/new/cal.vhd:15]
+INFO: [Synth 8-226] default block is never used [E:/0423/project_1/project_1.srcs/sources_1/imports/project/alu/alu.srcs/sources_1/new/alu.vhd:65]
+INFO: [Synth 8-256] done synthesizing module 'alu' (2#1) [E:/0423/project_1/project_1.srcs/sources_1/imports/project/alu/alu.srcs/sources_1/new/alu.vhd:43]
+INFO: [Synth 8-3491] module 'state' declared at 'E:/0423/project_1/project_1.srcs/sources_1/imports/project/ir/ir.srcs/sources_1/imports/new/state.vhd:35' bound to instance 'u2' of component 'state' [E:/0423/project_1/project_1.srcs/sources_1/new/test.vhd:66]
+INFO: [Synth 8-638] synthesizing module 'state' [E:/0423/project_1/project_1.srcs/sources_1/imports/project/ir/ir.srcs/sources_1/imports/new/state.vhd:42]
+INFO: [Synth 8-3491] module 'data2seg' declared at 'E:/0423/project_1/project_1.srcs/sources_1/imports/project/ir/ir.srcs/sources_1/imports/new/data2seg.vhd:34' bound to instance 'u' of component 'data2seg' [E:/0423/project_1/project_1.srcs/sources_1/imports/project/ir/ir.srcs/sources_1/imports/new/state.vhd:55]
+INFO: [Synth 8-638] synthesizing module 'data2seg' [E:/0423/project_1/project_1.srcs/sources_1/imports/project/ir/ir.srcs/sources_1/imports/new/data2seg.vhd:39]
+INFO: [Synth 8-226] default block is never used [E:/0423/project_1/project_1.srcs/sources_1/imports/project/ir/ir.srcs/sources_1/imports/new/data2seg.vhd:44]
+INFO: [Synth 8-256] done synthesizing module 'data2seg' (3#1) [E:/0423/project_1/project_1.srcs/sources_1/imports/project/ir/ir.srcs/sources_1/imports/new/data2seg.vhd:39]
+WARNING: [Synth 8-614] signal 'showw' is read in the process but is not in the sensitivity list [E:/0423/project_1/project_1.srcs/sources_1/imports/project/ir/ir.srcs/sources_1/imports/new/state.vhd:79]
+INFO: [Synth 8-256] done synthesizing module 'state' (4#1) [E:/0423/project_1/project_1.srcs/sources_1/imports/project/ir/ir.srcs/sources_1/imports/new/state.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'test' (5#1) [E:/0423/project_1/project_1.srcs/sources_1/new/test.vhd:46]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 406.043 ; gain = 141.191
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin u2:show[63] to constant 0 [E:/0423/project_1/project_1.srcs/sources_1/new/test.vhd:66]
+WARNING: [Synth 8-3295] tying undriven pin u2:show[62] to constant 0 [E:/0423/project_1/project_1.srcs/sources_1/new/test.vhd:66]
+WARNING: [Synth 8-3295] tying undriven pin u2:show[61] to constant 0 [E:/0423/project_1/project_1.srcs/sources_1/new/test.vhd:66]
+WARNING: [Synth 8-3295] tying undriven pin u2:show[60] to constant 0 [E:/0423/project_1/project_1.srcs/sources_1/new/test.vhd:66]
+WARNING: [Synth 8-3295] tying undriven pin u2:show[59] to constant 0 [E:/0423/project_1/project_1.srcs/sources_1/new/test.vhd:66]
+WARNING: [Synth 8-3295] tying undriven pin u2:show[58] to constant 0 [E:/0423/project_1/project_1.srcs/sources_1/new/test.vhd:66]
+WARNING: [Synth 8-3295] tying undriven pin u2:show[57] to constant 0 [E:/0423/project_1/project_1.srcs/sources_1/new/test.vhd:66]
+WARNING: [Synth 8-3295] tying undriven pin u2:show[56] to constant 0 [E:/0423/project_1/project_1.srcs/sources_1/new/test.vhd:66]
+WARNING: [Synth 8-3295] tying undriven pin u2:show[55] to constant 0 [E:/0423/project_1/project_1.srcs/sources_1/new/test.vhd:66]
+WARNING: [Synth 8-3295] tying undriven pin u2:show[54] to constant 0 [E:/0423/project_1/project_1.srcs/sources_1/new/test.vhd:66]
+WARNING: [Synth 8-3295] tying undriven pin u2:show[53] to constant 0 [E:/0423/project_1/project_1.srcs/sources_1/new/test.vhd:66]
+WARNING: [Synth 8-3295] tying undriven pin u2:show[52] to constant 0 [E:/0423/project_1/project_1.srcs/sources_1/new/test.vhd:66]
+WARNING: [Synth 8-3295] tying undriven pin u2:show[51] to constant 0 [E:/0423/project_1/project_1.srcs/sources_1/new/test.vhd:66]
+WARNING: [Synth 8-3295] tying undriven pin u2:show[50] to constant 0 [E:/0423/project_1/project_1.srcs/sources_1/new/test.vhd:66]
+WARNING: [Synth 8-3295] tying undriven pin u2:show[49] to constant 0 [E:/0423/project_1/project_1.srcs/sources_1/new/test.vhd:66]
+WARNING: [Synth 8-3295] tying undriven pin u2:show[48] to constant 0 [E:/0423/project_1/project_1.srcs/sources_1/new/test.vhd:66]
+WARNING: [Synth 8-3295] tying undriven pin u2:show[47] to constant 0 [E:/0423/project_1/project_1.srcs/sources_1/new/test.vhd:66]
+WARNING: [Synth 8-3295] tying undriven pin u2:show[46] to constant 0 [E:/0423/project_1/project_1.srcs/sources_1/new/test.vhd:66]
+WARNING: [Synth 8-3295] tying undriven pin u2:show[45] to constant 0 [E:/0423/project_1/project_1.srcs/sources_1/new/test.vhd:66]
+WARNING: [Synth 8-3295] tying undriven pin u2:show[44] to constant 0 [E:/0423/project_1/project_1.srcs/sources_1/new/test.vhd:66]
+WARNING: [Synth 8-3295] tying undriven pin u2:show[43] to constant 0 [E:/0423/project_1/project_1.srcs/sources_1/new/test.vhd:66]
+WARNING: [Synth 8-3295] tying undriven pin u2:show[42] to constant 0 [E:/0423/project_1/project_1.srcs/sources_1/new/test.vhd:66]
+WARNING: [Synth 8-3295] tying undriven pin u2:show[41] to constant 0 [E:/0423/project_1/project_1.srcs/sources_1/new/test.vhd:66]
+WARNING: [Synth 8-3295] tying undriven pin u2:show[40] to constant 0 [E:/0423/project_1/project_1.srcs/sources_1/new/test.vhd:66]
+WARNING: [Synth 8-3295] tying undriven pin u2:show[39] to constant 0 [E:/0423/project_1/project_1.srcs/sources_1/new/test.vhd:66]
+WARNING: [Synth 8-3295] tying undriven pin u2:show[38] to constant 0 [E:/0423/project_1/project_1.srcs/sources_1/new/test.vhd:66]
+WARNING: [Synth 8-3295] tying undriven pin u2:show[37] to constant 0 [E:/0423/project_1/project_1.srcs/sources_1/new/test.vhd:66]
+WARNING: [Synth 8-3295] tying undriven pin u2:show[36] to constant 0 [E:/0423/project_1/project_1.srcs/sources_1/new/test.vhd:66]
+WARNING: [Synth 8-3295] tying undriven pin u2:show[35] to constant 0 [E:/0423/project_1/project_1.srcs/sources_1/new/test.vhd:66]
+WARNING: [Synth 8-3295] tying undriven pin u2:show[34] to constant 0 [E:/0423/project_1/project_1.srcs/sources_1/new/test.vhd:66]
+WARNING: [Synth 8-3295] tying undriven pin u2:show[33] to constant 0 [E:/0423/project_1/project_1.srcs/sources_1/new/test.vhd:66]
+WARNING: [Synth 8-3295] tying undriven pin u2:show[32] to constant 0 [E:/0423/project_1/project_1.srcs/sources_1/new/test.vhd:66]
+WARNING: [Synth 8-3295] tying undriven pin u2:show[31] to constant 0 [E:/0423/project_1/project_1.srcs/sources_1/new/test.vhd:66]
+WARNING: [Synth 8-3295] tying undriven pin u2:show[30] to constant 0 [E:/0423/project_1/project_1.srcs/sources_1/new/test.vhd:66]
+WARNING: [Synth 8-3295] tying undriven pin u2:show[29] to constant 0 [E:/0423/project_1/project_1.srcs/sources_1/new/test.vhd:66]
+WARNING: [Synth 8-3295] tying undriven pin u2:show[28] to constant 0 [E:/0423/project_1/project_1.srcs/sources_1/new/test.vhd:66]
+WARNING: [Synth 8-3295] tying undriven pin u2:show[27] to constant 0 [E:/0423/project_1/project_1.srcs/sources_1/new/test.vhd:66]
+WARNING: [Synth 8-3295] tying undriven pin u2:show[26] to constant 0 [E:/0423/project_1/project_1.srcs/sources_1/new/test.vhd:66]
+WARNING: [Synth 8-3295] tying undriven pin u2:show[25] to constant 0 [E:/0423/project_1/project_1.srcs/sources_1/new/test.vhd:66]
+WARNING: [Synth 8-3295] tying undriven pin u2:show[24] to constant 0 [E:/0423/project_1/project_1.srcs/sources_1/new/test.vhd:66]
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 406.043 ; gain = 141.191
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 406.043 ; gain = 141.191
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7k160tfbg676-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [E:/0423/project_1/project_1.srcs/constrs_1/new/pin.xdc]
+Finished Parsing XDC File [E:/0423/project_1/project_1.srcs/constrs_1/new/pin.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/0423/project_1/project_1.srcs/constrs_1/new/pin.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/test_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/test_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 761.836 ; gain = 0.000
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 761.836 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 761.836 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 761.836 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 761.836 ; gain = 496.984
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7k160tfbg676-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 761.836 ; gain = 496.984
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 761.836 ; gain = 496.984
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "zn" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'state'
+INFO: [Synth 8-5544] ROM "seg_sel" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                      s0 |                             0000 |                             0000
+                      s1 |                             0001 |                             0001
+                      s2 |                             0010 |                             0010
+                      s3 |                             0011 |                             0011
+                      s4 |                             0100 |                             0100
+                      s5 |                             0101 |                             0101
+                      s6 |                             0110 |                             0110
+                      s7 |                             0111 |                             0111
+                      s8 |                             1000 |                             1000
+                      s9 |                             1001 |                             1001
+                     s10 |                             1010 |                             1010
+                     s11 |                             1011 |                             1011
+                     s12 |                             1100 |                             1100
+                     s13 |                             1101 |                             1101
+                     s14 |                             1110 |                             1110
+                     s15 |                             1111 |                             1111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'state'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 761.836 ; gain = 496.984
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     15 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 4     
+	   3 Input      9 Bit       Adders := 10    
+	   4 Input      9 Bit       Adders := 1     
++---XORs : 
+	   2 Input      9 Bit         XORs := 1     
++---Registers : 
+	               64 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	  16 Input     16 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 15    
+	   4 Input      8 Bit        Muxes := 1     
+	  16 Input      4 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module cal 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      9 Bit       Adders := 4     
+	   3 Input      9 Bit       Adders := 10    
+	   4 Input      9 Bit       Adders := 1     
++---XORs : 
+	   2 Input      9 Bit         XORs := 1     
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 15    
+	   2 Input      1 Bit        Muxes := 1     
+Module alu 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      8 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module state 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     15 Bit       Adders := 1     
++---Registers : 
+	               64 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	  16 Input     16 Bit        Muxes := 1     
+	  16 Input      4 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 600 (col length:100)
+BRAMs: 650 (col length: RAMB18 100 RAMB36 50)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5546] ROM "u1/zn" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-3886] merging instance 'u2/showw_reg[60]' (FDC) to 'u2/showw_reg[63]'
+INFO: [Synth 8-3886] merging instance 'u2/showw_reg[56]' (FDP) to 'u2/showw_reg[53]'
+INFO: [Synth 8-3886] merging instance 'u2/showw_reg[52]' (FDC) to 'u2/showw_reg[63]'
+INFO: [Synth 8-3886] merging instance 'u2/showw_reg[48]' (FDP) to 'u2/showw_reg[53]'
+INFO: [Synth 8-3886] merging instance 'u2/showw_reg[44]' (FDC) to 'u2/showw_reg[63]'
+INFO: [Synth 8-3886] merging instance 'u2/showw_reg[40]' (FDP) to 'u2/showw_reg[53]'
+INFO: [Synth 8-3886] merging instance 'u2/showw_reg[36]' (FDC) to 'u2/showw_reg[63]'
+INFO: [Synth 8-3886] merging instance 'u2/showw_reg[32]' (FDP) to 'u2/showw_reg[53]'
+INFO: [Synth 8-3886] merging instance 'u2/showw_reg[28]' (FDC) to 'u2/showw_reg[63]'
+INFO: [Synth 8-3886] merging instance 'u2/showw_reg[24]' (FDP) to 'u2/showw_reg[53]'
+INFO: [Synth 8-3886] merging instance 'u2/showw_reg[61]' (FDC) to 'u2/showw_reg[63]'
+INFO: [Synth 8-3886] merging instance 'u2/showw_reg[57]' (FDC) to 'u2/showw_reg[63]'
+INFO: [Synth 8-3886] merging instance 'u2/showw_reg[53]' (FDP) to 'u2/showw_reg[49]'
+INFO: [Synth 8-3886] merging instance 'u2/showw_reg[49]' (FDP) to 'u2/showw_reg[46]'
+INFO: [Synth 8-3886] merging instance 'u2/showw_reg[45]' (FDC) to 'u2/showw_reg[63]'
+INFO: [Synth 8-3886] merging instance 'u2/showw_reg[41]' (FDC) to 'u2/showw_reg[63]'
+INFO: [Synth 8-3886] merging instance 'u2/showw_reg[37]' (FDP) to 'u2/showw_reg[46]'
+INFO: [Synth 8-3886] merging instance 'u2/showw_reg[33]' (FDP) to 'u2/showw_reg[46]'
+INFO: [Synth 8-3886] merging instance 'u2/showw_reg[29]' (FDC) to 'u2/showw_reg[63]'
+INFO: [Synth 8-3886] merging instance 'u2/showw_reg[25]' (FDC) to 'u2/showw_reg[63]'
+INFO: [Synth 8-3886] merging instance 'u2/showw_reg[62]' (FDC) to 'u2/showw_reg[63]'
+INFO: [Synth 8-3886] merging instance 'u2/showw_reg[58]' (FDC) to 'u2/showw_reg[63]'
+INFO: [Synth 8-3886] merging instance 'u2/showw_reg[54]' (FDC) to 'u2/showw_reg[63]'
+INFO: [Synth 8-3886] merging instance 'u2/showw_reg[50]' (FDC) to 'u2/showw_reg[63]'
+INFO: [Synth 8-3886] merging instance 'u2/showw_reg[46]' (FDP) to 'u2/showw_reg[42]'
+INFO: [Synth 8-3886] merging instance 'u2/showw_reg[42]' (FDP) to 'u2/showw_reg[38]'
+INFO: [Synth 8-3886] merging instance 'u2/showw_reg[38]' (FDP) to 'u2/showw_reg[34]'
+INFO: [Synth 8-3886] merging instance 'u2/showw_reg[34]' (FDP) to 'u2/showw_reg[31]'
+INFO: [Synth 8-3886] merging instance 'u2/showw_reg[30]' (FDC) to 'u2/showw_reg[63]'
+INFO: [Synth 8-3886] merging instance 'u2/showw_reg[26]' (FDC) to 'u2/showw_reg[63]'
+INFO: [Synth 8-3886] merging instance 'u2/showw_reg[63]' (FDC) to 'u2/showw_reg[59]'
+INFO: [Synth 8-3886] merging instance 'u2/showw_reg[59]' (FDC) to 'u2/showw_reg[55]'
+INFO: [Synth 8-3886] merging instance 'u2/showw_reg[55]' (FDC) to 'u2/showw_reg[51]'
+INFO: [Synth 8-3886] merging instance 'u2/showw_reg[51]' (FDC) to 'u2/showw_reg[47]'
+INFO: [Synth 8-3886] merging instance 'u2/showw_reg[47]' (FDC) to 'u2/showw_reg[43]'
+INFO: [Synth 8-3886] merging instance 'u2/showw_reg[43]' (FDC) to 'u2/showw_reg[39]'
+INFO: [Synth 8-3886] merging instance 'u2/showw_reg[39]' (FDC) to 'u2/showw_reg[35]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u2/showw_reg[35] )
+INFO: [Synth 8-3886] merging instance 'u2/showw_reg[31]' (FDP) to 'u2/showw_reg[27]'
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 761.836 ; gain = 496.984
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 761.836 ; gain = 496.984
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 761.836 ; gain = 496.984
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 772.391 ; gain = 507.539
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 772.391 ; gain = 507.539
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 772.391 ; gain = 507.539
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 772.391 ; gain = 507.539
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 772.391 ; gain = 507.539
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 772.391 ; gain = 507.539
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 772.391 ; gain = 507.539
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    38|
+|3     |LUT1   |    18|
+|4     |LUT2   |    90|
+|5     |LUT3   |    13|
+|6     |LUT4   |    38|
+|7     |LUT5   |    27|
+|8     |LUT6   |    97|
+|9     |MUXF7  |    32|
+|10    |MUXF8  |     8|
+|11    |FDCE   |    11|
+|12    |FDPE   |    18|
+|13    |FDRE   |    16|
+|14    |IBUF   |    26|
+|15    |OBUF   |    26|
++------+-------+------+
+
+Report Instance Areas: 
++------+----------+-------+------+
+|      |Instance  |Module |Cells |
++------+----------+-------+------+
+|1     |top       |       |   459|
+|2     |  u1      |alu    |   186|
+|3     |    ls181 |cal    |   186|
+|4     |  u2      |state  |   200|
++------+----------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 772.391 ; gain = 507.539
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 772.391 ; gain = 151.746
+Synthesis Optimization Complete : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 772.391 ; gain = 507.539
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 78 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 788.668 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+74 Infos, 42 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 788.668 ; gain = 523.816
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 788.668 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'E:/0423/project_1/project_1.runs/synth_1/test.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file test_utilization_synth.rpt -pb test_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Apr 24 10:02:42 2025...

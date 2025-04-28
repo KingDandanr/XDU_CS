@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_2" LaunchPart="xc7k160tfbg676-2" LaunchTime="1685345021">
+  <File Type="ROUTE-PWR" Name="IR_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="IR.tcl"/>
+  <File Type="BITSTR-BMM" Name="IR_bd.bmm"/>
+  <File Type="ROUTE-PWR-SUM" Name="IR_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="IR_reports.tcl"/>
+  <File Type="OPT-DCP" Name="IR_opt.dcp"/>
+  <File Type="OPT-DRC" Name="IR_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="IR.hwdef"/>
+  <File Type="PWROPT-DCP" Name="IR_pwropt.dcp"/>
+  <File Type="PLACE-DCP" Name="IR_placed.dcp"/>
+  <File Type="PLACE-IO" Name="IR_io_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="IR_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="IR_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="IR_control_sets_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="IR_incremental_reuse_pre_placed.rpt"/>
+  <File Type="BG-BGN" Name="IR.bgn"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="IR_postplace_pwropt.dcp"/>
+  <File Type="BG-BIN" Name="IR.bin"/>
+  <File Type="PHYSOPT-DCP" Name="IR_physopt.dcp"/>
+  <File Type="BITSTR-MSK" Name="IR.msk"/>
+  <File Type="ROUTE-ERROR-DCP" Name="IR_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="IR_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="IR_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="IR_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="IR_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="IR_drc_routed.rpx"/>
+  <File Type="BITSTR-LTX" Name="IR.ltx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="IR_methodology_drc_routed.rpt"/>
+  <File Type="BITSTR-MMI" Name="IR.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="IR_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="IR_methodology_drc_routed.pb"/>
+  <File Type="BITSTR-SYSDEF" Name="IR.sysdef"/>
+  <File Type="ROUTE-PWR-RPX" Name="IR_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="IR_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="IR_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="IR_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="IR_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="IR_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-CLK" Name="IR_clock_utilization_routed.rpt"/>
+  <File Type="RDI-RDI" Name="IR.vdi"/>
+  <File Type="ROUTE-BUS-SKEW" Name="IR_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="IR_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="IR_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="IR_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="IR_postroute_physopt_bb.dcp"/>
+  <File Type="BG-BIT" Name="IR.bit"/>
+  <File Type="BITSTR-RBT" Name="IR.rbt"/>
+  <File Type="BITSTR-NKY" Name="IR.nky"/>
+  <File Type="BG-DRC" Name="IR.drc"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/data2seg.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../IR_storge/IR_storge.srcs/sources_1/new/data2seg.vhd"/>
+        <Attr Name="ImportTime" Val="1745295044"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/seg_dis.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../IR_storge/IR_storge.srcs/sources_1/new/seg_dis.vhd"/>
+        <Attr Name="ImportTime" Val="1745295044"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/IR.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../IR_storge/IR_storge.srcs/sources_1/new/IR.vhd"/>
+        <Attr Name="ImportTime" Val="1745295044"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="IR"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/IR.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../IR_storge/IR_storge.srcs/constrs_1/new/IR.xdc"/>
+        <Attr Name="ImportTime" Val="1745295044"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

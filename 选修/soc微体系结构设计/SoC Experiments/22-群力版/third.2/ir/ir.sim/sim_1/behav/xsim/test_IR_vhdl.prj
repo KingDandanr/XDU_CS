@@ -1,0 +1,9 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../IR_storge.srcs/sources_1/new/IR.vhd" \
+"../../../../IR_storge.srcs/sources_1/new/data2seg.vhd" \
+"../../../../IR_storge.srcs/sources_1/new/seg_dis.vhd" \
+"../../../../IR_storge.srcs/sim_1/new/test_IR.vhd" \
+
+# Do not sort compile order
+nosort

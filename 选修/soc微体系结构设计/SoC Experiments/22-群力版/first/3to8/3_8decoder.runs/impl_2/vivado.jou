@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sat Apr 30 15:18:39 2022
+# Process ID: 9932
+# Current directory: D:/SOC/kyle/3_8decoder/3_8decoder.runs/impl_2
+# Command line: vivado.exe -log decoder3_8.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source decoder3_8.tcl -notrace
+# Log file: D:/SOC/kyle/3_8decoder/3_8decoder.runs/impl_2/decoder3_8.vdi
+# Journal file: D:/SOC/kyle/3_8decoder/3_8decoder.runs/impl_2\vivado.jou
+#-----------------------------------------------------------
+source decoder3_8.tcl -notrace

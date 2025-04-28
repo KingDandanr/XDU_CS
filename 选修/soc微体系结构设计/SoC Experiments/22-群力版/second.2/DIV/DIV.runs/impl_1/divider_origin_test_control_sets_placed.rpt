@@ -1,0 +1,147 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Sun Apr 20 15:12:51 2025
+| Host         : PC505 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file divider_origin_test_control_sets_placed.rpt
+| Design       : divider_origin_test
+| Device       : xc7k160t
+------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    80 |
+| Unused register locations in slices containing registers |   547 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      1 |           76 |
+|      4 |            2 |
+|      9 |            1 |
+|    16+ |            1 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              10 |            4 |
+| No           | No                    | Yes                    |              86 |           60 |
+| No           | Yes                   | No                     |              25 |           25 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |               4 |            1 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-----------------------------------------------------------------------------+----------------------------------------------------+----------------------------------------------------------------------------+------------------+----------------+
+|                                 Clock Signal                                |                    Enable Signal                   |                              Set/Reset Signal                              | Slice Load Count | Bel Load Count |
++-----------------------------------------------------------------------------+----------------------------------------------------+----------------------------------------------------------------------------+------------------+----------------+
+|  divider_origin_inst/divider_origin_16bitreg_inst/sr16b_reg[12]_LDC_i_1_n_0 |                                                    | divider_origin_inst/divider_origin_16bitreg_inst/sr16b_reg[12]_LDC_i_2_n_0 |                1 |              1 |
+|  divider_origin_inst/divider_origin_16bitreg_inst/c_out_reg_LDC_i_1_n_0     |                                                    | divider_origin_inst/divider_origin_16bitreg_inst/c_out_reg_LDC_i_2_n_0     |                1 |              1 |
+|  divider_origin_inst/divider_origin_16bitreg_inst/sr16b_reg[7]_LDC_i_1_n_0  |                                                    | divider_origin_inst/divider_origin_16bitreg_inst/sr16b_reg[7]_LDC_i_2_n_0  |                1 |              1 |
+|  divider_origin_inst/divider_origin_16bitreg_inst/sr16b_reg[13]_LDC_i_1_n_0 |                                                    | divider_origin_inst/divider_origin_16bitreg_inst/sr16b_reg[13]_LDC_i_2_n_0 |                1 |              1 |
+|  divider_origin_inst/divider_origin_16bitreg_inst/sr16b_reg[15]_LDC_i_1_n_0 |                                                    | divider_origin_inst/divider_origin_16bitreg_inst/sr16b_reg[15]_LDC_i_2_n_0 |                1 |              1 |
+|  divider_origin_inst/divider_origin_16bitreg_inst/sr16b_reg[10]_LDC_i_1_n_0 |                                                    | divider_origin_inst/divider_origin_16bitreg_inst/sr16b_reg[10]_LDC_i_2_n_0 |                1 |              1 |
+|  divider_origin_inst/divider_origin_16bitreg_inst/sr16b_reg[2]_LDC_i_1_n_0  |                                                    | divider_origin_inst/divider_origin_16bitreg_inst/sr16b_reg[2]_LDC_i_2_n_0  |                1 |              1 |
+|  divider_origin_inst/divider_origin_16bitreg_inst/sr16b_reg[4]_LDC_i_1_n_0  |                                                    | divider_origin_inst/divider_origin_16bitreg_inst/sr16b_reg[4]_LDC_i_2_n_0  |                1 |              1 |
+|  divider_origin_inst/divider_origin_16bitreg_inst/sr16b_reg[11]_LDC_i_1_n_0 |                                                    | divider_origin_inst/divider_origin_16bitreg_inst/sr16b_reg[11]_LDC_i_2_n_0 |                1 |              1 |
+|  divider_origin_inst/divider_origin_16bitreg_inst/sr16b_reg[14]_LDC_i_1_n_0 |                                                    | divider_origin_inst/divider_origin_16bitreg_inst/sr16b_reg[14]_LDC_i_2_n_0 |                1 |              1 |
+|  divider_origin_inst/divider_origin_selector_inst/dout_reg[4]_LDC_i_1_n_0   |                                                    | divider_origin_inst/divider_origin_selector_inst/dout_reg[4]_LDC_i_2_n_0   |                1 |              1 |
+|  divider_origin_inst/divider_origin_16bitreg_inst/sr16b_reg[3]_LDC_i_1_n_0  |                                                    | divider_origin_inst/divider_origin_16bitreg_inst/sr16b_reg[3]_LDC_i_2_n_0  |                1 |              1 |
+|  divider_origin_inst/divider_origin_16bitreg_inst/sr16b_reg[5]_LDC_i_1_n_0  |                                                    | divider_origin_inst/divider_origin_16bitreg_inst/sr16b_reg[5]_LDC_i_2_n_0  |                1 |              1 |
+|  divider_origin_inst/divider_origin_16bitreg_inst/sr16b_reg[6]_LDC_i_1_n_0  |                                                    | divider_origin_inst/divider_origin_16bitreg_inst/sr16b_reg[6]_LDC_i_2_n_0  |                1 |              1 |
+|  divider_origin_inst/divider_origin_16bitreg_inst/sr16b_reg[1]_LDC_i_1_n_0  |                                                    | divider_origin_inst/divider_origin_16bitreg_inst/sr16b_reg[1]_LDC_i_2_n_0  |                1 |              1 |
+|  divider_origin_inst/divider_origin_16bitreg_inst/sr16b_reg[8]_LDC_i_1_n_0  |                                                    | divider_origin_inst/divider_origin_16bitreg_inst/sr16b_reg[8]_LDC_i_2_n_0  |                1 |              1 |
+|  divider_origin_inst/divider_origin_16bitreg_inst/sr16b_reg[9]_LDC_i_1_n_0  |                                                    | divider_origin_inst/divider_origin_16bitreg_inst/sr16b_reg[9]_LDC_i_2_n_0  |                1 |              1 |
+|  divider_origin_inst/divider_origin_ctrl_inst/cnt4b_reg__0[3]               |                                                    | start_IBUF                                                                 |                1 |              1 |
+| ~clk_line_0                                                                 |                                                    | start_IBUF                                                                 |                1 |              1 |
+|  divider_origin_inst/divider_origin_selector_inst/dout_reg[1]_LDC_i_1_n_0   |                                                    | divider_origin_inst/divider_origin_selector_inst/dout_reg[1]_LDC_i_2_n_0   |                1 |              1 |
+|  clk_IBUF_BUFG                                                              |                                                    |                                                                            |                1 |              1 |
+|  divider_origin_inst/divider_origin_selector_inst/dout_reg[3]_LDC_i_1_n_0   |                                                    | divider_origin_inst/divider_origin_selector_inst/dout_reg[3]_LDC_i_2_n_0   |                1 |              1 |
+|  divider_origin_inst/divider_origin_selector_inst/dout_reg[0]_LDC_i_1_n_0   |                                                    | divider_origin_inst/divider_origin_selector_inst/dout_reg[0]_LDC_i_2_n_0   |                1 |              1 |
+|  divider_origin_inst/divider_origin_selector_inst/dout_reg[2]_LDC_i_1_n_0   |                                                    | divider_origin_inst/divider_origin_selector_inst/dout_reg[2]_LDC_i_2_n_0   |                1 |              1 |
+|  divider_origin_inst/divider_origin_selector_inst/dout_reg[5]_LDC_i_1_n_0   |                                                    | divider_origin_inst/divider_origin_selector_inst/dout_reg[5]_LDC_i_2_n_0   |                1 |              1 |
+|  divider_origin_inst/divider_origin_selector_inst/dout_reg[7]_LDC_i_1_n_0   |                                                    | divider_origin_inst/divider_origin_selector_inst/dout_reg[7]_LDC_i_2_n_0   |                1 |              1 |
+|  divider_origin_inst/divider_origin_selector_inst/dout_reg[6]_LDC_i_1_n_0   |                                                    | divider_origin_inst/divider_origin_selector_inst/dout_reg[6]_LDC_i_2_n_0   |                1 |              1 |
+|  clk_line_0                                                                 |                                                    | divider_origin_inst/divider_origin_16bitreg_inst/c_out_reg_LDC_i_2_n_0     |                1 |              1 |
+|  clk_line_0                                                                 |                                                    | divider_origin_inst/divider_origin_16bitreg_inst/c_out_reg_LDC_i_1_n_0     |                1 |              1 |
+|  clk_line_0                                                                 |                                                    | divider_origin_inst/divider_origin_16bitreg_inst/sr16b_reg[7]_LDC_i_1_n_0  |                1 |              1 |
+|  clk_line_0                                                                 |                                                    | divider_origin_inst/divider_origin_16bitreg_inst/sr16b_reg[13]_LDC_i_1_n_0 |                1 |              1 |
+|  clk_line_0                                                                 |                                                    | divider_origin_inst/divider_origin_16bitreg_inst/sr16b_reg[15]_LDC_i_1_n_0 |                1 |              1 |
+|  clk_line_0                                                                 |                                                    | divider_origin_inst/divider_origin_16bitreg_inst/sr16b_reg[10]_LDC_i_1_n_0 |                1 |              1 |
+|  clk_line_0                                                                 |                                                    | divider_origin_inst/divider_origin_16bitreg_inst/sr16b_reg[2]_LDC_i_1_n_0  |                1 |              1 |
+|  clk_line_0                                                                 |                                                    | divider_origin_inst/divider_origin_16bitreg_inst/sr16b_reg[3]_LDC_i_2_n_0  |                1 |              1 |
+|  clk_line_0                                                                 |                                                    | divider_origin_inst/divider_origin_16bitreg_inst/sr16b_reg[4]_LDC_i_1_n_0  |                1 |              1 |
+|  clk_line_0                                                                 |                                                    | divider_origin_inst/divider_origin_16bitreg_inst/sr16b_reg[11]_LDC_i_1_n_0 |                1 |              1 |
+|  clk_line_0                                                                 |                                                    | divider_origin_inst/divider_origin_16bitreg_inst/sr16b_reg[12]_LDC_i_2_n_0 |                1 |              1 |
+|  clk_line_0                                                                 |                                                    | divider_origin_inst/divider_origin_16bitreg_inst/sr16b_reg[14]_LDC_i_1_n_0 |                1 |              1 |
+|  clk_line_0                                                                 |                                                    | divider_origin_inst/divider_origin_16bitreg_inst/sr16b_reg[12]_LDC_i_1_n_0 |                1 |              1 |
+|  clk_line_0                                                                 |                                                    | divider_origin_inst/divider_origin_16bitreg_inst/sr16b_reg[10]_LDC_i_2_n_0 |                1 |              1 |
+|  clk_line_0                                                                 |                                                    | divider_origin_inst/divider_origin_16bitreg_inst/sr16b_reg[3]_LDC_i_1_n_0  |                1 |              1 |
+|  clk_line_0                                                                 |                                                    | divider_origin_inst/divider_origin_16bitreg_inst/sr16b_reg[5]_LDC_i_1_n_0  |                1 |              1 |
+|  clk_line_0                                                                 |                                                    | divider_origin_inst/divider_origin_16bitreg_inst/sr16b_reg[5]_LDC_i_2_n_0  |                1 |              1 |
+|  clk_line_0                                                                 |                                                    | divider_origin_inst/divider_origin_16bitreg_inst/sr16b_reg[4]_LDC_i_2_n_0  |                1 |              1 |
+|  clk_line_0                                                                 |                                                    | divider_origin_inst/divider_origin_16bitreg_inst/sr16b_reg[6]_LDC_i_1_n_0  |                1 |              1 |
+|  clk_line_0                                                                 |                                                    | divider_origin_inst/divider_origin_16bitreg_inst/sr16b_reg[13]_LDC_i_2_n_0 |                1 |              1 |
+|  clk_line_0                                                                 |                                                    | divider_origin_inst/divider_origin_16bitreg_inst/sr16b_reg[6]_LDC_i_2_n_0  |                1 |              1 |
+|  clk_line_0                                                                 |                                                    | divider_origin_inst/divider_origin_16bitreg_inst/sr16b_reg[11]_LDC_i_2_n_0 |                1 |              1 |
+|  clk_line_0                                                                 |                                                    | divider_origin_inst/divider_origin_16bitreg_inst/sr16b_reg[14]_LDC_i_2_n_0 |                1 |              1 |
+|  clk_line_0                                                                 |                                                    | divider_origin_inst/divider_origin_16bitreg_inst/sr16b_reg[1]_LDC_i_1_n_0  |                1 |              1 |
+|  clk_line_0                                                                 |                                                    | divider_origin_inst/divider_origin_16bitreg_inst/sr16b_reg[15]_LDC_i_2_n_0 |                1 |              1 |
+|  clk_line_0                                                                 |                                                    | divider_origin_inst/divider_origin_16bitreg_inst/sr16b_reg[1]_LDC_i_2_n_0  |                1 |              1 |
+|  clk_line_0                                                                 |                                                    | divider_origin_inst/divider_origin_16bitreg_inst/sr16b_reg[2]_LDC_i_2_n_0  |                1 |              1 |
+|  clk_line_0                                                                 |                                                    | divider_origin_inst/divider_origin_16bitreg_inst/sr16b_reg[8]_LDC_i_1_n_0  |                1 |              1 |
+|  clk_line_0                                                                 |                                                    | divider_origin_inst/divider_origin_16bitreg_inst/sr16b_reg[7]_LDC_i_2_n_0  |                1 |              1 |
+|  clk_line_0                                                                 |                                                    | divider_origin_inst/divider_origin_16bitreg_inst/sr16b_reg[9]_LDC_i_2_n_0  |                1 |              1 |
+|  clk_line_0                                                                 |                                                    | divider_origin_inst/divider_origin_16bitreg_inst/sr16b_reg[8]_LDC_i_2_n_0  |                1 |              1 |
+|  clk_line_0                                                                 |                                                    | divider_origin_inst/divider_origin_16bitreg_inst/sr16b_reg[9]_LDC_i_1_n_0  |                1 |              1 |
+|  clk_line_0                                                                 |                                                    | start_IBUF                                                                 |                1 |              1 |
+| ~clk_line_0                                                                 |                                                    | divider_origin_inst/divider_origin_selector_inst/dout_reg[1]_LDC_i_2_n_0   |                1 |              1 |
+| ~clk_line_0                                                                 |                                                    | divider_origin_inst/divider_origin_selector_inst/dout_reg[0]_LDC_i_2_n_0   |                1 |              1 |
+| ~clk_line_0                                                                 |                                                    | divider_origin_inst/divider_origin_selector_inst/dout_reg[1]_LDC_i_1_n_0   |                1 |              1 |
+| ~clk_line_0                                                                 |                                                    | divider_origin_inst/divider_origin_selector_inst/dout_reg[4]_LDC_i_1_n_0   |                1 |              1 |
+| ~clk_line_0                                                                 |                                                    | divider_origin_inst/divider_origin_selector_inst/dout_reg[4]_LDC_i_2_n_0   |                1 |              1 |
+| ~clk_line_0                                                                 |                                                    | divider_origin_inst/divider_origin_selector_inst/dout_reg[2]_LDC_i_2_n_0   |                1 |              1 |
+| ~clk_line_0                                                                 |                                                    | divider_origin_inst/divider_origin_selector_inst/dout_reg[3]_LDC_i_1_n_0   |                1 |              1 |
+| ~clk_line_0                                                                 |                                                    | divider_origin_inst/divider_origin_selector_inst/dout_reg[0]_LDC_i_1_n_0   |                1 |              1 |
+| ~clk_line_0                                                                 |                                                    | divider_origin_inst/divider_origin_selector_inst/dout_reg[3]_LDC_i_2_n_0   |                1 |              1 |
+| ~clk_line_0                                                                 |                                                    | divider_origin_inst/divider_origin_selector_inst/dout_reg[2]_LDC_i_1_n_0   |                1 |              1 |
+| ~clk_line_0                                                                 |                                                    | divider_origin_inst/divider_origin_selector_inst/dout_reg[7]_LDC_i_2_n_0   |                1 |              1 |
+| ~clk_line_0                                                                 |                                                    | divider_origin_inst/divider_origin_selector_inst/dout_reg[5]_LDC_i_1_n_0   |                1 |              1 |
+| ~clk_line_0                                                                 |                                                    | divider_origin_inst/divider_origin_selector_inst/dout_reg[5]_LDC_i_2_n_0   |                1 |              1 |
+| ~clk_line_0                                                                 |                                                    | divider_origin_inst/divider_origin_selector_inst/dout_reg[6]_LDC_i_2_n_0   |                1 |              1 |
+| ~clk_line_0                                                                 |                                                    | divider_origin_inst/divider_origin_selector_inst/dout_reg[7]_LDC_i_1_n_0   |                1 |              1 |
+| ~clk_line_0                                                                 |                                                    | divider_origin_inst/divider_origin_selector_inst/dout_reg[6]_LDC_i_1_n_0   |                1 |              1 |
+|  clk_div_inst/CLK                                                           |                                                    | rst_IBUF                                                                   |                2 |              4 |
+|  clk_IBUF_BUFG                                                              | divider_origin_inst/divider_origin_ctrl_inst/leqOp | start_IBUF                                                                 |                1 |              4 |
+|  divider_origin_inst/divider_origin_ctrl_inst/E[0]                          |                                                    |                                                                            |                3 |              9 |
+|  clk_IBUF_BUFG                                                              |                                                    | rst_IBUF                                                                   |                8 |             32 |
++-----------------------------------------------------------------------------+----------------------------------------------------+----------------------------------------------------------------------------+------------------+----------------+
+
+

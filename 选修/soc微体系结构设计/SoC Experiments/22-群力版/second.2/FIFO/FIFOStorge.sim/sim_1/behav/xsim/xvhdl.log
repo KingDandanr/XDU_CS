@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/QuanCunDeXiWang/Vivado/SocWenjian/FIFOStorge/FIFOStorge.srcs/sources_1/new/FIFOControl.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'FIFOControl'
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/QuanCunDeXiWang/Vivado/SocWenjian/FIFOStorge/FIFOStorge.srcs/sim_1/new/FIFOTest.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'FIFOTest'

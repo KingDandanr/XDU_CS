@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_2" LaunchPart="xc7k160tfbg676-2" LaunchTime="1651302560">
+  <File Type="ROUTE-PWR" Name="decoder3_8_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="decoder3_8.tcl"/>
+  <File Type="BITSTR-BMM" Name="decoder3_8_bd.bmm"/>
+  <File Type="ROUTE-PWR-SUM" Name="decoder3_8_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="decoder3_8_reports.tcl"/>
+  <File Type="OPT-DCP" Name="decoder3_8_opt.dcp"/>
+  <File Type="OPT-DRC" Name="decoder3_8_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="decoder3_8.hwdef"/>
+  <File Type="PWROPT-DCP" Name="decoder3_8_pwropt.dcp"/>
+  <File Type="PLACE-DCP" Name="decoder3_8_placed.dcp"/>
+  <File Type="PLACE-IO" Name="decoder3_8_io_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="decoder3_8_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="decoder3_8_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="decoder3_8_control_sets_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="decoder3_8_incremental_reuse_pre_placed.rpt"/>
+  <File Type="BG-BGN" Name="decoder3_8.bgn"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="decoder3_8_postplace_pwropt.dcp"/>
+  <File Type="BG-BIN" Name="decoder3_8.bin"/>
+  <File Type="PHYSOPT-DCP" Name="decoder3_8_physopt.dcp"/>
+  <File Type="BITSTR-MSK" Name="decoder3_8.msk"/>
+  <File Type="ROUTE-ERROR-DCP" Name="decoder3_8_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="decoder3_8_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="decoder3_8_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="decoder3_8_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="decoder3_8_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="decoder3_8_drc_routed.rpx"/>
+  <File Type="BITSTR-LTX" Name="decoder3_8.ltx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="decoder3_8_methodology_drc_routed.rpt"/>
+  <File Type="BITSTR-MMI" Name="decoder3_8.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="decoder3_8_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="decoder3_8_methodology_drc_routed.pb"/>
+  <File Type="BITSTR-SYSDEF" Name="decoder3_8.sysdef"/>
+  <File Type="ROUTE-PWR-RPX" Name="decoder3_8_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="decoder3_8_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="decoder3_8_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="decoder3_8_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="decoder3_8_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="decoder3_8_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-CLK" Name="decoder3_8_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="decoder3_8_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="decoder3_8_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="decoder3_8_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="decoder3_8_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="decoder3_8_postroute_physopt_bb.dcp"/>
+  <File Type="BG-BIT" Name="decoder3_8.bit"/>
+  <File Type="BITSTR-RBT" Name="decoder3_8.rbt"/>
+  <File Type="BITSTR-NKY" Name="decoder3_8.nky"/>
+  <File Type="BG-DRC" Name="decoder3_8.drc"/>
+  <File Type="RDI-RDI" Name="decoder3_8.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/decoder3_8.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="decoder3_8"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/decoder3_8.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

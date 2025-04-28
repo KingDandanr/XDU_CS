@@ -1,0 +1,38 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sun Jun  5 12:06:15 2022
+# Process ID: 8688
+# Current directory: C:/Users/Administrator/Desktop/No3
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7944 C:\Users\Administrator\Desktop\No3\p3.xpr
+# Log file: C:/Users/Administrator/Desktop/No3/vivado.log
+# Journal file: C:/Users/Administrator/Desktop/No3\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Administrator/Desktop/No3/p3.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/Administrator/Desktop/p3' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+update_compile_order -fileset sources_1
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210203367162A
+set_property PROGRAM.FILE {C:/Users/Administrator/Desktop/No3/p3.runs/impl_1/adder.bit} [get_hw_devices xc7k160t_0]
+current_hw_device [get_hw_devices xc7k160t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7k160t_0] 0]
+INFO: [Labtools 27-1434] Device xc7k160t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property PROGRAM.FILE {C:/Users/Administrator/Desktop/No3/p3.runs/impl_1/adder.bit} [get_hw_devices xc7k160t_0]
+program_hw_devices [get_hw_devices xc7k160t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7k160t_0] 0]
+INFO: [Labtools 27-1434] Device xc7k160t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Jun  5 12:12:11 2022...

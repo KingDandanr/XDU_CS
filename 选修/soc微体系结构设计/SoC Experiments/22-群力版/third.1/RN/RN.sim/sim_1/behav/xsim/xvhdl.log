@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/soc/EXPERIMENT/RN/RN.srcs/sources_1/new/RN.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'RN'
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/soc/EXPERIMENT/RN/RN.srcs/sim_1/new/RN_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'RN_tb'

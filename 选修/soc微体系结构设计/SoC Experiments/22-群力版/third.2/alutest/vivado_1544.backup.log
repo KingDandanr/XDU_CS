@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sat May  7 17:51:32 2022
+# Process ID: 1544
+# Current directory: C:/Users/Administrator/Desktop/alutest
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1316 C:\Users\Administrator\Desktop\alutest\alutest.xpr
+# Log file: C:/Users/Administrator/Desktop/alutest/vivado.log
+# Journal file: C:/Users/Administrator/Desktop/alutest\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Administrator/Desktop/alutest/alutest.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/akyna/Codes/vivado/ALU/alutest/alutest' since last save.
+Scanning sources...
+Finished scanning sources
+CRITICAL WARNING: [Project 1-505] Unrecognized Option Name DcpsUptoDate
+WARNING: [Project 1-231] Project 'alutest.xpr' was created with a future version and may or may not perform reliably with this version of Vivado. It has been opened in read-only mode for the protection of unrecognized data. Use 'File | Save Project As...' if you wish to alter a copy of the project.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat May  7 17:52:18 2022...

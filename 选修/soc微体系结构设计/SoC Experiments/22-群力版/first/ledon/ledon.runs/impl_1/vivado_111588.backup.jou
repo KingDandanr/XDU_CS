@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Fri Apr 18 11:28:31 2025
+# Process ID         : 111588
+# Current directory  : A:/deskwork/LEDon/LEDon.runs/impl_1
+# Command line       : vivado.exe -log design1.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source design1.tcl -notrace
+# Log file           : A:/deskwork/LEDon/LEDon.runs/impl_1/design1.vdi
+# Journal file       : A:/deskwork/LEDon/LEDon.runs/impl_1\vivado.jou
+# Running On         : DESKTOP-CJMET7Q
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : 12th Gen Intel(R) Core(TM) i5-12500H
+# CPU Frequency      : 3110 MHz
+# CPU Physical cores : 12
+# CPU Logical cores  : 16
+# Host memory        : 16876 MB
+# Swap memory        : 12884 MB
+# Total Virtual      : 29761 MB
+# Available Virtual  : 13951 MB
+#-----------------------------------------------------------
+source design1.tcl -notrace

@@ -1,0 +1,30 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed Apr 23 11:52:00 2025
+# Process ID: 5392
+# Current directory: F:/实验代码参考/ALU/alutest
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1188 F:\实验代码参考\ALU\alutest\alutest.xpr
+# Log file: F:/实验代码参考/ALU/alutest/vivado.log
+# Journal file: F:/实验代码参考/ALU/alutest\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/实验代码参考/ALU/alutest/alutest.xpr
+update_compile_order -fileset sources_1
+save_project_as project_5 F:/ALU/project_5 -force
+open_hw
+connect_hw_server
+open_hw_target
+current_hw_device [get_hw_devices xc7k160t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7k160t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 3
+wait_on_run impl_1
+open_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property PROGRAM.FILE {F:/ALU/project_5/project_5.runs/impl_1/test.bit} [get_hw_devices xc7k160t_0]
+program_hw_devices [get_hw_devices xc7k160t_0]
+refresh_hw_device [lindex [get_hw_devices xc7k160t_0] 0]
+close_hw

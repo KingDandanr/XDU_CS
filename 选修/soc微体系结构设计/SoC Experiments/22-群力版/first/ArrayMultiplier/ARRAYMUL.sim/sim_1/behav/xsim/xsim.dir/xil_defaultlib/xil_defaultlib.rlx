@@ -1,0 +1,15 @@
+0.6
+2018.3
+Dec  7 2018
+00:33:28
+C:/Users/Administrator/Desktop/SOC_trial/ARRAYMUL/4TO16.vhd,1744782568,vhdl,,,,decoder4_16,,,,,,,,
+C:/Users/Administrator/Desktop/SOC_trial/ARRAYMUL/CLK.vhd,1744782401,vhdl,,,,clk_div,,,,,,,,
+C:/Users/Administrator/Desktop/SOC_trial/ARRAYMUL/DATA2SEG.vhd,1744782858,vhdl,,,,data2seg,,,,,,,,
+C:/Users/Administrator/Desktop/SOC_trial/ARRAYMUL/FLOOR_1.vhd,1744782025,vhdl,,,,array_multiplier_seg,,,,,,,,
+C:/Users/Administrator/Desktop/SOC_trial/ARRAYMUL/FLOOR_2.vhd,1744782051,vhdl,,,,array_multiplier,,,,,,,,
+C:/Users/Administrator/Desktop/SOC_trial/ARRAYMUL/MODE_1.vhd,1744782074,vhdl,,,,array_multiplier_top,,,,,,,,
+C:/Users/Administrator/Desktop/SOC_trial/ARRAYMUL/MODE_2.vhd,1744782092,vhdl,,,,array_multiplier_unit,,,,,,,,
+C:/Users/Administrator/Desktop/SOC_trial/ARRAYMUL/MODE_3.vhd,1744782108,vhdl,,,,array_multiplier_low,,,,,,,,
+C:/Users/Administrator/Desktop/SOC_trial/ARRAYMUL/MODE_4.vhd,1744782127,vhdl,,,,adder_1bit,,,,,,,,
+C:/Users/Administrator/Desktop/SOC_trial/ARRAYMUL/SEG.vhd,1744782617,vhdl,,,,seg_dis,,,,,,,,
+C:/Users/Administrator/Desktop/SOC_trial/ARRAYMUL/TESTBENCH.vhd,1744782175,vhdl,,,,array_multiplier_tb,,,,,,,,

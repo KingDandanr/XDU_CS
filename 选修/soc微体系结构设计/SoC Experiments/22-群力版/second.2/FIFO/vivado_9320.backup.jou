@@ -1,0 +1,109 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Mon May 22 15:54:34 2023
+# Process ID: 9320
+# Current directory: C:/Users/Administrator/Desktop/333
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8952 C:\Users\Administrator\Desktop\333\FIFOStorge.xpr
+# Log file: C:/Users/Administrator/Desktop/333/vivado.log
+# Journal file: C:/Users/Administrator/Desktop/333\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Administrator/Desktop/333/FIFOStorge.xpr
+update_compile_order -fileset sources_1
+close [ open C:/Users/Administrator/Desktop/333/FIFOStorge.srcs/sources_1/new/XIAODOU.vhd w ]
+add_files C:/Users/Administrator/Desktop/333/FIFOStorge.srcs/sources_1/new/XIAODOU.vhd
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 3
+wait_on_run synth_1
+launch_runs impl_1 -jobs 3
+wait_on_run impl_1
+open_run impl_1
+place_ports {dataIn[7]} A14
+place_ports {dataIn[6]} D11
+place_ports {dataIn[5]} E11
+place_ports {dataIn[4]} D10
+place_ports {dataIn[3]} F10
+place_ports {dataIn[2]} G11
+place_ports {dataIn[1]} B9
+place_ports {dataIn[0]} C9
+place_ports {dataOut[7]} C19
+place_ports {dataOut[6]} B19
+place_ports {dataOut[5]} C17
+place_ports {dataOut[4]} C18
+place_ports {dataOut[3]} D15
+place_ports {dataOut[2]} D16
+place_ports {dataOut[1]} H16
+place_ports {dataOut[0]} G16
+set_property IOSTANDARD LVCMOS33 [get_ports [list {dataOut[7]} {dataOut[6]} {dataOut[5]} {dataOut[4]} {dataOut[3]} {dataOut[2]} {dataOut[1]} {dataOut[0]}]]
+set_property IOSTANDARD LVCMOS18 [get_ports [list {dataIn[7]} {dataIn[6]} {dataIn[5]} {dataIn[4]} {dataIn[3]} {dataIn[2]} {dataIn[1]} {dataIn[0]}]]
+place_ports {segSel[7]} K21
+place_ports {segSel[6]} L23
+place_ports {segSel[5]} B25
+place_ports {segSel[4]} B26
+place_ports {segSel[3]} C24
+place_ports {segSel[2]} D21
+place_ports {segSel[1]} C22
+place_ports {segSel[0]} B20
+set_property IOSTANDARD LVCMOS33 [get_ports [list {segData[7]} {segData[6]} {segData[5]} {segData[4]} {segData[3]} {segData[2]} {segData[1]} {segData[0]}]]
+place_ports {segData[7]} E26
+place_ports {segData[6]} J26
+place_ports {segData[5]} H26
+place_ports {segData[4]} H21
+place_ports {segData[3]} G21
+place_ports {segData[2]} H23
+place_ports {segData[1]} H24
+place_ports {segData[0]} J21
+set_property IOSTANDARD LVCMOS33 [get_ports [list {segSel[7]} {segSel[6]} {segSel[5]} {segSel[4]} {segSel[3]} {segSel[2]} {segSel[1]} {segSel[0]}]]
+place_ports clk E10
+place_ports clkk D9
+place_ports empty K16
+place_ports full L20
+place_ports reEn J8
+place_ports re J14
+place_ports wrEn H9
+place_ports wr H8
+place_ports rst D8
+startgroup
+set_property package_pin "" [get_ports [list  clkk]]
+place_ports rst2 D9
+endgroup
+place_ports rst G10
+place_ports rst2 G9
+place_ports clkk D9
+set_property IOSTANDARD LVCMOS18 [get_ports [list clk]]
+set_property IOSTANDARD LVCMOS18 [get_ports [list clkk]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list empty]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list full]]
+set_property IOSTANDARD LVCMOS18 [get_ports [list re]]
+set_property IOSTANDARD LVCMOS18 [get_ports [list reEn]]
+set_property IOSTANDARD LVCMOS18 [get_ports [list rst2]]
+set_property IOSTANDARD LVCMOS18 [get_ports [list rst]]
+set_property IOSTANDARD LVCMOS18 [get_ports [list wr]]
+set_property IOSTANDARD LVCMOS18 [get_ports [list wrEn]]
+file mkdir C:/Users/Administrator/Desktop/333/FIFOStorge.srcs/constrs_1/new
+close [ open C:/Users/Administrator/Desktop/333/FIFOStorge.srcs/constrs_1/new/PIN.xdc w ]
+add_files -fileset constrs_1 C:/Users/Administrator/Desktop/333/FIFOStorge.srcs/constrs_1/new/PIN.xdc
+set_property target_constrs_file C:/Users/Administrator/Desktop/333/FIFOStorge.srcs/constrs_1/new/PIN.xdc [current_fileset -constrset]
+save_constraints -force
+reset_run synth_1
+reset_run impl_1
+launch_runs impl_1 -jobs 3
+wait_on_run impl_1
+refresh_design
+launch_runs impl_1 -to_step write_bitstream -jobs 3
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/Administrator/Desktop/333/FIFOStorge.runs/impl_1/FIFOControl.bit} [get_hw_devices xc7k160t_0]
+current_hw_device [get_hw_devices xc7k160t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7k160t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7k160t_0]
+set_property PROGRAM.FILE {C:/Users/Administrator/Desktop/333/FIFOStorge.runs/impl_1/FIFOControl.bit} [get_hw_devices xc7k160t_0]
+program_hw_devices [get_hw_devices xc7k160t_0]
+refresh_hw_device [lindex [get_hw_devices xc7k160t_0] 0]
+close_hw
