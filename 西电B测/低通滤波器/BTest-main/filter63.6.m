@@ -34,6 +34,7 @@ switch dataSource
     case 2
         y=A*square(2*pi*F1*t,50);
     otherwise
+        error('无效的 dataSource 值');
 end
 %%
 %绘制输入信号的时域、频域波形
@@ -51,7 +52,7 @@ plot(f,h_d/10000);         %画原始图像频域上图
 axis([-200*10^3 200*10^3 0 1]);
 title('输入信号的频域波形');
 xlabel('频率/hz');
-ylabel('幅度')
+ylabel('幅度');
 %%
 %对低通滤波器进行初值设定，同时绘制幅频特性
 r=25;           %电阻阻值（Ω）
@@ -81,7 +82,7 @@ xlabel('频率/hz');
 ylabel('幅度');
 %%
 %输入、输出信号的自相关函数
-figure(4)
+figure(4);
 subplot(2,1,1);
 [Rx,maxlags]=xcorr(y,'unbiased');           %输入信号的自相关
 if fs>10000                                 %调整时间轴单位及标签,便于观测波形
@@ -116,4 +117,4 @@ ypsd=h_d.*conj(h_d);
 plot(f,ypsd);
 title('输入信号功率谱');
 xlabel('频率/Hz');
-ylabel('W/Hz')
+ylabel('W/Hz');
