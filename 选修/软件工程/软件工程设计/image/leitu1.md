@@ -43,7 +43,4 @@ classDiagram
     LargeModel --> APIGateway : 返回回答
     OptimizationModel --> APIGateway : 返回优化回答
     Database --> APIGateway : 提供历史记录存储
-```
-
-
-
+``` 
