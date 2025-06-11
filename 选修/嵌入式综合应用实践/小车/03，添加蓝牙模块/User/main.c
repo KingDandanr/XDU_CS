@@ -1,0 +1,33 @@
+#include "stm32f10x.h"                  // Device header
+#include "Delay.h"
+#include "OLED.h"
+#include "PWM.h"
+#include "CAR.h"
+#include "Serial.h"
+uint16_t Data1;
+int main(void)
+{ 
+	Car_Init();
+	Serial_Init();
+	
+	while (1)
+	{
+		
+	}
+}
+
+void USART1_IRQHandler(void)
+{
+	if (USART_GetITStatus(USART1, USART_IT_RXNE) == SET)
+	{
+		Data1=USART_ReceiveData(USART1);
+		if(Data1==0x30)Car_Stop();
+		if(Data1==0x31)Go_Ahead();
+		if(Data1==0x32)Go_Back();
+		if(Data1==0x33)Turn_Left();
+		if(Data1==0x34)Turn_Right();
+		if(Data1==0x35)Self_Left();
+		if(Data1==0x36)Self_Right();
+		USART_ClearITPendingBit(USART1, USART_IT_RXNE);
+	}
+}
