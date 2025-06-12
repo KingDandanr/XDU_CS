@@ -701,11 +701,6 @@
               <FilePath>.\Hardware\LED.h</FilePath>
             </File>
             <File>
-              <FileName>Key.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\4，开关控制LED/Hardware\Key.c</FilePath>
-            </File>
-            <File>
               <FileName>Key.h</FileName>
               <FileType>5</FileType>
               <FilePath>.\Hardware\Key.h</FilePath>
@@ -794,6 +789,11 @@
               <FileName>Ultrasound.h</FileName>
               <FileType>5</FileType>
               <FilePath>.\Hardware\Ultrasound.h</FilePath>
+            </File>
+            <File>
+              <FileName>Key.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Hardware\Key.c</FilePath>
             </File>
           </Files>
         </Group>
