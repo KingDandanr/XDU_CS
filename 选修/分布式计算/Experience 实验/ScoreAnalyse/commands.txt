@@ -1,0 +1,17 @@
+mvn clean
+mvn package
+
+hadoop fs -mkdir input
+hadoop fs -put ./grades.txt input
+hadoop fs -cat input/grades.txt
+
+// compute the average
+hadoop jar ./target/ScoreAnalyse.jar com.org.xidian.MapReduceScoreAverage input/grades.txt output
+// sort students by average score
+hadoop jar ./target/ScoreAnalyse.jar com.org.xidian.MapReduceSortByClass input/grades.txt temp output
+
+hadoop fs -ls output
+hadoop fs -cat output/part-r-00000
+hadoop fs -rm -r output
+hadoop fs -rm -r temp
+
