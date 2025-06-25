@@ -1,0 +1,4 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Sat Jun 04 18:13:30 UTC 2022
+tink-1.6.0.jar>nexus-tencentyun=
+tink-1.6.0.pom>nexus-tencentyun=

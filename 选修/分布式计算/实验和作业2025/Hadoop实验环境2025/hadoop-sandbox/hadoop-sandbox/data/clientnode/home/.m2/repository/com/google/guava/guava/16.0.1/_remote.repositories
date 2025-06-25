@@ -1,0 +1,4 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Sat Jun 04 18:13:31 UTC 2022
+guava-16.0.1.jar>nexus-tencentyun=
+guava-16.0.1.pom>nexus-tencentyun=

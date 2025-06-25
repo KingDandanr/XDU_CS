@@ -1,0 +1,4 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Sat Jun 04 18:13:32 UTC 2022
+jackson-databind-2.12.3.jar>nexus-tencentyun=
+jackson-databind-2.12.3.pom>nexus-tencentyun=

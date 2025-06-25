@@ -1,0 +1,4 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Sat Jun 04 17:09:25 UTC 2022
+jackson-annotations-2.13.2.jar>nexus-tencentyun=
+jackson-annotations-2.13.2.pom>nexus-tencentyun=
