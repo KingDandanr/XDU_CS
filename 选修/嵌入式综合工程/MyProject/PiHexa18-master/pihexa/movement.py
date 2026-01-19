@@ -1,0 +1,104 @@
+# -*- coding: utf-8 -*-
+
+from enum import Enum
+from random import randint
+from movement_table import *
+
+"""
+定义六足机器人移动相关函数。
+"""
+
+
+class MovementMode(Enum):
+    MOVEMENT_STANDBY = (0, "Standby")
+
+    MOVEMENT_FORWARD = (1, "Forward")
+    MOVEMENT_FORWARDFAST = (2, "Run")
+    MOVEMENT_BACKWARD = (3, "Backward")
+    MOVEMENT_TURNLEFT = (4, "TurnLeft")
+    MOVEMENT_TURNRIGHT = (5, "TurnRight")
+    MOVEMENT_SHIFTLEFT = (6, "ShiftLeft")
+    MOVEMENT_SHIFTRIGHT = (7, "ShiftRight")
+    MOVEMENT_CLIMB = (8, "Climb")
+    MOVEMENT_ROTATEX = (9, "RotateX")
+    MOVEMENT_ROTATEY = (10, "RotateY")
+    MOVEMENT_ROTATEZ = (11, "RotateZ")
+    MOVEMENT_TWIST = (12, "Twist")
+
+    MOVEMENT_TOTAL = (13, "")
+
+    def __new__(cls, value, label):
+        obj = object.__new__(cls)
+        obj._value_ = value
+        obj.label = label
+        return obj
+
+    @staticmethod
+    def __get_enum_value(label):
+        for member in MovementMode:
+            if member.label.lower() == label.lower():
+                return member.value
+        raise ValueError(f"No such label '{label}' in {MovementMode.__name__}")
+
+    @staticmethod
+    def get_value(label):
+        return MovementMode.__get_enum_value(label)
+
+
+k_table = [standby_table,
+           forward_table,
+           forward_fast_table,
+           backward_table,
+           turn_left_table,
+           turn_right_table,
+           shift_left_table,
+           shift_right_table,
+           climb_table,
+           rotate_x_table,
+           rotate_y_table,
+           rotate_z_table,
+           twist_table]
+
+
+class Movement(object):
+    def __init__(self, mode, transiting: bool):
+        self.__mode = mode
+        self.__position = locations()  # k_standby
+        self.__index = 0  # index in mode position table
+        self.__transiting = transiting  # if still in transiting to new mode
+        self.__remain_time = 0
+
+    def set_mode(self, new_mode):
+        self.__mode = new_mode
+
+        table = k_table[self.__mode]
+
+        self.__index = table.entries[randint(0, 255) % table.entries_count]  # count==2: __index = 0 or 1
+        self.__remain_time = movement_switch_duration if movement_switch_duration > table.step_duration else table.step_duration  # maximum value
+
+        print("movement.mode", self.__mode)
+
+    def next(self, elapsed):
+        table = k_table[self.__mode]
+
+        if elapsed <= 0:
+            elapsed = table.step_duration  # 使elapsed的值合理
+
+        if self.__remain_time <= 0:  # 小于零，表示该步完成，则开始下一步（步的index自增1）
+            self.__index = (self.__index + 1) % table.length  # index会循环取[0, table_length)的值
+            self.__remain_time = table.step_duration
+
+        if elapsed >= self.__remain_time:  # 仍剩最后一次迭代。过后，self.__position == table[self.__index]
+            elapsed = self.__remain_time
+
+        # 对每一步再细分（remain_time是前一步态途径点与后一步态途径点的间隔；step_duration是前一细分步与后一细分步的间隔）
+        ratio = elapsed / self.__remain_time
+        self.__position += (table.table[self.__index] - self.__position) * ratio
+        self.__remain_time -= elapsed
+
+        return self.__position
+
+
+if __name__ == '__main__':
+    print(MovementMode.MOVEMENT_STANDBY.value)
+    print(MovementMode.get_value("Climb"))
