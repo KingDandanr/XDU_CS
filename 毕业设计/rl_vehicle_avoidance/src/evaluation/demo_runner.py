@@ -6,19 +6,27 @@ from src.envs.scenario_library import get_scenario
 from src.envs.vehicle_avoidance_env import VehicleAvoidanceEnv
 
 
-def run_demo(model_path: Path, scenario_name: str, delay: float):
+def load_model(model_path: Path, algo: str):
     try:
-        from stable_baselines3 import PPO
+        from stable_baselines3 import DQN, PPO
     except ImportError as exc:
         raise RuntimeError(
-            "缺少 stable-baselines3 或其依赖，请先执行 `pip install -r requirements.txt`。"
+            "Missing stable-baselines3 or its dependencies. Run `pip install -r requirements.txt` first."
         ) from exc
 
+    if algo == "ppo":
+        return PPO.load(model_path)
+    if algo == "dqn":
+        return DQN.load(model_path)
+    raise ValueError(f"Unknown algorithm: {algo}")
+
+
+def run_demo(model_path: Path, scenario_name: str, delay: float, algo: str):
     env = VehicleAvoidanceEnv(
         config=get_scenario(scenario_name),
         render_mode="human",
     )
-    model = PPO.load(model_path)
+    model = load_model(model_path, algo)
 
     obs, info = env.reset()
     done = False
@@ -35,6 +43,7 @@ def run_demo(model_path: Path, scenario_name: str, delay: float):
             time.sleep(delay)
 
     print("Demo finished")
+    print(f"algorithm      : {algo.upper()}")
     print(f"scenario       : {scenario_name}")
     print(f"steps          : {steps}")
     print(f"total_reward   : {total_reward:.2f}")
@@ -47,8 +56,14 @@ def run_demo(model_path: Path, scenario_name: str, delay: float):
 
 
 def main():
-    parser = argparse.ArgumentParser(description="Run a visual demo for a trained PPO model.")
-    parser.add_argument("--model", required=True, help="Path to PPO model zip file.")
+    parser = argparse.ArgumentParser(description="Run a visual demo for a trained PPO or DQN model.")
+    parser.add_argument("--model", required=True, help="Path to model zip file.")
+    parser.add_argument(
+        "--algo",
+        choices=["ppo", "dqn"],
+        default="ppo",
+        help="Algorithm used by the model. Default: ppo.",
+    )
     parser.add_argument("--scenario", default="mixed_dynamic", help="Scenario name.")
     parser.add_argument(
         "--delay",
@@ -58,4 +73,4 @@ def main():
     )
     args = parser.parse_args()
 
-    run_demo(Path(args.model), args.scenario, args.delay)
+    run_demo(Path(args.model), args.scenario, args.delay, args.algo)

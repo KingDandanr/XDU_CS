@@ -40,6 +40,32 @@ SCENARIOS = {
             {"position": [7.0, 3.5], "radius": 0.5, "velocity": [-0.04, 0.03]},
         ],
     },
+    "narrow_passage": {
+        "world_size": 10.0,
+        "start": [1.0, 1.0],
+        "goal": [9.0, 9.0],
+        "max_steps": 320,
+        "obstacles": [
+            {"position": [3.3, 4.0], "radius": 0.75, "velocity": [0.0, 0.0]},
+            {"position": [4.6, 5.2], "radius": 0.75, "velocity": [0.0, 0.0]},
+            {"position": [5.9, 4.0], "radius": 0.75, "velocity": [0.0, 0.0]},
+            {"position": [4.1, 7.0], "radius": 0.65, "velocity": [0.0, 0.0]},
+            {"position": [6.4, 7.0], "radius": 0.65, "velocity": [0.0, 0.0]},
+        ],
+    },
+    "dynamic_crossing": {
+        "world_size": 10.0,
+        "start": [1.0, 8.8],
+        "goal": [9.0, 1.2],
+        "max_steps": 340,
+        "obstacles": [
+            {"position": [3.0, 3.0], "radius": 0.55, "velocity": [0.06, 0.0]},
+            {"position": [7.0, 7.0], "radius": 0.55, "velocity": [-0.06, 0.0]},
+            {"position": [5.0, 2.5], "radius": 0.6, "velocity": [0.0, 0.055]},
+            {"position": [5.0, 7.5], "radius": 0.6, "velocity": [0.0, -0.055]},
+            {"position": [4.5, 5.0], "radius": 0.7, "velocity": [0.0, 0.0]},
+        ],
+    },
 }
 
 
